@@ -1,0 +1,10 @@
+--- GinibrePoincare/Concrete/GaussianProbability.lean
++++ AffineFK/ChafaiBrascampLieb/Concrete/GaussianProbability.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.Configuration
++public import AffineFK.ChafaiBrascampLieb.Concrete.Configuration
+ public import Mathlib.Probability.Distributions.Gaussian.Real
+ public import Mathlib.MeasureTheory.Measure.FiniteMeasurePi
+ public import Mathlib.MeasureTheory.Measure.Lebesgue.Complex

@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GinibreTransitionAnalyticLocalRegularityInterior.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreTransitionAnalyticLocalRegularityInterior.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreTransitionAnalyticLocalRegularityLocalizedData
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreTransitionAnalyticLocalRegularityLocalizedData
+ 
+ @[expose] public section
+ open MeasureTheory Filter

@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GinibrePairRadius.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibrePairRadius.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreSpatialCutoffs
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreSpatialCutoffs
+ 
+ @[expose] public section
+ 

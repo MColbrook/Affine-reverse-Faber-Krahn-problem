@@ -1,0 +1,184 @@
+{
+  "kind": "Factual acceptance/status update after actual final package gate; mathematical source statements unchanged",
+  "precheck_sha256": "252fa1416adf36093eeeb5d6ea05f1a22f5c2130fa83259bde33ea1171e025a2",
+  "accepted_sha256": "a8060ec66d5a9f6f3a4d8844d002fb59b38a5e00a50230b1918a671acd1a1ddd",
+  "differences": [
+    {
+      "path": "/alignment/statements",
+      "before": [
+        {
+          "source": "Original manuscript M01/M02/M03: the three complete principal conclusions",
+          "lean": "AffineFK.affine_reverse_faber_krahn_principal_results",
+          "module": "Solution",
+          "status": "Underlying source statements proved; new standalone combined declaration replay pending",
+          "note": "Exact conjunction with independent clause quantifiers and original domains, including set-based log-concave-law M03; see docs/correspondence.md."
+        }
+      ],
+      "after": [
+        {
+          "source": "Original manuscript M01/M02/M03: the three complete principal conclusions",
+          "lean": "AffineFK.affine_reverse_faber_krahn_principal_results",
+          "module": "Solution",
+          "status": "proved",
+          "note": "Exact conjunction with independent clause quantifiers and original domains, including set-based log-concave-law M03; see docs/correspondence.md."
+        }
+      ]
+    },
+    {
+      "path": "/automation/methods",
+      "before": [
+        {
+          "method": "agent",
+          "models": [
+            "GPT-6 (Codex; exact serving variant not exposed)"
+          ],
+          "framework": "Codex desktop with AI subagents",
+          "tool_setup": "Lean4.35.0-rc3; Mathlib b63f6e8a68d220e3b3bc4f3792bb53650d375f24 and exact transitive dependency pins. Ordinary kernel-checked tactics and complete genuinely reused proof sources. Mathlib-only root Challenge contains complete conventional fixed data and one isolated theorem benchmark placeholder. Root Solution imports the full genuine proof bundle and never imports Challenge. No native-execution trust, custom axiom, Solution placeholder or definition hole supports the solution. Existing source builds and earlier packet checks are retained as historical evidence; this final package's own exact-source #print axioms and ordinary Linux sandboxed Comparator --paranoid/all-six run are pending.",
+          "cost": {
+            "wall_time": "Not precisely tracked; actual command logs retained.",
+            "spend_usd": "not tracked",
+            "hardware": "VT_gauss Linux x86_64 server with 120 CPUs; earlier local Windows compilation"
+          },
+          "prompting_notes": "Preserve the full intended source statements, inventory all prerequisites, forbid placeholder/native-execution trust in the solution, use separate statement and proof reviews, and report partial scope honestly."
+        }
+      ],
+      "after": [
+        {
+          "method": "agent",
+          "models": [
+            "GPT-6 (Codex; exact serving variant not exposed)"
+          ],
+          "framework": "Codex desktop with AI subagents",
+          "tool_setup": "Lean4.35.0-rc3; Mathlib b63f6e8a68d220e3b3bc4f3792bb53650d375f24 and exact transitive dependency pins. Ordinary kernel-checked tactics and complete genuinely reused proof sources. Mathlib-only root Challenge contains complete conventional fixed data and one isolated theorem benchmark placeholder. Root Solution imports the full genuine proof bundle and never imports Challenge. No native-execution trust, custom axiom, Solution placeholder or definition hole supports the solution. This exact package has actual successful build/compiled-data/private-proof/axiom evidence and its own ordinary Linux sandboxed Comparator --paranoid/all-six acceptance. Earlier source-certificate identities are retained as historical provenance, not substituted for the new verdict.",
+          "cost": {
+            "wall_time": "Not precisely tracked; actual command logs retained.",
+            "spend_usd": "not tracked",
+            "hardware": "VT_gauss Linux x86_64 server with 120 CPUs; earlier local Windows compilation"
+          },
+          "prompting_notes": "Preserve the full intended source statements, inventory all prerequisites, forbid placeholder/native-execution trust in the solution, use separate statement and proof reviews, and report partial scope honestly."
+        }
+      ]
+    },
+    {
+      "path": "/project/description",
+      "before": "The three principal manuscript results M01, M02 and M03, with their original domains and quantifier order. M01: one finite C>0 before every n>0 and compact convex Euclidean body K with nonempty interior; there exists a literal real special-linear matrix S with finite actual H0 Rayleigh infimum on interior(S K) and lambda_1(interior(S K))*volume(K)^(2/n)<=C*n. M02: one finite C>0 before every n>0 and origin-symmetric compact convex volume-one K with nonempty interior in maximal Gaussian measure position; its actual H0 Rayleigh infimum is at most C*n. M03: for each real P>=2 one finite C(P)>0 precedes every n>0, every even isotropic probability law nu satisfying the conventional compact-set IsLogConcaveMeasure condition, least Poincare constant at most P and finite actual Gaussian-relative Fisher information, and every origin-symmetric compact convex body D with nonempty interior supporting nu almost everywhere; lambda_1(interior D)<=C(P)*(n+sqrt(n*I(nu|gamma))). The log-concave density is derived from the law's original finite-information hypothesis; no density witness, covariance lower bound, ellipsoid-existence conclusion or desired spectral estimate is an additional premise. This new standalone combined package is awaiting its own final exact-source build, axiom reports, independent canonical interface review and ordinary Linux sandboxed Comparator --paranoid/all-six replay. Earlier exact source results have their own accepted certificates, but their verdicts are not asserted as acceptance of this newly assembled root.",
+      "after": "The three principal manuscript results M01, M02 and M03, with their original domains and quantifier order. M01: one finite C>0 before every n>0 and compact convex Euclidean body K with nonempty interior; there exists a literal real special-linear matrix S with finite actual H0 Rayleigh infimum on interior(S K) and lambda_1(interior(S K))*volume(K)^(2/n)<=C*n. M02: one finite C>0 before every n>0 and origin-symmetric compact convex volume-one K with nonempty interior in maximal Gaussian measure position; its actual H0 Rayleigh infimum is at most C*n. M03: for each real P>=2 one finite C(P)>0 precedes every n>0, every even isotropic probability law nu satisfying the conventional compact-set IsLogConcaveMeasure condition, least Poincare constant at most P and finite actual Gaussian-relative Fisher information, and every origin-symmetric compact convex body D with nonempty interior supporting nu almost everywhere; lambda_1(interior D)<=C(P)*(n+sqrt(n*I(nu|gamma))). The log-concave density is derived from the law's original finite-information hypothesis; no density witness, covariance lower bound, ellipsoid-existence conclusion or desired spectral estimate is an additional premise. This standalone combined M01/M02/M03 package passed its own ordinary Linux sandboxed Comparator --paranoid with all six configured kernels. Its actual build, complete fixed-statement comparison, private proof inspection, axiom reports and separate AI reviews are retained under verification/."
+    },
+    {
+      "path": "/review/notes",
+      "before": "Exact prior review records and authorship boundaries are retained under verification/reviews/. docs/correspondence.md specifies the original domains/constants/quantifiers; docs/proof-departures.md specifies material alternative arguments and outstanding full-paper background. A source author is not presented as the independent mathematical reviewer of that same proof. New combined-root canonical and actual compiled-data review receipts must be pinned before its own Comparator run. No earlier certificate is treated as a verdict on this new package.",
+      "after": "Exact prior review records and authorship boundaries are retained under verification/reviews/. docs/correspondence.md specifies the original domains/constants/quantifiers; docs/proof-departures.md specifies material alternative arguments and outstanding full-paper background. A source author is not presented as the independent mathematical reviewer of that same proof. The new combined-root canonical and actual compiled-data review receipts were pinned before its own Comparator run. Post-check integrity review is retained separately. No earlier certificate is treated as a verdict on this new package."
+    },
+    {
+      "path": "/review/status",
+      "before": "Prior source proofs have separate non-author AI reviews; final combined standalone interface/package review and exact-root replay pending; no human review",
+      "after": "Separate non-author AI canonical data, statement-fidelity, proof-application, compiled-dependency and documentation reviews complete; own ordinary sandboxed six-kernel check accepted; no human review"
+    },
+    {
+      "path": "/status/main_results",
+      "before": [
+        {
+          "declaration": "AffineFK.affine_reverse_faber_krahn_principal_results",
+          "file": "Solution.lean",
+          "sorry_count": 0,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "note": "Combined packaged declaration; its new exact-root replay is pending. Underlying source results are already proved and separately certified."
+        }
+      ],
+      "after": [
+        {
+          "declaration": "AffineFK.affine_reverse_faber_krahn_principal_results",
+          "file": "Solution.lean",
+          "sorry_count": 0,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "note": "The exact combined packaged declaration passed its own ordinary sandboxed Comparator and all six kernels; source statements and complete proof dependencies are preserved."
+        }
+      ]
+    },
+    {
+      "path": "/status/scope",
+      "before": "The three principal manuscript results M01, M02 and M03, with their original domains and quantifier order. M01: one finite C>0 before every n>0 and compact convex Euclidean body K with nonempty interior; there exists a literal real special-linear matrix S with finite actual H0 Rayleigh infimum on interior(S K) and lambda_1(interior(S K))*volume(K)^(2/n)<=C*n. M02: one finite C>0 before every n>0 and origin-symmetric compact convex volume-one K with nonempty interior in maximal Gaussian measure position; its actual H0 Rayleigh infimum is at most C*n. M03: for each real P>=2 one finite C(P)>0 precedes every n>0, every even isotropic probability law nu satisfying the conventional compact-set IsLogConcaveMeasure condition, least Poincare constant at most P and finite actual Gaussian-relative Fisher information, and every origin-symmetric compact convex body D with nonempty interior supporting nu almost everywhere; lambda_1(interior D)<=C(P)*(n+sqrt(n*I(nu|gamma))). The log-concave density is derived from the law's original finite-information hypothesis; no density witness, covariance lower bound, ellipsoid-existence conclusion or desired spectral estimate is an additional premise. Genuine unchanged proof-source union: 992 modules (accepted Main35's 989 plus three set-based log-concave-law/density modules used for M03), with the new root interface and aggregate checked separately. One deliberate Challenge-only benchmark placeholder; zero Solution or proof-closure placeholders and zero definition holes. Schema sorry_count excludes that deliberate Challenge placeholder. This new standalone combined package is awaiting its own final exact-source build, axiom reports, independent canonical interface review and ordinary Linux sandboxed Comparator --paranoid/all-six replay. Earlier exact source results have their own accepted certificates, but their verdicts are not asserted as acceptance of this newly assembled root. Full classical positivity/simplicity/regularity, all-groundstate statements and every manuscript intermediate assertion are outside the principal-results claim.",
+      "after": "The three principal manuscript results M01, M02 and M03, with their original domains and quantifier order. M01: one finite C>0 before every n>0 and compact convex Euclidean body K with nonempty interior; there exists a literal real special-linear matrix S with finite actual H0 Rayleigh infimum on interior(S K) and lambda_1(interior(S K))*volume(K)^(2/n)<=C*n. M02: one finite C>0 before every n>0 and origin-symmetric compact convex volume-one K with nonempty interior in maximal Gaussian measure position; its actual H0 Rayleigh infimum is at most C*n. M03: for each real P>=2 one finite C(P)>0 precedes every n>0, every even isotropic probability law nu satisfying the conventional compact-set IsLogConcaveMeasure condition, least Poincare constant at most P and finite actual Gaussian-relative Fisher information, and every origin-symmetric compact convex body D with nonempty interior supporting nu almost everywhere; lambda_1(interior D)<=C(P)*(n+sqrt(n*I(nu|gamma))). The log-concave density is derived from the law's original finite-information hypothesis; no density witness, covariance lower bound, ellipsoid-existence conclusion or desired spectral estimate is an additional premise. Genuine unchanged proof-source union: 992 modules (accepted Main35's 989 plus three set-based log-concave-law/density modules used for M03), with the new root interface and aggregate checked separately. One deliberate Challenge-only benchmark placeholder; zero Solution or proof-closure placeholders and zero definition holes. Schema sorry_count excludes that deliberate Challenge placeholder. This standalone combined M01/M02/M03 package passed its own ordinary Linux sandboxed Comparator --paranoid with all six configured kernels. Its actual build, complete fixed-statement comparison, private proof inspection, axiom reports and separate AI reviews are retained under verification/. Full classical positivity/simplicity/regularity, all-groundstate statements and every manuscript intermediate assertion are outside the principal-results claim."
+    },
+    {
+      "path": "/verification/actual_comparator_exit",
+      "before": null,
+      "after": 0
+    },
+    {
+      "path": "/verification/actual_comparator_seconds",
+      "before": null,
+      "after": 1464.25
+    },
+    {
+      "path": "/verification/actual_private_project_constants_including_selected",
+      "before": null,
+      "after": 5685
+    },
+    {
+      "path": "/verification/actual_source_modules",
+      "before": null,
+      "after": 992
+    },
+    {
+      "path": "/verification/actual_statement_dependency_constants",
+      "before": null,
+      "after": 104
+    },
+    {
+      "path": "/verification/complete_reviewed_data_declarations",
+      "before": null,
+      "after": 26
+    },
+    {
+      "path": "/verification/kernel_acceptance_labels",
+      "before": null,
+      "after": [
+        "Lean paranoid kernel",
+        "lean4lean kernel",
+        "nanoda kernel",
+        "con-leche kernel",
+        "con-ron kernel",
+        "Lean default kernel"
+      ]
+    },
+    {
+      "path": "/verification/new_combined_package_acceptance_claimed",
+      "before": false,
+      "after": true
+    },
+    {
+      "path": "/verification/ordinary_TYPE_definitions",
+      "before": null,
+      "after": 25
+    },
+    {
+      "path": "/verification/ordinary_TYPE_theorem_helpers",
+      "before": null,
+      "after": 79
+    },
+    {
+      "path": "/verification/prior_source_evidence",
+      "before": "Separate accepted Main35 M01/M02 and Stage36 M03 source certificates retained as historical evidence, not substituted for the new package's own gate.",
+      "after": "Earlier source-certificate identities and verdict summaries appear in verification/reviews/prior/source-review-index.json. Their complete original development remains preserved separately. This package has its own authoritative verification/certificate.json."
+    },
+    {
+      "path": "/verification/retained_data_owner_outside_ordinary_TYPE",
+      "before": null,
+      "after": "AffineFK.fisherInformation"
+    },
+    {
+      "path": "/verification/status",
+      "before": "pending-final-combined-package-replay",
+      "after": "accepted-ordinary-sandboxed-all-six"
+    }
+  ]
+}

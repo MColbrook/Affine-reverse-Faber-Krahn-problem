@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GaussianPolynomialDensity.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianPolynomialDensity.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.MultivariateHermiteIntegrability
+-public import GinibrePoincare.Analysis.PolynomialCompactApproximation
++public import AffineFK.ChafaiBrascampLieb.Analysis.MultivariateHermiteIntegrability
++public import AffineFK.ChafaiBrascampLieb.Analysis.PolynomialCompactApproximation
+ public import Mathlib.MeasureTheory.Function.ContinuousMapDense
+ 
+ @[expose] public section

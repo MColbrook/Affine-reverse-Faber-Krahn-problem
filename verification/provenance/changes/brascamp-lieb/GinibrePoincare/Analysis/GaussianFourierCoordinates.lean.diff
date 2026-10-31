@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GaussianFourierCoordinates.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianFourierCoordinates.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianHermiteMoments
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianHermiteMoments
+ public import Mathlib.MeasureTheory.Measure.CharacteristicFunction.Basic
+ 
+ @[expose] public section

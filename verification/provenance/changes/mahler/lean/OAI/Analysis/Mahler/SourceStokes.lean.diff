@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/SourceStokes.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceStokes.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.SourceCoordinateForms
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceCoordinateForms
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,85 @@
+{
+  "kind": "Author-requested publication metadata update; existing mathematical verification retained",
+  "date": "2026-10-30",
+  "title": "A formal proof of an affine reverse Faber-Krahn inequality",
+  "authors": [
+    "Matthew J. Colbrook",
+    "George Stepaniants"
+  ],
+  "title_spelling_correction": "ineuqlaity corrected to inequality",
+  "preserved_predecessors": {
+    "formalization.yaml": {
+      "preserved_path": "verification/provenance/before-publication-metadata-update/formalization.yaml",
+      "sha256": "0868939b21057dabc7a0d86741627b084f0efa83e3a1ff999eada9976edb05d8"
+    },
+    "README.md": {
+      "preserved_path": "verification/provenance/before-publication-metadata-update/README.md",
+      "sha256": "0048e2bec4b4af5135ab0ec1ebfd0be7e4bab80a3bc13e1d01fdf7dd5c7449e4"
+    },
+    "CITATION.md": {
+      "preserved_path": "verification/provenance/before-publication-metadata-update/CITATION.md",
+      "sha256": "7056aba51f891cdb18d81a68504a68e5c02346927df50cba6ba5b4e86256b8d3"
+    },
+    "SUBMISSION.md": {
+      "preserved_path": "verification/provenance/before-publication-metadata-update/SUBMISSION.md",
+      "sha256": "ba2c5c021b897069ee2c20ce4abaf13930d20de79114cfc906ba685fba32a846"
+    },
+    "NOTICE": {
+      "preserved_path": "verification/provenance/before-publication-metadata-update/NOTICE",
+      "sha256": "1afc914cc9c49d140ea6d036bad7f6e1bdd306e79922b98b1d06d877933f9b17"
+    },
+    "verification/README.md": {
+      "preserved_path": "verification/provenance/before-publication-metadata-update/verification/README.md",
+      "sha256": "67fd98c8f9fba60a6a579bf47170add13e304fb56de620ee1888226f73ed71c0"
+    },
+    "verification/certificate.json": {
+      "preserved_path": "verification/provenance/before-publication-metadata-update/verification/certificate.json",
+      "sha256": "01aca66a970a0ed10e42e182ab8f758fde96467616145b8ad773742804311fea"
+    },
+    "verification/payload-sha256.json": {
+      "preserved_path": "verification/provenance/before-publication-metadata-update/verification/payload-sha256.json",
+      "sha256": "125071979e47058d78359a2153f5883ab7d8289dee2655c7bda3ace1fa6db0ad"
+    }
+  },
+  "changed_publication_files_sha256": {
+    "formalization.yaml": "e3fb8fc2aa2215b4991344e62ac4f79f1eb66cb3e8d73b409213971a7aead88f",
+    "README.md": "4ba0c02238968abe76437399dbc4b24e3a64947dfa8cd67e2c07bc5cda7ae60b",
+    "CITATION.md": "7a70f3187ddb2aaca52118c705864eb1ab70b4174ca6d50cabfd05de8f952d8e",
+    "SUBMISSION.md": "77a80ad1fcf6e7fd112e44c669ea5eb3cd58f3d6a22cfa82f7c6f289f959f2b1",
+    "NOTICE": "d234715ef4e973716cc3de63f297dac07ea53d73f62d72759330bc2128bbc8ae",
+    "verification/README.md": "5e970c66feb8281f2e4b084f9edbd2c89fd80a1640da3f310fc5c829ae47f7fe"
+  },
+  "metadata_differences": [
+    {
+      "path": "/project/name",
+      "before": "Affine reverse Faber--Krahn: the three principal results",
+      "after": "A formal proof of an affine reverse Faber-Krahn inequality"
+    },
+    {
+      "path": "/project/authors",
+      "before": [
+        "Matthew J. Colbrook"
+      ],
+      "after": [
+        "Matthew J. Colbrook",
+        "George Stepaniants"
+      ]
+    },
+    {
+      "path": "/review/notes",
+      "before": "Exact prior review records and authorship boundaries are retained under verification/reviews/. docs/correspondence.md specifies the original domains/constants/quantifiers; docs/proof-departures.md specifies material alternative arguments and outstanding full-paper background. A source author is not presented as the independent mathematical reviewer of that same proof. The new combined-root canonical and actual compiled-data review receipts were pinned before its own Comparator run. Post-check integrity review is retained separately. No earlier certificate is treated as a verdict on this new package. The new combined canonical interface was authored by claim_inventory and independently reviewed by formalization_coverage; see verification/reviews/canonical_interface_static_B.json and submission-interface-review.json. Its author is not counted as its independent reviewer.",
+      "after": "Exact prior review records and authorship boundaries are retained under verification/reviews/. docs/correspondence.md specifies the original domains/constants/quantifiers; docs/proof-departures.md specifies material alternative arguments and outstanding full-paper background. A source author is not presented as the independent mathematical reviewer of that same proof. The new combined-root canonical and actual compiled-data review receipts were pinned before its own Comparator run. Post-check integrity review is retained separately. No earlier certificate is treated as a verdict on this new package. The new combined canonical interface was authored by claim_inventory and independently reviewed by formalization_coverage; see verification/reviews/canonical_interface_static_B.json and submission-interface-review.json. Its author is not counted as its independent reviewer. The authors subsequently requested the project title and joint authorship shown in project.name and project.authors. This publication metadata update is documented in verification/publication-metadata-update.json; the independently reviewed Lean statements, proof sources and actual kernel-check evidence are unchanged. Earlier documentation and final-package AI reviews refer to their preserved earlier cuts."
+    },
+    {
+      "path": "/sources/0/note",
+      "before": "Unpublished manuscript by Matthew J. Colbrook and George Stepaniants. The first author requested this AI-assisted formalization and preparation workflow. This package targets only M01/M02/M03; the full manuscript is not verified. No human Lean review, coauthor formalization participation, upstream endorsement, public repository upload or registry submission is claimed. The manuscript retains its authors' rights.",
+      "after": "Unpublished manuscript by Matthew J. Colbrook and George Stepaniants. The first author requested this AI-assisted formalization and preparation workflow. This package targets only M01/M02/M03; the full manuscript is not verified. No human Lean review, upstream endorsement, public repository upload or registry submission is claimed. The manuscript retains its authors' rights."
+    }
+  ],
+  "Lean_interface_proof_AuditTools_config_toolchain_changes": false,
+  "Lean_or_kernel_rerun": false,
+  "previous_independent_AI_package_review_applies_to_preserved_predecessor": true,
+  "new_independent_AI_review_of_administrative_update_claimed": false,
+  "GitHub_interaction_or_submission": false,
+  "delivery": "Regular subfolder; workspace ZIP and ZIP checksum removed at author's request"
+}

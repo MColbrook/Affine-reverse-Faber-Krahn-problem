@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/AngularEndpoint.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/AngularEndpoint.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.AngularIntegrals
+-import Mathlib.MeasureTheory.Integral.DominatedConvergence
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.AngularIntegrals
++public import Mathlib.MeasureTheory.Integral.DominatedConvergence
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/L2BoundedCoefficientConvergence.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/L2BoundedCoefficientConvergence.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreWeakSobolevTruncation
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreWeakSobolevTruncation
+ public import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
+ 
+ @[expose] public section

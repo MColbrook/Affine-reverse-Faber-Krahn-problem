@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SourceRawCoefficient.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceRawCoefficient.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.SourceRawJets
+-import OAI.Analysis.Mahler.RawAlternationDerivative
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceRawJets
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RawAlternationDerivative
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

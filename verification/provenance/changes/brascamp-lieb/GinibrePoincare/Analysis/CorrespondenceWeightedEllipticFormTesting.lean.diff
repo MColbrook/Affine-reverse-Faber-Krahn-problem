@@ -1,0 +1,9 @@
+--- GinibrePoincare/Analysis/CorrespondenceWeightedEllipticFormTesting.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceWeightedEllipticFormTesting.lean
+@@ -1,5 +1,5 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticSobolevApproximation
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticSobolevApproximation
+ @[expose] public section
+ open MeasureTheory Filter ContinuousLinearMap
+ open scoped ContDiff Convolution Topology BigOperators

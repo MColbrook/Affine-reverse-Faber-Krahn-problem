@@ -1,0 +1,24 @@
+--- GinibrePoincare/Analysis/GlobalPhaseAction.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GlobalPhaseAction.lean
+@@ -1,14 +1,14 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.HolomorphicVandermondeDivision
++public import AffineFK.ChafaiBrascampLieb.Analysis.HolomorphicVandermondeDivision
+ public import Mathlib.Analysis.InnerProductSpace.Basic
+ public import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
+-public import GinibrePoincare.Analysis.ComplexGaussianDensity
+-public import GinibrePoincare.Analysis.MeasureTransport
+-public import GinibrePoincare.Analysis.VandermondeL2
+-public import GinibrePoincare.Analysis.VandermondeL2Inverse
+-public import GinibrePoincare.Analysis.HermiteL2Family
+-public import GinibrePoincare.Analysis.HermiteEnergy
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexGaussianDensity
++public import AffineFK.ChafaiBrascampLieb.Analysis.MeasureTransport
++public import AffineFK.ChafaiBrascampLieb.Analysis.VandermondeL2
++public import AffineFK.ChafaiBrascampLieb.Analysis.VandermondeL2Inverse
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteL2Family
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteEnergy
+ public import Mathlib.RingTheory.RootsOfUnity.Complex
+ public import Mathlib.RingTheory.MvPolynomial.Homogeneous
+ public import Mathlib.Algebra.MvPolynomial.NoZeroDivisors

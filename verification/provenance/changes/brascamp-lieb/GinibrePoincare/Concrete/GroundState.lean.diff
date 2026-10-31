@@ -1,0 +1,10 @@
+--- GinibrePoincare/Concrete/GroundState.lean
++++ AffineFK/ChafaiBrascampLieb/Concrete/GroundState.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.Weights
++public import AffineFK.ChafaiBrascampLieb.Concrete.Weights
+ public import Mathlib.Data.ENNReal.Real
+ public import Mathlib.Tactic.Ring
+ 

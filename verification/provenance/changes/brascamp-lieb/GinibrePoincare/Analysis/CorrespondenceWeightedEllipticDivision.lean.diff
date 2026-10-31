@@ -1,0 +1,11 @@
+--- GinibrePoincare/Analysis/CorrespondenceWeightedEllipticDivision.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceWeightedEllipticDivision.lean
+@@ -1,6 +1,6 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticProduct
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticDensity
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticProduct
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticDensity
+ @[expose] public section
+ open MeasureTheory Set Filter
+ open scoped ContDiff Topology

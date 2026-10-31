@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/SobolevValueTruncation.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/SobolevValueTruncation.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.SobolevTruncation
++public import AffineFK.ChafaiBrascampLieb.Analysis.SobolevTruncation
+ 
+ @[expose] public section
+ 

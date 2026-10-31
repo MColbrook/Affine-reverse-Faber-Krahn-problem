@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GaussianLSIReduction.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianLSIReduction.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianRadialLift
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianRadialLift
+ 
+ @[expose] public section
+ 

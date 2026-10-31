@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/TailIntegral.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/TailIntegral.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.PlanarEstimates
+-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PlanarEstimates
++public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

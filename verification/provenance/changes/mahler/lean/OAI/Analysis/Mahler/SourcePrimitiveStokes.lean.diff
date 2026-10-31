@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SourcePrimitiveStokes.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourcePrimitiveStokes.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.HomogeneousPrimitiveRegularity
+-import OAI.Analysis.Mahler.ExactSphereStokes
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousPrimitiveRegularity
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ExactSphereStokes
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

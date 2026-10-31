@@ -1,0 +1,38 @@
+{
+  "kind": "Independent AI corrected Main35 presentation delta and renewed canonical fidelity review",
+  "reviewer": "/root/claim_inventory",
+  "independent_ai_review_complete": true,
+  "defects_found": [],
+  "corrected_candidate_headers_and_bodies_reviewed": true,
+  "selected_header_unchanged": true,
+  "all19_nonbenchmark_complete_source_declarations_unchanged": true,
+  "conventional_semantic_data_owners": 17,
+  "manual_owners": 20,
+  "helper_theorems": 2,
+  "correction": "Exactly one orphan scoped heartbeat-option line removed from each candidate; no source definition or theorem modified.",
+  "historical_initial_packet_failed_elaboration": true,
+  "historical_initial_review_claimed_compilation": false,
+  "actual_corrected_packet_diagnostics_reviewed": false,
+  "actual_own_comparator_accepted": false,
+  "full_manuscript_verified": false,
+  "original_manuscript_and_inventory_modified": false,
+  "no_compiler_or_kernel_rerun": true,
+  "pins": {
+    "AffineFK/MainTheoremsResults/Challenge.lean": "48ec40a745ccd3948e5d9d5c1e59e57865c21df1f463fd3a8a8bcfde6ce60bc7",
+    "AffineFK/MainTheoremsResults/Solution.lean": "389b4eed3eee8365a494a36b010a91795f291023d91ddf8f4746aadbcd6193b2",
+    "AffineFK/MainTheoremsResults/interface-manifest.json": "757e8a32338db36ac652ace5422b00860c894674e7f2aae3f35a196970cc89a7",
+    "main-theorems-comparator.json": "30384fa7351bf0a63beaa92bd3335d5b12f774f33b1104badf065409a9a652be",
+    "audit/stage35_source_manifest.json": "26147ec2daf2c9197a1456ba353adf1c788e735df27a0ee21652f15e50dbccb6",
+    "audit/stage35_independent_packet_review.md": "1ebf89630ff8beb74280bd2c8cc03bb07b53d7e6eac557709b5d4261a03a2ff2",
+    "audit/stage35_independent_packet_review.json": "bf4e3d319c54e37fa2d2bf59a0920ce7fee10e151d07b43f96ac395dba9ec647"
+  },
+  "historical_pins": {
+    "AffineFK/MainTheoremsResults/Challenge.lean": "df39f60ad677d90a70888b136093531a9b9d0a97e2f531ca2865c07f6d653715",
+    "AffineFK/MainTheoremsResults/Solution.lean": "124fc778453eb02e30d04d8c097b22931c854b46f3a77628de25dbdbe944ab7e",
+    "AffineFK/MainTheoremsResults/interface-manifest.json": "32805de654a702862541a352c3fb2685cfac7d081b38155fd805225d629b7f30",
+    "audit/stage35_independent_packet_review.md": "1ebf89630ff8beb74280bd2c8cc03bb07b53d7e6eac557709b5d4261a03a2ff2",
+    "audit/stage35_independent_packet_review.json": "bf4e3d319c54e37fa2d2bf59a0920ce7fee10e151d07b43f96ac395dba9ec647",
+    "logs/stage35/packet-build-01.txt": "a9928bdbd1301b822f5d7afd08a0e859c3f72ad68e6d9c91e303ca0f3d794d73"
+  },
+  "authorship_boundary": "Independent review of the new root/E main composition and canonical packet. Reviewer authored some reused C dependencies, so this is not a fresh non-author mathematical review of those source proofs; existing root/B/E cross-reviews retain their distinct layers. No manual human or all989-body rereview claimed."
+}

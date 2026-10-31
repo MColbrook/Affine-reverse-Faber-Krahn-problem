@@ -1,0 +1,22 @@
+--- lean/OAI/Analysis/Mahler/HorizontalForms.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HorizontalForms.lean
+@@ -1,9 +1,13 @@
+-import Mathlib.LinearAlgebra.Complex.Module
+-import Mathlib.Tactic.Push
+-import Mathlib.Tactic
+-import Mathlib.LinearAlgebra.Alternating.DomCoprod
+-import Mathlib.LinearAlgebra.FiniteDimensional.Lemmas
+-import Mathlib.LinearAlgebra.TensorProduct.Basic
++module
++
++public import Mathlib.LinearAlgebra.Complex.Module
++public import Mathlib.Tactic.Push
++public import Mathlib.Tactic
++public import Mathlib.LinearAlgebra.Alternating.DomCoprod
++public import Mathlib.LinearAlgebra.FiniteDimensional.Lemmas
++public import Mathlib.LinearAlgebra.TensorProduct.Basic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

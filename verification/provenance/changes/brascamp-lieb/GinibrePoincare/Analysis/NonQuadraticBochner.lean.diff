@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/NonQuadraticBochner.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/NonQuadraticBochner.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.NonQuadraticPotential
++public import AffineFK.ChafaiBrascampLieb.Analysis.NonQuadraticPotential
+ public import Mathlib.Analysis.Calculus.ContDiff.Deriv
+ public import Mathlib.Analysis.Calculus.Deriv.Support
+ public import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts

@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/NormSquareForm.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/NormSquareForm.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.SphereForms
+-import Mathlib.Analysis.InnerProductSpace.Calculus
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereForms
++public import Mathlib.Analysis.InnerProductSpace.Calculus
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/ClosedWedgePowers.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ClosedWedgePowers.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ExteriorLeibnizTwo
+-import OAI.Analysis.Mahler.HomogeneousSmoothForms
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ExteriorLeibnizTwo
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousSmoothForms
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

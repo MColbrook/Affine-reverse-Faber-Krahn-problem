@@ -1,0 +1,127 @@
+{
+  "kind": "Independent AI separate Challenge/data/header/Solution-wrapper source-copy review",
+  "reviewer": "/root/claim_inventory",
+  "independent_ai_review_complete": true,
+  "selected_theorem": "AffineFK.uniform_symmetric_body_spectral_bound_of_covariance",
+  "manual_owners": 16,
+  "semantic_data_owners": 14,
+  "genuine_manual_theorem_helpers": 1,
+  "isolated_benchmark_placeholders": 1,
+  "all15_nonbenchmark_headers_and_bodies_match_source": true,
+  "all_ambient_scopes_manually_reviewed": true,
+  "complete_body_records": {
+    "SobolevAmbient": {
+      "kind": "abbrev",
+      "source_path": "AffineFK/WeightedSobolev.lean",
+      "normalized_complete_declaration_sha256": "705a611b9c6e1baa73506f21f963eb813a3f9ff1b808bbb27cd7e339954d773f"
+    },
+    "dirichletEigenvalue": {
+      "kind": "def",
+      "source_path": "AffineFK/DirichletRayleigh.lean",
+      "normalized_complete_declaration_sha256": "3db49c213a9640d29690fc0041b56a68815b3e12ca33247cc42ac6fe6275ab37"
+    },
+    "dirichletGradient": {
+      "kind": "def",
+      "source_path": "AffineFK/DirichletSobolev.lean",
+      "normalized_complete_declaration_sha256": "592f59a7034343a04deafb0ecf9400466f758af2633164515005031a09990b4c"
+    },
+    "dirichletRayleigh": {
+      "kind": "def",
+      "source_path": "AffineFK/DirichletRayleigh.lean",
+      "normalized_complete_declaration_sha256": "bf3aec88f24661750a3cc182ab82e923da4c76dbf53e3a6e7ea061ad6f5aca27"
+    },
+    "dirichletSobolev": {
+      "kind": "def",
+      "source_path": "AffineFK/DirichletSobolev.lean",
+      "normalized_complete_declaration_sha256": "9061aaae3483a2541f97579d557381d27207c1c666462af0b431472aa18978a4"
+    },
+    "dirichletTestToH1": {
+      "kind": "def",
+      "source_path": "AffineFK/DirichletSobolev.lean",
+      "normalized_complete_declaration_sha256": "49e5c5cbf9c962b3c66046b0b927ab610b86310ff4c2165cd67a00104c3212e0"
+    },
+    "dirichletTestToTop": {
+      "kind": "def",
+      "source_path": "AffineFK/DirichletSobolev.lean",
+      "normalized_complete_declaration_sha256": "c3e84ba77fae224000072e364f11dc16964ef6ac2a2976d2a8cae484b8f1db3b"
+    },
+    "dirichletValue": {
+      "kind": "def",
+      "source_path": "AffineFK/DirichletSobolev.lean",
+      "normalized_complete_declaration_sha256": "aae92543c8261a458102d3efd32ed6e275e0fb50d1adfad9c6c9a7931e4d6f42"
+    },
+    "testFunctionGradient": {
+      "kind": "def",
+      "source_path": "AffineFK/WeightedSobolev.lean",
+      "normalized_complete_declaration_sha256": "7a2e2657ce79dc2017996c2b739a280f19b2ecae717cc1806f26e600c2641555"
+    },
+    "unweightedGradient": {
+      "kind": "def",
+      "source_path": "AffineFK/UnweightedSobolevGraph.lean",
+      "normalized_complete_declaration_sha256": "ba44cd162ec380e9d6ad3464b49e73ae0f0ccccf5b771b0aa2b835ee1f10e951"
+    },
+    "unweightedSmoothPair": {
+      "kind": "def",
+      "source_path": "AffineFK/UnweightedSobolevGraph.lean",
+      "normalized_complete_declaration_sha256": "89df847d7397dcbfc7fb7fde946fa64b66730c4782e8d38fb32d81ee7b09decb"
+    },
+    "unweightedSobolevGraph": {
+      "kind": "def",
+      "source_path": "AffineFK/UnweightedSobolevGraph.lean",
+      "normalized_complete_declaration_sha256": "b7e4054e21a51c04306ffb0a05559579121aa24d078090cc8c6fd7fa3f78bd58"
+    },
+    "unweightedTestToL2": {
+      "kind": "def",
+      "source_path": "AffineFK/UnweightedSobolevGraph.lean",
+      "normalized_complete_declaration_sha256": "06054c13cd65136a420e2b0a32af85b818e118976bc2069eceee71a3c77959e7"
+    },
+    "unweightedValue": {
+      "kind": "def",
+      "source_path": "AffineFK/UnweightedSobolevGraph.lean",
+      "normalized_complete_declaration_sha256": "80031cbba91b91336a3ec41102ba59b567c3149f1e11bc1e36f3a52e14f95f6b"
+    },
+    "unweighted_smooth_pair_mem": {
+      "kind": "theorem",
+      "source_path": "AffineFK/UnweightedSobolevGraph.lean",
+      "normalized_complete_declaration_sha256": "1624003452eca4fdbb831ed40345045848812aad102d79fb425ce0e819e8db09"
+    }
+  },
+  "selected_header_normalized_sha256": "3a144cf4db4bdfd83c563ffe5d733d8b97e469199b7d48875258796183c599f4",
+  "challenge_raw_bytes": 16183,
+  "challenge_physical_lines": 248,
+  "solution_raw_bytes": 16346,
+  "solution_physical_lines": 250,
+  "complete_bundle_modules": 721,
+  "attributed_ginibre_modules": 234,
+  "attributed_rellich_modules": 15,
+  "actual_source_axiom_queries": 301,
+  "source_type_constants": 111,
+  "full_source_project_closure": 3161,
+  "source_full_other_entries": "One genuine upstream structure and its constructor; exact compiled-kind inspection remains separate.",
+  "actual_packet_diagnostics_reviewed": false,
+  "actual_own_comparator_accepted": false,
+  "full_paper_verified": false,
+  "definition_holes": [],
+  "solution_placeholders": 0,
+  "scope": "Uniform conditional symmetric-body actual spectral bound for literal c<=alpha<=1 restricted-Gaussian scalar covariance; positioning/G05/full M01/M02 and strict positivity/simplicity remain open.",
+  "authorship_boundary": "Reviewer authored some reused C source proofs; this independent packet review is not a new non-author mathematical review of those reused sources. Root/B/E source cross-reviews retain their distinct scopes.",
+  "pins": {
+    "AffineFK/SymmetricCovarianceSpectrumResults/Challenge.lean": "c414263c4ccccf9e835342a42adacfb856a45fb6b21d9690d3d23552bbc74379",
+    "AffineFK/SymmetricCovarianceSpectrumResults/Solution.lean": "c3ddfa2104ddbc70fb62a679e078f54f84550cc5fe05037f8d21cd7ee10d2458",
+    "symmetric-covariance-spectrum-comparator.json": "a4e8801eda4b346471df78ce6d629d51d1cc69ce009b56be3defec9caa9f6db0",
+    "AffineFK/SymmetricCovarianceSpectrumResults/interface-manifest.json": "b1bc44a2e460ecf7e5ecb89c34c5e1f0f174670f42d55f6e3bb70916ef7aa686",
+    "audit/stage33_source_manifest.json": "959f6112c35072543c925ad7388f735ab49517eede3d1e725b2037a71a75ed5a",
+    "audit/stage33_dependencies.json": "e6814407590dbaca526106c9bd923c666de0f6a9618c96fe11b159f5dc7644a6",
+    "audit/stage33_challenge_dependencies.json": "a8a52b72445b49d611d233b64c16f8cd90a4d7872fc033845fd5bb60537f2e06",
+    "logs/stage33/source-axioms.txt": "91db6c3584dbd4eeaa6452adf49e59d24ec23f3ce96b3106c36603dd448d0076",
+    "logs/stage33/source-dependencies.txt": "0b008b5de46d713819bef349243b1ce96e803381393aa4d66b383cabb88ff735",
+    "logs/stage33/source-statement-dependencies.txt": "f3f1218d81142d6fe1953294f5cd1cb4af6fa83db108be45f599806e475c92d2",
+    "audit/stage33_independent_packet_review.md": "5b7bb945e5867b3763185290e65e0fe0d0ee790b63efe729c624ffa85c465cc1",
+    "audit/stage33_source_statement_review.json": "e97ec8eefc728ce11b67991eac68ba5c2dc4e5e2cc14a49814523a8a331dacb7",
+    "AffineFK/WeightedSobolev.lean": "453b3e60c0b9d5639f63ddb0999d3e96498e844324c0f4805153488bf46df1d5",
+    "AffineFK/UnweightedSobolevGraph.lean": "89ea14c334e096da9ce2ba408906077fea99b8aa4325cc7f6cdb4492858dc41d",
+    "AffineFK/DirichletSobolev.lean": "0a351430f466082a2c08a4636d83a0869f2b30c841fc1eb8867cea4622778064",
+    "AffineFK/DirichletRayleigh.lean": "b574671fae52ca93f8e62c039e741764c08f2681598f144a42c25f8abe215ce7",
+    "AffineFK/SymmetricCovarianceSpectralBound.lean": "cb2a3edf24799e765b81e6fc9f7ffe4de6e578c187253900fb7d32c44728bb50"
+  }
+}

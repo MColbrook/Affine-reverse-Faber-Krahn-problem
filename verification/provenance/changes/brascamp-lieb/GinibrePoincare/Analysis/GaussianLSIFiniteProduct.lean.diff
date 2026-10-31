@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GaussianLSIFiniteProduct.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianLSIFiniteProduct.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianLSIProduct
+-public import GinibrePoincare.Analysis.CompactLipschitzLSIExtension
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianLSIProduct
++public import AffineFK.ChafaiBrascampLieb.Analysis.CompactLipschitzLSIExtension
+ 
+ @[expose] public section
+ 

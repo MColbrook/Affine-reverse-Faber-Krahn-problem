@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/FiberHeight.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/FiberHeight.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.AngularFibers
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.AngularFibers
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

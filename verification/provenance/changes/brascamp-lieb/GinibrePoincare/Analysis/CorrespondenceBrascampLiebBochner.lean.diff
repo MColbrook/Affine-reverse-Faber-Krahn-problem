@@ -1,0 +1,9 @@
+--- GinibrePoincare/Analysis/CorrespondenceBrascampLiebBochner.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceBrascampLiebBochner.lean
+@@ -1,5 +1,5 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceBrascampLiebAdjoint
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceBrascampLiebAdjoint
+ @[expose] public section
+ 
+ /-! # Directional weighted Bochner identity

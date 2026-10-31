@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/ConvexMassReduction.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ConvexMassReduction.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.ConvexENNRealTransfer
+-import OAI.Analysis.Mahler.ConvexPolarBody
+-import OAI.Analysis.Mahler.SpecialMassBridge
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ConvexENNRealTransfer
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ConvexPolarBody
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SpecialMassBridge
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

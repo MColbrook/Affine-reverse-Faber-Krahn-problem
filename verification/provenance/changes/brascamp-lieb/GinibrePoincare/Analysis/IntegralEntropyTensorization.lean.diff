@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/IntegralEntropyTensorization.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/IntegralEntropyTensorization.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.EntropyProductDecomposition
++public import AffineFK.ChafaiBrascampLieb.Analysis.EntropyProductDecomposition
+ 
+ @[expose] public section
+ 

@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/MainTheorem.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/MainTheorem.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.HomogeneousEndpoint
+-import OAI.Analysis.Mahler.HomogeneousMassAssembly
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousEndpoint
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousMassAssembly
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

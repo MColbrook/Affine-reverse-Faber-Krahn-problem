@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/BasisContinuousWedge.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/BasisContinuousWedge.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.ExteriorCoefficient
+-import OAI.Analysis.Mahler.WedgeEven
+-import Mathlib.Analysis.Normed.Module.FiniteDimension
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ExteriorCoefficient
++public import AffineFK.OpenAIMahler.Analysis.Mahler.WedgeEven
++public import Mathlib.Analysis.Normed.Module.FiniteDimension
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

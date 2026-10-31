@@ -1,0 +1,27 @@
+{
+  "kind": "Independent non-author AI complete mathematical/fidelity/clarity review",
+  "reviewer": "/root",
+  "proof_author": "/root/palomar_requirements",
+  "all_21_headers_and_bodies_read": true,
+  "source_modules": [
+    "AffineFK/DirichletBodyInvariances.lean",
+    "AffineFK/DirichletScalarEigenvalue.lean",
+    "AffineFK/DirichletTranslationTests.lean",
+    "AffineFK/DirichletTranslationTransport.lean"
+  ],
+  "actual_axiom_queries": 21,
+  "evidence_sha256": {
+    "audit/dirichlet_invariances_source_manifest.json": "84e717ababe0acd4631fb094c0c91c589b3f1bab6cd08d8d094c8435bfc58d8e",
+    "logs/branch_bridge/dirichlet-invariances-axioms-remote-01.txt": "955ed9df11db27046f86ccf7cd8337b046cb3f357b063715401fb682d29ea7b0",
+    "logs/branch_bridge/dirichlet-scalar-eigenvalue-remote-02.txt": "8c20b5f1b93b7a2f2f42b28664b147140fe3021a3cab93b7443401e7c6363d95",
+    "logs/branch_bridge/dirichlet-translation-tests-remote-02.txt": "dc3cded4ba162d89ebf7609e903a48ab9633a00e8640f6bd0353736feba54071",
+    "logs/branch_bridge/dirichlet-translation-transport-remote-02.txt": "54a3f9cb77ee3e5f4317a8821c1eb2491ebdf16a5b1c4a8af8d3ada2c4f149d7",
+    "audit/dirichlet_body_invariances_source_manifest.json": "a674fdbe0e999d987d9eb0ae23e2354ed70a8dbcfb172cf5c62eb418bb1d12dd",
+    "logs/branch_bridge/dirichlet-body-invariances-axioms-remote-01.txt": "f19d17495aac02c5aa403c1e1727ed09ef642f9e59217666e63bd3b50b2543c4",
+    "logs/branch_bridge/dirichlet-body-invariances-remote-01.txt": "750918b38707cf695ff9385c78471589555430ffb29091c9076c164015f1fb89"
+  },
+  "review_sha256": "8fec5e813857ee86bc3dfc24a513710448a4aeb38398f2dcdd853ce43ca1b665",
+  "defects_found": [],
+  "own_comparator_accepted": false,
+  "full_paper_verified": false
+}

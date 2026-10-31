@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/HermiteL2Family.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/HermiteL2Family.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.HermiteBinomialIdentity
+-public import GinibrePoincare.Analysis.ComplexGaussianMoments
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteBinomialIdentity
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexGaussianMoments
+ public import Mathlib.Analysis.InnerProductSpace.Projection.Submodule
+ 
+ @[expose] public section

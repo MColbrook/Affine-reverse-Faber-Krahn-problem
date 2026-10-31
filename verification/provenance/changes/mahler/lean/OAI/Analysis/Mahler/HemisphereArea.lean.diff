@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/HemisphereArea.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HemisphereArea.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.HemisphereMeasure
+-import OAI.Analysis.Mahler.SphereTransport
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HemisphereMeasure
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereTransport
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

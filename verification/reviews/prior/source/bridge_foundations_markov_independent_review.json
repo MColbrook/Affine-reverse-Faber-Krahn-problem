@@ -1,0 +1,103 @@
+{
+  "kind": "Independent non-author AI mathematical, fidelity and clarity review",
+  "reviewer": "/root",
+  "proof_author": "/root/palomar_requirements",
+  "all_310_headers_and_bodies_read": true,
+  "modules": [
+    "AffineFK/BrownianBridgeCoefficients.lean",
+    "AffineFK/BridgeGaussianProfile.lean",
+    "AffineFK/BridgeSchauderSeries.lean",
+    "AffineFK/BridgeContinuousPath.lean",
+    "AffineFK/BridgeSeriesSurvival.lean",
+    "AffineFK/BridgeSeriesAlmostSure.lean",
+    "AffineFK/BridgeSeriesAEConvergence.lean",
+    "AffineFK/GaussianL2Limit.lean",
+    "AffineFK/BridgeCoefficientL2.lean",
+    "AffineFK/BridgeScalarL2Series.lean",
+    "AffineFK/BridgeGaussianProcess.lean",
+    "AffineFK/BridgePathLawGaussian.lean",
+    "AffineFK/BridgeCoefficientCovariance.lean",
+    "AffineFK/BridgeSeriesCovariance.lean",
+    "AffineFK/BridgeTentKernel.lean",
+    "AffineFK/BridgeKernelRefinement.lean",
+    "AffineFK/BridgeKernelMinimum.lean",
+    "AffineFK/BridgeBrownianCovariance.lean",
+    "AffineFK/BridgeBrownianRealization.lean",
+    "AffineFK/BridgeBrownianGaussian.lean",
+    "AffineFK/BridgeBrownianMoments.lean",
+    "AffineFK/BridgeBrownianLaw.lean",
+    "AffineFK/BridgeBrownianIncrements.lean",
+    "AffineFK/BridgeKilledEndpoint.lean",
+    "AffineFK/BridgeKilledEndpointDensity.lean",
+    "AffineFK/BridgeBrownianScaling.lean",
+    "AffineFK/BridgeScaledBrownianLaw.lean",
+    "AffineFK/BridgeStartedBrownian.lean",
+    "AffineFK/BridgeAffineDensityMap.lean",
+    "AffineFK/BridgeKilledKernel.lean",
+    "AffineFK/BridgePathLawExt.lean",
+    "AffineFK/BridgeGaussianFiniteLaw.lean",
+    "AffineFK/BridgeGaussianPathLawExt.lean",
+    "AffineFK/BridgeGaussianPathImage.lean",
+    "AffineFK/BridgeBrownianSegments.lean",
+    "AffineFK/BridgeBrownianSegmentIndependence.lean",
+    "AffineFK/BridgeBrownianSegmentLaws.lean",
+    "AffineFK/BridgeKilledComposition.lean",
+    "AffineFK/BridgeKilledEndpointComposition.lean",
+    "AffineFK/BridgeKilledChapmanKolmogorov.lean",
+    "AffineFK/BridgeKilledTransitionKernel.lean",
+    "AffineFK/BridgeTimeReversal.lean",
+    "AffineFK/BridgeKilledKernelJoint.lean",
+    "AffineFK/BridgeKilledKernelSymmetry.lean",
+    "AffineFK/BridgeKilledSubinvariance.lean",
+    "AffineFK/BridgeSubprobabilityJensen.lean",
+    "AffineFK/BridgeKilledL2Contraction.lean",
+    "AffineFK/BridgeKilledL2Representatives.lean"
+  ],
+  "distinct_source_pins": 80,
+  "actual_axiom_queries": 310,
+  "distinct_actual_logs": 49,
+  "evidence": [
+    {
+      "manifest": "audit/bridge_killed_source_manifest.json",
+      "sha256": "fc30f766569fba0c784eb5bfbee6aad6e45530d91f2c008333baa5bc9951729d",
+      "actual_axiom_queries": 198,
+      "actual_build_logs": 20
+    },
+    {
+      "manifest": "audit/bridge_scaling_source_manifest.json",
+      "sha256": "b2050851f2a2636c039da2bae2ccb418de5e118ad250eac0d4b9328f55597f5c",
+      "actual_axiom_queries": 12,
+      "actual_build_logs": 1
+    },
+    {
+      "manifest": "audit/bridge_scaled_law_source_manifest.json",
+      "sha256": "cf253fb1fcbddd62bf70c04a5f90277f823406742ba431b991365f1d519a9378",
+      "actual_axiom_queries": 5,
+      "actual_build_logs": 2
+    },
+    {
+      "manifest": "audit/bridge_started_killed_source_manifest.json",
+      "sha256": "546665cdad6510ef52f5d229f13651bfeddafec3d111c4f300abc32f22abaf5e",
+      "actual_axiom_queries": 25,
+      "actual_build_logs": 3
+    },
+    {
+      "manifest": "audit/bridge_markov_source_manifest.json",
+      "sha256": "b2a71c15314d3121b9a46bc448d02f968f664c7071a97886e5197d8073760fb1",
+      "actual_axiom_queries": 41,
+      "actual_build_logs": 11
+    },
+    {
+      "manifest": "audit/bridge_symmetric_source_manifest.json",
+      "sha256": "4f213089974db2c317cba5696708b21c8da0df6db9784f830ff8ab167d775e4d",
+      "actual_axiom_queries": 29,
+      "actual_build_logs": 7
+    }
+  ],
+  "reused_gaussian_limit_prefix_matches": true,
+  "upstream_licence_git_blob_provenance_checked": true,
+  "review_sha256": "2cac5f52a921c8f12a4cfcaae6d2d23de4f294d50298fab607637edc300b0c86",
+  "defects_found": [],
+  "own_comparator_accepted": false,
+  "full_paper_verified": false
+}

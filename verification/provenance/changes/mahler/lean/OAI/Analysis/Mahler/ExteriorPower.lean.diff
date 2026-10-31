@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/ExteriorPower.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ExteriorPower.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.CovectorVolume
+-import Mathlib.Data.Fin.Tuple.Basic
+-import Mathlib.GroupTheory.Perm.Sign
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.CovectorVolume
++public import Mathlib.Data.Fin.Tuple.Basic
++public import Mathlib.GroupTheory.Perm.Sign
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/ConformalInjectivity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ConformalInjectivity.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.AngularGeometry
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.AngularGeometry
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

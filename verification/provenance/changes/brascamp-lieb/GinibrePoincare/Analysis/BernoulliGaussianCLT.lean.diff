@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/BernoulliGaussianCLT.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/BernoulliGaussianCLT.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.BernoulliCubeLSI
++public import AffineFK.ChafaiBrascampLieb.Analysis.BernoulliCubeLSI
+ public import Mathlib.Probability.CentralLimitTheorem
+ public import Mathlib.Probability.Independence.InfinitePi
+ public import Mathlib.Probability.Distributions.Bernoulli

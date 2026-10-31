@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SphereRadius.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SphereRadius.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.HemisphereJacobian
+-import OAI.Analysis.Mahler.PunctureCutoff
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HemisphereJacobian
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PunctureCutoff
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

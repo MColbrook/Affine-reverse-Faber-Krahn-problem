@@ -1,0 +1,110 @@
+{
+  "kind": "AI primary-reference and standard-background interpretation audit",
+  "reviewer": "/root/palomar_requirements",
+  "date": "2026-10-30",
+  "revision": "Corrected after accepted Stage36: final M03 has set-based log-concavity and derives its density; earlier helper limitation superseded",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "command": "python scripts/audit_principal_background_references.py",
+  "manuscript_sha256": "1d30574bf6a09012c0492449d6860884c993b191837c9c0d2a9bd17080a3d0bc",
+  "file_sha256": {
+    "AffineFK/DirichletSobolev.lean": "0a351430f466082a2c08a4636d83a0869f2b30c841fc1eb8867cea4622778064",
+    "AffineFK/DirichletRayleigh.lean": "b574671fae52ca93f8e62c039e741764c08f2681598f144a42c25f8abe215ce7",
+    "AffineFK/FisherInformation.lean": "169a09fa5092aebc069a7c0c194dfbedf2a05f6b6929f19aa4c7a7d845729213",
+    "AffineFK/FisherInformationMeasure.lean": "2fdb327d0d634819db7396f9438d4da690bdeb5869d9e7dee9acc0eb9465bf27",
+    "AffineFK/InformationSpectrumLaw.lean": "ebdd02f3f99adddc588cfc2eabf39f6b30652c3bcfad234337127e100d10122c",
+    "AffineFK/LogConcaveMeasureBalls.lean": "531b0e78bd850a23b73d1825ca27c40eff3c922f5254ab40f509360f9cb36181",
+    "AffineFK/LogConcaveMeasureDensity.lean": "0a9d0ca6aa5148847fabefed4b54f61e8dff0065b0cb235d2fc43d8d93e3c555",
+    "AffineFK/InformationSpectrumLogConcaveMeasure.lean": "bfbf56af1c2830f7332be8a14f4382ccd97327dad20dd34b4e8748d34887a457",
+    "AffineFK/MainTheoremsResults/Challenge.lean": "48ec40a745ccd3948e5d9d5c1e59e57865c21df1f463fd3a8a8bcfde6ce60bc7",
+    "audit/stage35_verification.json": "e75f46af1c41a44e6d15f07166a6279fd77df3666b56fed4ed4f1a3c6dc07ba3",
+    "audit/stage36_verification.json": "65932fa0e2b39e685e8c2ee0a28bf4337154e7f859edd9ca10951a6df61a59f5",
+    "audit/stage36_scope_inventory.md": "27294146749db0f4e6b6139ea17e01f35344cf0bf8a4649a7875924780b64099",
+    "logs/linux-gauss-stage36/additional-original-results/comparator-sandboxed.txt": "a65b1471180d37b17ac806428d519dd302ca13144615e0094c6bc4aed5fc9d37",
+    "audit/degiorgi_loggradient_source_handoff.json": "5dff4bd598909fdec0e9012bd48d736d028e0955ae55c5d5fc635ba21e832ab6",
+    "audit/degiorgi_interface_unicode_corrected_source_handoff.json": "2fe1de6d9c2d4459019c568084c699fdab9e999424f29b40027f86d6dbba1ad3",
+    "audit/degiorgi_weighted_estimates_compiled_addendum.json": "c60c1af1d77d4fbeb9ee59a2dc71db72b096b3e55687c507016fe775e5e37d3b",
+    "logs/branch_degiorgi/loggradient-build-10.txt": "4a3fa163812dcbb3a2ed3fb8b6e2e4d0d887d4d7708c6f5a2713e9416d7d2e9c",
+    "audit/principal_background_reference_audit.md": "50860de7526cde5d817861bf0cc15628923f527cb20a79f6f734a520f9d6385f",
+    "audit/history/principal_background_before_stage36_scope_correction/principal_background_reference_audit.md": "83e1c85d36a36dd9d9cc191a46cd4df1b38578cfb46df349ce0f29b53d13af06",
+    "audit/history/principal_background_before_stage36_scope_correction/principal_background_reference_audit.json": "6f34a159de494881304a2d01cd7a8557f6d4f35ce7e5a1f8c0f64cc4aaba8c6f",
+    "audit/history/principal_background_before_stage36_scope_correction/audit_principal_background_references.py": "b7c90743ac8e527a1506c08f89790aaf0e358970c37d8c9cb1ae3320bc457ea3"
+  },
+  "references": [
+    {
+      "id": "DirichletFriedrichs",
+      "url": "https://ems.press/content/serial-article-files/33560",
+      "locator": "van den Berg-Hempel-Voigt (2015), introduction and Section 1, pp. 830, 833-834",
+      "checked": "Complete primary article; form-domain definition, no boundary regularity, finite-volume discrete spectrum"
+    },
+    {
+      "id": "Bob11",
+      "url": "https://www-users.cse.umn.edu/~bobko001/papers/2011_Contemp.%20Math.On.Milman%27s.ellipsoids.pdf",
+      "locator": "Theorem 1.1, Corollary 2.3, Proposition 3.1, Lemma 4.1",
+      "checked": "Complete primary article; symmetric volume-one domains, origin ellipsoids and scalar covariance"
+    },
+    {
+      "id": "BL76",
+      "url": "https://www.sciencedirect.com/science/article/pii/0022123676900045",
+      "locator": "Bibliographic record; Theorem 6.1 identified through a later independent primary proof",
+      "access_limit": "Original complete theorem text not accessible from publisher during this audit"
+    },
+    {
+      "id": "BCR26",
+      "url": "https://arxiv.org/html/2605.01334v1",
+      "locator": "Assumption 1.1, Theorem 1.3 and convex-domain approximation discussion",
+      "checked": "Complete primary proof paper, including attribution of log-concavity to BL76 Theorem 6.1"
+    },
+    {
+      "id": "Bor74",
+      "url": "https://archive.ymsc.tsinghua.edu.cn/pacm_download/116/7214-11512_2006_Article_BF02384761.pdf",
+      "locator": "Theorem 1.1, p. 240, s=0 case",
+      "checked": "Complete original scanned primary article; density on affine support characterization"
+    },
+    {
+      "id": "LNP15",
+      "url": "https://arxiv.org/pdf/1403.5855",
+      "locator": "Version 2, Theorem 2.2 and Proposition 2.4, Section 2.3 generator",
+      "checked": "Complete primary text; smooth-density hypotheses, Gaussian normalizations, integrated de Bruijn"
+    },
+    {
+      "id": "BGL14",
+      "url": "https://link.springer.com/book/10.1007/978-3-319-00227-9",
+      "checked": "Publisher bibliographic metadata and separately accessible front matter/table of contents",
+      "access_limit": "No claim of reading the full book's theorem proofs"
+    }
+  ],
+  "substantive_principal_hypothesis_error_found": false,
+  "suggested_clarifications": [
+    "Explicitly state the finite second moment together with finite J before the I/J identity",
+    "An optional density-convention explanation must preserve the accepted M03 set-based domain; its density is derived, not an additional premise",
+    "Use the precise BL76 Theorem 6.1 and Bob11 Theorem 1.1/Corollary 2.3 locators if desired"
+  ],
+  "standard_interpretations_not_newly_kernel_checked_here": [
+    "Equality of the variational eigenvalue with the named Friedrichs-operator spectral bottom",
+    "Full arbitrary-law Borell affine-support equivalence, including potentially singular laws; this is not needed to bridge finite-information M03",
+    "Classical strict positivity, regularity and simplicity as background for the manuscript's chosen positive eigenfunction"
+  ],
+  "accepted_M03_has_set_based_logConcaveMeasure_domain": true,
+  "accepted_M03_has_extra_density_witness_premise": false,
+  "accepted_M03_derives_same_law_pointwise_logConcave_density": true,
+  "stage36_existing_certificate_sha256": "65932fa0e2b39e685e8c2ee0a28bf4337154e7f859edd9ca10951a6df61a59f5",
+  "stage36_existing_comparator_exit": 0,
+  "stage36_existing_six_acceptance_labels": [
+    "Lean paranoid kernel",
+    "lean4lean kernel",
+    "nanoda kernel",
+    "con-leche kernel",
+    "con-ron kernel",
+    "Lean default kernel"
+  ],
+  "stage36_sandbox_disabled": false,
+  "stage36_existing_comparator_elapsed_seconds": 1385.118,
+  "background26_source_build_exit": 0,
+  "background26_fresh_named_axiom_batch_launched": false,
+  "background26_comparator_launched": false,
+  "new_lean_or_checker_run_for_this_audit": false,
+  "new_proof_or_manuscript_edits_for_this_audit": false,
+  "human_review_claimed": false,
+  "all_manuscript_claims_verified": false,
+  "independence_limit": "Documentary reference audit; not a second independent mathematical review of this agent's authored source dependencies"
+}

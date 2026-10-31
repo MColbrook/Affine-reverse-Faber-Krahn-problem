@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/PrimitiveBound.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/PrimitiveBound.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.SineBound
+-import OAI.Analysis.Mahler.RadialBridge
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SineBound
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RadialBridge
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

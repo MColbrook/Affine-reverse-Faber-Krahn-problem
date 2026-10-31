@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/RawReindexedDerivative.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RawReindexedDerivative.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.RawAlternationDerivative
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RawAlternationDerivative
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

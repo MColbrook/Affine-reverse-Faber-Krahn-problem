@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/HomogeneousTransgression.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HomogeneousTransgression.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.PowerTransgression
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PowerTransgression
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

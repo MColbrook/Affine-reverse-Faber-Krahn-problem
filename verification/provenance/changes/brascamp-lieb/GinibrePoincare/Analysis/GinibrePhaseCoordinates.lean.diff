@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/GinibrePhaseCoordinates.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibrePhaseCoordinates.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreWeakSobolevMultipliers
+-public import GinibrePoincare.Analysis.GinibreDirectionalCoordinates
+-public import GinibrePoincare.Analysis.RadialConvolutionInvariance
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreWeakSobolevMultipliers
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreDirectionalCoordinates
++public import AffineFK.ChafaiBrascampLieb.Analysis.RadialConvolutionInvariance
+ 
+ @[expose] public section
+ 

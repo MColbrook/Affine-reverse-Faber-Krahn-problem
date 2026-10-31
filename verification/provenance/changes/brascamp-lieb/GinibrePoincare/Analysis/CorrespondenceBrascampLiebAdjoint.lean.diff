@@ -1,0 +1,9 @@
+--- GinibrePoincare/Analysis/CorrespondenceBrascampLiebAdjoint.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceBrascampLiebAdjoint.lean
+@@ -1,5 +1,5 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceBrascampLiebJets
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceBrascampLiebJets
+ @[expose] public section
+ open MeasureTheory Measure
+ open scoped ContDiff

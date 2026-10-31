@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/RealGaussianIntegrationByParts.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/RealGaussianIntegrationByParts.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianDensity
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianDensity
+ public import Mathlib.MeasureTheory.Integral.IntegralEqImproper
+ public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+ 

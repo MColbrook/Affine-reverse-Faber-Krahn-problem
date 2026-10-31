@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/PrimitiveEquality.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/PrimitiveEquality.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.PlanarDensity
+-import OAI.Analysis.Mahler.GlobalFiberParametrization
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PlanarDensity
++public import AffineFK.OpenAIMahler.Analysis.Mahler.GlobalFiberParametrization
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

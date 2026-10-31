@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/StripRegularValues.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/StripRegularValues.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.InverseRadialRegularity
+-import OAI.Analysis.Mahler.StripGeometry
+-import Mathlib.Analysis.Calculus.FDeriv.RestrictScalars
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.InverseRadialRegularity
++public import AffineFK.OpenAIMahler.Analysis.Mahler.StripGeometry
++public import Mathlib.Analysis.Calculus.FDeriv.RestrictScalars
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

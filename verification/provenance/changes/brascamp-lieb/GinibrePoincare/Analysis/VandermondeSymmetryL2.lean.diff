@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/VandermondeSymmetryL2.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/VandermondeSymmetryL2.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.PermutationLp
++public import AffineFK.ChafaiBrascampLieb.Analysis.PermutationLp
+ 
+ @[expose] public section
+ 

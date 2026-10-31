@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/ConvexCompletion.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ConvexCompletion.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.ConvexTransfer
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ConvexTransfer
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

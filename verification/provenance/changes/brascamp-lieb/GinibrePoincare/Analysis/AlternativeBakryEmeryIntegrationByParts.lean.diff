@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/AlternativeBakryEmeryIntegrationByParts.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/AlternativeBakryEmeryIntegrationByParts.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.NonQuadraticBochner
++public import AffineFK.ChafaiBrascampLieb.Analysis.NonQuadraticBochner
+ 
+ @[expose] public section
+ 

@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/GinibreCollisionCutoff.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreCollisionCutoff.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.ComplexSquaredGradient
+-public import GinibrePoincare.Analysis.GinibreZeroPairCutoff
+-public import GinibrePoincare.Concrete.Generator
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexSquaredGradient
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreZeroPairCutoff
++public import AffineFK.ChafaiBrascampLieb.Concrete.Generator
+ 
+ @[expose] public section
+ 

@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GinibrePhaseSeparation.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibrePhaseSeparation.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibrePhaseCoordinates
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibrePhaseCoordinates
+ public import Mathlib.RingTheory.RootsOfUnity.Complex
+ 
+ @[expose] public section

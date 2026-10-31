@@ -1,0 +1,13 @@
+--- GinibrePoincare/Analysis/GaussianPolynomialIntegrability.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianPolynomialIntegrability.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.MeasureModel
++public import AffineFK.ChafaiBrascampLieb.Concrete.MeasureModel
+ public import Mathlib.Probability.Distributions.Gaussian.Fernique
+-public import GinibrePoincare.Analysis.HermiteWirtinger
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteWirtinger
+ 
+ @[expose] public section
+ 

@@ -1,0 +1,16 @@
+--- GinibrePoincare/Analysis/HolomorphicVandermondeDivision.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/HolomorphicVandermondeDivision.lean
+@@ -1,9 +1,9 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.MultivariateComplexHermite
+-public import GinibrePoincare.Analysis.GinibreMassFiniteness
+-public import GinibrePoincare.Concrete.Vandermonde
+-public import GinibrePoincare.Concrete.NormalizedGroundState
++public import AffineFK.ChafaiBrascampLieb.Analysis.MultivariateComplexHermite
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreMassFiniteness
++public import AffineFK.ChafaiBrascampLieb.Concrete.Vandermonde
++public import AffineFK.ChafaiBrascampLieb.Concrete.NormalizedGroundState
+ public import Mathlib.RingTheory.MvPolynomial.Symmetric.FundamentalTheorem
+ public import Mathlib.Algebra.Polynomial.Div
+ public import Mathlib.Algebra.Polynomial.RingDivision

@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/PairTransgression.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/PairTransgression.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.WedgeOne
+-import OAI.Analysis.Mahler.HomogeneousDensityVariation
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.WedgeOne
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousDensityVariation
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/HolomorphicVandermondeL2Closure.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/HolomorphicVandermondeL2Closure.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.HolomorphicVandermondeDivision
+-public import GinibrePoincare.Analysis.HermiteEnergy
+-public import GinibrePoincare.Analysis.VandermondeL2Inverse
++public import AffineFK.ChafaiBrascampLieb.Analysis.HolomorphicVandermondeDivision
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteEnergy
++public import AffineFK.ChafaiBrascampLieb.Analysis.VandermondeL2Inverse
+ 
+ @[expose] public section
+ 

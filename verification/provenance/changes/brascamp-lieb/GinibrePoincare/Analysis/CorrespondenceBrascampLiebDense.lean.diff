@@ -1,0 +1,13 @@
+--- GinibrePoincare/Analysis/CorrespondenceBrascampLiebDense.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceBrascampLiebDense.lean
+@@ -1,7 +1,7 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceBrascampLiebCenter
+-public import GinibrePoincare.Analysis.CorrespondenceBrascampLiebDensityGenerator
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticLiouville
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceBrascampLiebCenter
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceBrascampLiebDensityGenerator
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticLiouville
+ @[expose] public section
+ open MeasureTheory Measure
+ open scoped ContDiff BigOperators Matrix

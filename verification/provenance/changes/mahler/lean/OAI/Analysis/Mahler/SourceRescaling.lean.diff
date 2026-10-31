@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SourceRescaling.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceRescaling.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.RescaledMassMap
+-import OAI.Analysis.Mahler.UniformJet
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RescaledMassMap
++public import AffineFK.OpenAIMahler.Analysis.Mahler.UniformJet
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

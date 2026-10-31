@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/RadialGaussianOrthogonality.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/RadialGaussianOrthogonality.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GlobalPhaseAction
+-public import GinibrePoincare.Analysis.ComplexGaussianProductIntegral
++public import AffineFK.ChafaiBrascampLieb.Analysis.GlobalPhaseAction
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexGaussianProductIntegral
+ 
+ @[expose] public section
+ 

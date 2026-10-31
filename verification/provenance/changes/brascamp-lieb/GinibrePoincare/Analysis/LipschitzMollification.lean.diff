@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/LipschitzMollification.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/LipschitzMollification.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianLSIProduct
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianLSIProduct
+ public import Mathlib.Analysis.Calculus.Rademacher
+ public import Mathlib.Analysis.Calculus.ParametricIntegral
+ public import Mathlib.Analysis.Calculus.FDeriv.Measurable

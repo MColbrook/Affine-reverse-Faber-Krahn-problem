@@ -1,0 +1,20 @@
+# Independent AI canonical review of the symmetric Mahler checkpoint
+
+Reviewer `/root/formalization_coverage`; canonical packet author `/root`. I read the complete 27-line Challenge, 29-line Solution and comparator configuration at the frozen pins below. No statement-fidelity, fixed-data, domain, constant, quantifier, wrapper-proof or clarity defect was found.
+
+- Challenge SHA256: `15a4522deb48ebd20e0a23ac1801922c6c0f6ccea89d9b37c6730a6b2272b3c3`.
+- Solution SHA256: `384d8efcf861156f9796dc4505a6e3b2f60eb4acf28e74f2708afcfae82a5cdd`.
+- Configuration SHA256: `66c363ae6e3b43d9e7ae710d8ff304b6761a6b911289183a4e311d3c7d5f4c9d`.
+- Interface-manifest SHA256: `7bf626d5fcfbc15ffbb5f74601bd4effe7c1d9396e85760438f707240bf95b65`.
+
+The selected result concerns every actual compact convex origin-symmetric K in ordinary `Fin n -> Real` coordinate space with nonempty interior and n>=1. Its quantities are actual standard finite-product Lebesgue volumes, with exact lower bound `4^n/n!`. The complete fixed `AffineFK.coordinatePolar` is exactly the conventional coordinate polar `{p | forall v in K, sum_i p_i*v_i <=1}`. No arbitrary functional, proxy support, substitute norm or desired volume-product hypothesis appears. Positive dimension and nonempty interior are retained, excluding an empty-body or zero-dimensional degeneration of the selected statement.
+
+Both packet files contain literally the same complete polar definition and theorem header. Solution's proof is the direct actual theorem application `OAI.SymmetricMahler.symmetric_mahler hn hK hconv hsym hint`. The imported proof's polar is definitionally the same complete conventional data, so the call supplies the exact five hypotheses without an extra geometry, regularity or desired-output premise. The entire 229-module genuine proof bundle is available as source, with zero mathematical-body edits from immutable upstream Git blobs and retained Apache-2.0 attribution. Its actual first compilation and fresh allowed-axiom reports are independently recorded in `audit/openai_mahler_source_checked_manifest.json`; the canonical packet's own fresh build/type evidence remains a separate layer.
+
+Challenge imports only canonical Mathlib sources and contains exactly one isolated selected benchmark placeholder. Solution imports no Challenge and contains no placeholder. Its complete genuine imported proof sources also contain none. The configuration selects only this theorem, has `definition_names=[]`, permits only `propext`, `Classical.choice` and `Quot.sound`, and contains no inherited upstream nanoDa or other kernel-disable flag. Ordinary full-body comparison of the referenced canonical polar remains required; the actual compiled type-dependency diagnostic is pending at this prereview cut. Both packet files are well within line/byte limits.
+
+The independent read-only `audit/review_stage34_canonical_packet.py` passed with exit0. It revalidated all 229 proof-source integrity pins, exact packet files/sizes, literal canonical data/header equality, direct wrapper, trust configuration and placeholder isolation. Its JSON SHA256 is `5a3608e39073ec96166b0865004c3540982c572f2153ddd014385a0180040959`. The reviewer ran no new compiler or Comparator command and edited no packet or proof source.
+
+Authorship boundary: I authored the header-only source port, not the original mathematical proof bodies or this root-authored canonical packet. This report independently reviews the complete canonical statement/fixed data and direct wrapper; it does not claim independent mathematical reading of all 1,565 upstream declarations. The root separately checked all original Git blobs/body mappings, the canonical upstream theorem and crucial endpoint hypotheses. Actual source compilation, permitted closures and future independent kernel checks remain separately identified evidence.
+
+The canonical packet's own build/type diagnostic and own ordinary Comparator/all-six results are pending. This AI prereview is not human review, an acceptance certificate, universal Milman assembly or full-paper verification.

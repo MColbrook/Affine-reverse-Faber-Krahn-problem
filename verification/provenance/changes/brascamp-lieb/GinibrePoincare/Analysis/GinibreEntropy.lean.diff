@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GinibreEntropy.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreEntropy.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.SmoothTarget
+-public import GinibrePoincare.Analysis.GinibreMassFiniteness
++public import AffineFK.ChafaiBrascampLieb.Concrete.SmoothTarget
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreMassFiniteness
+ public import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
+ public import Mathlib.Analysis.Convex.Integral
+ 

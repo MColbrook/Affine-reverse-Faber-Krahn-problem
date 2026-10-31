@@ -1,0 +1,13 @@
+--- GinibrePoincare/Analysis/CorrespondenceWeightedEllipticCutoffForm.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceWeightedEllipticCutoffForm.lean
+@@ -1,7 +1,7 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticGreen
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticFormTesting
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticCutoffGradient
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticGreen
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticFormTesting
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticCutoffGradient
+ @[expose] public section
+ open MeasureTheory Set Filter
+ open scoped ContDiff BigOperators

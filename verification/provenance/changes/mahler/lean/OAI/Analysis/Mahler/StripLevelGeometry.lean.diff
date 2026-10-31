@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/StripLevelGeometry.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/StripLevelGeometry.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.StripMassExhaustion
+-import Mathlib.Analysis.Calculus.LocalExtr.Basic
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.StripMassExhaustion
++public import Mathlib.Analysis.Calculus.LocalExtr.Basic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

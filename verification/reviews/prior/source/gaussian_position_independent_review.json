@@ -1,0 +1,47 @@
+{
+  "kind": "Independent non-author AI mathematical, fidelity and clarity review",
+  "reviewer": "/root",
+  "proof_author": "/root/formalization_coverage",
+  "all_new_82_headers_and_bodies_read": true,
+  "source_modules": 15,
+  "new_theorems": 71,
+  "new_data": 11,
+  "actual_axiom_queries": 82,
+  "distinct_source_pins": 345,
+  "distinct_raw_logs": 61,
+  "evidence": [
+    {
+      "manifest": "audit/branch_gaussian_position_manifest.json",
+      "sha256": "372cc97288f30f9ff9dd46094fb40839bb4e5b47c3a2d07412531e6a37122f3b",
+      "new_bodies": 55,
+      "raw_logs": 42,
+      "actual_axiom_logs": [
+        "logs/branch_gaussian_position/final-pinned-axioms-02.txt",
+        "logs/branch_gaussian_position/final-pinned-axioms-03.txt"
+      ]
+    },
+    {
+      "manifest": "audit/branch_gaussian_position_mass_manifest.json",
+      "sha256": "b8eded89cfc4d49f2ad16140f98bebb8cc50b5fa58edaa4001af603bccee23ff",
+      "new_bodies": 13,
+      "raw_logs": 8,
+      "actual_axiom_logs": [
+        "logs/branch_gaussian_position/mass-final-pinned-axioms-01.txt"
+      ]
+    },
+    {
+      "manifest": "audit/branch_gaussian_position_ellipsoid_manifest.json",
+      "sha256": "16185d142123ae093be76a553c558c33ecce59db62e1fc40401c709ce8a58b99",
+      "new_bodies": 14,
+      "raw_logs": 11,
+      "actual_axiom_logs": [
+        "logs/branch_gaussian_position/ellipsoid-final-pinned-axioms-01.txt"
+      ]
+    }
+  ],
+  "review_sha256": "050970c690f2349f50eedf6ad0cca93a8dd03ac57f744edb91dbad7edc50076e",
+  "defects_found": [],
+  "milman_existence_verified": false,
+  "own_comparator_accepted": false,
+  "full_paper_verified": false
+}

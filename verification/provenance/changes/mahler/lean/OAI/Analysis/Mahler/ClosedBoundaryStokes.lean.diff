@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/ClosedBoundaryStokes.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ClosedBoundaryStokes.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.PunctureCutoff
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PunctureCutoff
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

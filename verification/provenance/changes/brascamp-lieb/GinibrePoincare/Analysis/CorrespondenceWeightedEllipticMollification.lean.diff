@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/CorrespondenceWeightedEllipticMollification.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceWeightedEllipticMollification.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.Configuration
++public import AffineFK.ChafaiBrascampLieb.Concrete.Configuration
+ public import Mathlib.Analysis.Calculus.BumpFunction.Normed
+ public import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
+ public import Mathlib.MeasureTheory.Constructions.Pi

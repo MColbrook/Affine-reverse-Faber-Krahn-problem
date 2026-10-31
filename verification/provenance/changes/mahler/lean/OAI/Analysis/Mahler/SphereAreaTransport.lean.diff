@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/SphereAreaTransport.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SphereAreaTransport.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.SphereFlux
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereFlux
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

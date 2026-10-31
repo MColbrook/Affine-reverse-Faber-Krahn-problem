@@ -1,0 +1,18 @@
+--- lean/OAI/Analysis/Mahler/CompactIntegral.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/CompactIntegral.lean
+@@ -1,7 +1,11 @@
+-import Mathlib.Analysis.Calculus.ParametricIntegral
+-import Mathlib.Analysis.Calculus.ContDiff.Basic
+-import Mathlib.Analysis.Calculus.ContDiff.Operations
+-import Mathlib.MeasureTheory.Integral.Bochner.Set
++module
++
++public import Mathlib.Analysis.Calculus.ParametricIntegral
++public import Mathlib.Analysis.Calculus.ContDiff.Basic
++public import Mathlib.Analysis.Calculus.ContDiff.Operations
++public import Mathlib.MeasureTheory.Integral.Bochner.Set
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

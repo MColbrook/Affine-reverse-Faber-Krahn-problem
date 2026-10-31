@@ -1,0 +1,38 @@
+{
+  "kind": "Independent AI statement/domain fidelity review only; separate proof review and certificate required",
+  "reviewer": "/root/claim_inventory",
+  "pins": {
+    "AffineFK/InformationSpectrum.lean": "653cb18094be91b1a3d4cb868466404daf9b2ce5804d48bf972589ef93ba0c32",
+    "AffineFK/InformationSpectrumLaw.lean": "ce3918226688631a340f3d86b86723e93b18f97ea74fc3f47c67c8e55f0ffe86",
+    "AffineFK/SymmetricConvexInterior.lean": "36782d12f00cb216fa030dc62f9fe002db8c5e6d65ae3d037fd55a5debc2e717",
+    "audit/claim_inventory.json": "20988714f811ab8b56ac528e9f009d3f9907a61aba85400b1c47288a394407b0",
+    "source/affine_reverse_faber_krahn.tex": "1d30574bf6a09012c0492449d6860884c993b191837c9c0d2a9bd17080a3d0bc"
+  },
+  "source_claim": "M03",
+  "source_lines": [
+    178,
+    191
+  ],
+  "reviewed_headers": [
+    "AffineFKProof.information_spectrum_density_bound",
+    "AffineFKProof.information_spectrum_law_bound",
+    "AffineFKProof.information_spectrum_uniform_constant"
+  ],
+  "constant_quantifiers": "Every real P>=2; one explicitly chosen positive real C(P), independent of n,D,nu,I0, before all n>=1/body/law quantifiers.",
+  "verified_statement_correspondences": [
+    "Actual compact convex D with nonempty interior, origin symmetry; no boundary smoothness assumption.",
+    "Actual probability/even law, literal coordinate mean0/raw covariance delta; no fourth moments or output isotropy premise.",
+    "Actual least compact-test CP<=P and finite canonical Sobolev relative Fisher information.",
+    "Actual AE support on closed D, actual Dirichlet Rayleighinf on interiorD, bound ofReal(C(P)*(n+sqrt(n*I0))).",
+    "NNReal P in the density implementation is converted explicitly from arbitrary realP>=2 in law/uniform wrappers."
+  ],
+  "log_concavity_boundary": "Exactly laws admitting a measurable pointwise log-concave nonnegative Lebesgue density representative. The real witness may have negative values only before ENNReal.ofReal clipping; the actual density and law use that nonnegative clipped function. No pointwise log-concavity is assigned to the arbitrary canonical RN representative.",
+  "explicit_law_witness": "exists f, Measurable f and nu=densityMeasure n f and LogConcaveDensity(ofReal o f)",
+  "no_set_based_logconcave_measure_equivalence_proved": true,
+  "finite_I_implies_AC_but_not_pointwise_LC_of_arbitrary_RN_representative": true,
+  "inventory_status_recommendation": "M03 proved-form scope should be labelled the explicit LC-density-witness formulation, after its actual build/axiom/certificate evidence closes. Do not silently mark an independently defined set-based LC-measure formulation completely verified without proving the density-representative equivalence.",
+  "proof_review_boundary": "E separately reviews the new root mathematical proof bodies. This review inspects full headers and the transparent law/uniform wrapper structure but does not replace that non-author proof review or an actual Comparator run.",
+  "actual_checking_status": "Root reports density source build0; law wrapper is checking at review time. No independent own Comparator acceptance is asserted here.",
+  "full_paper_verified": false,
+  "main_M01_M02_unproved_by_these_statements": true
+}

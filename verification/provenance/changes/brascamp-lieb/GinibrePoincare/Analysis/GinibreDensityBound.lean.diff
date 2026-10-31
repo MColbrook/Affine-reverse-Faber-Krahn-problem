@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GinibreDensityBound.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreDensityBound.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreDistributionalGradient
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreDistributionalGradient
+ public import Mathlib.Analysis.Complex.Exponential
+ 
+ @[expose] public section

@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/HomogeneousRadialMeasure.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/HomogeneousRadialMeasure.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.MeasureTransport
++public import AffineFK.ChafaiBrascampLieb.Analysis.MeasureTransport
+ public import Mathlib.MeasureTheory.Measure.Haar.NormedSpace
+ public import Mathlib.MeasureTheory.Integral.Gamma
+ public import Mathlib.Probability.Distributions.Gamma

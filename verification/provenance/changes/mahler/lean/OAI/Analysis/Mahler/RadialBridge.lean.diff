@@ -1,0 +1,18 @@
+--- lean/OAI/Analysis/Mahler/RadialBridge.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RadialBridge.lean
+@@ -1,7 +1,11 @@
+-import OAI.Analysis.Mahler.ConformalSeries
+-import OAI.Analysis.Mahler.UniformError
+-import Mathlib.Analysis.Complex.RealDeriv
+-import Mathlib.MeasureTheory.Constructions.Polish.Basic
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ConformalSeries
++public import AffineFK.OpenAIMahler.Analysis.Mahler.UniformError
++public import Mathlib.Analysis.Complex.RealDeriv
++public import Mathlib.MeasureTheory.Constructions.Polish.Basic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

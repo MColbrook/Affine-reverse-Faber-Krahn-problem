@@ -1,0 +1,20 @@
+--- lean/OAI/Analysis/Mahler/RegularMassReduction.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RegularMassReduction.lean
+@@ -1,8 +1,12 @@
+-import OAI.Analysis.Mahler.EuclideanRegularLevels
+-import OAI.Analysis.Mahler.EuclideanMassDensity
+-import OAI.Analysis.Mahler.ComplexVolume
+-import OAI.Analysis.Mahler.ConvexMassReduction
+-import OAI.Analysis.Mahler.MassLimit
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.EuclideanRegularLevels
++public import AffineFK.OpenAIMahler.Analysis.Mahler.EuclideanMassDensity
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ComplexVolume
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ConvexMassReduction
++public import AffineFK.OpenAIMahler.Analysis.Mahler.MassLimit
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

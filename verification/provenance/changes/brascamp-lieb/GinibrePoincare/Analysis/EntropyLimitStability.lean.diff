@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/EntropyLimitStability.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/EntropyLimitStability.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreEntropy
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreEntropy
+ public import Mathlib.MeasureTheory.Integral.Lebesgue.Add
+ public import Mathlib.Topology.Instances.ENNReal.Lemmas
+ 

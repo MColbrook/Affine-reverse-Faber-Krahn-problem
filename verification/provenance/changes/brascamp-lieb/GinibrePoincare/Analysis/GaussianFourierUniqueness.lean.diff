@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/GaussianFourierUniqueness.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianFourierUniqueness.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianFourierCoordinates
+-public import GinibrePoincare.Analysis.GaussianHermiteMoments
+-public import GinibrePoincare.Analysis.HermiteL2Family
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianFourierCoordinates
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianHermiteMoments
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteL2Family
+ public import Mathlib.Analysis.InnerProductSpace.l2Space
+ public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+ 

@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/MeasureTransport.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/MeasureTransport.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianDensity
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianDensity
+ public import Mathlib.MeasureTheory.Integral.Lebesgue.Map
+ 
+ @[expose] public section

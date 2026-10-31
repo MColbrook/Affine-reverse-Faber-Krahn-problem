@@ -1,0 +1,20 @@
+--- lean/OAI/Analysis/Mahler/Hessian.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/Hessian.lean
+@@ -1,8 +1,12 @@
+-import Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv
+-import Mathlib.Analysis.Calculus.FDeriv.Mul
+-import Mathlib.Analysis.Calculus.FDeriv.Analytic
+-import Mathlib.Analysis.Complex.CauchyIntegral
+-import Mathlib.Tactic
++module
++
++public import Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv
++public import Mathlib.Analysis.Calculus.FDeriv.Mul
++public import Mathlib.Analysis.Calculus.FDeriv.Analytic
++public import Mathlib.Analysis.Complex.CauchyIntegral
++public import Mathlib.Tactic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

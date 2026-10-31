@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/DCRegularity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/DCRegularity.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.DCForms
+-import Mathlib.Analysis.Calculus.ContDiff.Operations
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.DCForms
++public import Mathlib.Analysis.Calculus.ContDiff.Operations
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

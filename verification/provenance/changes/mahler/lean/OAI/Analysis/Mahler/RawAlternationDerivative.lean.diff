@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/RawAlternationDerivative.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RawAlternationDerivative.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.RawCoefficientDerivative
+-import Mathlib.Analysis.Calculus.DifferentialForm.Basic
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RawCoefficientDerivative
++public import Mathlib.Analysis.Calculus.DifferentialForm.Basic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

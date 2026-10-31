@@ -1,0 +1,18 @@
+--- lean/OAI/Analysis/Mahler/HolomorphicRegularity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HolomorphicRegularity.lean
+@@ -1,7 +1,11 @@
+-import Mathlib.Analysis.Complex.Schwarz
+-import Mathlib.Analysis.Calculus.ParametricIntervalIntegral
+-import Mathlib.Analysis.Calculus.FDeriv.Measurable
+-import Mathlib.Analysis.Calculus.ContDiff.FiniteDimension
++module
++
++public import Mathlib.Analysis.Complex.Schwarz
++public import Mathlib.Analysis.Calculus.ParametricIntervalIntegral
++public import Mathlib.Analysis.Calculus.FDeriv.Measurable
++public import Mathlib.Analysis.Calculus.ContDiff.FiniteDimension
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

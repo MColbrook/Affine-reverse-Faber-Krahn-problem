@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/GinibreCollisionCutoffEnergy.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreCollisionCutoffEnergy.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreCollisionCutoff
+-public import GinibrePoincare.Analysis.GinibreDensityBound
+-public import GinibrePoincare.Analysis.GinibreWeakSobolevTruncation
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreCollisionCutoff
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreDensityBound
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreWeakSobolevTruncation
+ 
+ @[expose] public section
+ 

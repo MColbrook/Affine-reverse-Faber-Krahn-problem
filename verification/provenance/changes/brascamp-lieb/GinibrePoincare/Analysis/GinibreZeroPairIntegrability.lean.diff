@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GinibreZeroPairIntegrability.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreZeroPairIntegrability.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibrePhaseRegularSobolev
+-public import GinibrePoincare.Analysis.GinibreDensityBound
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibrePhaseRegularSobolev
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreDensityBound
+ public import Mathlib.Analysis.SpecialFunctions.Pow.Integral
+ public import Mathlib.MeasureTheory.Integral.Pi
+ 

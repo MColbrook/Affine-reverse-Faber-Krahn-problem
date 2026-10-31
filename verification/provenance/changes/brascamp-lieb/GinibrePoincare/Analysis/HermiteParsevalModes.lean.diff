@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/HermiteParsevalModes.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/HermiteParsevalModes.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianFourierUniqueness
+-public import GinibrePoincare.Analysis.PermutationLp
+-public import GinibrePoincare.Analysis.HolomorphicVandermondeL2Closure
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianFourierUniqueness
++public import AffineFK.ChafaiBrascampLieb.Analysis.PermutationLp
++public import AffineFK.ChafaiBrascampLieb.Analysis.HolomorphicVandermondeL2Closure
+ 
+ @[expose] public section
+ 

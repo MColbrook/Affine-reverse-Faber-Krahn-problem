@@ -1,0 +1,408 @@
+{
+  "kind": "Independent non-author AI actual compiled-diagnostics/tooling review; not a kernel oracle",
+  "reviewer": "/root/palomar_requirements",
+  "independent_AI_review_complete": true,
+  "selected_theorem": "AffineFK.affine_reverse_faber_krahn_principal_results",
+  "scope": "Completed new-package build, independent raw ordinary TYPE/proof-closure parsing, axiom reports and probe integrity; previous source authorship is not represented as independent mathematical self-review",
+  "all_diagnostic_fields_match": true,
+  "actual_ordinary_TYPE_count": 104,
+  "actual_ordinary_TYPE_kinds": {
+    "definition": 25,
+    "theorem": 79
+  },
+  "actual_proof_closure_excluding_selected_root": 5684,
+  "actual_proof_closure_including_selected_root": 5685,
+  "actual_full_closure_kinds": {
+    "definition": 708,
+    "theorem": 4968,
+    "inductive": 4,
+    "constructor": 4
+  },
+  "actual_namespace_counts_not_module_origin_counts": {
+    "AffineFK": 104,
+    "AffineFKProof": 3022,
+    "_private": 318,
+    "RellichKondrachov": 133,
+    "MeasureTheory": 14,
+    "GinibrePoincare": 186,
+    "ContDiffBump": 1,
+    "OAI": 1906
+  },
+  "all_actual_isUnsafe_isPartial_flags_false": true,
+  "actual_safety_suffixes_checked": true,
+  "actual_main_header": {
+    "level_params": [],
+    "name": "AffineFK.affine_reverse_faber_krahn_principal_results",
+    "type_hash": "3617755525"
+  },
+  "complete_manual_owners": [
+    {
+      "name": "AffineFK.SobolevAmbient",
+      "meaning_reviewed": "WithLp2 product of the actual scalar and vector L2 spaces",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": [
+        "AffineFK.SobolevAmbient._proof_1",
+        "AffineFK.SobolevAmbient._proof_2",
+        "AffineFK.SobolevAmbient._proof_3"
+      ]
+    },
+    {
+      "name": "AffineFK.testFunctionGradient",
+      "meaning_reviewed": "Actual Frechet derivative followed by the inner-product dual identification",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": [
+        "AffineFK.testFunctionGradient._proof_1",
+        "AffineFK.testFunctionGradient._proof_10",
+        "AffineFK.testFunctionGradient._proof_11",
+        "AffineFK.testFunctionGradient._proof_12",
+        "AffineFK.testFunctionGradient._proof_13",
+        "AffineFK.testFunctionGradient._proof_14",
+        "AffineFK.testFunctionGradient._proof_15",
+        "AffineFK.testFunctionGradient._proof_16",
+        "AffineFK.testFunctionGradient._proof_17",
+        "AffineFK.testFunctionGradient._proof_18",
+        "AffineFK.testFunctionGradient._proof_19",
+        "AffineFK.testFunctionGradient._proof_2",
+        "AffineFK.testFunctionGradient._proof_3",
+        "AffineFK.testFunctionGradient._proof_4",
+        "AffineFK.testFunctionGradient._proof_5",
+        "AffineFK.testFunctionGradient._proof_6",
+        "AffineFK.testFunctionGradient._proof_7",
+        "AffineFK.testFunctionGradient._proof_8",
+        "AffineFK.testFunctionGradient._proof_9"
+      ]
+    },
+    {
+      "name": "AffineFK.gaussianPosition_matrix_det",
+      "meaning_reviewed": "Genuine determinant identity for the matrix-induced Euclidean linear map",
+      "manual_kind": "genuine theorem helper",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": []
+    },
+    {
+      "name": "AffineFK.gaussianPositionSLLinear",
+      "meaning_reviewed": "Continuous linear equivalence induced by the literal real special-linear matrix",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": [
+        "AffineFK.gaussianPositionSLLinear._proof_1",
+        "AffineFK.gaussianPositionSLLinear._proof_10",
+        "AffineFK.gaussianPositionSLLinear._proof_2",
+        "AffineFK.gaussianPositionSLLinear._proof_3",
+        "AffineFK.gaussianPositionSLLinear._proof_4",
+        "AffineFK.gaussianPositionSLLinear._proof_5",
+        "AffineFK.gaussianPositionSLLinear._proof_6",
+        "AffineFK.gaussianPositionSLLinear._proof_7",
+        "AffineFK.gaussianPositionSLLinear._proof_8",
+        "AffineFK.gaussianPositionSLLinear._proof_9"
+      ]
+    },
+    {
+      "name": "AffineFK.GaussianPositionMaximal",
+      "meaning_reviewed": "Actual standard Gaussian mass dominates every real special-linear image",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": [
+        "AffineFK.GaussianPositionMaximal._proof_1"
+      ]
+    },
+    {
+      "name": "AffineFK.unweightedTestToL2",
+      "meaning_reviewed": "Genuine L2 class of each compact smooth test",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": [
+        "AffineFK.unweightedTestToL2._proof_1",
+        "AffineFK.unweightedTestToL2._proof_2",
+        "AffineFK.unweightedTestToL2._proof_3",
+        "AffineFK.unweightedTestToL2._proof_4",
+        "AffineFK.unweightedTestToL2._proof_5",
+        "AffineFK.unweightedTestToL2._proof_6",
+        "AffineFK.unweightedTestToL2._proof_7",
+        "AffineFK.unweightedTestToL2._proof_8",
+        "AffineFK.unweightedTestToL2._proof_9"
+      ]
+    },
+    {
+      "name": "AffineFK.unweightedSmoothPair",
+      "meaning_reviewed": "Actual value-gradient test pair",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": [
+        "AffineFK.unweightedSmoothPair._proof_1",
+        "AffineFK.unweightedSmoothPair._proof_10",
+        "AffineFK.unweightedSmoothPair._proof_11",
+        "AffineFK.unweightedSmoothPair._proof_12",
+        "AffineFK.unweightedSmoothPair._proof_13",
+        "AffineFK.unweightedSmoothPair._proof_14",
+        "AffineFK.unweightedSmoothPair._proof_15",
+        "AffineFK.unweightedSmoothPair._proof_16",
+        "AffineFK.unweightedSmoothPair._proof_2",
+        "AffineFK.unweightedSmoothPair._proof_3",
+        "AffineFK.unweightedSmoothPair._proof_4",
+        "AffineFK.unweightedSmoothPair._proof_5",
+        "AffineFK.unweightedSmoothPair._proof_6",
+        "AffineFK.unweightedSmoothPair._proof_7",
+        "AffineFK.unweightedSmoothPair._proof_8",
+        "AffineFK.unweightedSmoothPair._proof_9"
+      ]
+    },
+    {
+      "name": "AffineFK.unweightedSobolevGraph",
+      "meaning_reviewed": "Closure of actual compact smooth value-gradient pairs",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": [
+        "AffineFK.unweightedSobolevGraph._proof_1",
+        "AffineFK.unweightedSobolevGraph._proof_2",
+        "AffineFK.unweightedSobolevGraph._proof_3",
+        "AffineFK.unweightedSobolevGraph._proof_4",
+        "AffineFK.unweightedSobolevGraph._proof_5",
+        "AffineFK.unweightedSobolevGraph._proof_6"
+      ]
+    },
+    {
+      "name": "AffineFK.unweightedValue",
+      "meaning_reviewed": "Continuous scalar L2 projection of the Sobolev graph",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": []
+    },
+    {
+      "name": "AffineFK.unweightedGradient",
+      "meaning_reviewed": "Continuous vector L2 projection of the Sobolev graph",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": []
+    },
+    {
+      "name": "AffineFK.unweighted_smooth_pair_mem",
+      "meaning_reviewed": "Genuine inclusion of a compact smooth pair in its graph closure",
+      "manual_kind": "genuine theorem helper",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": []
+    },
+    {
+      "name": "AffineFK.dirichletTestToTop",
+      "meaning_reviewed": "Zero-extension inclusion of compact smooth tests supported inside the open set",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": [
+        "AffineFK.dirichletTestToTop._proof_1",
+        "AffineFK.dirichletTestToTop._proof_2",
+        "AffineFK.dirichletTestToTop._proof_3",
+        "AffineFK.dirichletTestToTop._proof_4",
+        "AffineFK.dirichletTestToTop._proof_5"
+      ]
+    },
+    {
+      "name": "AffineFK.dirichletTestToH1",
+      "meaning_reviewed": "Actual value-gradient map of those supported tests into global H1",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": [
+        "AffineFK.dirichletTestToH1._proof_1"
+      ]
+    },
+    {
+      "name": "AffineFK.dirichletSobolev",
+      "meaning_reviewed": "Closure of supported compact tests in the actual global Sobolev graph",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": [
+        "AffineFK.dirichletSobolev._proof_1",
+        "AffineFK.dirichletSobolev._proof_2"
+      ]
+    },
+    {
+      "name": "AffineFK.dirichletValue",
+      "meaning_reviewed": "Actual scalar L2 value map on the Dirichlet closure",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": []
+    },
+    {
+      "name": "AffineFK.dirichletGradient",
+      "meaning_reviewed": "Actual vector L2 weak-gradient map on the Dirichlet closure",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": [
+        "AffineFK.dirichletGradient._proof_1"
+      ]
+    },
+    {
+      "name": "AffineFK.dirichletRayleigh",
+      "meaning_reviewed": "Squared actual gradient norm divided by squared actual nonzero value norm",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": []
+    },
+    {
+      "name": "AffineFK.dirichletEigenvalue",
+      "meaning_reviewed": "Actual ENNReal infimum of Rayleigh quotients over nonzero Dirichlet values",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": []
+    },
+    {
+      "name": "AffineFK.UniformSymmetricGaussianDirichletBound",
+      "meaning_reviewed": "One C before all positive dimensions and symmetric volume-one maximal Gaussian bodies",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": [
+        "AffineFK.UniformSymmetricGaussianDirichletBound._proof_1"
+      ]
+    },
+    {
+      "name": "AffineFK.IsLogConcaveMeasure",
+      "meaning_reviewed": "Conventional compact nonempty-set log-concavity inequality, including endpoint weights",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": []
+    },
+    {
+      "name": "AffineFK.densityMeasure",
+      "meaning_reviewed": "Actual Lebesgue measure with the nonnegative real density's ofReal weight",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": []
+    },
+    {
+      "name": "AffineFK.sqrtDensitySobolev",
+      "meaning_reviewed": "An actual Sobolev-graph vector representing sqrt(density) almost everywhere",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": [
+        "AffineFK.sqrtDensitySobolev._proof_1"
+      ]
+    },
+    {
+      "name": "AffineFK.fisherInformation",
+      "meaning_reviewed": "Ordinary square-root Sobolev information, with infinity outside that domain",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": false,
+      "generated_or_subordinate_constants_in_TYPE": []
+    },
+    {
+      "name": "AffineFK.relativeFisherInformation",
+      "meaning_reviewed": "Actual square-root Gaussian score energy with Sobolev and second-moment guards, infinity otherwise",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": [
+        "AffineFK.relativeFisherInformation._proof_1"
+      ]
+    },
+    {
+      "name": "AffineFK.canonicalLebesgueDensity",
+      "meaning_reviewed": "toReal of the actual Lebesgue Radon-Nikodym derivative",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": []
+    },
+    {
+      "name": "AffineFK.relativeFisherMeasure",
+      "meaning_reviewed": "Actual law-level relative information; infinity without absolute continuity",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": []
+    },
+    {
+      "name": "AffineFK.poincare_euclidean_completeSpace",
+      "meaning_reviewed": "Genuine named Mathlib PiLp completeness proof used explicitly in gradient data",
+      "manual_kind": "genuine theorem helper",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": []
+    },
+    {
+      "name": "AffineFK.AdmissiblePoincareConstant",
+      "meaning_reviewed": "Actual compact-smooth variance/gradient inequality with the named completeness proof",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": []
+    },
+    {
+      "name": "AffineFK.poincareConstant",
+      "meaning_reviewed": "Actual infimum of admissible nonnegative Poincare constants",
+      "manual_kind": "data/abbreviation",
+      "owner_itself_in_actual_ordinary_TYPE": true,
+      "generated_or_subordinate_constants_in_TYPE": []
+    }
+  ],
+  "manual_data_owners_including_abbreviation": 26,
+  "manual_genuine_helper_theorems": 3,
+  "axiom_reports": [
+    {
+      "declaration": "AffineFK.affine_reverse_faber_krahn_principal_results",
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "AffineFKProof.affine_reverse_faber_krahn_main_theorems",
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "AffineFKProof.information_spectrum_logConcaveMeasure_uniform_constant",
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "actual_selected_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "actual_versions_match_pinned_Linux_baseline": true,
+  "actual_executable_hashes_matched": 9,
+  "retained_diagnostic_cache_warnings": [
+    "batteries"
+  ],
+  "cache_warning_resolution": "Separate root-author source receipts, independently parsed here against all nine manifest pins, record exact tracked non-Lean internal symlink-form restoration; no Lean source edit. This reviewer did not rerun remote Git commands. Final gate must itself record all nine clean trees.",
+  "full_private_imported_source_modules": 992,
+  "all_private_imports_including_Solution": 993,
+  "proof_classifier_uses_actual_origin_module": true,
+  "per_row_origin_module_serialized": false,
+  "origin_evidence_limit": "Actual getModuleIdxFor?-based classifier inspected in all three probes. Rows serialize names/kinds/flags/references, not origin_module. Namespace counts are not claimed as per-row module-origin tables.",
+  "diagnostic_hash_limit": "Lean expression hash equality is diagnostic evidence; the required genuine Comparator checks exact exported ConstantInfo rather than treating these hashes as a proof oracle.",
+  "new_package_comparator_acceptance_claimed": false,
+  "required_next_check": "Own ordinary Linux sandboxed lake comparator --config comparator.json --paranoid, with all six actual acceptances",
+  "github_interaction_or_rechecking_by_this_reviewer": false,
+  "file_sha256": {
+    "verification/checks/diagnostics03/build.txt": "e4b75402e585a57f220cfb2d6a89e0de14763b34ac518ee199d414b73bc3c297",
+    "verification/checks/diagnostics03/StatementChallenge.txt": "4aa5f404348c1891dc21f8ddc4a7c17251813b96d2c7613fcd82fd2521892099",
+    "verification/checks/diagnostics03/StatementSolution.txt": "d5acb796a23fe07d6c2d6e6f82863643d5cdc2e8a8ad51f7b66a2e813213a95b",
+    "verification/checks/diagnostics03/ProofClosure.txt": "10012c4f7e8ec99a036bdf010eb43f520f60828cf037062c9393c2224466b648",
+    "verification/checks/diagnostics03/axioms.txt": "cc18205150481a56072177c5a4500e7e03ac77213d19ea127ef38d5d41cc899a",
+    "AuditTools/StatementChallenge.lean": "a99d43358e64cf9df95fbc5ea30afec8ac8b5f7a1c44a3e2f959310e058d2ea8",
+    "AuditTools/StatementSolution.lean": "483fca647ec811494381bfffc5ac063fd5e5609858606fdbeffa84c228976553",
+    "AuditTools/ProofClosure.lean": "116101d4dcddd9d30590e66f965e388e597cd2a68993a27022490e380543643f",
+    "Challenge.lean": "f1e54850c2a7e20d96f5c26af48ec68dfa208d718837c6f91e966444172d01c1",
+    "Solution.lean": "40e7bf57f72e19da664b408a95ab9fdca52caf883d9adf7cc351f7c50708e659",
+    "AxiomAudit.lean": "02fcc86dd0c6bf5508141ed6ee21e316c742aa31a7e058f5996f2264af7ebe9b",
+    "comparator.json": "8f067ec60c3a994daba8faeaaad85bfff96ae7e39623ddf29934d8047673a6ac",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+    "lake-manifest.json": "a9340a6648ae07976e18f4b362b2ad6c2480311042154a98ddd642dc89369dc1",
+    "verification/source-sha256.json": "8f47b864010173ab9bd069e432191e032b8ff683f103cf81aa9703c5a4233a24",
+    "verification/provenance/source-import-closure.json": "bcbf24cbb0efdffbda03b81e0705463b5a2ed70f1c61c700b6acd67bec46a7af",
+    "verification/provenance/interface-source-copy.json": "065ea5c00e4875172e5bfdbde4ec1ebab710e9c24c30f8c759ac51cfac753999",
+    "verification/reviews/canonical_interface_static_B.json": "6bdd67ed4aa90247c37252abb796ea6bc39f4b41a6cb38e8ea1b65fa3c1f985c",
+    "verification/reviews/compiled-diagnostics-cache-repair-source.json": "bc6236679d7ce8672fd52cc50a68d8fb4a1855296fc0da1133f8c95bb8691c2d",
+    "verification/reviews/compiled-diagnostics-Mathlib-link-repair-source.json": "4512f0c371b2a4b8ee5baa8171304dcc2072d951fcacf9fb836f9a35e85bc1b5",
+    "verification/checks/diagnostics03/versions.json": "74d291fd78df874b92b444d541cbbc95d67206fb38ac4030f2a5e324e36eaca0",
+    "verification/provenance/accepted-toolchain.json": "8bd7eefd4e483bfc2336684f434dcfc538c9ac4367b68502a5a580c696b1655c",
+    "verification/checks/diagnostics03/status.txt": "a4bccf5c13ef5ff8311e59b34d492bc7072a55298723601a6a9c127053aee8fc",
+    "verification/reviews/review_compiled_diagnostics.py": "9a15dff3e889f6068a7a0a178d06ed9bf6e5d09da5715b64aa368b3aa8d32d78"
+  },
+  "findings": []
+}

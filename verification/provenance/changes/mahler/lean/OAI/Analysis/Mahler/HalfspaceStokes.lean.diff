@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/HalfspaceStokes.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HalfspaceStokes.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.FormLocalization
+-import Mathlib.MeasureTheory.Integral.IntegralEqImproper
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.FormLocalization
++public import Mathlib.MeasureTheory.Integral.IntegralEqImproper
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

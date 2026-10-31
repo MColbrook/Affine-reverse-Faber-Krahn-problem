@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/GinibreRadialGamma.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreRadialGamma.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.EquilibriumProbability
+-public import GinibrePoincare.Analysis.HomogeneousRadialMeasure
+-public import GinibrePoincare.Analysis.GlobalPhaseAction
++public import AffineFK.ChafaiBrascampLieb.Analysis.EquilibriumProbability
++public import AffineFK.ChafaiBrascampLieb.Analysis.HomogeneousRadialMeasure
++public import AffineFK.ChafaiBrascampLieb.Analysis.GlobalPhaseAction
+ public import Mathlib.Probability.Distributions.Gamma
+ public import Mathlib.Algebra.BigOperators.Intervals
+ public import Mathlib.Order.Interval.Finset.Fin

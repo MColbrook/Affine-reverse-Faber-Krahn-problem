@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/EquilibriumProbability.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/EquilibriumProbability.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.EquilibriumFactorization
++public import AffineFK.ChafaiBrascampLieb.Analysis.EquilibriumFactorization
+ public import Mathlib.MeasureTheory.Measure.Haar.NormedSpace
+ public import Mathlib.Probability.Independence.Basic
+ 

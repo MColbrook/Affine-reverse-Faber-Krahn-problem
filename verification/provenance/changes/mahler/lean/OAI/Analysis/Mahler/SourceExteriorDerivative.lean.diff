@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/SourceExteriorDerivative.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceExteriorDerivative.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.SourceFluxRegularity
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceFluxRegularity
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

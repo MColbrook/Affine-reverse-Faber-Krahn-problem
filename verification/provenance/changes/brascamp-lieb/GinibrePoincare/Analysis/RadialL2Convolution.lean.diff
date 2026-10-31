@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/RadialL2Convolution.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/RadialL2Convolution.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.RadialL2MollifierAverage
++public import AffineFK.ChafaiBrascampLieb.Analysis.RadialL2MollifierAverage
+ public import Mathlib.Analysis.Calculus.ContDiff.Convolution
+ public import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
+ 

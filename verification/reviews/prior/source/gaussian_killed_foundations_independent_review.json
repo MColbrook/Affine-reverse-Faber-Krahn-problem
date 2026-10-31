@@ -1,0 +1,54 @@
+{
+  "kind": "Independent non-author AI mathematical, fidelity, clarity and actual-source evidence review",
+  "reviewer": "/root/claim_inventory",
+  "author": "/root/palomar_requirements",
+  "independent_ai_review_complete": true,
+  "full_six_module_types_and_bodies_read": true,
+  "new_declarations": 40,
+  "theorems": 35,
+  "semantic_definitions": 5,
+  "source_pins_checked": 139,
+  "current_source_build_logs_checked": 6,
+  "fresh_allowed_axiom_reports": 40,
+  "actual_axioms_exit": 0,
+  "actual_axioms_elapsed_seconds": 5.518,
+  "payload_source_byte_matches": 139,
+  "payload_additional_entries": [
+    "_bridge_manifest.json"
+  ],
+  "mathematical_defects_found": [],
+  "scope": "Actual all-L2 Gaussian-average/free-heat identity, genuine free half-time semigroup and PSD, actual measurable-domain indicator projection and compressed Gaussian operator. Generic normalized powers converge to the norm Rayleigh quotient under explicit nonzero-power and dyadic operator domination hypotheses.",
+  "distinction": "M_U Q_h M_U is a discrete Gaussian compression. No continuously killed Brownian semigroup identification or semigroup law for the compression is asserted.",
+  "remaining_inputs": [
+    "Actual Gaussian killed power identification with literal finite-grid log-concave iterates",
+    "Nonzero actual finite iterates in the original domain",
+    "Actual Gaussian operator domination estimate supplying the abstract power lemma"
+  ],
+  "exclusions": [
+    "Complete finite-iterate approximation endpoint until its concrete hypotheses are discharged",
+    "Actual log-concave H0 groundstate",
+    "Headline affine reverse Faber-Krahn theorems",
+    "New Comparator acceptance"
+  ],
+  "authorship_boundary": "The six new modules are not authored by this reviewer. Reused older sources include work authored by this reviewer; all139 byte pins were checked, but their full proof bodies are not freshly non-author-reviewed here. Earlier separate source reviews retain that layer. The seven new C17 source files are not imported by this40-declaration closure.",
+  "own_comparator_accepted": false,
+  "full_paper_verified": false,
+  "pins": {
+    "audit/gaussian_killed_foundations_source_manifest.json": "4a39fe83c2534a73ca369de5390b0b4957cfc065eab79d846b003f8cbbf33f59",
+    "audit/bridge_remote_jobs/gaussian-killed-foundation-axioms-remote-01/source.zip": "2acd9c44db36010e168f65677a166d593cfb8e8ba7c54d09b26b793f0211c607",
+    "logs/branch_bridge/gaussian-killed-foundation-axioms-remote-01.txt": "8586c13dd062205d66c48ee9870e0975b73ee3f6641811632d8ec5b7426753d0",
+    "AffineFK/GaussianKilledFoundationsAxioms.lean": "6bf37e9e7ad258905363cd4a1b23d6be06ab60eb6026842d489529c166a0a41d",
+    "logs/branch_bridge/positive-power-ratios-remote-02.txt": "dd4d88cb725c6a256d04f8d760337de6126566ca4ed2c67998a04910c0c0977e",
+    "logs/branch_bridge/positive-power-rayleigh-remote-04.txt": "e06320b4b7d4d7583b5bee008bfc7980d76bba610ad75aab3befaa039c890d96",
+    "logs/branch_bridge/gaussian-l2-heat-identity-remote-02.txt": "c456e6043d034d87f945242ea4e81127ee9438d5bf9d865e13e3cf27c7eeaf8a",
+    "logs/branch_bridge/gaussian-l2-semigroup-remote-03.txt": "428dd3b7664e7e78ff4a931fa7574c3842be29173e71a7a3fb902c3f5967b480",
+    "logs/branch_bridge/gaussian-killed-projection-remote-06.txt": "7081b6f5737ac60c4a103937c8e16c5e9d28f8296320d2aab317711854161344",
+    "logs/branch_bridge/gaussian-killed-l2-remote-01.txt": "17ad82a4df16944493dce6c92407f4a1357277354d1d79b7951908060d78f54d",
+    "AffineFK/PositivePowerNormRatios.lean": "8cce34562aab6e7ca59bdfb1e02af49e2e5a219e3ce3e0372b6df0890165ac39",
+    "AffineFK/PositivePowerRayleigh.lean": "696d16713d4acf4bc1d2a06aec965985677d5b673b41fdbbaa186276ea91d941",
+    "AffineFK/GaussianL2HeatIdentification.lean": "dbbc8e8253aaf8fbf96b91cc38fb1302e316588b3f4aa164b7386b8fa085bf7d",
+    "AffineFK/GaussianL2Semigroup.lean": "0fc174a28e65b7348a61e9598c97928ba1b3f18c3a87eedf1c14b0e0f2d2defb",
+    "AffineFK/GaussianKilledProjection.lean": "a0ace656d1a34143d69908d3b6afceee7623f5388516f81de59af16130b8c944",
+    "AffineFK/GaussianKilledL2.lean": "98e95b32d360fe3f4423f59ccf0a8e793f65fe342914710bd94cd812b11ca6e8"
+  }
+}

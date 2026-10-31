@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/ConvexSequence.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ConvexSequence.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ConvexCompletion
+-import Mathlib.LinearAlgebra.StdBasis
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ConvexCompletion
++public import Mathlib.LinearAlgebra.StdBasis
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

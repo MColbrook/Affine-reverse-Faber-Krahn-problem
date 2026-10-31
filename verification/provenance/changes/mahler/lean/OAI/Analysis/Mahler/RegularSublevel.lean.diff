@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/RegularSublevel.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RegularSublevel.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.RegularLevelCharts
+-import Mathlib.Analysis.Calculus.LocalExtr.Basic
+-import Mathlib.Topology.Order.OrderClosed
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RegularLevelCharts
++public import Mathlib.Analysis.Calculus.LocalExtr.Basic
++public import Mathlib.Topology.Order.OrderClosed
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/MultivariateComplexHermite.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/MultivariateComplexHermite.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.NormalizedComplexHermite
++public import AffineFK.ChafaiBrascampLieb.Analysis.NormalizedComplexHermite
+ public import Mathlib.Analysis.Complex.Basic
+ public import Mathlib.Topology.Algebra.MvPolynomial
+ 

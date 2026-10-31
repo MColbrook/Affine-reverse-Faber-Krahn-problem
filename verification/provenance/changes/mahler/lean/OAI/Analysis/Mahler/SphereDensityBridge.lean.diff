@@ -1,0 +1,26 @@
+--- lean/OAI/Analysis/Mahler/SphereDensityBridge.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SphereDensityBridge.lean
+@@ -1,11 +1,15 @@
+-import OAI.Analysis.Mahler.SphereFlux
+-import OAI.Analysis.Mahler.SphereVolumeOrientation
+-import OAI.Analysis.Mahler.SphereDensityRestriction
+-import OAI.Analysis.Mahler.SphereOrientation
+-import OAI.Analysis.Mahler.HomogeneousSphereIntegral
+-import OAI.Analysis.Mahler.SmallSphereLimits
+-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+-import Mathlib.MeasureTheory.Function.LocallyIntegrable
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereFlux
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereVolumeOrientation
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereDensityRestriction
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereOrientation
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousSphereIntegral
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SmallSphereLimits
++public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
++public import Mathlib.MeasureTheory.Function.LocallyIntegrable
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

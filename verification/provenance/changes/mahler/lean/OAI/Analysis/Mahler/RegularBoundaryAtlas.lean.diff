@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/RegularBoundaryAtlas.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RegularBoundaryAtlas.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.RegularSublevel
+-import Mathlib.Topology.MetricSpace.ProperSpace
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RegularSublevel
++public import Mathlib.Topology.MetricSpace.ProperSpace
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

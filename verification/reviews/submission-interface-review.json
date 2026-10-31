@@ -1,0 +1,23 @@
+{
+  "kind": "Gate precondition receipt assembled from B's independent full static interface review; not a new proof verdict",
+  "independent_AI_review_complete": true,
+  "reviewer": "/root/formalization_coverage",
+  "original_review": "verification/reviews/canonical_interface_static_B.json",
+  "original_review_sha256": "6bdd67ed4aa90247c37252abb796ea6bc39f4b41a6cb38e8ea1b65fa3c1f985c",
+  "author_boundary": "Reviewer authored several reused analytic/geometric sources and prior Stage36 presentation, but none of this new canonical interface or probe setup. This is independent review of new packaging/data/statement/proof applications, not a new correctness review of the unchanged992 proof sources; their earlier non-author reviews remain distinct.",
+  "compiled_review_separately_required": true,
+  "file_sha256": {
+    "Challenge.lean": "f1e54850c2a7e20d96f5c26af48ec68dfa208d718837c6f91e966444172d01c1",
+    "Solution.lean": "40e7bf57f72e19da664b408a95ab9fdca52caf883d9adf7cc351f7c50708e659",
+    "AxiomAudit.lean": "02fcc86dd0c6bf5508141ed6ee21e316c742aa31a7e058f5996f2264af7ebe9b",
+    "comparator.json": "8f067ec60c3a994daba8faeaaad85bfff96ae7e39623ddf29934d8047673a6ac",
+    "lakefile.toml": "fd9272ca9a57effc2f085b58870a59a074b9ba546f35568377d594418794fc37",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+    "lake-manifest.json": "a9340a6648ae07976e18f4b362b2ad6c2480311042154a98ddd642dc89369dc1",
+    "AuditTools/StatementChallenge.lean": "a99d43358e64cf9df95fbc5ea30afec8ac8b5f7a1c44a3e2f959310e058d2ea8",
+    "AuditTools/StatementSolution.lean": "483fca647ec811494381bfffc5ac063fd5e5609858606fdbeffa84c228976553",
+    "AuditTools/ProofClosure.lean": "116101d4dcddd9d30590e66f965e388e597cd2a68993a27022490e380543643f",
+    "verification/provenance/interface-source-copy.json": "065ea5c00e4875172e5bfdbde4ec1ebab710e9c24c30f8c759ac51cfac753999",
+    "verification/source-sha256.json": "8f47b864010173ab9bd069e432191e032b8ff683f103cf81aa9703c5a4233a24"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "kind": "Independent AI semantic documentation/attribution/local-link review",
+  "reviewer": "/root/claim_inventory",
+  "independent_AI_review_complete": true,
+  "findings": [],
+  "documents_reviewed": [
+    "README.md",
+    "SUBMISSION.md",
+    "CITATION.md",
+    "NOTICE",
+    "docs/correspondence.md",
+    "docs/proof-departures.md",
+    "docs/scope.md",
+    "docs/third-party.md"
+  ],
+  "selected_claims": [
+    "M01",
+    "M02",
+    "M03"
+  ],
+  "theorem_domain_or_quantifier_correction_required": false,
+  "manuscript_modified": false,
+  "proofs_modified": false,
+  "build_or_kernel_run": false,
+  "network_or_GitHub_interaction": false,
+  "external_URLs_fetched": false,
+  "actual_new_package_acceptance_independently_checked_in_this_review": false,
+  "final_acceptance_evidence_required_separately": true,
+  "pending_finalization_paths": [
+    "verification/certificate.json"
+  ],
+  "finalization_note": "README/SUBMISSION describe the intended final accepted package. Do not publish its acceptance assertions unless the new exact combined packet certificate and raw actual gate evidence exist. Historical packet verdicts are not new-package acceptance.",
+  "local_Markdown_links": [
+    {
+      "document": "README.md",
+      "label": "Challenge.lean",
+      "target": "Challenge.lean",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "label": "Solution.lean",
+      "target": "Solution.lean",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "label": "correspondence table",
+      "target": "docs/correspondence.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "label": "verification/certificate.json",
+      "target": "verification/certificate.json",
+      "exists": false
+    },
+    {
+      "document": "README.md",
+      "label": "proof-departure account",
+      "target": "docs/proof-departures.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "label": "scope account",
+      "target": "docs/scope.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "label": "formalization.yaml",
+      "target": "formalization.yaml",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "label": "NOTICE",
+      "target": "NOTICE",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "label": "third-party attribution",
+      "target": "docs/third-party.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "label": "SUBMISSION.md",
+      "target": "SUBMISSION.md",
+      "exists": true
+    },
+    {
+      "document": "docs/correspondence.md",
+      "label": "manuscript",
+      "target": "source/manuscript.tex",
+      "exists": true
+    },
+    {
+      "document": "docs/scope.md",
+      "label": "correspondence.md",
+      "target": "docs/correspondence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/scope.md",
+      "label": "proof-departures.md",
+      "target": "docs/proof-departures.md",
+      "exists": true
+    },
+    {
+      "document": "docs/third-party.md",
+      "label": "Apache-2.0",
+      "target": "AffineFK/OpenAIMahler/LICENSE",
+      "exists": true
+    },
+    {
+      "document": "docs/third-party.md",
+      "label": "MIT",
+      "target": "AffineFK/ChafaiBrascampLieb/LICENSE",
+      "exists": true
+    },
+    {
+      "document": "docs/third-party.md",
+      "label": "Apache-2.0",
+      "target": "AffineFK/BenensonRellich/LICENSE",
+      "exists": true
+    },
+    {
+      "document": "docs/third-party.md",
+      "label": "Apache-2.0",
+      "target": "licenses/prekopa-leindler-LICENSE",
+      "exists": true
+    },
+    {
+      "document": "docs/third-party.md",
+      "label": "Apache-2.0",
+      "target": "licenses/gaussian-closure-LICENSE",
+      "exists": true
+    }
+  ],
+  "external_reference_URLs": [
+    {
+      "document": "docs/correspondence.md",
+      "label": "doi:10.4171/JST/115",
+      "url": "https://doi.org/10.4171/JST/115"
+    },
+    {
+      "document": "docs/proof-departures.md",
+      "label": "arXiv:2605.01334v1",
+      "url": "https://arxiv.org/abs/2605.01334v1"
+    }
+  ],
+  "prose_or_command_paths_checked": [
+    "scripts/check_package.py",
+    "scripts/run_checks.py",
+    "scripts/inspect_diagnostics.py",
+    "AxiomAudit.lean",
+    "comparator.json",
+    "formalization.yaml",
+    "source/manuscript.tex",
+    "lake-manifest.json",
+    "verification/formalization-v0.4.schema.json",
+    "verification/provenance/upstream-source-map.json",
+    "verification/reviews/prior/principal_manuscript_lean_correspondence_review.md",
+    "verification/reviews/prior/principal_correspondence_calibration_review.md",
+    "verification/reviews/prior/principal_proof_departure_review.md",
+    "verification/reviews/prior/principal_background_reference_audit.md",
+    "verification/reviews/prior/origin-map.json"
+  ],
+  "proof_source_hashes_checked": 992,
+  "original_snapshot_hashes_and_Git_blob_ids_checked": 481,
+  "complete_textual_differences_reconstructed": 481,
+  "upstream_group_counts": {
+    "OpenAI symmetric Mahler": 229,
+    "Chafai MIT Brascamp-Lieb": 234,
+    "Ho Prekopa-Leindler source port": 2,
+    "Benenson Rellich": 15,
+    "Armstrong-Loher Gaussian closure excerpt": 1
+  },
+  "license_hashes_checked": 5,
+  "Mahler_files_identical_after_exact_import_visibility_scaffold_reversal": 229,
+  "local_or_adapted_non_upstream_modules": 511,
+  "resolved_style_observations": [
+    "Owner replaced the invented-identifier defensive wording with direct URL/commit instructions.",
+    "Owner replaced the verbose no-GitHub-contact sentence with the plain upload/registration status."
+  ],
+  "source_authorship_boundary": "Reviewer did not author root README/SUBMISSION/CITATION/NOTICE/docs; reviewer authored the proposed combined interface, the retained correspondence audit and some reused probabilistic/Sobolev/geometric proofs. This review does not independently certify those own proof bodies or replace their separate non-author reviews. No human review or rereading all992 source proofs is claimed.",
+  "file_sha256": {
+    "README.md": "c08963511dd62039b85234c0a03b9f92f6d03507ee6d9cea74c181df10a246df",
+    "SUBMISSION.md": "ba2c5c021b897069ee2c20ce4abaf13930d20de79114cfc906ba685fba32a846",
+    "CITATION.md": "7056aba51f891cdb18d81a68504a68e5c02346927df50cba6ba5b4e86256b8d3",
+    "NOTICE": "1afc914cc9c49d140ea6d036bad7f6e1bdd306e79922b98b1d06d877933f9b17",
+    "docs/correspondence.md": "7ac37c2174a48cb689b476a1286cb58de28d3b8ebd5fb3471fb5dc2bbdf8f2f0",
+    "docs/proof-departures.md": "67ca8f77d7c84f3a0fbfdbb691d63dfe40bcad138d89ce12abcca4d54c5c5b88",
+    "docs/scope.md": "93f1424fbaa58225b588d271ec9076908cbb13f530f368fde249cc248599da4c",
+    "docs/third-party.md": "7794bb110211e389c7039828aedacb6e5480bd2c19f6cee78b0c188984518cd1",
+    "scripts/check_package.py": "b3eb73a299bd317e8776156fd73b1a52e5f7002117b293184610ceed22e67323",
+    "scripts/run_checks.py": "19d2f00bfdc0a896e8dad4aa655e347b2a725dc31e610ac2b7f0e43619bcb713",
+    "scripts/inspect_diagnostics.py": "bcb76cc7aef8fd75b319003e469078cc5a05c8dad9ad56a42301432c3ae8cbe2",
+    "AxiomAudit.lean": "02fcc86dd0c6bf5508141ed6ee21e316c742aa31a7e058f5996f2264af7ebe9b",
+    "comparator.json": "8f067ec60c3a994daba8faeaaad85bfff96ae7e39623ddf29934d8047673a6ac",
+    "formalization.yaml": "252fa1416adf36093eeeb5d6ea05f1a22f5c2130fa83259bde33ea1171e025a2",
+    "source/manuscript.tex": "1d30574bf6a09012c0492449d6860884c993b191837c9c0d2a9bd17080a3d0bc",
+    "lake-manifest.json": "a9340a6648ae07976e18f4b362b2ad6c2480311042154a98ddd642dc89369dc1",
+    "verification/formalization-v0.4.schema.json": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+    "verification/provenance/upstream-source-map.json": "817a140cf826051e7d30a9bf601452e48f0852cedb74846bb0fe76c8f46de65b",
+    "verification/reviews/prior/principal_manuscript_lean_correspondence_review.md": "c267a2b82b5e926b491346d2f15e024f3eadbefa71b7e93f4fc5e82224862c16",
+    "verification/reviews/prior/principal_correspondence_calibration_review.md": "0083b6c01e9526c2d7dc0444ccb003952eb2bfcfc082442c3226616ed9f510d9",
+    "verification/reviews/prior/principal_proof_departure_review.md": "c10c74cb3ef380d393ad1c36b7efc13c9f31f8265a5493fc4dd8033bb909885d",
+    "verification/reviews/prior/principal_background_reference_audit.md": "50860de7526cde5d817861bf0cc15628923f527cb20a79f6f734a520f9d6385f",
+    "verification/reviews/prior/origin-map.json": "586234808fbd6d6841e832a87919f2a065935c1e7dd3347af9b40426937e53d0",
+    "Challenge.lean": "f1e54850c2a7e20d96f5c26af48ec68dfa208d718837c6f91e966444172d01c1",
+    "Solution.lean": "40e7bf57f72e19da664b408a95ab9fdca52caf883d9adf7cc351f7c50708e659",
+    "verification/source-sha256.json": "8f47b864010173ab9bd069e432191e032b8ff683f103cf81aa9703c5a4233a24",
+    "AffineFK/MainTheorems.lean": "79e7f75588806e79d357b6792b569651ee024ce5318cecc6bbaab4f10faedf40",
+    "AffineFK/InformationSpectrumLogConcaveMeasure.lean": "bfbf56af1c2830f7332be8a14f4382ccd97327dad20dd34b4e8748d34887a457"
+  }
+}

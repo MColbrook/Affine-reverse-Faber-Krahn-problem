@@ -1,0 +1,9 @@
+# Independent AI review of the literal finite Gaussian iteration
+
+Reviewer: Codex `/root`; proof author: Codex `/root/claim_inventory`. I read all 23 theorem bodies and all three definitions in `DirichletGaussianIterationKernel`, `DirichletGaussianIteration` and `DirichletGaussianIterationFinite`. This is a non-author AI mathematical, statement-fidelity and clarity review. It is not human review or a Comparator acceptance.
+
+The kernel is the actual normalized Gaussian of variance `b^2`, with mass one established by its actual Haar change of variables. The positivity and normalization assertions require `b>0`. The recursion is literal convolution followed by multiplication by the indicator of the specified domain; it is not an assumed continuous killed semigroup. The indicator is log-concave exactly under the stated convexity hypothesis. The genuine Prekopa proof propagates pointwise log-concavity through every finite iteration. Reflection invariance, measurability, the upper bound one and exterior vanishing are proved from that same recursion.
+
+For a nonempty open domain, each convolution has a strictly positive integral over an actual open set of positive volume. Consequently every finite iterate has positive mass. The finite-volume hypothesis and the pointwise upper bound supply all the finite-Lp conclusions used later. In particular no Sobolev regularity of an indicator is assumed. These statements include dimension zero, and no dimension factor is lost in the Gaussian normalization.
+
+I found no mathematical defect or omitted assumption. The kernel's successful compilation as a dependency is distinguished from the failed overall first iteration build. The final iteration and finite-volume builds and the fresh 26-declaration axiom output are separately retained. This review concerns finite iterations; a groundstate limit is proved in other files.

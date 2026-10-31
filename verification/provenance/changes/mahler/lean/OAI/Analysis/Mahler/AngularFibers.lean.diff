@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/AngularFibers.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/AngularFibers.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ImplicitAngle
+-import OAI.Analysis.Mahler.SineBound
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ImplicitAngle
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SineBound
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

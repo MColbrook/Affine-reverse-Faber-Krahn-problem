@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/FormStokes.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/FormStokes.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ShellRegularity
+-import Mathlib.Analysis.Calculus.DifferentialForm.Basic
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ShellRegularity
++public import Mathlib.Analysis.Calculus.DifferentialForm.Basic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

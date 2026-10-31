@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GaussianHermiteMoments.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianHermiteMoments.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.MultivariateHermiteMonomialSpan
+-public import GinibrePoincare.Analysis.GaussianPolynomialCompleteness
++public import AffineFK.ChafaiBrascampLieb.Analysis.MultivariateHermiteMonomialSpan
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianPolynomialCompleteness
+ public import Mathlib.Probability.Distributions.Gaussian.Real
+ public import Mathlib.Probability.Moments.IntegrableExpMul
+ 

@@ -1,0 +1,91 @@
+{
+  "kind": "Independent AI full non-author mathematical/fidelity/clarity review of root four Jacobian applications",
+  "reviewer": "/root/formalization_coverage",
+  "proof_author": "/root",
+  "all_complete_headers_and_bodies_read": 4,
+  "source_sha256": "26600038885544cb28c376af90bd6634aac4f94b3fd69fc5144db7ce5e1d259e",
+  "source_manifest_sha256": "3d8e417ff004edb67ab5feec268851af0c6df060c287a13a31a713f38d28e97f",
+  "new_theorems": 4,
+  "new_definitions": 0,
+  "validated_source_pins": 39,
+  "actual_raw_logs": {
+    "logs/branch_bochner/gaussian-tilt-jacobian-build-01.txt": {
+      "sha256": "db07da21b43c3c8880b3e8128418ccf8ebd2c238512a9b682f97971524b253e2",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.GaussianPositionTiltJacobian",
+      "elapsed_seconds": 7.733
+    },
+    "logs/branch_bochner/gaussian-tilt-jacobian-build-02.txt": {
+      "sha256": "97276bf879b0c4eb4cbdbc1d9dfd24f337ad4be1c41bf400abf7d478dbe763ef",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.GaussianPositionTiltJacobian",
+      "elapsed_seconds": 9.722
+    },
+    "logs/branch_bochner/gaussian-tilt-jacobian-build-03.txt": {
+      "sha256": "3673a64df73cb84dd674f8d7c19ea21f80b75add4b56ad931943f8c4b9e48aa5",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.GaussianPositionTiltJacobian",
+      "elapsed_seconds": 11.373
+    },
+    "logs/branch_bochner/gaussian-tilt-jacobian-build-04.txt": {
+      "sha256": "0f44a806a82f7753babe2b28693fa7c2862b430585993b9ec06fd9c658d1ced0",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.GaussianPositionTiltJacobian",
+      "elapsed_seconds": 10.933
+    },
+    "logs/branch_bochner/gaussian-tilt-jacobian-axioms-01.txt": {
+      "sha256": "0dfec2c1cbf35f99417938590fdffb2d59c921ef917517defe865c7150322cfa",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake env lean audit/probes/GaussianPositionTiltJacobianAxioms.lean",
+      "elapsed_seconds": 5.273
+    }
+  },
+  "actual_axiom_reports": {
+    "AffineFKProof.gaussianPositionLogLaplace_jacobian_integral_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPositionLogLaplace_global_jacobian_integral_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPositionLogLaplace_exists_small_jacobian": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPositionLogLaplace_exists_small_jacobian_of_volume_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "primary_average_source_sha256": "20ae06fce9a3229e4a5fb92e652449662a8a47996eb0d54383e80233a3801069",
+  "primary_declarations_read": [
+    "exists_le_setAverage",
+    "setAverage_eq"
+  ],
+  "mathematical_review_findings": [],
+  "mathematical_review_outcome": "No mathematical, fidelity, domain, derivative, integral, selection, constant or trust defect found.",
+  "key_checks": [
+    "The actual map is gradient of the literal compact-domain logarithmic Laplace integral. Its genuine derivative, global injectivity and actual image containment are supplied by proved imports, not assumptions of these four theorems.",
+    "The actual compact target supplies finite image volume, and the independently reviewed general area core derives actual Jacobian L1/exact image volume before a real upper bound.",
+    "Global integration specializes the actual measurable parameter domain to univ, retaining true global integrability and exact whole-range volume.",
+    "The first-moment method requires actual positive finite parameter-domain volume and the derived Jacobian L1, and selects a genuine point in the domain below its actual average.",
+    "The inverse-volume multiplier is explicitly typed and nonnegative; no measure metavariable or unguarded totalized-real conversion survives.",
+    "In the volume-one corollary, b>0 makes b^n positive even for n=0, so the supplied actual real-volume lower bound genuinely implies positive domain volume before selection/inverse comparison.",
+    "The exact bound is (b inverse)^n, with no hidden dimension factor, zero-measure default, assumed selected point or desired Jacobian bound."
+  ],
+  "attribution": "Mathlib first-moment/set-average proof, with its original contributor attribution, and the separately independently reviewed genuine Gou\u00ebzel/Fremlin general Jacobian source are reused unchanged.",
+  "authorship_boundary": "Reviewer authored frozen reused tilt38 and meanMap7 foundations, so this is independent review of the four new root proofs, not independent re-review of self-authored earlier foundations. Root separately reviewed those exact frozen sources.",
+  "scope_limits": [
+    "The positive lower volume b^n of the parameter set is explicit and unproved here; universal reverse-volume-product/Milman existence remains separate.",
+    "The determinant is the actual mean-map Jacobian; identification with a named covariance-matrix determinant is a separate bridge.",
+    "No new reviewer Lean/Comparator run, human review, own six-kernel acceptance, unconditional main theorem or full-paper verification is claimed."
+  ],
+  "new_lean_checks_run_by_reviewer": false,
+  "own_comparator_claim": false,
+  "full_paper_verified": false
+}

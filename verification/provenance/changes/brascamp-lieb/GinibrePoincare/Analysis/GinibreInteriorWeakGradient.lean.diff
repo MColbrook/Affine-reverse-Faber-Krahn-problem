@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/GinibreInteriorWeakGradient.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreInteriorWeakGradient.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreLocalSobolev
+-public import GinibrePoincare.Analysis.SobolevTruncation
+-public import GinibrePoincare.Analysis.WeakDerivativeMollification
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreLocalSobolev
++public import AffineFK.ChafaiBrascampLieb.Analysis.SobolevTruncation
++public import AffineFK.ChafaiBrascampLieb.Analysis.WeakDerivativeMollification
+ 
+ @[expose] public section
+ 

@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/PrimitiveRegularity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/PrimitiveRegularity.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.HomogeneousSmoothForms
+-import OAI.Analysis.Mahler.WedgeDecomposition
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousSmoothForms
++public import AffineFK.OpenAIMahler.Analysis.Mahler.WedgeDecomposition
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

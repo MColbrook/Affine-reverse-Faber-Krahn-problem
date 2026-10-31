@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GinibreWeakGradient.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreWeakGradient.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.RadialSobolevClosure
+-public import GinibrePoincare.Analysis.GinibreIntegrationByParts
++public import AffineFK.ChafaiBrascampLieb.Analysis.RadialSobolevClosure
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreIntegrationByParts
+ public import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
+ 
+ @[expose] public section

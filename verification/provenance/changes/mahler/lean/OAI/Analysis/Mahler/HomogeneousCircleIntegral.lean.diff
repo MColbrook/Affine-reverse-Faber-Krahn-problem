@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/HomogeneousCircleIntegral.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HomogeneousCircleIntegral.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.HomogeneousDensityVariation
+-import Mathlib.Analysis.Calculus.MeanValue
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousDensityVariation
++public import Mathlib.Analysis.Calculus.MeanValue
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

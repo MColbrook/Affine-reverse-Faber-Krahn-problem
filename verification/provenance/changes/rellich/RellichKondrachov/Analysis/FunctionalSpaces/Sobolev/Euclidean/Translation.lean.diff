@@ -1,0 +1,111 @@
+--- RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/Translation.lean
++++ AffineFK/BenensonRellich/Analysis/FunctionalSpaces/Sobolev/Euclidean/Translation.lean
+@@ -1,8 +1,15 @@
+-import RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.H1
+-import Mathlib.Analysis.Calculus.FDeriv.Add
+-import Mathlib.MeasureTheory.Group.Measure
+-import Mathlib.MeasureTheory.Function.LpSpace.Basic
+-import Mathlib.Topology.Algebra.Group.Basic
++module
++
++public import AffineFK.BenensonRellich.Analysis.FunctionalSpaces.Sobolev.Euclidean.H1
++public import Mathlib.Analysis.Calculus.FDeriv.Add
++public import Mathlib.MeasureTheory.Group.Measure
++public import Mathlib.MeasureTheory.Function.LpSpace.Basic
++public import Mathlib.Topology.Algebra.Group.Basic
++
++@[expose] public section
++
++set_option autoImplicit false
++set_option backward.isDefEq.respectTransparency false
+ 
+ /-
+ Copyright (c) 2026 Adam Benenson. All rights reserved.
+@@ -47,12 +54,12 @@
+ lemma contDiff_translate {f : E → ℝ} (hf : ContDiff ℝ 1 f) (a : E) :
+     ContDiff ℝ 1 (translate (E := E) a f) := by
+   -- `x ↦ x + a` is `C^∞`; compose.
+-  simpa [translate] using hf.comp (contDiff_id.add contDiff_const)
++  simpa [translate] using! hf.comp (contDiff_id.add contDiff_const)
+ 
+ omit [InnerProductSpace ℝ E] [CompleteSpace E] in
+ lemma hasCompactSupport_translate {F : Type*} [Zero F] {f : E → F}
+     (hf : HasCompactSupport f) (a : E) : HasCompactSupport (translate (E := E) a f) := by
+-  simpa [translate] using hf.comp_homeomorph (Homeomorph.addRight a)
++  simpa [translate] using! hf.comp_homeomorph (Homeomorph.addRight a)
+ 
+ lemma grad_translate (a : E) (f : E → ℝ) (x : E) :
+     grad (E := E) (translate (E := E) a f) x = grad (E := E) f (x + a) := by
+@@ -60,7 +67,7 @@
+   -- `fderiv` commutes with translation, hence so does `grad`.
+   simp [grad]
+   -- Reduce to the standard `fderiv` translation lemma.
+-  simpa [translate] using (fderiv_comp_add_right (𝕜 := ℝ) (f := f) (x := x) a)
++  simpa [translate] using! (fderiv_comp_add_right (𝕜 := ℝ) (f := f) (x := x) a)
+ 
+ omit [CompleteSpace E] in
+ lemma mem_C1c_translate {f : E → ℝ} (hf : f ∈ C1c (E := E)) (a : E) :
+@@ -83,8 +90,7 @@
+ 
+ variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E]
+ 
+-local instance instMeasurableSpaceE_SobolevEuclideanTranslation : MeasurableSpace E := borel E
+-local instance instBorelSpaceE_SobolevEuclideanTranslation : BorelSpace E := ⟨rfl⟩
++variable [MeasurableSpace E] [BorelSpace E]
+ local instance instOpensMeasurableSpaceE_SobolevEuclideanTranslation : OpensMeasurableSpace E := by
+   infer_instance
+ local instance instMeasurableAddE_SobolevEuclideanTranslation : MeasurableAdd E := by
+@@ -96,7 +102,7 @@
+ noncomputable def translateL2 {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F] (a : E) :
+     (E →₂[μ] F) →ₗᵢ[ℝ] (E →₂[μ] F) := by
+   classical
+-  simpa using
++  simpa using!
+     (MeasureTheory.Lp.compMeasurePreservingₗᵢ (𝕜 := ℝ) (E := F) (p := (2 : ENNReal))
+       (μ := μ) (μb := μ) (f := fun x : E => x + a) (MeasureTheory.measurePreserving_add_right μ a))
+ 
+@@ -106,7 +112,7 @@
+     (translateL2 (μ := μ) (F := F) a g : E → F) =ᵐ[μ] fun x => (g : E → F) (x + a) := by
+   classical
+   -- Reduce to `Lp.coeFn_compMeasurePreserving`.
+-  simpa [translateL2] using
++  simpa [translateL2] using!
+     (MeasureTheory.Lp.coeFn_compMeasurePreserving (g := (g : MeasureTheory.Lp F (2 : ENNReal) μ))
+       (hf := MeasureTheory.measurePreserving_add_right μ a))
+ 
+@@ -125,7 +131,7 @@
+     have hf' :
+         (fun x => (toL2 (μ := μ) (E := E) f : E → ℝ) (x + a)) =ᵐ[μ] fun x => f.1 (x + a) := by
+       -- Move the a.e. equality through a measure-preserving map.
+-      simpa [Function.comp, Pi.add_apply] using
++      simpa [Function.comp, Pi.add_apply] using!
+         (Measure.QuasiMeasurePreserving.ae_eq_comp
+           (MeasureTheory.measurePreserving_add_right μ a).quasiMeasurePreserving hf)
+     exact (translateL2_ae_eq (μ := μ) (F := ℝ) a (toL2 (μ := μ) (E := E) f)).trans hf'
+@@ -133,7 +139,7 @@
+       (toL2 (μ := μ) (E := E) (translateC1c (E := E) a f) : E → ℝ) =ᵐ[μ]
+         fun x => f.1 (x + a) := by
+     -- `toL2` agrees a.e. with the underlying translated function.
+-    simpa [translateC1c, translate] using
++    simpa [translateC1c, translate] using!
+       (memLp_of_mem_C1c (μ := μ) (E := E) (translateC1c (E := E) a f).2).coeFn_toLp
+   exact h₁.trans h₂.symm
+ 
+@@ -150,7 +156,7 @@
+     have hf' :
+         (fun x => (toL2Grad (μ := μ) (E := E) f : E → E) (x + a)) =ᵐ[μ]
+           fun x => grad (E := E) f.1 (x + a) := by
+-      simpa [Function.comp, Pi.add_apply] using
++      simpa [Function.comp, Pi.add_apply] using!
+         (Measure.QuasiMeasurePreserving.ae_eq_comp
+           (MeasureTheory.measurePreserving_add_right μ a).quasiMeasurePreserving hf)
+     exact
+@@ -165,7 +171,7 @@
+     have hGrad :
+         grad (E := E) (translate (E := E) a f.1) = fun x => grad (E := E) f.1 (x + a) := by
+       funext x
+-      simpa [translate] using grad_translate (E := E) a f.1 x
++      simpa [translate] using! grad_translate (E := E) a f.1 x
+     exact hTo.trans (by simp [hGrad])
+   exact h₁.trans h₂.symm
+ 

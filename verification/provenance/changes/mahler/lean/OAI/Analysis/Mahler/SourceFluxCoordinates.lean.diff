@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/SourceFluxCoordinates.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceFluxCoordinates.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.SourceTopCoordinates
+-import OAI.Analysis.Mahler.SourceCoordinateForms
+-import OAI.Analysis.Mahler.ExactSphereFluxBridge
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceTopCoordinates
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceCoordinateForms
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ExactSphereFluxBridge
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

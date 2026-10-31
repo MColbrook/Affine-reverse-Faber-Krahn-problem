@@ -1,0 +1,39 @@
+{
+  "kind": "Historical AI review origin map; original development-relative paths are not package replay dependencies",
+  "original_scope": "Six selected principal/supporting claims; new package selects only M01/M02/M03",
+  "newly_accepted_package_evidence": "verification/certificate.json",
+  "files": {
+    "audit/principal_manuscript_lean_correspondence_review.md": {
+      "package_path": "verification/reviews/prior/principal_manuscript_lean_correspondence_review.md",
+      "sha256": "c267a2b82b5e926b491346d2f15e024f3eadbefa71b7e93f4fc5e82224862c16"
+    },
+    "audit/principal_manuscript_lean_correspondence_review.json": {
+      "package_path": "verification/reviews/prior/principal_manuscript_lean_correspondence_review.json",
+      "sha256": "466fd8cfa3afc1f5fd9eb5bab7235c83c366fef14bf92771feca9d91602337a6"
+    },
+    "audit/principal_correspondence_calibration_review.md": {
+      "package_path": "verification/reviews/prior/principal_correspondence_calibration_review.md",
+      "sha256": "0083b6c01e9526c2d7dc0444ccb003952eb2bfcfc082442c3226616ed9f510d9"
+    },
+    "audit/principal_correspondence_calibration_review.json": {
+      "package_path": "verification/reviews/prior/principal_correspondence_calibration_review.json",
+      "sha256": "e24082582b7977fa2e12e6208bf6af6851c41513f32cdc9930b33acb8403927f"
+    },
+    "audit/principal_proof_departure_review.md": {
+      "package_path": "verification/reviews/prior/principal_proof_departure_review.md",
+      "sha256": "c10c74cb3ef380d393ad1c36b7efc13c9f31f8265a5493fc4dd8033bb909885d"
+    },
+    "audit/principal_proof_departure_review.json": {
+      "package_path": "verification/reviews/prior/principal_proof_departure_review.json",
+      "sha256": "d7a4ce7d3227352c436c04be65e59287ea992bec832df31be49ab201f9a57c1c"
+    },
+    "audit/principal_background_reference_audit.md": {
+      "package_path": "verification/reviews/prior/principal_background_reference_audit.md",
+      "sha256": "50860de7526cde5d817861bf0cc15628923f527cb20a79f6f734a520f9d6385f"
+    },
+    "audit/principal_background_reference_audit.json": {
+      "package_path": "verification/reviews/prior/principal_background_reference_audit.json",
+      "sha256": "02c20ec683d916b0c759a0b2073763996dc8c70fb04f45c17b33fa08fc3bac72"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+name = "affine_reverse_faber_krahn"
+version = "1.0.0"
+defaultTargets = ["Solution", "AxiomAudit"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "b63f6e8a68d220e3b3bc4f3792bb53650d375f24"
+
+[[lean_lib]]
+name = "AffineFK"
+
+[[lean_lib]]
+name = "Challenge"
+roots = ["Challenge"]
+
+[[lean_lib]]
+name = "Solution"
+roots = ["Solution"]
+
+[[lean_lib]]
+name = "AxiomAudit"
+roots = ["AxiomAudit"]
+
+[[lean_lib]]
+name = "AuditTools"

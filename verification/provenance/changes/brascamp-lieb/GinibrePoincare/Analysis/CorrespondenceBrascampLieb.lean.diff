@@ -1,0 +1,9 @@
+--- GinibrePoincare/Analysis/CorrespondenceBrascampLieb.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceBrascampLieb.lean
+@@ -1,5 +1,5 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceBrascampLiebDense
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceBrascampLiebDense
+ @[expose] public section
+ open MeasureTheory Measure
+ open scoped ContDiff BigOperators Matrix

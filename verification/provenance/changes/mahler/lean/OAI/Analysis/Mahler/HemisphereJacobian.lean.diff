@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/HemisphereJacobian.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HemisphereJacobian.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.HemisphereChart
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HemisphereChart
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

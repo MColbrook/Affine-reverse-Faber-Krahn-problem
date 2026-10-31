@@ -1,0 +1,18 @@
+{
+  "kind": "Two exact tracked internal Mathlib symlinks restored after copying cache; no Lean/proof file changed",
+  "actual_clean_check_exit": 0,
+  "rows": [
+    {
+      "path": "scripts/bench/build/fake-root/bin/lean.py",
+      "original_relative_target": "lean",
+      "materialized_content_sha256": "ab98a2fcf00c288793e9080d916ce966625823306e4b71c5fd54531bf068391c",
+      "git_index": "120000 819298943e1a8c331413fb55e2c4bbc98d05e562 0\tscripts/bench/build/fake-root/bin/lean.py"
+    },
+    {
+      "path": "scripts/bench/size/run.py",
+      "original_relative_target": "run",
+      "materialized_content_sha256": "c13667487f0ee36481a5fbf6da35d1154b953c7ec663d44d39aabfe715df44a1",
+      "git_index": "120000 e5224d533ef27b001224859a9b36696846a7e7fe 0\tscripts/bench/size/run.py"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+--- GinibrePoincare/Analysis/L2RepresentativeBridges.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/L2RepresentativeBridges.lean
+@@ -1,12 +1,12 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.FiniteHermiteDeficit
+-public import GinibrePoincare.Analysis.HermiteParsevalModes
+-public import GinibrePoincare.Analysis.GroundStateDbar
+-public import GinibrePoincare.Analysis.VandermondeL2Inverse
+-public import GinibrePoincare.Analysis.ComplexGaussianDensity
+-public import GinibrePoincare.Analysis.GinibreMassFiniteness
+-public import GinibrePoincare.Concrete.Generator
++public import AffineFK.ChafaiBrascampLieb.Analysis.FiniteHermiteDeficit
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteParsevalModes
++public import AffineFK.ChafaiBrascampLieb.Analysis.GroundStateDbar
++public import AffineFK.ChafaiBrascampLieb.Analysis.VandermondeL2Inverse
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexGaussianDensity
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreMassFiniteness
++public import AffineFK.ChafaiBrascampLieb.Concrete.Generator
+ public import Mathlib.MeasureTheory.Measure.OpenPos
+ public import Mathlib.MeasureTheory.Function.LpSpace.Indicator
+ public import Mathlib.Topology.ContinuousMap.BoundedCompactlySupported

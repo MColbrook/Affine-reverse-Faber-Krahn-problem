@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/ActualVerticalPrimitive.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ActualVerticalPrimitive.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.RadialPrimitiveDeriv
+-import OAI.Analysis.Mahler.VerticalRadius
+-import Mathlib.Analysis.SpecialFunctions.Sqrt
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RadialPrimitiveDeriv
++public import AffineFK.OpenAIMahler.Analysis.Mahler.VerticalRadius
++public import Mathlib.Analysis.SpecialFunctions.Sqrt
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

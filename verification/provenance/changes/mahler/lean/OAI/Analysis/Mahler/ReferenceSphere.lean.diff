@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/ReferenceSphere.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ReferenceSphere.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.LevelForms
+-import OAI.Analysis.Mahler.WedgeAlgebra
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.LevelForms
++public import AffineFK.OpenAIMahler.Analysis.Mahler.WedgeAlgebra
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

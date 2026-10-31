@@ -1,0 +1,10 @@
+--- GinibrePoincare/Concrete/AnalyticStatements.lean
++++ AffineFK/ChafaiBrascampLieb/Concrete/AnalyticStatements.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.HolomorphicDistance
++public import AffineFK.ChafaiBrascampLieb.Concrete.HolomorphicDistance
+ public import Mathlib.MeasureTheory.Measure.Typeclasses.Probability
+ 
+ @[expose] public section

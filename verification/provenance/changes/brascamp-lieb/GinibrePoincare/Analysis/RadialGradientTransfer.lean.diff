@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/RadialGradientTransfer.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/RadialGradientTransfer.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.KostlanEntropyTransfer
++public import AffineFK.ChafaiBrascampLieb.Analysis.KostlanEntropyTransfer
+ public import Mathlib.Analysis.Calculus.FDeriv.Mul
+ public import Mathlib.Analysis.Calculus.FDeriv.Pi
+ public import Mathlib.Analysis.Calculus.ContDiff.Operations

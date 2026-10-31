@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/PlanarRegularity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/PlanarRegularity.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.PlanarIntegralRegularity
+-import OAI.Analysis.Mahler.GlobalVerticalGeometry
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PlanarIntegralRegularity
++public import AffineFK.OpenAIMahler.Analysis.Mahler.GlobalVerticalGeometry
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

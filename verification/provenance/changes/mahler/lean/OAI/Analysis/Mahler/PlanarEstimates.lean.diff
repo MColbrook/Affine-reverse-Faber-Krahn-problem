@@ -1,0 +1,26 @@
+--- lean/OAI/Analysis/Mahler/PlanarEstimates.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/PlanarEstimates.lean
+@@ -1,11 +1,15 @@
+-import Mathlib.Analysis.Real.Pi.Bounds
+-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan
+-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
+-import Mathlib.Analysis.SpecialFunctions.Exp
+-import Mathlib.Tactic.FieldSimp
+-import Mathlib.Tactic.Linarith
+-import Mathlib.Tactic.Positivity
+-import Mathlib.Tactic.Ring
++module
++
++public import Mathlib.Analysis.Real.Pi.Bounds
++public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan
++public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
++public import Mathlib.Analysis.SpecialFunctions.Exp
++public import Mathlib.Tactic.FieldSimp
++public import Mathlib.Tactic.Linarith
++public import Mathlib.Tactic.Positivity
++public import Mathlib.Tactic.Ring
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

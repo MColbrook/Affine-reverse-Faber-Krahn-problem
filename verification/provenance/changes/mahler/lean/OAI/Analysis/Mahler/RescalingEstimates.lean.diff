@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/RescalingEstimates.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RescalingEstimates.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.HolomorphicRegularity
+-import Mathlib.Analysis.Normed.Operator.Asymptotics
+-import Mathlib.Topology.MetricSpace.Pseudo.Basic
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HolomorphicRegularity
++public import Mathlib.Analysis.Normed.Operator.Asymptotics
++public import Mathlib.Topology.MetricSpace.Pseudo.Basic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

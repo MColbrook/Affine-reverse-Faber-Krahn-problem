@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/AngularStrip.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/AngularStrip.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.AngularEndpoint
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.AngularEndpoint
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

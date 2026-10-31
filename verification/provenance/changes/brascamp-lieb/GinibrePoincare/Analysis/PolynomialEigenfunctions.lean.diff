@@ -1,0 +1,16 @@
+--- GinibrePoincare/Analysis/PolynomialEigenfunctions.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/PolynomialEigenfunctions.lean
+@@ -1,9 +1,9 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.MultivariateComplexHermite
+-public import GinibrePoincare.Analysis.GeneralizedLaguerre
+-public import GinibrePoincare.Analysis.PairwiseRadius
+-public import GinibrePoincare.Analysis.CenterOfMassEigenfunctions
++public import AffineFK.ChafaiBrascampLieb.Analysis.MultivariateComplexHermite
++public import AffineFK.ChafaiBrascampLieb.Analysis.GeneralizedLaguerre
++public import AffineFK.ChafaiBrascampLieb.Analysis.PairwiseRadius
++public import AffineFK.ChafaiBrascampLieb.Analysis.CenterOfMassEigenfunctions
+ 
+ @[expose] public section
+ 

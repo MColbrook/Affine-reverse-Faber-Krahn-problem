@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/CoordinateSphere.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/CoordinateSphere.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.ShellRegularity
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ShellRegularity
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

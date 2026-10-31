@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/InverseRadialRegularity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/InverseRadialRegularity.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.ConformalRadialRegularity
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ConformalRadialRegularity
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

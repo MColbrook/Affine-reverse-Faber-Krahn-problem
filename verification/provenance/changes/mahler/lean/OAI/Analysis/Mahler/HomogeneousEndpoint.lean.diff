@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/HomogeneousEndpoint.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HomogeneousEndpoint.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.HomogeneousTransgression
+-import OAI.Analysis.Mahler.HomogeneousTransgressionFTC
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousTransgression
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousTransgressionFTC
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

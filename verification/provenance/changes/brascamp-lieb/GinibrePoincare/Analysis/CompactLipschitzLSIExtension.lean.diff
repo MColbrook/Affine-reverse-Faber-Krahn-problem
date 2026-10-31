@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/CompactLipschitzLSIExtension.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CompactLipschitzLSIExtension.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.LipschitzMollification
++public import AffineFK.ChafaiBrascampLieb.Analysis.LipschitzMollification
+ 
+ @[expose] public section
+ 

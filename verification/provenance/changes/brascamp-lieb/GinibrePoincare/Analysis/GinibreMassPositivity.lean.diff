@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GinibreMassPositivity.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreMassPositivity.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.ComplexGaussianDensity
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexGaussianDensity
+ public import Mathlib.MeasureTheory.Measure.OpenPos
+ 
+ @[expose] public section

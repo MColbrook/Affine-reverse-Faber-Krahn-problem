@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/SineBound.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SineBound.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.TailIntegral
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.TailIntegral
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

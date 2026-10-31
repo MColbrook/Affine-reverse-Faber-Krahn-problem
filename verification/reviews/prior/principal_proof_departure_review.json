@@ -1,0 +1,328 @@
+{
+  "kind": "AI comparative proof-departure and argument-fidelity audit of principal results",
+  "reviewer": "/root/formalization_coverage",
+  "independent_comparison_complete": true,
+  "reviewer_authorship_boundary": "Reviewer authored several reused analytic/geometry/Stein sources and the Stage36 packet presentation; this is not a fresh independent correctness certification of those bodies. Separate non-author mathematical reviews and own checking layers remain distinct.",
+  "manuscript": "../affine_reverse_faber_krahn.tex",
+  "manuscript_sha256": "1d30574bf6a09012c0492449d6860884c993b191837c9c0d2a9bd17080a3d0bc",
+  "principal_claims": [
+    "M01",
+    "M02",
+    "M03",
+    "G01",
+    "W13",
+    "S07"
+  ],
+  "actual_compiled_dependency_paths": [
+    {
+      "stage": 35,
+      "root": "AffineFKProof.affine_reverse_faber_krahn_main_theorems",
+      "target": "OAI.SymmetricMahler.symmetric_mahler",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.affine_reverse_faber_krahn_main_theorems",
+        "AffineFKProof.affine_reverse_faber_krahn",
+        "AffineFKProof.gaussianPosition_uniform_volume_one_ellipsoid_intersection",
+        "AffineFKProof.gaussianPosition_dilated_polar_uniform_volume_lower",
+        "AffineFKProof.gaussianPosition_mahler_volume_product",
+        "OAI.SymmetricMahler.symmetric_mahler"
+      ]
+    },
+    {
+      "stage": 35,
+      "root": "AffineFKProof.affine_reverse_faber_krahn_main_theorems",
+      "target": "AffineFKProof.gaussianPosition_uniform_volume_one_ellipsoid_intersection",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.affine_reverse_faber_krahn_main_theorems",
+        "AffineFKProof.affine_reverse_faber_krahn",
+        "AffineFKProof.gaussianPosition_uniform_volume_one_ellipsoid_intersection"
+      ]
+    },
+    {
+      "stage": 35,
+      "root": "AffineFKProof.affine_reverse_faber_krahn_main_theorems",
+      "target": "AffineFKProof.exists_even_logConcave_dirichlet_groundstate",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.affine_reverse_faber_krahn_main_theorems",
+        "AffineFKProof.gaussian_reverse_faber_krahn",
+        "AffineFKProof.symmetric_gaussian_spectral_bound_of_ellipsoid_intersections",
+        "AffineFKProof.uniform_symmetric_body_spectral_bound_of_covariance",
+        "AffineFKProof.symmetric_body_eigenvalue_bound_of_scalar_covariance",
+        "AffineFKProof.exists_even_logConcave_dirichlet_groundstate"
+      ]
+    },
+    {
+      "stage": 35,
+      "root": "AffineFKProof.affine_reverse_faber_krahn_main_theorems",
+      "target": "AffineFKProof.gaussian_groundstate_whitening_construction",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.affine_reverse_faber_krahn_main_theorems",
+        "AffineFKProof.gaussian_reverse_faber_krahn",
+        "AffineFKProof.symmetric_gaussian_spectral_bound_of_ellipsoid_intersections",
+        "AffineFKProof.uniform_symmetric_body_spectral_bound_of_covariance",
+        "AffineFKProof.symmetric_body_eigenvalue_bound_of_scalar_covariance",
+        "AffineFKProof.symmetric_body_eigenvalue_bound_of_logConcave_groundstate",
+        "AffineFKProof.symmetric_body_eigenvalue_bound_of_gaussian_groundstate",
+        "AffineFKProof.gaussian_groundstate_whitening_construction"
+      ]
+    },
+    {
+      "stage": 35,
+      "root": "AffineFKProof.affine_reverse_faber_krahn_main_theorems",
+      "target": "AffineFKProof.bridgeKilledRowL2_has_sobolev_energy",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.affine_reverse_faber_krahn_main_theorems",
+        "AffineFKProof.gaussian_reverse_faber_krahn",
+        "AffineFKProof.symmetric_gaussian_spectral_bound_of_ellipsoid_intersections",
+        "AffineFKProof.uniform_symmetric_body_spectral_bound_of_covariance",
+        "AffineFKProof.symmetric_body_eigenvalue_bound_of_scalar_covariance",
+        "AffineFKProof.symmetric_body_eigenvalue_bound_of_logConcave_groundstate",
+        "AffineFKProof.symmetric_body_eigenvalue_bound_of_gaussian_groundstate",
+        "AffineFKProof.information_spectrum_law_bound",
+        "AffineFKProof.information_spectrum_density_bound",
+        "AffineFKProof.bridge_dirichletEigenvalue_le_profile_constant",
+        "AffineFKProof.bridge_dirichletEigenvalue_interior_le_dilation_profile",
+        "AffineFKProof.bridge_dirichletEigenvalue_le_dilation_profile",
+        "AffineFKProof.bridge_dirichletEigenvalue_le_unit_survival",
+        "AffineFKProof.bridge_dirichletEigenvalue_le_log_diagonal",
+        "AffineFKProof.bridgeKilledRow_dirichlet_energy",
+        "AffineFKProof.bridgeKilledRowL2_has_sobolev_energy"
+      ]
+    },
+    {
+      "stage": 36,
+      "root": "AffineFKProof.additional_original_manuscript_results",
+      "target": "AffineFKProof.finite_relativeFisher_logConcaveMeasure_exists_density",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.additional_original_manuscript_results",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_uniform_constant",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_bound",
+        "AffineFKProof.finite_relativeFisher_logConcaveMeasure_exists_density"
+      ]
+    },
+    {
+      "stage": 36,
+      "root": "AffineFKProof.additional_original_manuscript_results",
+      "target": "AffineFKProof.second_stein_exists_odd_tensor",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.additional_original_manuscript_results",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_uniform_constant",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_bound",
+        "AffineFKProof.information_spectrum_law_bound",
+        "AffineFKProof.information_spectrum_density_bound",
+        "AffineFKProof.gaussian_dilation_profile_of_finite_information",
+        "AffineFKProof.gaussian_dyadic_support_entropy_rate",
+        "AffineFKProof.dyadicNormalizedLaw_entropy_rate",
+        "AffineFKProof.dyadic_normalized_sum_entropy_rate",
+        "AffineFKProof.second_stein_exists_odd_tensor"
+      ]
+    },
+    {
+      "stage": 36,
+      "root": "AffineFKProof.additional_original_manuscript_results",
+      "target": "AffineFKProof.normalized_sum_stein_tensor_of_vector_identity",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.additional_original_manuscript_results",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_uniform_constant",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_bound",
+        "AffineFKProof.information_spectrum_law_bound",
+        "AffineFKProof.information_spectrum_density_bound",
+        "AffineFKProof.gaussian_dilation_profile_of_finite_information",
+        "AffineFKProof.gaussian_dyadic_support_entropy_rate",
+        "AffineFKProof.dyadicNormalizedLaw_entropy_rate",
+        "AffineFKProof.dyadic_normalized_sum_entropy_rate",
+        "AffineFKProof.normalized_sum_stein_tensor_of_vector_identity"
+      ]
+    },
+    {
+      "stage": 36,
+      "root": "AffineFKProof.additional_original_manuscript_results",
+      "target": "AffineFKProof.second_order_entropy_stein_information_measure",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.additional_original_manuscript_results",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_uniform_constant",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_bound",
+        "AffineFKProof.information_spectrum_law_bound",
+        "AffineFKProof.information_spectrum_density_bound",
+        "AffineFKProof.gaussian_dilation_profile_of_finite_information",
+        "AffineFKProof.gaussian_dyadic_support_entropy_rate",
+        "AffineFKProof.dyadicNormalizedLaw_entropy_rate",
+        "AffineFKProof.dyadic_normalized_sum_entropy_rate",
+        "AffineFKProof.second_order_entropy_stein_information_measure"
+      ]
+    },
+    {
+      "stage": 36,
+      "root": "AffineFKProof.additional_original_manuscript_results",
+      "target": "AffineFKProof.dyadicNormalizedLaw_entropy_rate",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.additional_original_manuscript_results",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_uniform_constant",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_bound",
+        "AffineFKProof.information_spectrum_law_bound",
+        "AffineFKProof.information_spectrum_density_bound",
+        "AffineFKProof.gaussian_dilation_profile_of_finite_information",
+        "AffineFKProof.gaussian_dyadic_support_entropy_rate",
+        "AffineFKProof.dyadicNormalizedLaw_entropy_rate"
+      ]
+    },
+    {
+      "stage": 36,
+      "root": "AffineFKProof.additional_original_manuscript_results",
+      "target": "AffineFKProof.gaussian_dilation_profile_of_finite_information",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.additional_original_manuscript_results",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_uniform_constant",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_bound",
+        "AffineFKProof.information_spectrum_law_bound",
+        "AffineFKProof.information_spectrum_density_bound",
+        "AffineFKProof.gaussian_dilation_profile_of_finite_information"
+      ]
+    },
+    {
+      "stage": 36,
+      "root": "AffineFKProof.additional_original_manuscript_results",
+      "target": "AffineFKProof.bridgeSeriesSurvival_probability_lower",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.additional_original_manuscript_results",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_uniform_constant",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_bound",
+        "AffineFKProof.information_spectrum_law_bound",
+        "AffineFKProof.information_spectrum_density_bound",
+        "AffineFKProof.bridge_dirichletEigenvalue_le_profile_constant",
+        "AffineFKProof.bridge_dirichletEigenvalue_interior_le_dilation_profile",
+        "AffineFKProof.bridge_dirichletEigenvalue_le_dilation_profile",
+        "AffineFKProof.bridgeSeriesSurvival_probability_lower"
+      ]
+    },
+    {
+      "stage": 36,
+      "root": "AffineFKProof.additional_original_manuscript_results",
+      "target": "AffineFKProof.bridge_dirichletEigenvalue_le_profile_constant",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.additional_original_manuscript_results",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_uniform_constant",
+        "AffineFKProof.information_spectrum_logConcaveMeasure_bound",
+        "AffineFKProof.information_spectrum_law_bound",
+        "AffineFKProof.information_spectrum_density_bound",
+        "AffineFKProof.bridge_dirichletEigenvalue_le_profile_constant"
+      ]
+    },
+    {
+      "stage": 36,
+      "root": "AffineFKProof.additional_original_manuscript_results",
+      "target": "AffineFKProof.first_stein_exists_matrix",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.additional_original_manuscript_results",
+        "AffineFKProof.first_stein_exists_matrix"
+      ]
+    },
+    {
+      "stage": 36,
+      "root": "AffineFKProof.additional_original_manuscript_results",
+      "target": "AffineFKProof.dirichlet_rayleigh_literal_pullback",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.additional_original_manuscript_results",
+        "AffineFKProof.dirichlet_rayleigh_literal_pullback"
+      ]
+    },
+    {
+      "stage": 36,
+      "root": "AffineFKProof.additional_original_manuscript_results",
+      "target": "AffineFKProof.gaussianPosition_exists_universal_covariance",
+      "actual_compiled_recursive_constant_path": [
+        "AffineFKProof.additional_original_manuscript_results",
+        "AffineFKProof.gaussianPosition_exists_universal_covariance"
+      ]
+    }
+  ],
+  "core_novel_strategy_bypassed": false,
+  "formalized_core_strategy": [
+    "second-order centred Stein tensor",
+    "exact normalized-sum tensor decay",
+    "equal-law information jump",
+    "entropy decay with exponent greater than two",
+    "support-to-Gaussian dilation profile",
+    "actual independent dyadic bridge coefficient event",
+    "summable probability and path-radius series",
+    "actual H0 variational spectral bound",
+    "Gaussian-weighted groundstate convolution/whitening and scalar absorption"
+  ],
+  "departures": [
+    {
+      "id": "geometric-background",
+      "original": "Milman M-ellipsoid intersection consequence",
+      "formal": "stronger attributed symmetric Mahler volume-product proof, actual tilt/Jacobian/covariance-ellipsoid construction",
+      "original_full_background_proof_verified": false,
+      "principal_conclusion_preserved": true
+    },
+    {
+      "id": "terminal-bridge-spectral-step",
+      "original": "Dirichlet heat-kernel spectral expansion and free-kernel domination; 4B+2n log2",
+      "formal": "actual killed-row H1/H0 Rayleigh competitor via free-heat approximation and finite log-grid estimates; 8B+4n log2",
+      "original_sharper_intermediate_verified": false,
+      "principal_conclusion_preserved": true
+    },
+    {
+      "id": "groundstate-background",
+      "original": "positive simple first eigenfunction and classical Brascamp-Lieb log-concavity",
+      "formal": "existence of one even nonnegative log-concave actual weak groundstate via Gaussian killing powers/compactness",
+      "strict_positivity_and_simplicity_verified": false,
+      "principal_conclusion_preserved": true
+    },
+    {
+      "id": "tensor-parity",
+      "original": "uniqueness proves original Poisson solution parities",
+      "formal": "main existence route antisymmetrises the constructed tensor; original-solution parity separately proved",
+      "principal_conclusion_preserved": true
+    },
+    {
+      "id": "nonsmooth-endpoints",
+      "original": "general lower semicontinuity cited in smoothing passage",
+      "formal": "actual finite-Sobolev KL/Fisher endpoint lemmas and direct finite-Sobolev HSI sufficient for this domain",
+      "generic_weak_lower_semicontinuity_claimed": false,
+      "principal_conclusion_preserved": true
+    }
+  ],
+  "audited_bypassed_bridge_argument_mathematically_sound_subject_to_cited_standard_heat_kernel_theory": true,
+  "historical_priority_or_literature_novelty_certified": false,
+  "additional_background_formalization_recommended": false,
+  "checking_status_at_cut": {
+    "M01_M02": "actual own ordinary sandboxed six-kernel acceptance",
+    "M03_G01_W13_S07": "actual compiled statement/proof diagnostics and source checks; own Stage36 six-kernel run remains parent-controlled and pending at this audit cut"
+  },
+  "full_paper_verified": false,
+  "pins": {
+    "AffineFK/AdditionalOriginalResults.lean": "143ed3bfc0fa60a7018027843062d1af227c98338f73b4012ceedf8d9fa63efd",
+    "AffineFK/MainTheorems.lean": "79e7f75588806e79d357b6792b569651ee024ce5318cecc6bbaab4f10faedf40",
+    "AffineFK/GaussianPositionMilman.lean": "b990cd79d2de0dd6c045fd7189ff048846d9cc1561fab557fa1e0b45655e3958",
+    "AffineFK/GaussianPositionUniversalCovariance.lean": "974503c6c6deff574f2c76cc8b59a7f65e1b46dbfa2bba12a2b19c7fb0f4f6f8",
+    "AffineFK/GaussianPositionStationarity.lean": "6224edc4f21b587d08a26c8aca97443e71b206758e45442463dd52e9bca9d14a",
+    "AffineFK/GaussianPositionMassCovariance.lean": "9e98a63c4e89f4aedabcd07eb931cb844c4f899871392dc452a41aa9d89e6c6e",
+    "AffineFK/InformationSpectrumLogConcaveMeasure.lean": "bfbf56af1c2830f7332be8a14f4382ccd97327dad20dd34b4e8748d34887a457",
+    "AffineFK/InformationSpectrumLaw.lean": "ebdd02f3f99adddc588cfc2eabf39f6b30652c3bcfad234337127e100d10122c",
+    "AffineFK/InformationSpectrum.lean": "653cb18094be91b1a3d4cb868466404daf9b2ce5804d48bf972589ef93ba0c32",
+    "AffineFK/LogConcaveMeasureDensity.lean": "0a9d0ca6aa5148847fabefed4b54f61e8dff0065b0cb235d2fc43d8d93e3c555",
+    "AffineFK/DyadicEntropyRate.lean": "559612a835e07f45c92d61ed25e82f40770155a4b4ab2d78ba6c986f7f5623cc",
+    "AffineFK/GaussianDilationRate.lean": "d86e46b6598e0e0a358e65187bf6636b508e7cf2a9c133af45e88dc6acaf67b0",
+    "AffineFK/VectorSteinIdentity.lean": "57b0d746e695bfc3205a4ac1827153591f529450095ad920755c3ea9849bb632",
+    "AffineFK/OddSteinTensor.lean": "011bce87b61f092279ed5eff9f876846d6cb788472fed944b0b3371349d45abf",
+    "AffineFK/SteinSolutionParity.lean": "0f8b485d8a26ce9f268fc3d5f8510ae1acca440667de3bbe1fe18e72cf0c7cde",
+    "AffineFK/NormalizedSumSteinTheorem.lean": "97acc104be9176861b6edddcc934d51f690210d6a18319dc52a4b9d91b886ebc",
+    "AffineFK/FisherInformationMeasureHSI.lean": "3fa2db0dae26bb9a3de7208726ffc2af05cd022f37ac9b8814a7f8ab0e88f862",
+    "AffineFK/FiniteSobolevHSI.lean": "e73f84155bb43a367ef95b921de959235f95a4a93d55f98affb2fedf4cecbd72",
+    "AffineFK/BridgeProfileEigenvalue.lean": "af7c878ebfabc0a97f8db94d3aca49aab8047edcea33c1650cd8339644e9404b",
+    "AffineFK/BridgeProfileRayleigh.lean": "b8daf7b177b046f6921e751f29cbdb41e168c94cf06acf4a8920d1759450ddc6",
+    "AffineFK/BridgeDirichletRayleigh.lean": "c436c60ca503b182dffd7e14a66966970bfc67ebd1725481c21abebe1c508c9d",
+    "AffineFK/BridgeKilledRowSobolev.lean": "42283020a50b3478dbd35fcc9d41f2ac7d33e9e468ba168f272495540732a754",
+    "AffineFK/EvenLogConcaveGroundstate.lean": "b5dc3bf68b46a7c9691a7da8c2c1c14b8efeca644b143a8bc41e4c446c6127c8",
+    "AffineFK/WhiteningSpectralClosure.lean": "2836f8ef225a14a380c30d9cc7d60ff0a08227b408b04e63733a1423b9675726",
+    "AffineFK/DirichletUnnormalizedPullback.lean": "7052ed81944856caf66082f9a7ae28007581e506dfd905d292e9cd4d7a6685a6",
+    "AffineFK/FirstSteinVectorIdentity.lean": "d944308ffd92f4701209294c90c2f76272a9489abe80ba767b5529eef0c50add",
+    "audit/stage35_compiled_comparison.json": "df5d64fd10edd6cf5f8a6e803db50f92912c63df1ca91ac7c1cbef320f9ae329",
+    "audit/stage36_compiled_comparison.json": "416696aa5f251fbf052f2b3bcfa2c203ee548fb689a85801b54d5f01515cd848",
+    "audit/stage35_verification.json": "e75f46af1c41a44e6d15f07166a6279fd77df3666b56fed4ed4f1a3c6dc07ba3",
+    "audit/stage36_scope_inventory.md": "27294146749db0f4e6b6139ea17e01f35344cf0bf8a4649a7875924780b64099",
+    "audit/bridge_rayleigh_independent_review.md": "b25526aef4513019e7b0222bb46f952e5cfd6aba99ba85d57a8f4ce493417f7f",
+    "audit/stage35_source_statement_review.md": "c3457513707111d2d2fc521a345a25d8887f24c106d681dbefb6b84530fe2ac4"
+  }
+}

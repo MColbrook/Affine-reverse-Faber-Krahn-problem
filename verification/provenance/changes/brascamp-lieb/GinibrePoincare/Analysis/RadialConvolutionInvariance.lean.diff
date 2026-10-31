@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/RadialConvolutionInvariance.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/RadialConvolutionInvariance.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.RadialGaussianOrthogonality
+-public import GinibrePoincare.Analysis.GinibreSpatialCutoffs
++public import AffineFK.ChafaiBrascampLieb.Analysis.RadialGaussianOrthogonality
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreSpatialCutoffs
+ public import Mathlib.Analysis.Calculus.ContDiff.Convolution
+ 
+ @[expose] public section

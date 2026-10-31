@@ -1,0 +1,47 @@
+--- verification/provenance/diagnostic-runner-as-launched.py.txt
++++ verification/provenance/final-gate-runner-as-launched.py.txt
+@@ -53,14 +53,24 @@
+     actual_versions = {name: subprocess.check_output([str(paths[name]), "--version"], text=True).strip()
+                        for name in ["lean", "lake"]}
+     assert actual_versions == baseline["versions"]
+-    mathlib = ROOT / ".lake/packages/mathlib"
+-    revision = subprocess.check_output(["git", "-C", str(mathlib), "rev-parse", "HEAD"], text=True).strip()
+-    assert revision == "b63f6e8a68d220e3b3bc4f3792bb53650d375f24"
+-    subprocess.run(["git", "-C", str(mathlib), "diff", "--quiet"], check=True)
++    dependencies = []
++    manifest = json.loads((ROOT / "lake-manifest.json").read_text())
++    for package in manifest["packages"]:
++        checkout = ROOT / manifest["packagesDir"] / package["name"]
++        revision_command = ["git", "-C", str(checkout), "rev-parse", "HEAD"]
++        cleanliness_command = ["git", "-C", str(checkout), "diff", "--quiet"]
++        revision = subprocess.check_output(revision_command, text=True).strip()
++        assert revision == package["rev"], package["name"]
++        subprocess.run(cleanliness_command, check=True)
++        dependencies.append(dict(package=package["name"], pinned_commit=revision,
++            tracked_clean=True, revision_command=revision_command,
++            cleanliness_command=cleanliness_command))
++    assert len(dependencies) == 9
+     assert sha(ROOT / "lake-manifest.json") == baseline["lake_manifest_sha256"]
+-    return dict(versions=actual_versions, binary_sha256=hashes, mathlib_commit=revision,
++    return dict(versions=actual_versions, binary_sha256=hashes,
++                mathlib_commit="b63f6e8a68d220e3b3bc4f3792bb53650d375f24",
+                 mathlib_clean=True, lake_manifest_sha256=sha(ROOT / "lake-manifest.json"),
+-                platform=platform.platform(), dependency_fetching_performed=False)
++                dependencies=dependencies, platform=platform.platform(), dependency_fetching_performed=False)
+ 
+ def main():
+     parser = argparse.ArgumentParser(description=__doc__)
+@@ -71,6 +81,13 @@
+     assert platform.system() == "Linux", "Use Linux with real bwrap and user namespaces"
+     assert args.lake
+     lake = str(Path(args.lake).resolve())
++    if not (Path(lake).parent / "leanexport").is_file():
++        # Resolve the ordinary elan shim without assuming checker binaries live
++        # beside the shim. The requested toolchain must already be installed.
++        elan = shutil.which("elan")
++        assert elan, "Pass --lake with the pinned toolchain's actual lake binary"
++        lake = subprocess.check_output([elan, "which", "lake"], cwd=ROOT, text=True).strip()
++        assert Path(lake).is_file()
+     output = (ROOT / args.output).resolve()
+     assert output.is_relative_to(ROOT) and output != ROOT
+     output.mkdir(parents=True, exist_ok=False)

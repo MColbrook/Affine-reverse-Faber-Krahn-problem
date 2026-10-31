@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GaussianLSIProduct.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianLSIProduct.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianLSIScaling
+-public import GinibrePoincare.Analysis.IntegralEntropyTensorization
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianLSIScaling
++public import AffineFK.ChafaiBrascampLieb.Analysis.IntegralEntropyTensorization
+ 
+ @[expose] public section
+ 

@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/EntropyL2Closure.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/EntropyL2Closure.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.EntropyLimitStability
++public import AffineFK.ChafaiBrascampLieb.Analysis.EntropyLimitStability
+ public import Mathlib.MeasureTheory.Function.L2Space
+ public import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
+ public import Mathlib.Topology.Sequences

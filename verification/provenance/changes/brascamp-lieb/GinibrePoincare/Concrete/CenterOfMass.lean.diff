@@ -1,0 +1,10 @@
+--- GinibrePoincare/Concrete/CenterOfMass.lean
++++ AffineFK/ChafaiBrascampLieb/Concrete/CenterOfMass.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.Configuration
++public import AffineFK.ChafaiBrascampLieb.Concrete.Configuration
+ public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+ 
+ @[expose] public section

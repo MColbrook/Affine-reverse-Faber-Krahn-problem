@@ -1,0 +1,16 @@
+--- GinibrePoincare/Analysis/GinibreWeakPermutation.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreWeakPermutation.lean
+@@ -1,9 +1,9 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibrePermutationAverage
+-public import GinibrePoincare.Analysis.GinibreDistributionalGradient
+-public import GinibrePoincare.Analysis.GinibreWeakSobolevMultipliers
+-public import GinibrePoincare.Analysis.GinibrePermutationGradient
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibrePermutationAverage
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreDistributionalGradient
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreWeakSobolevMultipliers
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibrePermutationGradient
+ public import Mathlib.Analysis.Normed.Lp.PiLp
+ 
+ @[expose] public section

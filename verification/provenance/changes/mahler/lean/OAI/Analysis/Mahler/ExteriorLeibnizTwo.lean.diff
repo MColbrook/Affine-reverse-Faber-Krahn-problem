@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/ExteriorLeibnizTwo.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ExteriorLeibnizTwo.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.ExteriorDirectional
+-import OAI.Analysis.Mahler.ContinuousWedgeDerivative
+-import OAI.Analysis.Mahler.WedgeTwoDifferentialAlgebra
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ExteriorDirectional
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ContinuousWedgeDerivative
++public import AffineFK.OpenAIMahler.Analysis.Mahler.WedgeTwoDifferentialAlgebra
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

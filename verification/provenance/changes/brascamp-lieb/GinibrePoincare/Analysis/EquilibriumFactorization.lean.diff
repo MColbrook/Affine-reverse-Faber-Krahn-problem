@@ -1,0 +1,24 @@
+--- GinibrePoincare/Analysis/EquilibriumFactorization.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/EquilibriumFactorization.lean
+@@ -1,13 +1,13 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.Configuration
+-public import GinibrePoincare.Concrete.CenterOfMass
+-public import GinibrePoincare.Concrete.MeasureModel
+-public import GinibrePoincare.Concrete.Vandermonde
+-public import GinibrePoincare.Concrete.Weights
+-public import GinibrePoincare.Concrete.GroundState
+-public import GinibrePoincare.Analysis.ComplexGaussianDensity
+-public import GinibrePoincare.Analysis.GinibreMassFiniteness
++public import AffineFK.ChafaiBrascampLieb.Concrete.Configuration
++public import AffineFK.ChafaiBrascampLieb.Concrete.CenterOfMass
++public import AffineFK.ChafaiBrascampLieb.Concrete.MeasureModel
++public import AffineFK.ChafaiBrascampLieb.Concrete.Vandermonde
++public import AffineFK.ChafaiBrascampLieb.Concrete.Weights
++public import AffineFK.ChafaiBrascampLieb.Concrete.GroundState
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexGaussianDensity
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreMassFiniteness
+ 
+ @[expose] public section
+ 

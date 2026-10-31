@@ -1,0 +1,10 @@
+--- GinibrePoincare/Endgame/FiniteTheoremOneNine.lean
++++ AffineFK/ChafaiBrascampLieb/Endgame/FiniteTheoremOneNine.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.L2RepresentativeBridges
++public import AffineFK.ChafaiBrascampLieb.Analysis.L2RepresentativeBridges
+ 
+ @[expose] public section
+ 

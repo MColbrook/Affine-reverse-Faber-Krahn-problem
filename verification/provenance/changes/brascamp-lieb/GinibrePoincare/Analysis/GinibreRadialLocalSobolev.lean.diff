@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/GinibreRadialLocalSobolev.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreRadialLocalSobolev.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreGradientPhaseNorm
+-public import GinibrePoincare.Analysis.GinibrePhaseSeparation
+-public import GinibrePoincare.Analysis.GinibreLocalSobolev
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreGradientPhaseNorm
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibrePhaseSeparation
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreLocalSobolev
+ 
+ @[expose] public section
+ 

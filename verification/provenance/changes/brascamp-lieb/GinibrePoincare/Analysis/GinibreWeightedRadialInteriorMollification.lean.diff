@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GinibreWeightedRadialInteriorMollification.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreWeightedRadialInteriorMollification.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreRadialInteriorMollification
+-public import GinibrePoincare.Analysis.GinibreLebesgueL2Transfer
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreRadialInteriorMollification
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreLebesgueL2Transfer
+ 
+ @[expose] public section
+ 

@@ -1,0 +1,9 @@
+--- lean/OAI/Analysis/Mahler/SourceCoordinateMeasure.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceCoordinateMeasure.lean
+@@ -1 +1,5 @@
+-import OAI.Analysis.Mahler.ComplexCoordinates
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ComplexCoordinates
++
++@[expose] public noncomputable section

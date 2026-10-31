@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/MagnitudeNullSets.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/MagnitudeNullSets.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.MagnitudeGradient
++public import AffineFK.ChafaiBrascampLieb.Analysis.MagnitudeGradient
+ 
+ @[expose] public section
+ 

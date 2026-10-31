@@ -1,0 +1,22 @@
+--- lean/OAI/Analysis/Mahler/ConvexApproximation.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ConvexApproximation.lean
+@@ -1,9 +1,13 @@
+-import OAI.Analysis.Mahler.ActualFiniteStrips
+-import Mathlib.Analysis.LocallyConvex.Separation
+-import Mathlib.Analysis.Convex.Topology
+-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+-import Mathlib.Topology.Instances.ENNReal.Lemmas
+-import Mathlib.Tactic
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ActualFiniteStrips
++public import Mathlib.Analysis.LocallyConvex.Separation
++public import Mathlib.Analysis.Convex.Topology
++public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
++public import Mathlib.Topology.Instances.ENNReal.Lemmas
++public import Mathlib.Tactic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

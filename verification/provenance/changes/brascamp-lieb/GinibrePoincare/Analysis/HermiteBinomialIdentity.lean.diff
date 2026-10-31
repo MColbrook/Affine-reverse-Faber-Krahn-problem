@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/HermiteBinomialIdentity.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/HermiteBinomialIdentity.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.HermiteOrthogonalityCombinatorics
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteOrthogonalityCombinatorics
+ public import Mathlib.Algebra.Polynomial.Coeff
+ 
+ @[expose] public section

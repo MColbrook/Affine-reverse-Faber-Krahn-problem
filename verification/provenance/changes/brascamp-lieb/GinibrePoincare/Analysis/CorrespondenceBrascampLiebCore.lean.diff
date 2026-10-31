@@ -1,0 +1,9 @@
+--- GinibrePoincare/Analysis/CorrespondenceBrascampLiebCore.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceBrascampLiebCore.lean
+@@ -1,5 +1,5 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceBrascampLiebCompactBound
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceBrascampLiebCompactBound
+ public import Mathlib.MeasureTheory.Function.L2Space
+ @[expose] public section
+ open MeasureTheory Measure

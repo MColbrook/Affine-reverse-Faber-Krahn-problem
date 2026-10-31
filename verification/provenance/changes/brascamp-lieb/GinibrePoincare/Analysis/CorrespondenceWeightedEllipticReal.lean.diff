@@ -1,0 +1,28 @@
+--- GinibrePoincare/Analysis/CorrespondenceWeightedEllipticReal.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceWeightedEllipticReal.lean
+@@ -1,8 +1,8 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticDensity
+-public import GinibrePoincare.Analysis.GinibreTransitionAnalyticLocalRegularityRealTests
+-public import GinibrePoincare.Analysis.GinibreTransitionAnalyticLocalRegularityRealIndicator
+-public import GinibrePoincare.Analysis.GinibreTransitionAnalyticLocalRegularityRealDerivative
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticDensity
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreTransitionAnalyticLocalRegularityRealTests
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreTransitionAnalyticLocalRegularityRealIndicator
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreTransitionAnalyticLocalRegularityRealDerivative
+ @[expose] public section
+ open MeasureTheory Set
+ open scoped ContDiff
+@@ -29,9 +29,9 @@
+   let up := K.indicator u
+   let hp := K.indicator h
+   let Fp := fun i=>K.indicator (F i)
+-  have hup : MemLp up 2 (volume : Measure E) := (memLp_indicator_iff_restrict hKm).mpr hu
+-  have hhp : MemLp hp 2 (volume : Measure E) := (memLp_indicator_iff_restrict hKm).mpr hh
+-  have hFp (i) : MemLp (Fp i) 2 (volume : Measure E) := (memLp_indicator_iff_restrict hKm).mpr (hF i)
++  have hup : MemLp up 2 (volume : Measure E) := (memLp_indicator_iff_restrict hKm.nullMeasurableSet).mpr hu
++  have hhp : MemLp hp 2 (volume : Measure E) := (memLp_indicator_iff_restrict hKm.nullMeasurableSet).mpr hh
++  have hFp (i) : MemLp (Fp i) 2 (volume : Measure E) := (memLp_indicator_iff_restrict hKm.nullMeasurableSet).mpr (hF i)
+   have hei := ginibreLocalRegularity_indicator_real_equation (fun i=>b i) K u h F heq
+   have hec := ginibreLocalRegularity_real_tests_complex_equation (fun i=>b i) K up hp Fp
+     (hup.locallyIntegrable (by norm_num)) (hhp.locallyIntegrable (by norm_num))

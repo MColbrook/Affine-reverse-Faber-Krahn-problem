@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/RadialSobolevSpace.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/RadialSobolevSpace.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreDistributionalClosure
+-public import GinibrePoincare.Analysis.FullRadialLSIReduction
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreDistributionalClosure
++public import AffineFK.ChafaiBrascampLieb.Analysis.FullRadialLSIReduction
+ 
+ @[expose] public section
+ 

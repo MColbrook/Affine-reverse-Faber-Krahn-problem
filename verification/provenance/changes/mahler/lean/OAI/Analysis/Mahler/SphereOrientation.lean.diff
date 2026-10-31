@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SphereOrientation.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SphereOrientation.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.SphereAreaTransport
+-import OAI.Analysis.Mahler.LogDilation
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereAreaTransport
++public import AffineFK.OpenAIMahler.Analysis.Mahler.LogDilation
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,10 @@
+--- GinibrePoincare/Concrete/Vandermonde.lean
++++ AffineFK/ChafaiBrascampLieb/Concrete/Vandermonde.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.Configuration
++public import AffineFK.ChafaiBrascampLieb.Concrete.Configuration
+ public import Mathlib.LinearAlgebra.Vandermonde
+ public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
+ 

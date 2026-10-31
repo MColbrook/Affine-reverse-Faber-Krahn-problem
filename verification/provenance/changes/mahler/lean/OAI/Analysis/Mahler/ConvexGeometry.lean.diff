@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/ConvexGeometry.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ConvexGeometry.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ConvexApproximation
+-import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ConvexApproximation
++public import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

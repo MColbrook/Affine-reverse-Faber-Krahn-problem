@@ -1,0 +1,161 @@
+{
+  "kind": "Independent AI separate canonical Main35 Challenge/data/header/Solution-wrapper fidelity review",
+  "reviewer": "/root/claim_inventory",
+  "independent_ai_review_complete": true,
+  "defects_found": [],
+  "selected_theorem": "AffineFK.affine_reverse_faber_krahn_main_theorems",
+  "manual_owners": 20,
+  "semantic_data_owners": 17,
+  "genuine_manual_theorem_helpers": 2,
+  "isolated_benchmark_placeholders": 1,
+  "all19_nonbenchmark_headers_and_bodies_match_source": true,
+  "all_ambient_scopes_and_all20_complete_declarations_manually_read": true,
+  "complete_body_records": {
+    "GaussianPositionMaximal": {
+      "kind": "def",
+      "source_path": "AffineFK/GaussianPositionStationarity.lean",
+      "normalized_complete_declaration_sha256": "87e06a8834741ef318152690055c0e2521f5b6a0744c96ace1e946ddda9f894b"
+    },
+    "SobolevAmbient": {
+      "kind": "abbrev",
+      "source_path": "AffineFK/WeightedSobolev.lean",
+      "normalized_complete_declaration_sha256": "705a611b9c6e1baa73506f21f963eb813a3f9ff1b808bbb27cd7e339954d773f"
+    },
+    "UniformSymmetricGaussianDirichletBound": {
+      "kind": "def",
+      "source_path": "AffineFK/SymmetricAffineSpectralReduction.lean",
+      "normalized_complete_declaration_sha256": "1fc11f822b18d1fa2bc26e5b114ca005777361b28b89bf8bdd04339368e35761"
+    },
+    "dirichletEigenvalue": {
+      "kind": "def",
+      "source_path": "AffineFK/DirichletRayleigh.lean",
+      "normalized_complete_declaration_sha256": "3db49c213a9640d29690fc0041b56a68815b3e12ca33247cc42ac6fe6275ab37"
+    },
+    "dirichletGradient": {
+      "kind": "def",
+      "source_path": "AffineFK/DirichletSobolev.lean",
+      "normalized_complete_declaration_sha256": "592f59a7034343a04deafb0ecf9400466f758af2633164515005031a09990b4c"
+    },
+    "dirichletRayleigh": {
+      "kind": "def",
+      "source_path": "AffineFK/DirichletRayleigh.lean",
+      "normalized_complete_declaration_sha256": "bf3aec88f24661750a3cc182ab82e923da4c76dbf53e3a6e7ea061ad6f5aca27"
+    },
+    "dirichletSobolev": {
+      "kind": "def",
+      "source_path": "AffineFK/DirichletSobolev.lean",
+      "normalized_complete_declaration_sha256": "9061aaae3483a2541f97579d557381d27207c1c666462af0b431472aa18978a4"
+    },
+    "dirichletTestToH1": {
+      "kind": "def",
+      "source_path": "AffineFK/DirichletSobolev.lean",
+      "normalized_complete_declaration_sha256": "49e5c5cbf9c962b3c66046b0b927ab610b86310ff4c2165cd67a00104c3212e0"
+    },
+    "dirichletTestToTop": {
+      "kind": "def",
+      "source_path": "AffineFK/DirichletSobolev.lean",
+      "normalized_complete_declaration_sha256": "c3e84ba77fae224000072e364f11dc16964ef6ac2a2976d2a8cae484b8f1db3b"
+    },
+    "dirichletValue": {
+      "kind": "def",
+      "source_path": "AffineFK/DirichletSobolev.lean",
+      "normalized_complete_declaration_sha256": "aae92543c8261a458102d3efd32ed6e275e0fb50d1adfad9c6c9a7931e4d6f42"
+    },
+    "gaussianPositionSLLinear": {
+      "kind": "def",
+      "source_path": "AffineFK/GaussianPositionAction.lean",
+      "normalized_complete_declaration_sha256": "fabab814ce63aadf14feb4cca5c17978e9674f1514f86fd571aa1f1ff202d410"
+    },
+    "gaussianPosition_matrix_det": {
+      "kind": "theorem",
+      "source_path": "AffineFK/GaussianPositionAction.lean",
+      "normalized_complete_declaration_sha256": "9a7663267f8757a346721d6cee0e0207cf45bd8510c946c69107f7e064faf21e"
+    },
+    "testFunctionGradient": {
+      "kind": "def",
+      "source_path": "AffineFK/WeightedSobolev.lean",
+      "normalized_complete_declaration_sha256": "7a2e2657ce79dc2017996c2b739a280f19b2ecae717cc1806f26e600c2641555"
+    },
+    "unweightedGradient": {
+      "kind": "def",
+      "source_path": "AffineFK/UnweightedSobolevGraph.lean",
+      "normalized_complete_declaration_sha256": "ba44cd162ec380e9d6ad3464b49e73ae0f0ccccf5b771b0aa2b835ee1f10e951"
+    },
+    "unweightedSmoothPair": {
+      "kind": "def",
+      "source_path": "AffineFK/UnweightedSobolevGraph.lean",
+      "normalized_complete_declaration_sha256": "89df847d7397dcbfc7fb7fde946fa64b66730c4782e8d38fb32d81ee7b09decb"
+    },
+    "unweightedSobolevGraph": {
+      "kind": "def",
+      "source_path": "AffineFK/UnweightedSobolevGraph.lean",
+      "normalized_complete_declaration_sha256": "b7e4054e21a51c04306ffb0a05559579121aa24d078090cc8c6fd7fa3f78bd58"
+    },
+    "unweightedTestToL2": {
+      "kind": "def",
+      "source_path": "AffineFK/UnweightedSobolevGraph.lean",
+      "normalized_complete_declaration_sha256": "06054c13cd65136a420e2b0a32af85b818e118976bc2069eceee71a3c77959e7"
+    },
+    "unweightedValue": {
+      "kind": "def",
+      "source_path": "AffineFK/UnweightedSobolevGraph.lean",
+      "normalized_complete_declaration_sha256": "80031cbba91b91336a3ec41102ba59b567c3149f1e11bc1e36f3a52e14f95f6b"
+    },
+    "unweighted_smooth_pair_mem": {
+      "kind": "theorem",
+      "source_path": "AffineFK/UnweightedSobolevGraph.lean",
+      "normalized_complete_declaration_sha256": "1624003452eca4fdbb831ed40345045848812aad102d79fb425ce0e819e8db09"
+    }
+  },
+  "selected_header_normalized_sha256": "0d4b39b39c290bddc1166a7d8ace7dca72c030cd7f0f10bdb067a5be1b0ec34a",
+  "challenge_raw_bytes": 18614,
+  "challenge_physical_lines": 280,
+  "solution_raw_bytes": 18706,
+  "solution_physical_lines": 282,
+  "complete_bundle_modules": 989,
+  "attributed_ginibre_modules": 234,
+  "attributed_rellich_modules": 15,
+  "attributed_mahler_modules": 229,
+  "unchanged_accepted33_34_modules": 950,
+  "fresh_modules": 39,
+  "actual_source_axiom_queries": 213,
+  "source_TYPE_constants": 129,
+  "full_source_project_closure": 5564,
+  "actual_packet_diagnostics_reviewed": false,
+  "actual_own_comparator_accepted": false,
+  "original_M01_full_statement_preserved": true,
+  "original_M02_full_statement_preserved": true,
+  "full_manuscript_verified": false,
+  "definition_holes": [],
+  "solution_placeholders": 0,
+  "original_inventory_modified": false,
+  "no_compiler_or_kernel_rerun": true,
+  "presentation_note": "Inherited maxHeartbeats-in before one namespace end has no mathematical premise/data content; actual build/compiled diagnostic outcome is separate.",
+  "authorship_boundary": "Independent review of the new root/E main composition and canonical packet. Reviewer authored some reused C dependencies, so this is not a fresh non-author mathematical review of those source proofs; existing root/B/E cross-reviews retain their distinct layers. No manual human or all989-body rereview claimed.",
+  "pins": {
+    "AffineFK/MainTheoremsResults/Challenge.lean": "df39f60ad677d90a70888b136093531a9b9d0a97e2f531ca2865c07f6d653715",
+    "AffineFK/MainTheoremsResults/Solution.lean": "124fc778453eb02e30d04d8c097b22931c854b46f3a77628de25dbdbe944ab7e",
+    "main-theorems-comparator.json": "30384fa7351bf0a63beaa92bd3335d5b12f774f33b1104badf065409a9a652be",
+    "AffineFK/MainTheoremsResults/interface-manifest.json": "32805de654a702862541a352c3fb2685cfac7d081b38155fd805225d629b7f30",
+    "audit/stage35_source_manifest.json": "26147ec2daf2c9197a1456ba353adf1c788e735df27a0ee21652f15e50dbccb6",
+    "audit/stage35_dependencies.json": "2c3905ea06934ba603257fabe15b798be04af3fba71663091699c0fb432785d6",
+    "audit/stage35_challenge_dependencies.json": "be25766a3797aaab89284ecc4b080d0a71f79d07d553dd927088a12b5ee599b9",
+    "logs/stage35/source-axioms-early-01.txt": "14a85be55a2792041a193bf446860c407a671761421067026d43a9ed7b51ab5b",
+    "logs/stage35/source-dependencies.txt": "182bac96fe27e56442b10a39a37d138d8832b5aa98cd1795239639980140b464",
+    "logs/stage35/source-statement-dependencies-early-01.txt": "3c2833e0fa51aeb770ad074a2c8f3a350164fb143f344001eb4c241ec28c4685",
+    "source/affine_reverse_faber_krahn.tex": "1d30574bf6a09012c0492449d6860884c993b191837c9c0d2a9bd17080a3d0bc",
+    "audit/claim_inventory.json": "20988714f811ab8b56ac528e9f009d3f9907a61aba85400b1c47288a394407b0",
+    "audit/stage35_scope_inventory.md": "d22fd89158a5f6eb76c4ea9cca351d5da6dda2340e8058406335f0b21f1929a9",
+    "audit/stage35_remaining_manuscript_obligations.md": "36d6b92a3654cb2c3eb67f5a90527f4ffa79ea45d0624d081217f49c1a3bada6",
+    "audit/stage35_source_statement_review.json": "1da8665484a7e8a9ea3cf868df05e8de6ca856fa9cb0832e8b2549e645e3d92f",
+    "audit/gaussian_position_milman_statement_fidelity_review.json": "2b1ccdf878ff7ce8962010854f6e1338ce5f366e61b3306d8a4fae27450805c5",
+    "AffineFK/WeightedSobolev.lean": "453b3e60c0b9d5639f63ddb0999d3e96498e844324c0f4805153488bf46df1d5",
+    "AffineFK/GaussianPositionAction.lean": "a6ed9cdf8bd9b9bfbe951b6f8676ae45c0ac26662ccadaed516f25ef97f242c4",
+    "AffineFK/GaussianPositionStationarity.lean": "6224edc4f21b587d08a26c8aca97443e71b206758e45442463dd52e9bca9d14a",
+    "AffineFK/UnweightedSobolevGraph.lean": "89ea14c334e096da9ce2ba408906077fea99b8aa4325cc7f6cdb4492858dc41d",
+    "AffineFK/DirichletSobolev.lean": "0a351430f466082a2c08a4636d83a0869f2b30c841fc1eb8867cea4622778064",
+    "AffineFK/DirichletRayleigh.lean": "b574671fae52ca93f8e62c039e741764c08f2681598f144a42c25f8abe215ce7",
+    "AffineFK/SymmetricAffineSpectralReduction.lean": "95d5101b27571b72003e07ba6d183bf2f1f8604cc12a4c66898c9c7b19f466a8",
+    "AffineFK/MainTheorems.lean": "79e7f75588806e79d357b6792b569651ee024ce5318cecc6bbaab4f10faedf40"
+  }
+}

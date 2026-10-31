@@ -1,0 +1,67 @@
+{
+  "kind": "Independent non-author AI final actual source-checking receipt",
+  "reviewer": "/root/formalization_coverage",
+  "source_math_review_complete": true,
+  "complete_new_headers_and_bodies_read": 4,
+  "mathematical_findings": [],
+  "preserved_provisional_review_sha256": {
+    "audit/gaussian_position_milman_independent_review.json": "2f17a010244540dc625229af8deeb90c9f8d355d5c9a96fa92f80973b72d5c22",
+    "audit/gaussian_position_milman_independent_review.md": "ed84a0a78e541c10af7d1801e310efaf3916ced7a70947b9281e07df129ea368"
+  },
+  "source_manifest_sha256": "d7792769ac62f432029529a687ec9a65df67a1d951b92a35574ba1820a256d9b",
+  "validated_distinct_source_and_probe_pins": 989,
+  "actual_source_sha256": {
+    "AffineFK/GaussianPositionMilman.lean": "b990cd79d2de0dd6c045fd7189ff048846d9cc1561fab557fa1e0b45655e3958"
+  },
+  "actual_fetched_raw_logs": {
+    "logs/branch_bochner/gaussian-position-milman-main-build-01.txt": {
+      "sha256": "7aec1611cb56d0855cbca7daca6702295b55c36ab4e77982a952c93c65be7944",
+      "exit_code": 0,
+      "command": "/home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.GaussianPositionMilman",
+      "elapsed_seconds": 7.995
+    },
+    "logs/branch_bochner/gaussian-position-milman-axioms-01.txt": {
+      "sha256": "ccbdbe300fa75d677fdce800e73444253c95854d11761338df071939805f3e39",
+      "exit_code": 0,
+      "command": "/home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake env lean audit/probes/GaussianPositionMilmanAxioms.lean",
+      "elapsed_seconds": 7.009
+    }
+  },
+  "actual_fresh_axiom_reports": {
+    "AffineFKProof.gaussianPosition_mahler_volume_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_dilated_polar_uniform_volume_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_uniform_volume_one_ellipsoid_intersection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.affine_reverse_faber_krahn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "archive_byte_comparison": {
+    "path": "audit/gaussian-position-milman-evidence-01.tar.gz",
+    "sha256": "a282709b3d8a3adb1de34b147beb98da98e8f64d94b3be6525f54632bedb2048",
+    "all_two_logs_byte_exact": true
+  },
+  "environment": {
+    "lean": "4.35.0-rc3",
+    "lean_commit": "470d5ce1400764999581fd26d5d72b00d990b0f4",
+    "mathlib": "b63f6e8a68d220e3b3bc4f3792bb53650d375f24"
+  },
+  "authorship_boundary": "Reviewer authored header-only upstream import/module port and some frozen reused tilt/normalization proofs, not the original 229 upstream proof bodies or these four new root assembly proofs. Existing separate non-author reviews cover those reused author boundaries.",
+  "compiler_or_checker_run_by_reviewer": false,
+  "own_comparator_accepted": false,
+  "full_paper_verified": false,
+  "scope": "Actual four unconditional source results are compiled with allowed axiom closure. This does not infer the separate Stage34 or final-main six-kernel gate, human review, or verification of every paper statement."
+}

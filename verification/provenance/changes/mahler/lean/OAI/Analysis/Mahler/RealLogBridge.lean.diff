@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/RealLogBridge.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RealLogBridge.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.SourceSphereLimit
+-import OAI.Analysis.Mahler.SourceLogC2
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceSphereLimit
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceLogC2
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

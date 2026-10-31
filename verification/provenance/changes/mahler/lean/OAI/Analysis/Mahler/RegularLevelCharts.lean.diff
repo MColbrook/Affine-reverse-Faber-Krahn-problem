@@ -1,0 +1,20 @@
+--- lean/OAI/Analysis/Mahler/RegularLevelCharts.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RegularLevelCharts.lean
+@@ -1,8 +1,12 @@
+-import Mathlib.Analysis.Calculus.InverseFunctionTheorem.ContDiff
+-import Mathlib.Analysis.Normed.Module.FiniteDimension
+-import Mathlib.Analysis.Calculus.FDeriv.Pi
+-import Mathlib.Tactic.FinCases
+-import Mathlib.Tactic.Linarith
++module
++
++public import Mathlib.Analysis.Calculus.InverseFunctionTheorem.ContDiff
++public import Mathlib.Analysis.Normed.Module.FiniteDimension
++public import Mathlib.Analysis.Calculus.FDeriv.Pi
++public import Mathlib.Tactic.FinCases
++public import Mathlib.Tactic.Linarith
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

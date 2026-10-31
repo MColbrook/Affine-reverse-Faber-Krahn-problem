@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GinibreArbitraryWeakPairClosure.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreArbitraryWeakPairClosure.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreArbitraryWeakPairApproximation
+-public import GinibrePoincare.Analysis.GinibreCollisionCutoffSobolevApproximation
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreArbitraryWeakPairApproximation
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreCollisionCutoffSobolevApproximation
+ 
+ @[expose] public section
+ 

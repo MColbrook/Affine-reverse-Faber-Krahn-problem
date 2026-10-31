@@ -1,0 +1,73 @@
+{
+  "kind": "Independent AI complete mathematical/fidelity/clarity review with actual final author checking evidence",
+  "reviewer": "/root/formalization_coverage",
+  "author_of_new_wrappers": false,
+  "complete_new_headers_and_bodies_read": 2,
+  "new_declarations": 2,
+  "new_definitions": 0,
+  "new_source_sha256": {
+    "AffineFK/SymmetricCovarianceSpectralBound.lean": "cb2a3edf24799e765b81e6fc9f7ffe4de6e578c187253900fb7d32c44728bb50"
+  },
+  "groundstate_dependency_complete_source_read_sha256": "b5dc3bf68b46a7c9691a7da8c2c1c14b8efeca644b143a8bc41e4c446c6127c8",
+  "failed_source_sha256": "797495d6ffe7c3267a37836c91bada0317a6809544faf779f54250b7ec8bd185",
+  "exact_presentation_delta": "One explicit change of the local U carrier to interior K in the negation-membership proof; all other source bytes unchanged modulo line endings.",
+  "chronology_correction": "The earlier provisional report associated failed01 with the current cb2a source. Actual failed01 pins 797495; cb2a already contains the carrier fix and is the actual successful02 source. Both original report and failed source/log are preserved.",
+  "actual_manifest_sha256": "959f6112c35072543c925ad7388f735ab49517eede3d1e725b2037a71a75ed5a",
+  "validated_source_pins": 721,
+  "actual_logs": {
+    "logs/branch_bochner/symmetric-covariance-spectral-bound-build-01.txt": {
+      "sha256": "af3a9bb621c8e65ba2d99076fb2ffa16d806d24fed9aa68117d4c2ccc945621f",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.SymmetricCovarianceSpectralBound",
+      "elapsed_seconds": 15.479
+    },
+    "logs/branch_bochner/symmetric-covariance-spectral-bound-build-02.txt": {
+      "sha256": "77a6f2f59211bbffa6fba5a054aaded0cec02d6f1eaa919183c2135c22a13bd8",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.SymmetricCovarianceSpectralBound",
+      "elapsed_seconds": 12.147
+    },
+    "logs/stage33/source-axioms.txt": {
+      "sha256": "91db6c3584dbd4eeaa6452adf49e59d24ec23f3ce96b3106c36603dd448d0076",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake env lean audit/probes/SymmetricCovarianceSpectrumResultsAxioms.lean",
+      "elapsed_seconds": 6.28
+    }
+  },
+  "actual_new_axiom_reports": {
+    "AffineFKProof.symmetric_body_eigenvalue_bound_of_scalar_covariance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.uniform_symmetric_body_spectral_bound_of_covariance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "containing_fresh_audit_report_count": 301,
+  "containing_fresh_audit_all_allowed": true,
+  "findings": [],
+  "mathematical_review_outcome": "No mathematical, domain, quantifier-order, constant, groundstate-existence or trust defect found.",
+  "key_checks": [
+    "The two complete new proofs construct the actual even log-concave groundstate from the unconditional Gaussian minimizing-family theorem, not a desired eigenfunction assumption.",
+    "Origin symmetry is transported to the actual interior by a genuine negation homeomorphism; compactness supplies the bounded-open domain.",
+    "The actual squared L2 value norm one proves the resulting H0 element nonzero.",
+    "Only literal restricted-Gaussian raw covariance alpha Id with 0<c<=alpha<=1 remains geometric input; no groundstate/strong-log-concavity/CP/Fisher/spectral output premise remains.",
+    "The constant is exactly whiteningSpectralConstant(c), chosen before n,K,alpha; c in(0,1] suffices for its positivity.",
+    "The first wrapper proves actual eigenvalue finiteness before real interpretation and supplies both real and ENNReal bounds."
+  ],
+  "attribution": "The imported unconditional groundstate construction retains its genuine Gaussian-iteration, Benenson Rellich, variational H0 and pointwise-LC-limit attribution. Mathlib Homeomorph.neg/isOpenMap.image_interior_subset and map/norm zero facts supply the only direct standard-library steps in these wrappers.",
+  "authorship_boundary": "Reviewer authored frozen reused whitening/conditional analytic closure/weighted-representative proofs. This review is independent for the two root-authored wrappers and the full newly constructed groundstate source reading, but does not claim an independent re-review of those earlier self-authored inputs. Their root non-author reviews remain separate.",
+  "source_only_success": true,
+  "new_lean_checks_run_by_reviewer": false,
+  "independent_kernel_or_comparator_run_by_reviewer": false,
+  "own_comparator_claim": false,
+  "scope_limits": [
+    "Universal Milman/M-ellipsoid existence and a universal geometric c remain unproved.",
+    "The containing301 axiom audit is a genuine source-checking layer, not Comparator acceptance or an independent mathematical review of all301 declarations.",
+    "This is an AI review, not human review, unconditional main-theorem verification or full-paper verification."
+  ],
+  "full_paper_verified": false
+}

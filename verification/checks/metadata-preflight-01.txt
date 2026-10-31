@@ -1,0 +1,6 @@
+COMMAND: ["C:\\Users\\MatthewColbrook\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe", "-X", "utf8", "scripts/check_package.py", "--preflight", "--schema"]
+PYTHON_SCHEMA_LIBRARY: previously installed jsonschema4.25.1 in cached metadata-python
+METADATA_SHA256: 252fa1416adf36093eeeb5d6ea05f1a22f5c2130fa83259bde33ea1171e025a2
+{"status": "PASS", "proof_source_files": 992, "compiled_Lean_files": 998, "source_bytes": 5508450, "Challenge_physical_lines": 327, "Challenge_bytes": 22148, "selected_originals": 481, "schema_checked": true, "preflight_only": true, "Lean_or_kernel_commands_run": false}
+EXIT_CODE: 0
+ELAPSED_SECONDS: 5.671

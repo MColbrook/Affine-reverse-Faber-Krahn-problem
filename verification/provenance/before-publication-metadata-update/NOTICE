@@ -1,0 +1,22 @@
+Affine reverse Faber--Krahn inequalities: Lean proof of M01, M02 and M03.
+Prepared under the direction of Matthew J. Colbrook with AI proof construction
+and separate AI reviews. Source-authorship boundaries are disclosed in
+formalization.yaml and verification/reviews/.
+
+The root Apache-2.0 LICENSE applies to new local formalization code and
+documentation. Reused source families retain their existing licences and
+copyright notices. In particular AffineFK/ChafaiBrascampLieb/ remains MIT;
+its original copyright and LICENSE are included. Other selected upstream
+licences are retained in their proof directories or licenses/.
+Exact commits, originals and compatibility differences are provided in
+verification/provenance/upstream-source-map.json and docs/third-party.md.
+
+The source manuscript is by Matthew J. Colbrook and George Stepaniants.
+Its authors retain their rights; the formalization licence does not
+relicense source/manuscript.tex. George Stepaniants is credited as a
+mathematical manuscript author; Lean-code authorship or human Lean review
+by him is not asserted.
+
+Mathlib revision: b63f6e8a68d220e3b3bc4f3792bb53650d375f24.
+Lean revision: 470d5ce1400764999581fd26d5d72b00d990b0f4 (v4.35.0-rc3).
+Mathlib, Lean and independent checker contributors retain their attribution.

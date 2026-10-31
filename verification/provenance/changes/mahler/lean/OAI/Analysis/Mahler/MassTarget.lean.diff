@@ -1,0 +1,18 @@
+--- lean/OAI/Analysis/Mahler/MassTarget.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/MassTarget.lean
+@@ -1,7 +1,11 @@
+-import OAI.Analysis.Mahler.MatrixHessian
+-import Mathlib.RingTheory.MvPolynomial.Homogeneous
+-import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
+-import Mathlib.MeasureTheory.Integral.Lebesgue.Basic
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.MatrixHessian
++public import Mathlib.RingTheory.MvPolynomial.Homogeneous
++public import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
++public import Mathlib.MeasureTheory.Integral.Lebesgue.Basic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

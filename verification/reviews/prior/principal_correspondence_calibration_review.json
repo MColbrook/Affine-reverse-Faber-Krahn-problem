@@ -1,0 +1,42 @@
+{
+  "kind": "Independent AI documentary and semantic cross-review of C's principal correspondence table",
+  "reviewer": "/root/formalization_coverage",
+  "table_author": "/root/claim_inventory",
+  "independent_document_review_complete": true,
+  "table_headers_and_full_semantic_discussion_read": true,
+  "selected_Challenge_statements_and_complete_fixed_definitions_reread": true,
+  "source_authorship_boundary": "Reviewer authored M03/G01/S07 extensions, coauthored W13, ported Mahler import headers and authored Stage36 presentation. This is a non-author review of C's document/calibration, not a fresh independent correctness endorsement of those Lean proofs; separate root/C source reviews remain authoritative at that layer.",
+  "principal_claims": [
+    "M01",
+    "M02",
+    "M03",
+    "G01",
+    "W13",
+    "S07"
+  ],
+  "material_fidelity_or_claim_calibration_findings": [],
+  "checks": [
+    "original domains and universal-constant quantifier order",
+    "literal special-linear map and volume exponent",
+    "actual H0 closure/Rayleigh infimum and weak/classical boundary",
+    "nonzero denominator, finite ENNReal/toReal and true L1/L2 guards",
+    "least Poincare constant and actual compact-test extension",
+    "set-based log-concavity input with density derived, not assumed",
+    "literal unnormalized linear pullback and adjoint gradient",
+    "one actual Stein matrix before all vector tests and exact HS sum",
+    "stronger attributed Mahler input and exact polar/Haar geometry",
+    "actual Stage35/36 acceptance distinguished from postfreeze integrity",
+    "AI/source-authorship and excluded-background boundaries"
+  ],
+  "exact_table_pins": {
+    "audit/principal_manuscript_lean_correspondence_review.md": "c267a2b82b5e926b491346d2f15e024f3eadbefa71b7e93f4fc5e82224862c16",
+    "audit/principal_manuscript_lean_correspondence_review.json": "466fd8cfa3afc1f5fd9eb5bab7235c83c366fef14bf92771feca9d91602337a6"
+  },
+  "table_source_evidence_pins_checked": 48,
+  "actual_acceptance_review": "audit/stage36_acceptance_for_principal_account.json",
+  "actual_acceptance_review_sha256": "6ee3e7a76adae6ac745e0be909c6752527d2e583c323be00698a05e96b6515cb",
+  "no_checker_restarted": true,
+  "no_source_or_table_changed": true,
+  "full_paper_verified": false,
+  "historical_priority_certified": false
+}

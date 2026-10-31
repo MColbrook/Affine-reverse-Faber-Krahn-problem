@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SphereFluxDifferentiation.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SphereFluxDifferentiation.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.CompactFluxDifferentiation
+-import OAI.Analysis.Mahler.SphereFluxIntegral
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.CompactFluxDifferentiation
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereFluxIntegral
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

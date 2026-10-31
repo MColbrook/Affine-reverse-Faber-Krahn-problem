@@ -1,0 +1,22 @@
+--- GinibrePoincare/Endgame/ConcreteTheoremOneNine.lean
++++ AffineFK/ChafaiBrascampLieb/Endgame/ConcreteTheoremOneNine.lean
+@@ -1,12 +1,12 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreGeneratorL2
+-public import GinibrePoincare.Analysis.GinibreConjugationGeometry
+-public import GinibrePoincare.Analysis.HermiteWeightedEnergy
+-public import GinibrePoincare.Analysis.WeightedSeriesTruncation
+-public import GinibrePoincare.Analysis.VandermondeGroundStateZeroMode
+-public import GinibrePoincare.Endgame.SeriesDeficit
+-public import GinibrePoincare.Endgame.FiniteTheoremOneNine
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreGeneratorL2
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreConjugationGeometry
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteWeightedEnergy
++public import AffineFK.ChafaiBrascampLieb.Analysis.WeightedSeriesTruncation
++public import AffineFK.ChafaiBrascampLieb.Analysis.VandermondeGroundStateZeroMode
++public import AffineFK.ChafaiBrascampLieb.Endgame.SeriesDeficit
++public import AffineFK.ChafaiBrascampLieb.Endgame.FiniteTheoremOneNine
+ 
+ @[expose] public section
+ 

@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SpecialMassHypotheses.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SpecialMassHypotheses.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.SpecialLeadingTerm
+-import OAI.Analysis.Mahler.StripGeometry
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SpecialLeadingTerm
++public import AffineFK.OpenAIMahler.Analysis.Mahler.StripGeometry
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

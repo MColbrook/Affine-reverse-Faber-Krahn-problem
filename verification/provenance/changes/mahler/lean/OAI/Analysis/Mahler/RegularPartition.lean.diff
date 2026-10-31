@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/RegularPartition.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RegularPartition.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.RegularBoundaryAtlas
+-import Mathlib.Geometry.Manifold.PartitionOfUnity
+-import Mathlib.Geometry.Manifold.ContMDiff.NormedSpace
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RegularBoundaryAtlas
++public import Mathlib.Geometry.Manifold.PartitionOfUnity
++public import Mathlib.Geometry.Manifold.ContMDiff.NormedSpace
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

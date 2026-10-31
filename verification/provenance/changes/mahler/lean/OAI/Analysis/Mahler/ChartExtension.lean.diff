@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/ChartExtension.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ChartExtension.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.PullbackRegularity
+-import OAI.Analysis.Mahler.OrientedChartIntegral
+-import OAI.Analysis.Mahler.InteriorStokes
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PullbackRegularity
++public import AffineFK.OpenAIMahler.Analysis.Mahler.OrientedChartIntegral
++public import AffineFK.OpenAIMahler.Analysis.Mahler.InteriorStokes
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

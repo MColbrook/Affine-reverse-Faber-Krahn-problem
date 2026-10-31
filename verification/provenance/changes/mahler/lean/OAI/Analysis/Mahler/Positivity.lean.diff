@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/Positivity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/Positivity.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.Hessian
+-import Mathlib.Analysis.InnerProductSpace.PiL2
+-import Mathlib.Analysis.Matrix.PosDef
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.Hessian
++public import Mathlib.Analysis.InnerProductSpace.PiL2
++public import Mathlib.Analysis.Matrix.PosDef
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

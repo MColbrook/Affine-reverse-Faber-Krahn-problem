@@ -1,0 +1,26 @@
+--- lean/OAI/Analysis/Mahler/CoordinateBall.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/CoordinateBall.lean
+@@ -1,11 +1,15 @@
+-import Mathlib.MeasureTheory.Integral.Prod
+-import Mathlib.MeasureTheory.Constructions.Pi
+-import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+-import Mathlib.Analysis.SpecialFunctions.Pow.Real
+-import Mathlib.Analysis.Calculus.Deriv.Pi
+-import Mathlib.Tactic.FunProp
+-import Mathlib.Tactic.Linarith
+-import Mathlib.Tactic.Positivity
++module
++
++public import Mathlib.MeasureTheory.Integral.Prod
++public import Mathlib.MeasureTheory.Constructions.Pi
++public import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
++public import Mathlib.Analysis.SpecialFunctions.Pow.Real
++public import Mathlib.Analysis.Calculus.Deriv.Pi
++public import Mathlib.Tactic.FunProp
++public import Mathlib.Tactic.Linarith
++public import Mathlib.Tactic.Positivity
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

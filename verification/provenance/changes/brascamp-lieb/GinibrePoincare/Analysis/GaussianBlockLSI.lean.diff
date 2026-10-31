@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/GaussianBlockLSI.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianBlockLSI.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianFiniteIndexLSI
+-public import GinibrePoincare.Analysis.GaussianCurryLaw
+-public import GinibrePoincare.Analysis.BlockMagnitudeLift
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianFiniteIndexLSI
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianCurryLaw
++public import AffineFK.ChafaiBrascampLieb.Analysis.BlockMagnitudeLift
+ 
+ @[expose] public section
+ 

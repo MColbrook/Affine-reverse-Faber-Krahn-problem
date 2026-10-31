@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/FluxVariation.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/FluxVariation.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ReferenceSphere
+-import OAI.Analysis.Mahler.WedgeCalculus
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ReferenceSphere
++public import AffineFK.OpenAIMahler.Analysis.Mahler.WedgeCalculus
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

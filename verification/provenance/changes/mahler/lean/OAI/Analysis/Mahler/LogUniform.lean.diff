@@ -1,0 +1,20 @@
+--- lean/OAI/Analysis/Mahler/LogUniform.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/LogUniform.lean
+@@ -1,8 +1,12 @@
+-import Mathlib.Topology.UniformSpace.UniformConvergenceTopology
+-import Mathlib.Topology.MetricSpace.ProperSpace
+-import Mathlib.Topology.Order.Compact
+-import Mathlib.Topology.UniformSpace.HeineCantor
+-import Mathlib.Analysis.SpecialFunctions.Log.Basic
++module
++
++public import Mathlib.Topology.UniformSpace.UniformConvergenceTopology
++public import Mathlib.Topology.MetricSpace.ProperSpace
++public import Mathlib.Topology.Order.Compact
++public import Mathlib.Topology.UniformSpace.HeineCantor
++public import Mathlib.Analysis.SpecialFunctions.Log.Basic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

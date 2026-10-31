@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/NormExteriorPower.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/NormExteriorPower.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ExteriorPower
+-import OAI.Analysis.Mahler.NormSquareForm
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ExteriorPower
++public import AffineFK.OpenAIMahler.Analysis.Mahler.NormSquareForm
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

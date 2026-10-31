@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/SmallSphereLimits.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SmallSphereLimits.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.RealLogBridge
+-import OAI.Analysis.Mahler.SphereOrientation
+-import OAI.Analysis.Mahler.StripRegularLevels
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RealLogBridge
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereOrientation
++public import AffineFK.OpenAIMahler.Analysis.Mahler.StripRegularLevels
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,9 @@
+--- GinibrePoincare/Analysis/CorrespondenceBrascampLiebDensityGenerator.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceBrascampLiebDensityGenerator.lean
+@@ -1,5 +1,5 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceBrascampLiebGibbs
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceBrascampLiebGibbs
+ @[expose] public section
+ open scoped ContDiff BigOperators
+ namespace GinibrePoincare

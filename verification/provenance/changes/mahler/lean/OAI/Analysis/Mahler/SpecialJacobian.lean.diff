@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SpecialJacobian.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SpecialJacobian.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.SpecialMassHypotheses
+-import Mathlib.Analysis.Matrix.PosDef
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SpecialMassHypotheses
++public import Mathlib.Analysis.Matrix.PosDef
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

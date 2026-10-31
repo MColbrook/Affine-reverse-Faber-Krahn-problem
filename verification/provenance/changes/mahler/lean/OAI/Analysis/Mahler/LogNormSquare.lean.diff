@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/LogNormSquare.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/LogNormSquare.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.NormSquareJet
+-import OAI.Analysis.Mahler.LogScalarJet
+-import Mathlib.Analysis.Calculus.ContDiff.Defs
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.NormSquareJet
++public import AffineFK.OpenAIMahler.Analysis.Mahler.LogScalarJet
++public import Mathlib.Analysis.Calculus.ContDiff.Defs
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

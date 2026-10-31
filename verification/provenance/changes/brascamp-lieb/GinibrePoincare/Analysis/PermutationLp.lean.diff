@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/PermutationLp.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/PermutationLp.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.VandermondeL2
++public import AffineFK.ChafaiBrascampLieb.Analysis.VandermondeL2
+ public import Mathlib.MeasureTheory.Function.LpSpace.ContinuousCompMeasurePreserving
+ 
+ @[expose] public section

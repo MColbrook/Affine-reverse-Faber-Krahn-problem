@@ -1,0 +1,32 @@
+--- verification/provenance/final-gate-runner-as-launched.py.txt
++++ scripts/run_checks.py
+@@ -1,7 +1,8 @@
+-"""Run real Lean tools and preserve their output. Never fetches dependencies.
++"""Run real Lean tools and preserve output without explicit fetch commands.
+ 
+ Linux is required for the ordinary sandboxed Comparator. Provision the pinned
+-dependencies first; this script does not contact GitHub or install software.
++dependencies first. Lake's own resolver remains network-capable; this script
++does not claim to provide an outer network-isolation boundary.
+ """
+ from pathlib import Path
+ from concurrent.futures import ThreadPoolExecutor
+@@ -58,7 +59,7 @@
+     for package in manifest["packages"]:
+         checkout = ROOT / manifest["packagesDir"] / package["name"]
+         revision_command = ["git", "-C", str(checkout), "rev-parse", "HEAD"]
+-        cleanliness_command = ["git", "-C", str(checkout), "diff", "--quiet"]
++        cleanliness_command = ["git", "-C", str(checkout), "diff", "--quiet", "HEAD", "--"]
+         revision = subprocess.check_output(revision_command, text=True).strip()
+         assert revision == package["rev"], package["name"]
+         subprocess.run(cleanliness_command, check=True)
+@@ -70,7 +71,8 @@
+     return dict(versions=actual_versions, binary_sha256=hashes,
+                 mathlib_commit="b63f6e8a68d220e3b3bc4f3792bb53650d375f24",
+                 mathlib_clean=True, lake_manifest_sha256=sha(ROOT / "lake-manifest.json"),
+-                dependencies=dependencies, platform=platform.platform(), dependency_fetching_performed=False)
++                dependencies=dependencies, platform=platform.platform(),
++                explicit_dependency_fetch_command_issued=False, outer_network_isolation_claimed=False)
+ 
+ def main():
+     parser = argparse.ArgumentParser(description=__doc__)

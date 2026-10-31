@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/PolarGaussianMoments.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/PolarGaussianMoments.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.AngularMoments
+-public import GinibrePoincare.Analysis.RadialMoments
+-public import GinibrePoincare.Analysis.ComplexGaussianDensity
++public import AffineFK.ChafaiBrascampLieb.Analysis.AngularMoments
++public import AffineFK.ChafaiBrascampLieb.Analysis.RadialMoments
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexGaussianDensity
+ public import Mathlib.MeasureTheory.Integral.Prod
+ 
+ @[expose] public section

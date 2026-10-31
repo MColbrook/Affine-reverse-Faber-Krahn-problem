@@ -1,0 +1,20 @@
+--- lean/OAI/Analysis/Mahler/AngularGeometry.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/AngularGeometry.lean
+@@ -1,8 +1,12 @@
+-import OAI.Analysis.Mahler.ConformalSeries
+-import Mathlib.Analysis.Complex.RealDeriv
+-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan
+-import Mathlib.Analysis.Calculus.Deriv.MeanValue
+-import Mathlib.Topology.Order.IntermediateValue
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ConformalSeries
++public import Mathlib.Analysis.Complex.RealDeriv
++public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan
++public import Mathlib.Analysis.Calculus.Deriv.MeanValue
++public import Mathlib.Topology.Order.IntermediateValue
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

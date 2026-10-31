@@ -1,0 +1,14 @@
+--- GinibrePoincare/Concrete/HolomorphicDistance.lean
++++ AffineFK/ChafaiBrascampLieb/Concrete/HolomorphicDistance.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.NormalizedGroundState
+-public import GinibrePoincare.Concrete.SmoothTarget
+-public import GinibrePoincare.Concrete.Wirtinger
++public import AffineFK.ChafaiBrascampLieb.Concrete.NormalizedGroundState
++public import AffineFK.ChafaiBrascampLieb.Concrete.SmoothTarget
++public import AffineFK.ChafaiBrascampLieb.Concrete.Wirtinger
+ 
+ @[expose] public section
+ 

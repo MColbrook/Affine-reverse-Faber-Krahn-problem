@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SpecialMassBridge.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SpecialMassBridge.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.SpecialJacobian
+-import OAI.Analysis.Mahler.FiniteStripReduction
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SpecialJacobian
++public import AffineFK.OpenAIMahler.Analysis.Mahler.FiniteStripReduction
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

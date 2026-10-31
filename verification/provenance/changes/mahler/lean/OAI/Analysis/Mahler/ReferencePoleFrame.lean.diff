@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/ReferencePoleFrame.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ReferencePoleFrame.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.ReferencePole
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ReferencePole
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

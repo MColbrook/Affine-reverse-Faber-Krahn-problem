@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/SourceBoundaryIntegral.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceBoundaryIntegral.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.SourceStokes
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceStokes
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

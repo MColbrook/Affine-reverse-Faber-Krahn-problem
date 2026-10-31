@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GinibreTransitionAnalyticLocalRegularityCompactTests.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreTransitionAnalyticLocalRegularityCompactTests.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreTransitionAnalyticLocalRegularityWeakDerivatives
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreTransitionAnalyticLocalRegularityWeakDerivatives
+ public import Mathlib.Analysis.Calculus.BumpFunction.Basic
+ 
+ @[expose] public section

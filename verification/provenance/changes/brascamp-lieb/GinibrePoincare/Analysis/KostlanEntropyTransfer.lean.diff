@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/KostlanEntropyTransfer.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/KostlanEntropyTransfer.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.KostlanGammaLaw
+-public import GinibrePoincare.Analysis.GinibreEntropy
++public import AffineFK.ChafaiBrascampLieb.Analysis.KostlanGammaLaw
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreEntropy
+ public import Mathlib.Analysis.Normed.Group.Bounded
+ 
+ @[expose] public section

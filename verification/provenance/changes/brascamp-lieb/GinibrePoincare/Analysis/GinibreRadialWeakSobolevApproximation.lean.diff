@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GinibreRadialWeakSobolevApproximation.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreRadialWeakSobolevApproximation.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreWeakSobolevTruncation
+-public import GinibrePoincare.Analysis.RadialSobolevSpace
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreWeakSobolevTruncation
++public import AffineFK.ChafaiBrascampLieb.Analysis.RadialSobolevSpace
+ 
+ @[expose] public section
+ 

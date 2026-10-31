@@ -1,0 +1,233 @@
+{
+  "kind": "Independent non-author AI full mathematical/fidelity/clarity review of polar geometry9 plus coordinate transport10",
+  "reviewer": "/root/formalization_coverage",
+  "proof_author": "/root/claim_inventory",
+  "complete_new_headers_and_bodies_read": 19,
+  "new_theorems": 19,
+  "new_definitions": 0,
+  "new_source_sha256": {
+    "AffineFK/GaussianPositionPolarGeometry.lean": "35994e7ba025daf077fcccead88d0ea538cd77a55e1a456a9af0f03b581426b8",
+    "AffineFK/GaussianPositionCoordinatePolar.lean": "d1ad9180995ddbbc01e0b6bb5e514328733bd99df1573428e1ef952f4eb57abb",
+    "AffineFK/GaussianPositionPolarVolumeTransport.lean": "e449cdc288bfa493b5ebc675ab7809732d127af704fc140d741ba5ad0f97e932"
+  },
+  "handoff_sha256": {
+    "audit/gaussian_position_polar_geometry_handoff.json": "babe8e2729bb5de6f819f43956f7b73ec32ee2f7583d991137d25696d1bffc7e",
+    "audit/gaussian_position_coordinate_polar_handoff.json": "f2a83a8f932ea4ac9c856ee7316d3b2d257c4f9888941241b7996c793613de21"
+  },
+  "validated_file_pins": {
+    ".lake/packages/mathlib/Mathlib/Analysis/LocallyConvex/Polar.lean": "d03d2e334c65ca8e06dec69d4d1743999e84941983025d0b56b1984cb6bfd9a7",
+    ".lake/packages/mathlib/Mathlib/Analysis/Normed/Module/Convex.lean": "ce38bfc47833fafdee05aa9c3f971f9ee6930e3530d1b119b545e6439cae87c1",
+    ".lake/packages/mathlib/Mathlib/MeasureTheory/Measure/Lebesgue/EqHaar.lean": "ac4f8d3b060c0bb1b1c58975fcca35f815d23e79d76cc5b0f97316119b96d188",
+    "AffineFK/GaussianPositionPolarGeometry.lean": "35994e7ba025daf077fcccead88d0ea538cd77a55e1a456a9af0f03b581426b8",
+    "AffineFK/SymmetricConvexInterior.lean": "36782d12f00cb216fa030dc62f9fe002db8c5e6d65ae3d037fd55a5debc2e717",
+    "audit/gaussian_position_polar_geometry_implementation.md": "1d5578a52272888203baec200c68b2f222f24322b82fdb9a6f1c2f3d05f02fc4",
+    "audit/gaussian_position_polar_geometry_source_manifest.json": "4c32353471a574c681087bbd060aed1f8c55cc64463797ea8fbd978aebe124bf",
+    "audit/history/polar_geometry_attempt01/GaussianPositionPolarGeometry.lean": "181603e33e5339e5953d7eb1f0bc3dc64e984fbf1cb247a1fcb35b7fb7816a73",
+    "audit/probes/GaussianPositionPolarGeometryAxioms.lean": "ce77f53cc3f1fc8ce2ba341dde18b4230d92f27aa4f0510592b64174e9e4a073",
+    "lake-manifest.json": "a9340a6648ae07976e18f4b362b2ad6c2480311042154a98ddd642dc89369dc1",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+    "logs/branch_polar_geometry/axioms-01.txt": "56a00af0caa63c5464508b9d1382a0c846bce2e07d4b79b8de2b251603384605",
+    "logs/branch_polar_geometry/source-build-01.txt": "65d3ff1eb8771e179e4e35fa498df0e6669efe9796b87b683fefe06d5fc9eb89",
+    "logs/branch_polar_geometry/source-build-02.txt": "d3e2f2f2f27eff2b49af749087f2fe94a2f6aac62e97fff5f2d5774ba2cad46f",
+    "scripts/gaussian_position_polar_geometry_handoff.py": "b24725e271809d97a6d91ddca987dd0fd056e59c2b747285b4a6cac0acbf814e",
+    ".lake/packages/mathlib/Mathlib/Analysis/InnerProductSpace/PiL2.lean": "eb721ebc69f040db53a1efb9640d221590c69e30644f2e15b4cf68b26a48d097",
+    ".lake/packages/mathlib/Mathlib/Analysis/Normed/Lp/PiLp.lean": "7112429f07acb62520c0f60723c3160bbc591dd53380b7082fa5a8dc5b6eeb96",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Factorial/Basic.lean": "400923b84cdd8ba283a323537f173a2e887436bc88c75fe1591413d1b91ce7ba",
+    ".lake/packages/mathlib/Mathlib/MeasureTheory/Measure/Haar/InnerProductSpace.lean": "beb79a38e3ec7814aff48b8561f4af222806482f0fff1644e718131c57d2e25e",
+    "AffineFK/GaussianPositionCoordinatePolar.lean": "d1ad9180995ddbbc01e0b6bb5e514328733bd99df1573428e1ef952f4eb57abb",
+    "AffineFK/GaussianPositionPolarVolumeTransport.lean": "e449cdc288bfa493b5ebc675ab7809732d127af704fc140d741ba5ad0f97e932",
+    "audit/gaussian_position_coordinate_polar_implementation.md": "0c2efef08d39e32782ce7817d700b70da6a210bd30deb47e36a14e5c7f70fc19",
+    "audit/gaussian_position_coordinate_polar_source_manifest.json": "46f5d04f7429429704401d1b0828d83b8724e7b5c3c8611bc892db110550d23c",
+    "audit/history/coordinate_polar_attempt01/GaussianPositionCoordinatePolar.lean": "0fcaba19c483c2d173297001bc1203d09a3b1b7c4c39968b0d7115eda9a62c7b",
+    "audit/history/coordinate_polar_attempt01/GaussianPositionPolarVolumeTransport.lean": "dc7508984ebce76a59b0accec5dd0cf7ec025231736466e19a1104349a9d0e26",
+    "audit/history/coordinate_polar_attempt02/GaussianPositionCoordinatePolar.lean": "d1ad9180995ddbbc01e0b6bb5e514328733bd99df1573428e1ef952f4eb57abb",
+    "audit/history/coordinate_polar_attempt02/GaussianPositionPolarVolumeTransport.lean": "dc7508984ebce76a59b0accec5dd0cf7ec025231736466e19a1104349a9d0e26",
+    "audit/probes/GaussianPositionCoordinatePolarAxioms.lean": "b62c14f42dff63089d18065dbb38dcc45b753d1aa520f38c765ffdff469628cd",
+    "logs/branch_polar_geometry/coordinate-axioms-01.txt": "98cf114fe41e0ecd4147fc8cc4fc1a4cceea2e0231e50c2123b484d6c2b358a9",
+    "logs/branch_polar_geometry/coordinate-final-source-build-01.txt": "d390a7ce98cbc648e86bd68c02ab095b51e645a83ab5dbaf02c9ad0834d47f52",
+    "logs/branch_polar_geometry/coordinate-volume-build-01.txt": "709341a76517dc8fb1d26dabd13682d9889dfb4270678078d35f043e14e39095",
+    "logs/branch_polar_geometry/coordinate-volume-build-02.txt": "f933d4dd1ea389b6fca8b7156eb3ef4b030a25cd212ffb2492bceef4b93a6a02",
+    "logs/branch_polar_geometry/coordinate-volume-build-03.txt": "3dce9daee9fef484f370e38fd6a52474476a88d512ec7f37f2a048c5ebdef54f",
+    "scripts/gaussian_position_coordinate_polar_handoff.py": "d3cd5124bfb95b9cac076bf6d5aec254b15d96cad067c7479e82ca1a37864b1d"
+  },
+  "validated_distinct_file_pin_count": 34,
+  "actual_raw_logs": {
+    "logs/branch_polar_geometry/axioms-01.txt": {
+      "sha256": "56a00af0caa63c5464508b9d1382a0c846bce2e07d4b79b8de2b251603384605",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake env lean audit/probes/GaussianPositionPolarGeometryAxioms.lean",
+      "elapsed_seconds": 4.837
+    },
+    "logs/branch_polar_geometry/source-build-01.txt": {
+      "sha256": "65d3ff1eb8771e179e4e35fa498df0e6669efe9796b87b683fefe06d5fc9eb89",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.GaussianPositionPolarGeometry",
+      "elapsed_seconds": 10.857
+    },
+    "logs/branch_polar_geometry/source-build-02.txt": {
+      "sha256": "d3e2f2f2f27eff2b49af749087f2fe94a2f6aac62e97fff5f2d5774ba2cad46f",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.GaussianPositionPolarGeometry",
+      "elapsed_seconds": 8.505
+    },
+    "logs/branch_polar_geometry/coordinate-axioms-01.txt": {
+      "sha256": "98cf114fe41e0ecd4147fc8cc4fc1a4cceea2e0231e50c2123b484d6c2b358a9",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake env lean audit/probes/GaussianPositionCoordinatePolarAxioms.lean",
+      "elapsed_seconds": 6.514
+    },
+    "logs/branch_polar_geometry/coordinate-final-source-build-01.txt": {
+      "sha256": "d390a7ce98cbc648e86bd68c02ab095b51e645a83ab5dbaf02c9ad0834d47f52",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.GaussianPositionCoordinatePolar",
+      "elapsed_seconds": 5.35
+    },
+    "logs/branch_polar_geometry/coordinate-volume-build-01.txt": {
+      "sha256": "709341a76517dc8fb1d26dabd13682d9889dfb4270678078d35f043e14e39095",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.GaussianPositionPolarVolumeTransport",
+      "elapsed_seconds": 5.883
+    },
+    "logs/branch_polar_geometry/coordinate-volume-build-02.txt": {
+      "sha256": "f933d4dd1ea389b6fca8b7156eb3ef4b030a25cd212ffb2492bceef4b93a6a02",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.GaussianPositionPolarVolumeTransport",
+      "elapsed_seconds": 8.921
+    },
+    "logs/branch_polar_geometry/coordinate-volume-build-03.txt": {
+      "sha256": "3dce9daee9fef484f370e38fd6a52474476a88d512ec7f37f2a048c5ebdef54f",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.GaussianPositionPolarVolumeTransport",
+      "elapsed_seconds": 7.526
+    }
+  },
+  "actual_axiom_reports": {
+    "AffineFKProof.gaussianPosition_polar_isClosed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_polar_convex": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_polar_even": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_closedBall_subset_polar": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_polar_subset_closedBall": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_polar_convex_body": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_polar_dilation_volume": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_polar_dilation_real_volume": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_dilated_polar_finite_volume": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_coordinate_inner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_coordinatePolar_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_coordinatePolar_image": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_coordinate_body": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_ofLp_image_volume": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_toLp_image_volume": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_coordinatePolar_volume": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_coordinate_volume_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_factorial_le_dim_pow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianPosition_dilated_polar_lower_of_volume_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "primary_mathlib_declarations_read": [
+    "LinearMap.polar",
+    "LinearMap.polar_eq_biInter_preimage",
+    "Measure.addHaar_smul_of_nonneg",
+    "PiLp.volume_preserving_toLp",
+    "PiLp.volume_preserving_ofLp",
+    "MeasurePreserving.measure_preimage_emb",
+    "Nat.factorial_le_pow"
+  ],
+  "mathematical_review_findings": [],
+  "mathematical_review_outcome": "No mathematical, polarity, norm, Haar normalization, dimension, conversion, constant or trust defect found.",
+  "key_checks": [
+    "The polar is literally Mathlib absolute polar for the actual real inner bilinear form, with no alternate support/norm definition.",
+    "Closedness and convexity are genuine intersections of continuous-linear preimages of the actual closed unit ball; absolute polarity supplies evenness for every K.",
+    "Cauchy-Schwarz derives the inner ball inclusion from actual boundedness. Testing the polar at the actual r/2-normalized vector derives the outer2/r bound from a literal open ball in K.",
+    "For an actual symmetric convex body, zero belongs to its actual interior, and the two proved ball bounds yield compactness, measurability, positive finite Haar volume and guarded positive real volume.",
+    "Haar scaling gives exact n^n volume dilation in ENNReal and real form, including n=0 conventions; the nonzero dilation/interior body theorem correctly retains n>0.",
+    "The one-sided coordinate polar agrees with the absolute real inner polar under literal symmetry by applying the original coordinate bound to both x and -x.",
+    "The actual PiLp equivalence transports compactness, convexity, symmetry and interior; its genuine volume-preserving theorem proves exact Haar normalization, not a norm-dependent estimate.",
+    "Both actual volumes and their product agree exactly before real conversion; no toReal monotonicity across infinity is invoked.",
+    "The final arithmetic is conditional on an explicit actual polar-volume-product lower bound; factorial<=n^n yields exactly volume(n polar)>=4^n, without Stirling or native numerical trust."
+  ],
+  "checking_provenance_note": "The actual coordinate source was compiled as a successful child in the otherwise failed second volume-target build; its preserved attempt02 bytes equal the final frozen source. The later5.350s explicit source receipt is accurately identified as cached, not falsely claimed as recompilation. The corrected volume target and both fresh9/10axiom commands actually succeeded.",
+  "attribution": "Mathlib actual polar development (Moritz Doll, Kalle Kytola), Cauchy-Schwarz/convexity, Haar scaling and Euclidean/PiLp volume-preserving correspondence retain their original primary Apache-2.0 attribution. No upstream Mahler proof is imported by these19 proofs.",
+  "authorship_boundary": "Reviewer authored none of these19 new C proofs. Frozen reused geometric/interior foundations are not represented as newly independently reviewed here; their existing separate provenance remains applicable.",
+  "scope_limits": [
+    "No unconditional Mahler/reverse-Santalo/universal-Milman conclusion is proved by this source branch; its final arithmetic explicitly accepts a volume-product bound.",
+    "No new reviewer Lean/Comparator run, human review, own six-kernel acceptance or full-paper verification is claimed."
+  ],
+  "new_compiler_or_checker_run_by_reviewer": false,
+  "own_comparator_claim": false,
+  "full_paper_verified": false
+}

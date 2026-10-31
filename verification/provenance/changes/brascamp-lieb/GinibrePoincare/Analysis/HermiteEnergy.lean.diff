@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/HermiteEnergy.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/HermiteEnergy.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.HermiteL2Family
+-public import GinibrePoincare.Analysis.HermiteWirtinger
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteL2Family
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteWirtinger
+ 
+ @[expose] public section
+ 

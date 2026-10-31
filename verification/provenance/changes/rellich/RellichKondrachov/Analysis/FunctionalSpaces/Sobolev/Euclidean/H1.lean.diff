@@ -1,0 +1,140 @@
+--- RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/H1.lean
++++ AffineFK/BenensonRellich/Analysis/FunctionalSpaces/Sobolev/Euclidean/H1.lean
+@@ -1,9 +1,16 @@
+-import Mathlib.Analysis.Calculus.ContDiff.Operations
+-import Mathlib.Analysis.Calculus.FDeriv.Const
+-import Mathlib.Analysis.InnerProductSpace.Dual
+-import Mathlib.MeasureTheory.Function.LpSpace.Complete
+-import Mathlib.MeasureTheory.Function.LpSpace.Indicator
+-import Mathlib.Topology.Algebra.Support
++module
++
++public import Mathlib.Analysis.Calculus.ContDiff.Operations
++public import Mathlib.Analysis.Calculus.FDeriv.Const
++public import Mathlib.Analysis.InnerProductSpace.Dual
++public import Mathlib.MeasureTheory.Function.LpSpace.Complete
++public import Mathlib.MeasureTheory.Function.LpSpace.Indicator
++public import Mathlib.Topology.Algebra.Support
++
++@[expose] public section
++
++set_option autoImplicit false
++set_option backward.isDefEq.respectTransparency false
+ 
+ /-
+ Copyright (c) 2026 Adam Benenson. All rights reserved.
+@@ -55,22 +62,21 @@
+ variable
+   {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E]
+ 
+-local instance : MeasurableSpace E := borel E
+-local instance : BorelSpace E := ⟨rfl⟩
++variable [MeasurableSpace E] [BorelSpace E]
+ local instance : OpensMeasurableSpace E := by infer_instance
+ 
+ variable (μ : Measure E) [IsFiniteMeasureOnCompacts μ]
+ 
+-private abbrev L2ℝ : Type _ := ↥(E →₂[μ] ℝ)
+-private abbrev L2E : Type _ := ↥(E →₂[μ] E)
+-private abbrev H1Target : Type _ := L2ℝ (μ := μ) × L2E (μ := μ)
++abbrev L2ℝ : Type _ := ↥(E →₂[μ] ℝ)
++abbrev L2E : Type _ := ↥(E →₂[μ] E)
++abbrev H1Target : Type _ := L2ℝ (μ := μ) × L2E (μ := μ)
+ 
+ /-- `C¹` real-valued functions on `E` with compact support, as a submodule of `E → ℝ`. -/
+ def C1c : Submodule ℝ (E → ℝ) where
+   carrier := {f | ContDiff ℝ 1 f ∧ HasCompactSupport f}
+   zero_mem' := by
+     refine ⟨contDiff_const, ?_⟩
+-    simpa using (HasCompactSupport.zero : HasCompactSupport (fun _ : E => (0 : ℝ)))
++    simpa using! (HasCompactSupport.zero : HasCompactSupport (fun _ : E => (0 : ℝ)))
+   add_mem' := by
+     intro f g hf hg
+     refine ⟨hf.1.add hg.1, hf.2.add hg.2⟩
+@@ -78,7 +84,7 @@
+     intro c f hf
+     refine ⟨hf.1.const_smul c, ?_⟩
+     -- `HasCompactSupport` is stable under pointwise scalar multiplication.
+-    simpa using (HasCompactSupport.smul_left (f := fun _ : E => c) hf.2)
++    simpa using! (HasCompactSupport.smul_left (f := fun _ : E => c) hf.2)
+ 
+ /-- The pointwise gradient (as an `E`-valued function), via Riesz representation. -/
+ noncomputable def grad (f : E → ℝ) : E → E :=
+@@ -88,21 +94,21 @@
+   have hcont : Continuous (fderiv ℝ f) := hf.continuous_fderiv one_ne_zero
+   have : Continuous fun x => (InnerProductSpace.toDual ℝ E).symm (fderiv ℝ f x) :=
+     (InnerProductSpace.toDual ℝ E).symm.continuous.comp hcont
+-  simpa [grad] using this
++  simpa [grad] using! this
+ 
+ lemma hasCompactSupport_grad {f : E → ℝ} (hf : HasCompactSupport f) :
+     HasCompactSupport (grad (E := E) f) := by
+   -- Outside the support of `f`, `fderiv` is identically `0`, hence so is `grad`.
+   have hf' : HasCompactSupport (fderiv ℝ f) := hf.fderiv ℝ
+   -- `grad` is composition with a linear map sending `0` to `0`.
+-  simpa [grad] using
++  simpa [grad] using!
+     (HasCompactSupport.comp_left (f := fderiv ℝ f) (g := (InnerProductSpace.toDual ℝ E).symm)
+       hf' (by simp))
+ 
+ lemma tsupport_grad_subset (f : E → ℝ) : tsupport (grad (E := E) f) ⊆ tsupport f := by
+   have hcomp :
+       tsupport (grad (E := E) f) ⊆ tsupport (fderiv ℝ f) := by
+-    simpa [grad, Function.comp] using
++    simpa [grad, Function.comp] using!
+       (tsupport_comp_subset
+         (g := (InnerProductSpace.toDual ℝ E).symm) (hg := by simp)
+         (f := fderiv ℝ f))
+@@ -127,7 +133,7 @@
+   (memLp_grad_of_mem_C1c (μ := μ) (E := E) f.2).toLp (grad (E := E) f.1)
+ 
+ omit [CompleteSpace E] in
+-private lemma toL2_add (f g : ↥(C1c (E := E))) :
++lemma toL2_add (f g : ↥(C1c (E := E))) :
+     toL2 (μ := μ) (E := E) (f + g) =
+       toL2 (μ := μ) (E := E) f + toL2 (μ := μ) (E := E) g := by
+   apply Lp.ext
+@@ -148,10 +154,10 @@
+           (toL2 (μ := μ) (E := E) g : E → ℝ) x := by
+       simp [hxf, hxg]
+     _ = ((toL2 (μ := μ) (E := E) f + toL2 (μ := μ) (E := E) g : L2ℝ (μ := μ)) : E → ℝ) x := by
+-      simpa [Pi.add_apply] using hxadd.symm
++      simpa [Pi.add_apply] using! hxadd.symm
+ 
+ omit [CompleteSpace E] in
+-private lemma toL2_smul (c : ℝ) (f : ↥(C1c (E := E))) :
++lemma toL2_smul (c : ℝ) (f : ↥(C1c (E := E))) :
+     toL2 (μ := μ) (E := E) (c • f) = c • toL2 (μ := μ) (E := E) f := by
+   apply Lp.ext
+   have hf : (toL2 (μ := μ) (E := E) f : E → ℝ) =ᵐ[μ] f.1 :=
+@@ -168,7 +174,7 @@
+   map_add' := toL2_add (μ := μ) (E := E)
+   map_smul' := toL2_smul (μ := μ) (E := E)
+ 
+-private lemma toL2Grad_add (f g : ↥(C1c (E := E))) :
++lemma toL2Grad_add (f g : ↥(C1c (E := E))) :
+     toL2Grad (μ := μ) (E := E) (f + g) =
+       toL2Grad (μ := μ) (E := E) f + toL2Grad (μ := μ) (E := E) g := by
+   apply Lp.ext
+@@ -199,9 +205,9 @@
+     _ = ((toL2Grad (μ := μ) (E := E) f +
+             toL2Grad (μ := μ) (E := E) g : L2E (μ := μ)) :
+             E → E) x := by
+-        simpa [Pi.add_apply] using hxadd.symm
+-
+-private lemma toL2Grad_smul (c : ℝ) (f : ↥(C1c (E := E))) :
++        simpa [Pi.add_apply] using! hxadd.symm
++
++lemma toL2Grad_smul (c : ℝ) (f : ↥(C1c (E := E))) :
+     toL2Grad (μ := μ) (E := E) (c • f) = c • toL2Grad (μ := μ) (E := E) f := by
+   apply Lp.ext
+   have hf : (toL2Grad (μ := μ) (E := E) f : E → E) =ᵐ[μ] grad (E := E) f.1 :=
+@@ -221,7 +227,7 @@
+       simp [hxf]
+     _ = ((c • toL2Grad (μ := μ) (E := E) f : L2E (μ := μ)) : E → E) x := by
+       -- `Lp.coeFn_smul` gives the pointwise evaluation of `c • f` in `L²`.
+-      simpa [Pi.smul_apply] using hxsmul.symm
++      simpa [Pi.smul_apply] using! hxsmul.symm
+ 
+ /-- Linear map sending `C¹_c` functions to the `L²` class of their gradient. -/
+ noncomputable def toL2GradLinear : ↥(C1c (E := E)) →ₗ[ℝ] L2E (μ := μ) where

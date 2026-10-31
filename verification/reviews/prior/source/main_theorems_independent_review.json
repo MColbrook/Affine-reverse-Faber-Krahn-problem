@@ -1,0 +1,17 @@
+{
+  "all_2_headers_and_bodies_read": true,
+  "source_manifest_sha256": "f06ec71052d535008f63d6c7fb78a9457ec5f615b0a5c6b8ed72b80aed22477d",
+  "source_pins": 990,
+  "new_definitions": 0,
+  "new_theorems": 2,
+  "actual_axiom_queries": 2,
+  "unconditional_M01_M02_at_source": true,
+  "authorship_boundary": "Root reviews only E new2 compositions; root-authored reused geometric/main proofs have separate B/C non-author reviews.",
+  "kind": "Independent non-author AI complete mathematical/fidelity/clarity review",
+  "reviewer": "/root",
+  "proof_author": "/root/palomar_requirements",
+  "review_sha256": "64bf267f25d9c16940c362eb7118a078780bb1354249e2ea05def10d8a93688b",
+  "defects_found": [],
+  "own_comparator_accepted": false,
+  "full_paper_verified": false
+}

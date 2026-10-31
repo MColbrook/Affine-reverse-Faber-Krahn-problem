@@ -1,0 +1,32 @@
+--- lean/OAI/Analysis/Mahler/ConformalSeries.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ConformalSeries.lean
+@@ -1,14 +1,18 @@
+-import Mathlib.Analysis.Calculus.SmoothSeries
+-import Mathlib.Analysis.Calculus.Deriv.Slope
+-import Mathlib.Analysis.Calculus.MeanValue
+-import Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv
+-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
+-import Mathlib.Analysis.SpecificLimits.Normed
+-import Mathlib.Tactic.FieldSimp
+-import Mathlib.Tactic.NormNum
+-import Mathlib.Tactic.Positivity
+-import Mathlib.Tactic.Linarith
+-import Mathlib.Tactic.Ring
++module
++
++public import Mathlib.Analysis.Calculus.SmoothSeries
++public import Mathlib.Analysis.Calculus.Deriv.Slope
++public import Mathlib.Analysis.Calculus.MeanValue
++public import Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv
++public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++public import Mathlib.Analysis.SpecificLimits.Normed
++public import Mathlib.Tactic.FieldSimp
++public import Mathlib.Tactic.NormNum
++public import Mathlib.Tactic.Positivity
++public import Mathlib.Tactic.Linarith
++public import Mathlib.Tactic.Ring
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

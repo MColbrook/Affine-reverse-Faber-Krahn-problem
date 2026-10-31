@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/WedgeUnit.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/WedgeUnit.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.WedgeEven
+-import OAI.Analysis.Mahler.WedgeOne
+-import OAI.Analysis.Mahler.SphereFluxIntegral
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.WedgeEven
++public import AffineFK.OpenAIMahler.Analysis.Mahler.WedgeOne
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereFluxIntegral
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,9 @@
+# Independent AI review of the actual analytic closure
+
+Reviewer: Codex `/root`; proof author: Codex `/root/formalization_coverage`. I read the complete bodies and headers of the two definitions and four theorems in `WhiteningSpectralClosure`. This is a non-author AI mathematical, fidelity and clarity review, not human review or Comparator acceptance.
+
+For fixed `c>0`, `c<=1`, the coefficient is exactly `(4/c)*informationSpectrumConstant(2/c)` and the final constant is exactly `4*A+8*A^2`. Their positivity is derived from `2<=2/c`. The constructed weighted groundstate law and its whitening are the actual laws from the earlier construction. The output body is literally the image under the actual invertible map, with the interior image justified by the homeomorphism. Its compactness, convexity, symmetry, nonempty interior, support, isotropy, Poincare bound and finite Fisher information are conclusions of that construction.
+
+The accepted information-to-spectrum inequality is applied with the single constant `P=2/c`. The genuine linear H0 pullback contributes the squared operator norm `4/c`. Finiteness of the true Rayleigh infimum is proved before its conversion to a real number. The actual information upper bound is `8*ell+n`; the scalar absorption therefore gives precisely `(4*A+8*A^2)*n`. No output spectral inequality or output isotropy is an assumption.
+
+No defect or lost condition was found. This source theorem explicitly consumes a genuine nonzero weak first eigenfunction, the same weighted law's strongly log-concave representative and the literal scalar covariance condition `c<=alpha<=1`. Later genuine sources discharge the eigenfunction and representative inputs. A universal geometric lower bound remains a separate obligation; the present conditional theorem alone does not prove M01 or M02.

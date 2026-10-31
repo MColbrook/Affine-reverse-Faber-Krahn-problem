@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/SourceRawOrientation.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceRawOrientation.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.SourceRawCoefficient
+-import OAI.Analysis.Mahler.RawReindexedDerivative
+-import OAI.Analysis.Mahler.SourceCoordinateForms
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceRawCoefficient
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RawReindexedDerivative
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceCoordinateForms
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/MatrixExteriorPower.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/MatrixExteriorPower.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.NormExteriorPower
+-import Mathlib.LinearAlgebra.Matrix.SchurComplement
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.NormExteriorPower
++public import Mathlib.LinearAlgebra.Matrix.SchurComplement
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/BlockMagnitudeLift.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/BlockMagnitudeLift.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.BlockMagnitudeGradient
+-public import GinibrePoincare.Analysis.GaussianLSIReduction
++public import AffineFK.ChafaiBrascampLieb.Analysis.BlockMagnitudeGradient
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianLSIReduction
+ 
+ @[expose] public section
+ 

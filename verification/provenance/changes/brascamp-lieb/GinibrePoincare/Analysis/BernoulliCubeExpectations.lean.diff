@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/BernoulliCubeExpectations.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/BernoulliCubeExpectations.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.BernoulliTaylorEnergy
++public import AffineFK.ChafaiBrascampLieb.Analysis.BernoulliTaylorEnergy
+ 
+ @[expose] public section
+ 

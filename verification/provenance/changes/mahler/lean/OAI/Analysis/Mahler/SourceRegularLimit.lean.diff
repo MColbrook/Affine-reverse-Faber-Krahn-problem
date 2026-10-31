@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/SourceRegularLimit.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceRegularLimit.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.SourceRegularFlux
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceRegularFlux
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

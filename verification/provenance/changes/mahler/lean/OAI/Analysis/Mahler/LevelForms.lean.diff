@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/LevelForms.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/LevelForms.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ExteriorHessian
+-import OAI.Analysis.Mahler.NormSquareForm
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ExteriorHessian
++public import AffineFK.OpenAIMahler.Analysis.Mahler.NormSquareForm
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

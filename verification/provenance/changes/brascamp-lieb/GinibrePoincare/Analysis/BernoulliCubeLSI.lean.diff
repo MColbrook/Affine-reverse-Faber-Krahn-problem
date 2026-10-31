@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/BernoulliCubeLSI.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/BernoulliCubeLSI.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.TwoPointLSI
++public import AffineFK.ChafaiBrascampLieb.Analysis.TwoPointLSI
+ 
+ @[expose] public section
+ 

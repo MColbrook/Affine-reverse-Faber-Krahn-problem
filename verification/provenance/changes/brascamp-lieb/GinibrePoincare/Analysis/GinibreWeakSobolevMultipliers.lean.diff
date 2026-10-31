@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GinibreWeakSobolevMultipliers.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreWeakSobolevMultipliers.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreDistributionalClosure
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreDistributionalClosure
+ 
+ @[expose] public section
+ 

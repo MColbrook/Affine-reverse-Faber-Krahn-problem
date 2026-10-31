@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/VerticalSpeed.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/VerticalSpeed.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.RadialBridge
+-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+-import Mathlib.Analysis.Calculus.ImplicitFunction.Bivariate
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RadialBridge
++public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
++public import Mathlib.Analysis.Calculus.ImplicitFunction.Bivariate
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

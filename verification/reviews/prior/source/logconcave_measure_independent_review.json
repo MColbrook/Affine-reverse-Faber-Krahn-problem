@@ -1,0 +1,32 @@
+{
+  "kind": "Independent non-author AI full M03 mathematics/fidelity/clarity and actual-evidence review",
+  "reviewer": "/root",
+  "proof_author": "/root/formalization_coverage",
+  "independent_ai_review_complete": true,
+  "complete_new_declarations_read": 12,
+  "new_theorems": 10,
+  "new_definitions": 2,
+  "source_import_probe_pins": 382,
+  "actual_source_axiom_queries": 12,
+  "defects_found": [],
+  "full_original_M03_at_source": true,
+  "explicit_density_witness_no_longer_an_M03_premise": true,
+  "finite_original_relative_information_derives_AC": true,
+  "full_Borell_without_finite_information_claimed": false,
+  "own_comparator_accepted": false,
+  "full_paper_verified": false,
+  "pins": {
+    "audit/logconcave_measure_source_manifest.json": "03d9654f03747b16d24edd074d5efedd7ff81754f6e9d700ddd9d9f9641590c1",
+    "audit/logconcave_measure_handoff.json": "f9603960e95bcf905d59560c52993c4fa6b07170c85278b16a766991ce2b77a2",
+    "audit/logconcave_measure_independent_review.md": "d20969c175267bec914e43bc2ca6d2e03f4fa6d7ff9e836448fd7354fd3fa87e",
+    "scripts/review_logconcave_measure.py": "c50389b2eefa17d4767b04db18037ba108bf477eec85ac0040f1dac263faf516",
+    "AffineFK/LogConcaveMeasureBalls.lean": "531b0e78bd850a23b73d1825ca27c40eff3c922f5254ab40f509360f9cb36181",
+    "AffineFK/LogConcaveMeasureDensity.lean": "0a9d0ca6aa5148847fabefed4b54f61e8dff0065b0cb235d2fc43d8d93e3c555",
+    "AffineFK/InformationSpectrumLogConcaveMeasure.lean": "bfbf56af1c2830f7332be8a14f4382ccd97327dad20dd34b4e8748d34887a457",
+    "logs/branch_logconcave_measure/density-build-01.txt": "19aad7af9a9ba62c686addc549efe089b762529954af12b14d65c2fdcd6e43f2",
+    "logs/branch_logconcave_measure/information-spectrum-build-02.txt": "51f1a8cee339cbe8a97787505684b106de0ec1a4ca8b1668d594c844305da9a8",
+    "logs/branch_logconcave_measure/lake-version-01.txt": "9254571bdf4f08910c7dbce6715367c5860f0af5a9032232390f416ec23611a0",
+    "logs/branch_logconcave_measure/lean-version-01.txt": "3b219e52f13ce0d071cc1e87f8613c8cec3d88ee0d709a9a07c2c605088945d4",
+    "logs/branch_logconcave_measure/source-pinned-axioms-01.txt": "831059bebfab248f7e62efb0b420d12a9be0bacb4726e57efd93005cf08b4e5f"
+  }
+}

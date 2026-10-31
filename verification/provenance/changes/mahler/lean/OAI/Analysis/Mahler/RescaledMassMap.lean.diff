@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/RescaledMassMap.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RescaledMassMap.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.RescaledHolomorphic
+-import OAI.Analysis.Mahler.MassTarget
+-import Mathlib.Analysis.Analytic.Polynomial
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RescaledHolomorphic
++public import AffineFK.OpenAIMahler.Analysis.Mahler.MassTarget
++public import Mathlib.Analysis.Analytic.Polynomial
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

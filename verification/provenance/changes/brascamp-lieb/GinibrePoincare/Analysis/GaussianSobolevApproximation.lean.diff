@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/GaussianSobolevApproximation.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianSobolevApproximation.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.RadialSobolevClosure
+-public import GinibrePoincare.Analysis.SobolevTruncation
+-public import GinibrePoincare.Analysis.BernoulliTaylorEnergy
++public import AffineFK.ChafaiBrascampLieb.Analysis.RadialSobolevClosure
++public import AffineFK.ChafaiBrascampLieb.Analysis.SobolevTruncation
++public import AffineFK.ChafaiBrascampLieb.Analysis.BernoulliTaylorEnergy
+ public import Mathlib.Analysis.Calculus.BumpFunction.SmoothApprox
+ public import Mathlib.Analysis.Calculus.ContDiff.Convolution
+ 

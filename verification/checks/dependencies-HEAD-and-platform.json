@@ -1,0 +1,224 @@
+{
+  "kind": "Actual read-only pre-gate-completion cached dependency HEAD and platform supplement",
+  "python_version": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.35",
+  "dependencies": [
+    {
+      "package": "mathlib",
+      "pinned_commit": "b63f6e8a68d220e3b3bc4f3792bb53650d375f24",
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/mathlib",
+        "diff",
+        "--quiet",
+        "HEAD",
+        "--"
+      ],
+      "actual_cleanliness_exit": 0,
+      "staged_and_unstaged_tracked_clean": true
+    },
+    {
+      "package": "plausible",
+      "pinned_commit": "fb13df72ecefd8ddbf9291021d7f33a8673eb57b",
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/plausible",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/plausible",
+        "diff",
+        "--quiet",
+        "HEAD",
+        "--"
+      ],
+      "actual_cleanliness_exit": 0,
+      "staged_and_unstaged_tracked_clean": true
+    },
+    {
+      "package": "LeanSearchClient",
+      "pinned_commit": "29ff470276c725ae01505d55b17148c18fc7dfd3",
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/LeanSearchClient",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/LeanSearchClient",
+        "diff",
+        "--quiet",
+        "HEAD",
+        "--"
+      ],
+      "actual_cleanliness_exit": 0,
+      "staged_and_unstaged_tracked_clean": true
+    },
+    {
+      "package": "importGraph",
+      "pinned_commit": "10a2cfff285e1c7c2ebc49c0ba22cab0f3c58ee5",
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/importGraph",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/importGraph",
+        "diff",
+        "--quiet",
+        "HEAD",
+        "--"
+      ],
+      "actual_cleanliness_exit": 0,
+      "staged_and_unstaged_tracked_clean": true
+    },
+    {
+      "package": "proofwidgets",
+      "pinned_commit": "c643bbb3c24f8a25f9c14e3a6b1ceb13d01f3de1",
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/proofwidgets",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/proofwidgets",
+        "diff",
+        "--quiet",
+        "HEAD",
+        "--"
+      ],
+      "actual_cleanliness_exit": 0,
+      "staged_and_unstaged_tracked_clean": true
+    },
+    {
+      "package": "aesop",
+      "pinned_commit": "a90fbf7b02ff06a0deebf74088dff9e5fe02c9ea",
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/aesop",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/aesop",
+        "diff",
+        "--quiet",
+        "HEAD",
+        "--"
+      ],
+      "actual_cleanliness_exit": 0,
+      "staged_and_unstaged_tracked_clean": true
+    },
+    {
+      "package": "Qq",
+      "pinned_commit": "37b0ba0b26109cf9f9c541f0f9557e50cfa1a3b9",
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/Qq",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/Qq",
+        "diff",
+        "--quiet",
+        "HEAD",
+        "--"
+      ],
+      "actual_cleanliness_exit": 0,
+      "staged_and_unstaged_tracked_clean": true
+    },
+    {
+      "package": "batteries",
+      "pinned_commit": "33131f4fb10067cb3009bf4db615d9680c1ccd6b",
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/batteries",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/batteries",
+        "diff",
+        "--quiet",
+        "HEAD",
+        "--"
+      ],
+      "actual_cleanliness_exit": 0,
+      "staged_and_unstaged_tracked_clean": true
+    },
+    {
+      "package": "Cli",
+      "pinned_commit": "843844fa601dd56767b1eb22b7ada5b64d5e567a",
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/Cli",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/Cli",
+        "diff",
+        "--quiet",
+        "HEAD",
+        "--"
+      ],
+      "actual_cleanliness_exit": 0,
+      "staged_and_unstaged_tracked_clean": true
+    }
+  ],
+  "versions": [
+    {
+      "command": [
+        "bwrap",
+        "--version"
+      ],
+      "output": "bubblewrap 0.6.1",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uname",
+        "-srmo"
+      ],
+      "output": "Linux 5.15.0-198-generic x86_64 GNU/Linux",
+      "exit_code": 0
+    }
+  ],
+  "no_dependency_or_GitHub_fetch_command": true
+}

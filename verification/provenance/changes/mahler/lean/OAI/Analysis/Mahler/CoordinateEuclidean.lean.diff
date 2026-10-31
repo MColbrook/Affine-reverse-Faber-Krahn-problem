@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/CoordinateEuclidean.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/CoordinateEuclidean.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.CoordinateSphere
+-import Mathlib.Analysis.InnerProductSpace.PiL2
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.CoordinateSphere
++public import Mathlib.Analysis.InnerProductSpace.PiL2
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

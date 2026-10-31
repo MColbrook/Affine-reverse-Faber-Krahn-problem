@@ -1,0 +1,169 @@
+{
+  "kind": "Independent non-author AI static complete canonical-data/statement/proof/config/probe review",
+  "reviewer": "/root/formalization_coverage",
+  "canonical_author": "/root/claim_inventory",
+  "setup_author": "/root",
+  "independent_static_review_complete": true,
+  "selected_theorem": "AffineFK.affine_reverse_faber_krahn_principal_results",
+  "exact_claims": [
+    "M01",
+    "M02",
+    "M03"
+  ],
+  "clause_correspondence": "Exactly (accepted full M01 AND accepted full M02) AND accepted full set-based-law M03; no assumption or conclusion edited",
+  "complete_helper_declarations": 29,
+  "complete_data_declarations_including_abbrev": 26,
+  "complete_proved_helpers": 3,
+  "complete_block_copies_independently_checked": [
+    {
+      "names": [
+        "SobolevAmbient",
+        "testFunctionGradient"
+      ],
+      "complete_block_sha256": "1bffa56284f3a1a975ced576d8beac182df011fe8697092e280a5bb190f49c28",
+      "accepted_origin": "AffineFK/MainTheoremsResults/Challenge.lean",
+      "accepted_origin_sha256": "48ec40a745ccd3948e5d9d5c1e59e57865c21df1f463fd3a8a8bcfde6ce60bc7"
+    },
+    {
+      "names": [
+        "gaussianPosition_matrix_det",
+        "gaussianPositionSLLinear"
+      ],
+      "complete_block_sha256": "0f5b7b1ba2062dd2f9f85ed550988134c63234c497a9ee92f66de558b551805d",
+      "accepted_origin": "AffineFK/MainTheoremsResults/Challenge.lean",
+      "accepted_origin_sha256": "48ec40a745ccd3948e5d9d5c1e59e57865c21df1f463fd3a8a8bcfde6ce60bc7"
+    },
+    {
+      "names": [
+        "GaussianPositionMaximal"
+      ],
+      "complete_block_sha256": "3c4d8ea825ccccd2e105dead8460bd367d281141a03e646db2bab953504d4de4",
+      "accepted_origin": "AffineFK/MainTheoremsResults/Challenge.lean",
+      "accepted_origin_sha256": "48ec40a745ccd3948e5d9d5c1e59e57865c21df1f463fd3a8a8bcfde6ce60bc7"
+    },
+    {
+      "names": [
+        "unweightedTestToL2",
+        "unweightedSmoothPair",
+        "unweightedSobolevGraph",
+        "unweightedValue",
+        "unweightedGradient",
+        "unweighted_smooth_pair_mem"
+      ],
+      "complete_block_sha256": "9f7511dc2e911e2eca092328b72bd2a547c085a321762a0bc6d98ffb68ed4095",
+      "accepted_origin": "AffineFK/MainTheoremsResults/Challenge.lean",
+      "accepted_origin_sha256": "48ec40a745ccd3948e5d9d5c1e59e57865c21df1f463fd3a8a8bcfde6ce60bc7"
+    },
+    {
+      "names": [
+        "dirichletTestToTop",
+        "dirichletTestToH1",
+        "dirichletSobolev",
+        "dirichletValue",
+        "dirichletGradient"
+      ],
+      "complete_block_sha256": "41f2218139d9e334559d74cae4090245db61cfeacdf5788f6c509afb86b4481e",
+      "accepted_origin": "AffineFK/MainTheoremsResults/Challenge.lean",
+      "accepted_origin_sha256": "48ec40a745ccd3948e5d9d5c1e59e57865c21df1f463fd3a8a8bcfde6ce60bc7"
+    },
+    {
+      "names": [
+        "dirichletRayleigh",
+        "dirichletEigenvalue"
+      ],
+      "complete_block_sha256": "f0270310569e658c5609178394b7fd198f623af8edede09f22b3fa9326bfd502",
+      "accepted_origin": "AffineFK/MainTheoremsResults/Challenge.lean",
+      "accepted_origin_sha256": "48ec40a745ccd3948e5d9d5c1e59e57865c21df1f463fd3a8a8bcfde6ce60bc7"
+    },
+    {
+      "names": [
+        "UniformSymmetricGaussianDirichletBound"
+      ],
+      "complete_block_sha256": "ab0aca1acca0c3dfac629c68a79d0db695dcfb58d3089158559fc5f7c264b84a",
+      "accepted_origin": "AffineFK/MainTheoremsResults/Challenge.lean",
+      "accepted_origin_sha256": "48ec40a745ccd3948e5d9d5c1e59e57865c21df1f463fd3a8a8bcfde6ce60bc7"
+    },
+    {
+      "names": [
+        "IsLogConcaveMeasure"
+      ],
+      "complete_block_sha256": "deb5e2df25002739494a7f003bf190f04ee47c4b1d2221a260d5b36ae30d9f78",
+      "accepted_origin": "AffineFK/AdditionalOriginalResults/Challenge.lean",
+      "accepted_origin_sha256": "90063d93437e66c9c7bae2bb363c34085046af51b24e6fa458e28635cef65eb2"
+    },
+    {
+      "names": [
+        "densityMeasure"
+      ],
+      "complete_block_sha256": "564c155efad4a2b845587cc225d556679335c61791d0fa1ee9b5466422473f18",
+      "accepted_origin": "AffineFK/AdditionalOriginalResults/Challenge.lean",
+      "accepted_origin_sha256": "90063d93437e66c9c7bae2bb363c34085046af51b24e6fa458e28635cef65eb2"
+    },
+    {
+      "names": [
+        "sqrtDensitySobolev",
+        "fisherInformation",
+        "relativeFisherInformation"
+      ],
+      "complete_block_sha256": "4125824e024ff711ce764cdc6ae071afbf154d8aafce99f88541f1a4cca85e44",
+      "accepted_origin": "AffineFK/AdditionalOriginalResults/Challenge.lean",
+      "accepted_origin_sha256": "90063d93437e66c9c7bae2bb363c34085046af51b24e6fa458e28635cef65eb2"
+    },
+    {
+      "names": [
+        "canonicalLebesgueDensity",
+        "relativeFisherMeasure"
+      ],
+      "complete_block_sha256": "2bf1518d22f98d738770b2559ed4db89727b9ba149b4cbd69bd70609bf5b13c6",
+      "accepted_origin": "AffineFK/AdditionalOriginalResults/Challenge.lean",
+      "accepted_origin_sha256": "90063d93437e66c9c7bae2bb363c34085046af51b24e6fa458e28635cef65eb2"
+    },
+    {
+      "names": [
+        "poincare_euclidean_completeSpace",
+        "AdmissiblePoincareConstant",
+        "poincareConstant"
+      ],
+      "complete_block_sha256": "fa19751048dce69a3457e79daee9da02dd16b4a00c71c5f6752e57012895b486",
+      "accepted_origin": "AffineFK/AdditionalOriginalResults/Challenge.lean",
+      "accepted_origin_sha256": "90063d93437e66c9c7bae2bb363c34085046af51b24e6fa458e28635cef65eb2"
+    }
+  ],
+  "source_byte_copies_independently_checked": 992,
+  "source_proof_bytes": 5508450,
+  "benchmark_placeholders_in_Challenge": 1,
+  "Solution_placeholders": 0,
+  "definition_holes": [],
+  "direct_source_proof": "Actual accepted MainTheorems conjunction paired with full InformationSpectrumLogConcaveMeasure uniform theorem; Solution never imports Challenge",
+  "actual_origin_classifier_root_modules": [
+    "Challenge",
+    "Solution"
+  ],
+  "actual_origin_classifier_prefix": "AffineFK.",
+  "private_source_imports": 992,
+  "private_imports_including_Solution": 993,
+  "static_probe_review_complete": true,
+  "probe_scope": "Statement probes recurse from selected TYPE through ordinary complete type/value dependencies; proof probe starts from TYPE and genuine selected proof and loads every source's private declarations. Actual compilation/fingerprints/closure counts remain pending.",
+  "static_findings": [],
+  "portability_finding_resolved": "Probe directory/library/runner names are now AuditTools with correct case for Linux; original pre-build setup was preserved by root",
+  "author_boundary": "Reviewer authored several reused analytic/geometric sources and prior Stage36 presentation, but none of this new canonical interface or probe setup. This is independent review of new packaging/data/statement/proof applications, not a new correctness review of the unchanged992 proof sources; their earlier non-author reviews remain distinct.",
+  "no_compiler_or_network_by_reviewer": true,
+  "new_packet_compilation_inferred": false,
+  "new_packet_Comparator_acceptance": false,
+  "submission_or_GitHub_interaction": false,
+  "full_manuscript_verified": false,
+  "pins": {
+    "Challenge.lean": "f1e54850c2a7e20d96f5c26af48ec68dfa208d718837c6f91e966444172d01c1",
+    "Solution.lean": "40e7bf57f72e19da664b408a95ab9fdca52caf883d9adf7cc351f7c50708e659",
+    "AxiomAudit.lean": "02fcc86dd0c6bf5508141ed6ee21e316c742aa31a7e058f5996f2264af7ebe9b",
+    "comparator.json": "8f067ec60c3a994daba8faeaaad85bfff96ae7e39623ddf29934d8047673a6ac",
+    "lakefile.toml": "fd9272ca9a57effc2f085b58870a59a074b9ba546f35568377d594418794fc37",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+    "lake-manifest.json": "a9340a6648ae07976e18f4b362b2ad6c2480311042154a98ddd642dc89369dc1",
+    "AuditTools/StatementChallenge.lean": "a99d43358e64cf9df95fbc5ea30afec8ac8b5f7a1c44a3e2f959310e058d2ea8",
+    "AuditTools/StatementSolution.lean": "483fca647ec811494381bfffc5ac063fd5e5609858606fdbeffa84c228976553",
+    "AuditTools/ProofClosure.lean": "116101d4dcddd9d30590e66f965e388e597cd2a68993a27022490e380543643f",
+    "verification/provenance/interface-source-copy.json": "065ea5c00e4875172e5bfdbde4ec1ebab710e9c24c30f8c759ac51cfac753999",
+    "verification/source-sha256.json": "8f47b864010173ab9bd069e432191e032b8ff683f103cf81aa9703c5a4233a24"
+  }
+}

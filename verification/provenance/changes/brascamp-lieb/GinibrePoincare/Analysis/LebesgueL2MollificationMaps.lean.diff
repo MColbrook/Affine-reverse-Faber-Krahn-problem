@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/LebesgueL2MollificationMaps.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/LebesgueL2MollificationMaps.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.LebesgueL2Convolution
++public import AffineFK.ChafaiBrascampLieb.Analysis.LebesgueL2Convolution
+ 
+ @[expose] public section
+ 

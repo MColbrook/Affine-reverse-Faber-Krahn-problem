@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/TaylorDifferenceQuotient.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/TaylorDifferenceQuotient.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.BernoulliGaussianCLT
++public import AffineFK.ChafaiBrascampLieb.Analysis.BernoulliGaussianCLT
+ public import Mathlib.Analysis.Calculus.Taylor
+ 
+ @[expose] public section

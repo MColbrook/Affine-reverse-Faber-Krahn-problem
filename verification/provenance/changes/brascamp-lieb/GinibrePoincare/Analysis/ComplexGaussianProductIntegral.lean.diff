@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/ComplexGaussianProductIntegral.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/ComplexGaussianProductIntegral.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.GaussianProbability
++public import AffineFK.ChafaiBrascampLieb.Concrete.GaussianProbability
+ public import Mathlib.MeasureTheory.Integral.Pi
+ 
+ @[expose] public section

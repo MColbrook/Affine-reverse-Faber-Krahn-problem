@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SpecialSourceMass.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SpecialSourceMass.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.SourceRegularMass
+-import OAI.Analysis.Mahler.RegularMassReduction
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceRegularMass
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RegularMassReduction
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

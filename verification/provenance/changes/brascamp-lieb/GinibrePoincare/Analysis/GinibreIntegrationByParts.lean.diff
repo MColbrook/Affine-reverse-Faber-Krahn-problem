@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GinibreIntegrationByParts.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreIntegrationByParts.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.L2RepresentativeBridges
+-public import GinibrePoincare.Analysis.ComplexGaussianIntegrationByParts
++public import AffineFK.ChafaiBrascampLieb.Analysis.L2RepresentativeBridges
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexGaussianIntegrationByParts
+ public import Mathlib.MeasureTheory.Integral.IntegralEqImproper
+ 
+ @[expose] public section

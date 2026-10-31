@@ -1,0 +1,9 @@
+--- GinibrePoincare/Analysis/CorrespondenceBrascampLiebJets.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceBrascampLiebJets.lean
+@@ -1,5 +1,5 @@
+ module
+-public import GinibrePoincare.Analysis.AlternativeBakryEmeryGibbsGenerator
++public import AffineFK.ChafaiBrascampLieb.Analysis.AlternativeBakryEmeryGibbsGenerator
+ public import Mathlib.Analysis.Calculus.FDeriv.Symmetric
+ @[expose] public section
+ open scoped ContDiff

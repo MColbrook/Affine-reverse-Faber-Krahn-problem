@@ -1,0 +1,22 @@
+{
+  "kind": "Independent non-author AI mathematical, fidelity and clarity review",
+  "reviewer": "/root",
+  "proof_author": "/root/formalization_coverage",
+  "all_53_headers_and_bodies_read": true,
+  "source_modules": 15,
+  "new_theorems": 44,
+  "new_definitions": 9,
+  "actual_axiom_queries": 53,
+  "source_pins": 440,
+  "raw_logs": 33,
+  "actual_axiom_logs": [
+    "logs/branch_whitening/whitening-pinned-axioms-01.txt"
+  ],
+  "source_manifest_sha256": "de678301dd9e673af6beabeb2605a91eb7a2f350bbd75427758c8f0478af2d39",
+  "review_sha256": "96cb21fbcc9994813fca55c5eaac694e740755973de4b089296badb8d4194068",
+  "defects_found": [],
+  "milman_existence_verified": false,
+  "groundstate_log_concavity_existence_verified": false,
+  "own_comparator_accepted": false,
+  "full_paper_verified": false
+}

@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SourceCoordinateForms.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceCoordinateForms.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.SourceFluxRegularity
+-import OAI.Analysis.Mahler.PuncturedSublevelStokes
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceFluxRegularity
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PuncturedSublevelStokes
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

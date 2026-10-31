@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/FormLocalization.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/FormLocalization.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.RegularPartition
+-import OAI.Analysis.Mahler.ChartStokes
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RegularPartition
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ChartStokes
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

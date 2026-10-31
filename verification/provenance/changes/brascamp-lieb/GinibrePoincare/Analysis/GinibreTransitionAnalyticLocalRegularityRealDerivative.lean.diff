@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GinibreTransitionAnalyticLocalRegularityRealDerivative.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreTransitionAnalyticLocalRegularityRealDerivative.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreTransitionAnalyticLocalRegularityInterior
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreTransitionAnalyticLocalRegularityInterior
+ public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+ 
+ @[expose] public section

@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/SourceCanonicalMeasure.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceCanonicalMeasure.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.SourceTopCoordinates
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceTopCoordinates
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

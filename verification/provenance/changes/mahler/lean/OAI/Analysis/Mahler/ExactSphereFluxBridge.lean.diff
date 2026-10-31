@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/ExactSphereFluxBridge.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ExactSphereFluxBridge.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ExactFormCoordinates
+-import OAI.Analysis.Mahler.SphereCoordinateIntegral
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ExactFormCoordinates
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereCoordinateIntegral
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

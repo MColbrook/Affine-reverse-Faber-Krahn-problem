@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/CoordinateAnnulus.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/CoordinateAnnulus.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.CoordinateBall
+-import Mathlib.Tactic.Ring
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.CoordinateBall
++public import Mathlib.Tactic.Ring
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GaussianPolynomialCompleteness.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianPolynomialCompleteness.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianPolynomialDensity
+-public import GinibrePoincare.Analysis.GaussianPolynomialIntegrability
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianPolynomialDensity
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianPolynomialIntegrability
+ public import Mathlib.MeasureTheory.Function.L1Space.Integrable
+ 
+ @[expose] public section

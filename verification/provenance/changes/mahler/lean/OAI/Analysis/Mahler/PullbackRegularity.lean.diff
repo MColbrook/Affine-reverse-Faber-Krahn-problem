@@ -1,0 +1,20 @@
+--- lean/OAI/Analysis/Mahler/PullbackRegularity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/PullbackRegularity.lean
+@@ -1,8 +1,12 @@
+-import OAI.Analysis.Mahler.DCForms
+-import Mathlib.Analysis.Calculus.ContDiff.CPolynomial
+-import Mathlib.Analysis.Normed.Module.FiniteDimension
+-import Mathlib.LinearAlgebra.Basis.VectorSpace
+-import Mathlib.LinearAlgebra.Multilinear.FiniteDimensional
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.DCForms
++public import Mathlib.Analysis.Calculus.ContDiff.CPolynomial
++public import Mathlib.Analysis.Normed.Module.FiniteDimension
++public import Mathlib.LinearAlgebra.Basis.VectorSpace
++public import Mathlib.LinearAlgebra.Multilinear.FiniteDimensional
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

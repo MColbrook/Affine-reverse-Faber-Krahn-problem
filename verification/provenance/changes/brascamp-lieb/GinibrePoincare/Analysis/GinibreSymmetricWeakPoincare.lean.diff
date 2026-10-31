@@ -1,0 +1,24 @@
+--- GinibrePoincare/Analysis/GinibreSymmetricWeakPoincare.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreSymmetricWeakPoincare.lean
+@@ -1,13 +1,13 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreArbitraryWeakPairClosure
+-public import GinibrePoincare.Endgame.ConcreteTheoremOneNine
+-public import GinibrePoincare.Analysis.EntropyL2Closure
+-public import GinibrePoincare.Analysis.EquilibriumProbability
+-public import GinibrePoincare.Analysis.ComplexGaussianMoments
+-public import GinibrePoincare.Analysis.KostlanProductLaw
+-public import GinibrePoincare.Analysis.GinibreSmoothDistributionalGradient
+-public import GinibrePoincare.Analysis.CenterOfMassEigenfunctions
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreArbitraryWeakPairClosure
++public import AffineFK.ChafaiBrascampLieb.Endgame.ConcreteTheoremOneNine
++public import AffineFK.ChafaiBrascampLieb.Analysis.EntropyL2Closure
++public import AffineFK.ChafaiBrascampLieb.Analysis.EquilibriumProbability
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexGaussianMoments
++public import AffineFK.ChafaiBrascampLieb.Analysis.KostlanProductLaw
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreSmoothDistributionalGradient
++public import AffineFK.ChafaiBrascampLieb.Analysis.CenterOfMassEigenfunctions
+ 
+ @[expose] public section
+ 

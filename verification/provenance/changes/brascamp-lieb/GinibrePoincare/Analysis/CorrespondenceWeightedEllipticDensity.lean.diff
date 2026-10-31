@@ -1,0 +1,18 @@
+--- GinibrePoincare/Analysis/CorrespondenceWeightedEllipticDensity.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceWeightedEllipticDensity.lean
+@@ -1,5 +1,5 @@
+ module
+-public import GinibrePoincare.Analysis.GinibreTransitionAnalyticLocalRegularityRestrictedData
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreTransitionAnalyticLocalRegularityRestrictedData
+ public import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+ @[expose] public section
+ open MeasureTheory Set
+@@ -86,7 +86,7 @@
+     (hη : Continuous η) (hc : HasCompactSupport η) :
+     MemLp (fun x=>η x*f x) 2 (volume : Measure E) := by
+   have hK := correspondenceWeightedElliptic_compact_multiplier_memLp ρ hρ hp f η hf hη (tsupport η) hc
+-  have hI := (memLp_indicator_iff_restrict hc.measurableSet).mpr hK
++  have hI := (memLp_indicator_iff_restrict hc.measurableSet.nullMeasurableSet).mpr hK
+   apply hI.ae_eq
+   exact ae_of_all volume fun x=>by
+     by_cases hx : x∈tsupport η

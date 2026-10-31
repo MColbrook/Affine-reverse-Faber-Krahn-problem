@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/CorrespondenceWeightedEllipticConvolution.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceWeightedEllipticConvolution.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticMollification
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticMollification
+ public import Mathlib.Analysis.Calculus.ContDiff.Convolution
+ public import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
+ 

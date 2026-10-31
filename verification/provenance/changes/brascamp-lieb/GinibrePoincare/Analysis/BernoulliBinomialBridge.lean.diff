@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/BernoulliBinomialBridge.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/BernoulliBinomialBridge.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.BernoulliCubeExpectations
++public import AffineFK.ChafaiBrascampLieb.Analysis.BernoulliCubeExpectations
+ public import Mathlib.Probability.Independence.Integration
+ 
+ @[expose] public section

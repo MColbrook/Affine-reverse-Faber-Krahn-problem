@@ -1,0 +1,22 @@
+{
+  "kind": "Independent non-author AI complete mathematical/fidelity/clarity review",
+  "reviewer": "/root",
+  "proof_author": "/root/formalization_coverage",
+  "all_38_headers_and_bodies_read": true,
+  "new_theorems": 32,
+  "new_definitions": 6,
+  "source_modules": 6,
+  "source_pins": 37,
+  "raw_logs": 14,
+  "source_manifest_sha256": "62a1fd50c31688f4db6ea24e71fc5ca0ed69393304aef43aae4dc8a6806700d1",
+  "actual_axiom_queries": 38,
+  "actual_axiom_logs": [
+    "logs/branch_gaussian_tilt/source-pinned-axioms-01.txt"
+  ],
+  "review_sha256": "9a560fcf202a2697c6cce57cd83caf3a9e7d37ff639883290106d519d9f1fa80",
+  "defects_found": [],
+  "bourgain_milman_verified": false,
+  "universal_ellipsoid_existence_verified": false,
+  "own_comparator_accepted": false,
+  "full_paper_verified": false
+}

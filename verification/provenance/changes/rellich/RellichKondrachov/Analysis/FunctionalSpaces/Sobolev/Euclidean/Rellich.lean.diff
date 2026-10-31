@@ -1,0 +1,157 @@
+--- RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/Rellich.lean
++++ AffineFK/BenensonRellich/Analysis/FunctionalSpaces/Sobolev/Euclidean/Rellich.lean
+@@ -1,10 +1,17 @@
+-import Mathlib.Analysis.Normed.Operator.Compact
+-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+-import Mathlib.MeasureTheory.Function.LpSpace.Complete
+-import RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.TranslationEstimateH1
+-import RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.FrechetKolmogorov
+-import RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Kernels
+-import RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.TranslationIntegral
++module
++
++public import Mathlib.Analysis.Normed.Operator.Compact
++public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
++public import Mathlib.MeasureTheory.Function.LpSpace.Complete
++public import AffineFK.BenensonRellich.Analysis.FunctionalSpaces.Sobolev.Euclidean.TranslationEstimateH1
++public import AffineFK.BenensonRellich.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.FrechetKolmogorov
++public import AffineFK.BenensonRellich.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Kernels
++public import AffineFK.BenensonRellich.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.TranslationIntegral
++
++@[expose] public section
++
++set_option autoImplicit false
++set_option backward.isDefEq.respectTransparency false
+ 
+ /-
+ Copyright (c) 2026 Adam Benenson. All rights reserved.
+@@ -59,8 +66,7 @@
+ variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E]
+   [CompleteSpace E]
+ 
+-local instance instMeasurableSpaceE_SobolevEuclideanRellich : MeasurableSpace E := borel E
+-local instance instBorelSpaceE_SobolevEuclideanRellich : BorelSpace E := ⟨rfl⟩
++variable [MeasurableSpace E] [BorelSpace E]
+ local instance instOpensMeasurableSpaceE_SobolevEuclideanRellich : OpensMeasurableSpace E := by
+   infer_instance
+ local instance instMeasurableAddE_SobolevEuclideanRellich : MeasurableAdd E := by
+@@ -118,24 +124,24 @@
+     rcases hu with ⟨x, hx, hxEq⟩
+     have hx' : ‖(x : H1vol)‖ ≤ (1 : ℝ) := by
+       -- `h1On` inherits the ambient norm, so this is definitional.
+-      change ‖x‖ ≤ (1 : ℝ)
+-      exact (mem_closedBall_zero_iff.mp hx)
++      change dist (x : H1vol) 0 ≤ (1 : ℝ) at hx
++      simpa only [dist_zero_right] using! hx
+     have hTx' : ‖T x‖ ≤ C := by
+       have hTx : ‖T x‖ ≤ C * ‖(x : H1vol)‖ := by
+         have h :=
+           (h1ToL2 (μ := (volume : Measure E)) (E := E)).le_opNorm (x : H1vol)
+-        simpa [T, h1OnToL2, C] using h
++        simpa [T, h1OnToL2, C] using! h
+       refine hTx.trans ?_
+       have : C * ‖(x : H1vol)‖ ≤ C * (1 : ℝ) := mul_le_mul_of_nonneg_left hx' hCnonneg
+-      simpa [mul_one] using this
++      simpa [mul_one] using! this
+     have hnorm_ext :
+         ‖L2Compactness.extendByZeroL2 (E := E) (K := K) hKm u‖ = ‖u‖ :=
+       L2Compactness.norm_extendByZeroL2 (E := E) (K := K) hKm u
+     have hu' : ‖u‖ ≤ C := by
+       have : ‖L2Compactness.extendByZeroL2 (E := E) (K := K) hKm u‖ ≤ C := by
+-        simpa [hxEq] using hTx'
+-      simpa [hnorm_ext] using this
+-    simpa [Metric.closedBall, dist_eq_norm] using hu'
++        simpa [hxEq] using! hTx'
++      simpa [hnorm_ext] using! this
++    simpa [Metric.closedBall, dist_eq_norm] using! hu'
+   have hApprox :
+       ∀ ε : ℝ, 0 < ε →
+         ∃ ψ : E → ℝ, Continuous ψ ∧ HasCompactSupport ψ ∧ (∀ x, 0 ≤ ψ x) ∧
+@@ -156,18 +162,18 @@
+     intro u huA
+     rcases huA with ⟨x, hx, hxEq⟩
+     have hxH1 : ‖(x : H1vol)‖ ≤ (1 : ℝ) := by
+-      change ‖x‖ ≤ (1 : ℝ)
+-      exact (mem_closedBall_zero_iff.mp hx)
++      change dist (x : H1vol) 0 ≤ (1 : ℝ) at hx
++      simpa only [dist_zero_right] using! hx
+     have hmod :
+         ∀ t : E, t ∈ Metric.ball (0 : E) (ε / 2) →
+           ‖(translateL2 (μ := (volume : Measure E)) (-t)) (T x) - T x‖ ≤ ε / 2 := by
+       intro t ht
+       have ht' : ‖t‖ ≤ ε / 2 := le_of_lt (by
+-        simpa [Metric.ball, dist_eq_norm, mem_setOf_eq] using ht)
++        simpa [Metric.ball, dist_eq_norm, mem_setOf_eq] using! ht)
+       have hgrad_le :
+           ‖h1ToL2Grad (μ := (volume : Measure E)) (E := E) (x : H1vol)‖ ≤ ‖(x : H1vol)‖ := by
+         let V : Type _ := (E →₂[(volume : Measure E)] ℝ) × (E →₂[(volume : Measure E)] E)
+-        simpa [h1ToL2Grad, V] using (norm_snd_le (x := ((x : H1vol) : V)))
++        simpa [h1ToL2Grad, V] using! (norm_snd_le (x := ((x : H1vol) : V)))
+       have hgrad_le_one :
+           ‖h1ToL2Grad (μ := (volume : Measure E)) (E := E) (x : H1vol)‖ ≤ (1 : ℝ) :=
+         hgrad_le.trans hxH1
+@@ -178,22 +184,22 @@
+                 (h1ToL2 (μ := (volume : Measure E)) (E := E) (x : H1vol))
+               - h1ToL2 (μ := (volume : Measure E)) (E := E) (x : H1vol)‖ ≤
+             ‖t‖ * ‖h1ToL2Grad (μ := (volume : Measure E)) (E := E) (x : H1vol)‖ := by
+-        simpa [neg_neg] using htr
++        simpa [neg_neg] using! htr
+       have hle :
+           ‖(translateL2 (μ := (volume : Measure E)) (-t)) (T x) - T x‖ ≤
+             ‖t‖ * ‖h1ToL2Grad (μ := (volume : Measure E)) (E := E) (x : H1vol)‖ := by
+-        simpa [T, h1OnToL2, hxEq] using htr'
++        simpa [T, h1OnToL2, hxEq] using! htr'
+       refine hle.trans ?_
+       have :
+           ‖t‖ * ‖h1ToL2Grad (μ := (volume : Measure E)) (E := E) (x : H1vol)‖ ≤ (ε / 2) * 1 := by
+         refine (mul_le_mul_of_nonneg_right ht' (norm_nonneg _)).trans ?_
+         refine mul_le_mul_of_nonneg_left hgrad_le_one (by linarith)
+-      simpa [mul_one] using this
++      simpa [mul_one] using! this
+     have hη : 0 ≤ ε / 2 := le_of_lt hδ
+     have hbound :=
+       L2Compactness.integral_norm_sq_translateL2_sub_le_sq_of_tsupport_subset_ball
+         (E := E) (ψ := ψ) hψc hψcs hψ0 hψint (δ := ε / 2) (η := ε / 2) hη hψsupp (T x) hmod
+-    simpa [hxEq] using hbound
++    simpa [hxEq] using! hbound
+   have hcomp : IsCompact (closure (T '' Metric.closedBall (0 : ↥(h1On (E := E) K hKm)) 1)) := by
+     have hR : 0 ≤ C := hCnonneg
+     have hA_eq :
+@@ -229,16 +235,16 @@
+             (MeasureTheory.Lp.extendByZeroₗᵢ
+                   (μ := (volume : Measure E)) (E := ℝ) (p := (2 : ℝ≥0∞)) (s := K) hKm) u =
+               h1ToL2 (μ := (volume : Measure E)) (E := E) (x : H1vol) := by
+-          simpa using hu
++          simpa using! hu
+         have hTx : T x = L2Compactness.extendByZeroL2 (E := E) (K := K) hKm u := by
+           calc
+             T x = h1ToL2 (μ := (volume : Measure E)) (E := E) (x : H1vol) := by
+                   simp [T, h1OnToL2]
+             _ = (MeasureTheory.Lp.extendByZeroₗᵢ
+                   (μ := (volume : Measure E)) (E := ℝ) (p := (2 : ℝ≥0∞)) (s := K) hKm) u := by
+-                  simpa using hu0.symm
++                  simpa using! hu0.symm
+             _ = L2Compactness.extendByZeroL2 (E := E) (K := K) hKm u := by
+-                  simpa using
++                  simpa using!
+                     (L2Compactness.extendByZeroL2_eq_extendByZeroₗᵢ (E := E) (K := K) hKm u).symm
+         refine ⟨u, ?_, hTx.symm⟩
+         exact ⟨x, hx, hTx⟩
+@@ -250,7 +256,7 @@
+     L2Compactness.isCompact_closure_extendByZeroL2_image_of_forall_exists_translationIntegral_small
+       (E := E) (K := K) (hK := (_hK : IsCompact K))
+       (hKm := hKm) hR hA_ball hApprox
+-    simpa [hA_eq] using this
++    simpa [hA_eq] using! this
+   -- Use the topological definition of `IsCompactOperator` to avoid expensive normed-space
+   -- characterizations.
+   refine ⟨closure (T '' Metric.closedBall (0 : ↥(h1On (E := E) K hKm)) 1), hcomp, ?_⟩
+@@ -290,7 +296,7 @@
+         (LinearMap.range e.toLinearMap : Set (E →₂[(volume : Measure E)] ℝ)) := by
+     ext y
+     constructor <;> rintro ⟨u, rfl⟩ <;> exact ⟨u, rfl⟩
+-  simpa [hEq] using hcr
++  simpa [hEq] using! hcr
+ 
+ theorem isCompactOperator_h1OnToL2_codRestrict_range_extendByZero {K : Set E} (hK : IsCompact K)
+     (hKm : MeasurableSet K) :

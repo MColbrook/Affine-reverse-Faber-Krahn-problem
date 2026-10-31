@@ -1,0 +1,19 @@
+{
+  "proof_author": "/root/formalization_coverage",
+  "all_7_headers_and_bodies_read": true,
+  "source_manifest_sha256": "df375ed31ea7263af3b10f5bf0be28750dd96907c7bfd78b652ae788deacbe38",
+  "source_pins": 38,
+  "raw_logs": 6,
+  "actual_axiom_queries": 7,
+  "actual_axiom_logs": [
+    "logs/branch_gaussian_tilt_mean_map/audit-build-01.txt",
+    "logs/branch_gaussian_tilt_mean_map/source-pinned-axioms-01.txt"
+  ],
+  "universal_ellipsoid_existence_verified": false,
+  "kind": "Independent non-author AI complete mathematical/fidelity/clarity review",
+  "reviewer": "/root",
+  "review_sha256": "cb59a295842d60635ffa101963376ae728eeb30efdfba9b1ad44feab5060c3df",
+  "defects_found": [],
+  "own_comparator_accepted": false,
+  "full_paper_verified": false
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "Exact orchestration/preflight versions and explicit non-mathematical hardening differences",
+  "actual_diagnostics_runner": "verification/provenance/diagnostic-runner-as-launched.py.txt",
+  "actual_final_gate_runner": "verification/provenance/final-gate-runner-as-launched.py.txt",
+  "public_replay_runner": "scripts/run_checks.py",
+  "historical_package_checker_reconstruction": "Reconstructed exact predecessor from the sole localized hardening delta and verified against the original immutable documentation-review SHA256; not labelled as a pre-edit capture.",
+  "mathematical_sources_interfaces_and_probes_changed": false,
+  "no_proof_gate_rerun_required_for_reporting_or_stronger_preflight_changes": true,
+  "staged_and_unstaged_HEAD_verification_supplement": "verification/checks/dependencies-HEAD-and-platform.json",
+  "no_outer_airgap_claimed": true,
+  "differences": [
+    {
+      "before": "verification/provenance/diagnostic-runner-as-launched.py.txt",
+      "before_sha256": "19d2f00bfdc0a896e8dad4aa655e347b2a725dc31e610ac2b7f0e43619bcb713",
+      "after": "verification/provenance/final-gate-runner-as-launched.py.txt",
+      "after_sha256": "556268950533cc8ffeed2442289466b06aae2bb9da11a94d81f8822a04547191",
+      "diff": "verification/provenance/diagnostic-to-gate-runner.diff",
+      "diff_sha256": "5ae229630c1da1076d5fbffd0681982e05ff11dd30ac6ed3e81a82c3057701b3"
+    },
+    {
+      "before": "verification/provenance/final-gate-runner-as-launched.py.txt",
+      "before_sha256": "556268950533cc8ffeed2442289466b06aae2bb9da11a94d81f8822a04547191",
+      "after": "scripts/run_checks.py",
+      "after_sha256": "46e3c3968828931ee5479de1337d66f989303a68a7bc0d378d8c006ce16bfec3",
+      "diff": "verification/provenance/gate-to-public-runner-hardening.diff",
+      "diff_sha256": "29767853c4d45cd4d04f3e8f3cd3a088850143f64ad5adfb87ce319b577bceae"
+    },
+    {
+      "before": "verification/provenance/precheck-package-checker.py.txt",
+      "before_sha256": "b3eb73a299bd317e8776156fd73b1a52e5f7002117b293184610ceed22e67323",
+      "after": "scripts/check_package.py",
+      "after_sha256": "e688989a336e0aeed5b2fea60d9aa503c8117622c0c685a5d9565a80ea59c106",
+      "diff": "verification/provenance/package-evidence-validator-hardening.diff",
+      "diff_sha256": "a30d12627445fd1664d348213c9bd0de082b23444465208ed13a681191119a9a"
+    }
+  ]
+}

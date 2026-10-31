@@ -1,0 +1,105 @@
+{
+  "kind": "Independent non-author AI complete mathematical/fidelity/clarity review",
+  "reviewer": "/root/formalization_coverage",
+  "proof_author": "/root/claim_inventory",
+  "all_complete_headers_and_bodies_read": 5,
+  "new_declarations": 5,
+  "new_semantic_definitions": 0,
+  "source_sha256": "c21aa2cce091037f0f5f35b232f3932620ad6e96459f988d7703796a330421d4",
+  "source_manifest_sha256": "85c372127e58254413f75bcfdd9ab34ae35b38d467963b0ab63d4b97985cf706",
+  "handoff_sha256": "25b590d3d6a12b997aba2ff7eb8ccaa693e3870f7b183a5832a061f1dccf228f",
+  "validated_file_sha256": {
+    ".lake/packages/mathlib/Mathlib/Analysis/Calculus/ContDiff/Basic.lean": "e8faec51bc2e6f254c5ed7dd5e79d860023e0f6982f8d48433d5bf646c211b44",
+    ".lake/packages/mathlib/Mathlib/Analysis/InnerProductSpace/PiL2.lean": "eb721ebc69f040db53a1efb9640d221590c69e30644f2e15b4cf68b26a48d097",
+    ".lake/packages/mathlib/Mathlib/MeasureTheory/Function/Jacobian.lean": "f7a694977f86a0777326c1dbe199ba316767b37ed0c29e5e36b3bdde192e62d8",
+    ".lake/packages/mathlib/Mathlib/MeasureTheory/Measure/Haar/InnerProductSpace.lean": "beb79a38e3ec7814aff48b8561f4af222806482f0fff1644e718131c57d2e25e",
+    "AffineFK/InjectiveJacobianIntegral.lean": "c21aa2cce091037f0f5f35b232f3932620ad6e96459f988d7703796a330421d4",
+    "audit/history/jacobian_integral_attempt01/InjectiveJacobianIntegral.lean": "0f03d05b735074038fb47f12121c8cf93f40c835ca8615cfdd0f161dd00d9b26",
+    "audit/injective_jacobian_integral_implementation.md": "8d9164bf1dfe7490c3aefabb52314772581e8989fdd253a9f6b729d6a5c6662f",
+    "audit/injective_jacobian_integral_source_manifest.json": "85c372127e58254413f75bcfdd9ab34ae35b38d467963b0ab63d4b97985cf706",
+    "audit/probes/InjectiveJacobianIntegralAxioms.lean": "02103845dc1d1ffb5c9875e283d61df5ee3e91921ac6b0c35f9c9ee5ea3967c5",
+    "lake-manifest.json": "a9340a6648ae07976e18f4b362b2ad6c2480311042154a98ddd642dc89369dc1",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+    "logs/branch_jacobian_integral/axioms-01.txt": "6fbb3eac4fcc2acc43bc99d63d536c8ddeb1b824dfdf0265b42024f25804c4e3",
+    "logs/branch_jacobian_integral/source-build-01.txt": "66ce2c801108560b72aa26383341de3d03b1ed118e83debe2e359f61d3fc9d96",
+    "logs/branch_jacobian_integral/source-build-02.txt": "38577e754091c9e48c01263bbb3146640f83982dc75542f1bcbd80f208f630df",
+    "scripts/jacobian_and_h1_adapter_handoffs.py": "fbb6fcb14a4f4b1b9081c8274d36cb712a0b7c18a3c332d5998877225ffed6b4"
+  },
+  "validated_file_pin_count": 15,
+  "actual_logs": {
+    "logs/branch_jacobian_integral/source-build-01.txt": {
+      "sha256": "66ce2c801108560b72aa26383341de3d03b1ed118e83debe2e359f61d3fc9d96",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.InjectiveJacobianIntegral",
+      "elapsed_seconds": 13.857
+    },
+    "logs/branch_jacobian_integral/source-build-02.txt": {
+      "sha256": "38577e754091c9e48c01263bbb3146640f83982dc75542f1bcbd80f208f630df",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.InjectiveJacobianIntegral",
+      "elapsed_seconds": 8.915
+    },
+    "logs/branch_jacobian_integral/axioms-01.txt": {
+      "sha256": "6fbb3eac4fcc2acc43bc99d63d536c8ddeb1b824dfdf0265b42024f25804c4e3",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake env lean audit/probes/InjectiveJacobianIntegralAxioms.lean",
+      "elapsed_seconds": 6.601
+    }
+  },
+  "actual_axiom_reports": {
+    "AffineFKProof.injective_jacobian_lintegral_image": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.injective_jacobian_lintegral_le_volume": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.injective_jacobian_integral_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.injective_jacobian_integral_bound_of_hasFDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.injective_C1_jacobian_integral_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "primary_mathlib_declarations_read": [
+    "MeasureTheory.measurable_image_of_fderivWithin",
+    "MeasureTheory.lintegral_abs_det_fderiv_eq_addHaar_image",
+    "MeasureTheory.integrableOn_image_iff_integrableOn_abs_det_fderiv_smul",
+    "MeasureTheory.integral_image_eq_integral_abs_det_fderiv_smul",
+    "MeasureTheory.measureReal_mono"
+  ],
+  "primary_reuse_attribution": "Sebastien Gouezel, Mathlib MeasureTheory.Function.Jacobian (Apache-2.0), following Fremlin; primary source body semantics read rather than inferred from theorem names.",
+  "mathematical_review_findings": [],
+  "mathematical_review_outcome": "No mathematical, domain, measure, dimension, determinant, integrability, conversion or trust defect found.",
+  "key_checks": [
+    "Actual measurable U, actual within-derivatives on U and actual InjOn suffice for Mathlib exact area identity and image measurability; no C1/invertible-Jacobian assumption is silently needed.",
+    "The extended inequality uses actual image inclusion and measure monotonicity, so it remains valid with infinite target volume.",
+    "Finite target outer volume bounds actual image volume before any real conversion. The actual constant one on that finite-volume image is integrable.",
+    "Applying genuine Bochner change-of-variables integrability equivalence to one DERIVES actual absolute-Jacobian L1 on U; no output integrability is a premise and no totalized-zero integral is exploited.",
+    "The exact real identity uses the actual image integral of one. The final real inequality uses finite-guarded measureReal_mono, never unguarded toReal monotonicity.",
+    "The general core needs neither finite-volume U nor measurable K, and allows actual arbitrary within-derivative fields whose determinants are only AE measurable as the primary theorem permits.",
+    "The everywhere-derivative wrapper genuinely weakens HasFDerivAt to HasFDerivWithinAt; the final actual-C1 wrapper chooses DF=fderiv and U=univ, with exact whole-range equality.",
+    "All natural dimensions including zero and empty domains retain the primary determinant/volume convention without division by n or positive-dimension assumption."
+  ],
+  "author_boundary": "Reviewer authored none of these five proofs and none of their Mathlib-only imported project-free proof dependencies.",
+  "own_new_lean_checks": false,
+  "own_comparator_claim": false,
+  "scope_limits": [
+    "This is a generic analytic change-of-variables implication. Its actual gradient-map application and universal Milman existence are separate.",
+    "The inspected actual author build/axiom logs are distinguished from this independent proof reading; no new reviewer kernel/Comparator run was made.",
+    "This is AI review, not human review, own six-kernel acceptance or full-paper verification."
+  ],
+  "full_paper_verified": false
+}

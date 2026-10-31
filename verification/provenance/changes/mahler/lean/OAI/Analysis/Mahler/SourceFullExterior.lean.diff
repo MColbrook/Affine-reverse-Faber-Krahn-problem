@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/SourceFullExterior.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceFullExterior.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.SourceRawOrientation
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceRawOrientation
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

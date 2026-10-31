@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/WedgeTwoDifferentialAlgebra.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/WedgeTwoDifferentialAlgebra.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.WedgeUnit
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.WedgeUnit
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

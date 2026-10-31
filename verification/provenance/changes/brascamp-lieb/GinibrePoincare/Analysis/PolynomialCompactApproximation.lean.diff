@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/PolynomialCompactApproximation.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/PolynomialCompactApproximation.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.Configuration
++public import AffineFK.ChafaiBrascampLieb.Concrete.Configuration
+ public import Mathlib.Topology.ContinuousMap.StoneWeierstrass
+ 
+ @[expose] public section

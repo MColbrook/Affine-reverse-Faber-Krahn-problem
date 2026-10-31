@@ -1,0 +1,71 @@
+{
+  "kind": "Independent non-author AI mathematical/fidelity/clarity and actual-evidence review of Main35 source",
+  "independent_ai_review_complete": true,
+  "reviewer": "/root/formalization_coverage",
+  "aggregate_author": "/root/palomar_requirements",
+  "complete_new_headers_and_bodies_read": 2,
+  "new_definitions": 0,
+  "source_sha256": {
+    "AffineFK/MainTheorems.lean": "79e7f75588806e79d357b6792b569651ee024ce5318cecc6bbaab4f10faedf40",
+    "AffineFK/GaussianPositionMilman.lean": "b990cd79d2de0dd6c045fd7189ff048846d9cc1561fab557fa1e0b45655e3958"
+  },
+  "source_manifest_sha256": "f06ec71052d535008f63d6c7fb78a9457ec5f615b0a5c6b8ed72b80aed22477d",
+  "validated_source_import_and_probe_pins": 990,
+  "source_payload_all_990_bytes_match": true,
+  "M01_type_matches_root_unconditional_type_modulo_whitespace": true,
+  "actual_fetched_source_logs": {
+    "logs/branch_bridge/main-theorems-remote-01.txt": {
+      "sha256": "bbca0e0132c8181d9e3b3211ca44bac342c838b0c34543efa18b45b0a90e9948",
+      "exit_code": 0,
+      "command": "/home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.MainTheorems",
+      "elapsed_seconds": 7.751
+    },
+    "logs/branch_bridge/main-theorems-axioms-remote-01.txt": {
+      "sha256": "609e9335b348812ef8757407458e890053ad1ac20d77ec7d159b7311111266ff",
+      "exit_code": 0,
+      "command": "/home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake env lean AffineFK/MainTheoremsAxioms.lean",
+      "elapsed_seconds": 6.839
+    }
+  },
+  "actual_two_axiom_reports": {
+    "AffineFKProof.gaussian_reverse_faber_krahn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.affine_reverse_faber_krahn_main_theorems": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "referenced_previous_review_and_certificate_sha256": {
+    "audit/gaussian_position_milman_independent_review.md": "ed84a0a78e541c10af7d1801e310efaf3916ced7a70947b9281e07df129ea368",
+    "audit/gaussian_position_milman_independent_final_receipt.json": "d5d5d1836fd6c9c534d5bb76c22afb7738a56edee3229a6947138de3e1716c73",
+    "audit/gaussian_position_milman_statement_fidelity_review.json": "2b1ccdf878ff7ce8962010854f6e1338ce5f366e61b3306d8a4fae27450805c5",
+    "audit/gaussian_position_polar_independent_review.json": "587eca851d0ae79c813e4a81ae4a7a4b844b49cc0f1f60f87f5118fd87d7e3e4",
+    "audit/gaussian_tilt_independent_review.json": "9c5012d70570cd865246bf6fc5c2a3dfb013476ec26dce753e46b2754670f384",
+    "audit/gaussian_tilt_mean_map_independent_review.json": "2cb6b0cfcf33ca5675168987a811a073f12e29dffd8e897e087ecff3dfbf1627",
+    "audit/injective_jacobian_integral_independent_review.json": "da44b9d91ab19f023a5e95aa0495cec5d173b5c7aaf49f1300f10001993ceeee",
+    "audit/gaussian_tilt_jacobian_independent_review.json": "e4691be4ed40de015f04ede0d62a4ddd36f0641308be04c63c5ccd466a7dfde4",
+    "audit/covariance_ellipsoid_independent_review.json": "3e7b6c1085fffb3b0d014b8b62c6c86357682b9b1860350a3ec5fb678bedef20",
+    "audit/covariance_ellipsoid_tilt_independent_review.json": "df71705b226bc03f957631920d52f2d91f72225f7be6e49b8e1ca1f7803eb870",
+    "audit/gaussian_ellipsoid_reduction_independent_review.json": "1da9684118264b2d3348c3bcdeeb3456606545805dc1795be2bdd2c3a548d48d",
+    "audit/gaussian_position_independent_review.json": "894d9369bd4461037a564304e36981b64c846eb1627c45c7bc7f2e7a9d53c668",
+    "audit/whitening_independent_review.json": "cb77c20c5429fffd3b1383dec6da1ef1f7ec4411397e87d14b1b9fa21b5cd868",
+    "audit/groundstate_composition_independent_review.json": "3382fa75bd2f789f55b2235598327e7a05493a741bc13a37702aaa8f50ee22a8",
+    "audit/groundstate_lc_density_independent_review.json": "c52c3d53b52430d33c172286b13129f53d4ddb8368789bb4cf548b5af64a9063",
+    "audit/symmetric_covariance_spectral_independent_review.json": "68b571497792c4559b4c0ba5734ab97af51e3fd93daa917fda3450e2e8cf6007",
+    "audit/affine_spectral_reduction_independent_review.json": "f464751f6f156bad49c2c07b870616351cb98e0f2a665953d2b040df8d6f1309",
+    "audit/stage32_verification.json": "14a9b3f0f9251193a57e5543b48d9c6fa2a943ae55bf6837ea1e212ef20ec879",
+    "audit/stage33_verification.json": "dcfcc76d00a722e0a7a997d9d411f2e23e99fa0b31ed2f3127b69d3f2604a4e1"
+  },
+  "mathematical_review_findings": [],
+  "mathematical_review_outcome": "Both genuine source compositions preserve the complete original M01/M02, with no output assumption or domain weakening.",
+  "scope": "One universal constant for each theorem before every dimension/body. M01 has only compactness/convexity/nonempty interior and literal SL; M02 has precisely origin symmetry, volume one and actual Gaussian maximality. The genuine H0 Rayleigh eigenvalue, finite-value guards and original exponent are preserved.",
+  "authorship_boundary": "Reviewer authored neither new aggregate proof nor root Milman composition. Header-only Mahler port and some reused tilt/whitening work are reviewer-authored; separate root/non-author reviews cover them. No claim of a new manual review of all 990 imported sources is made.",
+  "current_990_count_is_import_manifest_not_private_dependency_closure": true,
+  "new_compiler_or_checker_run_by_reviewer": false,
+  "main35_own_comparator_claim": false,
+  "full_manuscript_verified": false
+}

@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/ExactSphereStokes.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ExactSphereStokes.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ExactSphereFluxBridge
+-import OAI.Analysis.Mahler.ClosedBoundaryStokes
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ExactSphereFluxBridge
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ClosedBoundaryStokes
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

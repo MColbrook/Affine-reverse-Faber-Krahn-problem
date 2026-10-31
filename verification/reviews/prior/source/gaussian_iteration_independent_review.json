@@ -1,0 +1,16 @@
+{
+  "proof_author": "/root/claim_inventory",
+  "all_26_headers_and_bodies_read": true,
+  "source_manifest_sha256": "833589de16149bd3ca56faf9ac302716a4f631d35f1a13ec0c5b1f67938bef96",
+  "new_theorems": 23,
+  "new_definitions": 3,
+  "actual_axiom_queries": 26,
+  "source_pins": 46,
+  "raw_logs": 5,
+  "kind": "Independent non-author AI mathematical, fidelity and clarity full-body review",
+  "reviewer": "/root",
+  "review_sha256": "4cdca494fa5d68043bceb7271c4d73fabe1b1da39d3fda3f237225ee747534da",
+  "own_comparator_accepted": false,
+  "full_paper_verified": false,
+  "defects_found": []
+}

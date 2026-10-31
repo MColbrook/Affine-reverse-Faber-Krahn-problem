@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/PlanarIntegralRegularity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/PlanarIntegralRegularity.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.PlanarDensity
+-import OAI.Analysis.Mahler.CompactIntegral
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PlanarDensity
++public import AffineFK.OpenAIMahler.Analysis.Mahler.CompactIntegral
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

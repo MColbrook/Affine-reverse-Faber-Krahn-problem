@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/ComplexHermiteOrthogonality.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/ComplexHermiteOrthogonality.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.MultivariateComplexHermite
+-public import GinibrePoincare.Analysis.GaussianPolynomialIntegrability
++public import AffineFK.ChafaiBrascampLieb.Analysis.MultivariateComplexHermite
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianPolynomialIntegrability
+ 
+ @[expose] public section
+ 

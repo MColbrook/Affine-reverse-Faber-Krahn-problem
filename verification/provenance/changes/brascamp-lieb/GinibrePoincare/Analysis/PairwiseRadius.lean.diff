@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/PairwiseRadius.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/PairwiseRadius.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreRadialGamma
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreRadialGamma
+ public import Mathlib.Tactic
+ 
+ @[expose] public section

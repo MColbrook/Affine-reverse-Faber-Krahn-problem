@@ -1,0 +1,931 @@
+{
+  "kind": "Independent non-author AI proof/source/fidelity/clarity review",
+  "reviewer": "/root/formalization_coverage",
+  "proof_author": "/root",
+  "new_declarations": 66,
+  "modules": [
+    "DirichletSobolev",
+    "DirichletRayleigh",
+    "DirichletRayleighFinite",
+    "L2CoefficientField",
+    "H1MultiplierCoefficients",
+    "H1MultiplierAmbient",
+    "DirichletMultiplier",
+    "DirichletWeakEigenfunction",
+    "DirichletLinearTransport",
+    "DirichletLinearRayleigh",
+    "DirichletLinearEigenvalue"
+  ],
+  "declarations": {
+    "AffineFKProof.dirichletTestToTop": {
+      "kind": "def",
+      "source": "AffineFK/DirichletSobolev.lean"
+    },
+    "AffineFKProof.dirichletTestToTop_apply": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletSobolev.lean"
+    },
+    "AffineFKProof.dirichletTestToH1": {
+      "kind": "def",
+      "source": "AffineFK/DirichletSobolev.lean"
+    },
+    "AffineFKProof.dirichletSobolev": {
+      "kind": "def",
+      "source": "AffineFK/DirichletSobolev.lean"
+    },
+    "AffineFKProof.dirichletSobolev_isClosed": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletSobolev.lean"
+    },
+    "AffineFKProof.dirichletSobolev_completeSpace": {
+      "kind": "instance",
+      "source": "AffineFK/DirichletSobolev.lean"
+    },
+    "AffineFKProof.dirichletValue": {
+      "kind": "def",
+      "source": "AffineFK/DirichletSobolev.lean"
+    },
+    "AffineFKProof.dirichletGradient": {
+      "kind": "def",
+      "source": "AffineFK/DirichletSobolev.lean"
+    },
+    "AffineFKProof.dirichletValue_injective": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletSobolev.lean"
+    },
+    "AffineFKProof.dirichlet_test_mem": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletSobolev.lean"
+    },
+    "AffineFKProof.dirichletSobolev_mono": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletSobolev.lean"
+    },
+    "AffineFKProof.dirichletInclusion": {
+      "kind": "def",
+      "source": "AffineFK/DirichletSobolev.lean"
+    },
+    "AffineFKProof.dirichletInclusion_value": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletSobolev.lean"
+    },
+    "AffineFKProof.dirichletInclusion_gradient": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletSobolev.lean"
+    },
+    "AffineFKProof.dirichletRayleigh": {
+      "kind": "def",
+      "source": "AffineFK/DirichletRayleigh.lean"
+    },
+    "AffineFKProof.dirichletEigenvalue": {
+      "kind": "def",
+      "source": "AffineFK/DirichletRayleigh.lean"
+    },
+    "AffineFKProof.dirichletRayleigh_eq_integral": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletRayleigh.lean"
+    },
+    "AffineFKProof.dirichletEigenvalue_le_rayleigh": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletRayleigh.lean"
+    },
+    "AffineFKProof.dirichletEigenvalue_antitone": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletRayleigh.lean"
+    },
+    "AffineFKProof.dirichletTestElement": {
+      "kind": "def",
+      "source": "AffineFK/DirichletRayleighFinite.lean"
+    },
+    "AffineFKProof.dirichletTestElement_value": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletRayleighFinite.lean"
+    },
+    "AffineFKProof.dirichletTestElement_gradient": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletRayleighFinite.lean"
+    },
+    "AffineFKProof.dirichletTestElement_value_ne_zero": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletRayleighFinite.lean"
+    },
+    "AffineFKProof.dirichlet_exists_nonzero_test": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletRayleighFinite.lean"
+    },
+    "AffineFKProof.dirichletEigenvalue_ne_top": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletRayleighFinite.lean"
+    },
+    "AffineFKProof.l2CoefficientField_memLp": {
+      "kind": "theorem",
+      "source": "AffineFK/L2CoefficientField.lean"
+    },
+    "AffineFKProof.l2CoefficientFieldLinear": {
+      "kind": "def",
+      "source": "AffineFK/L2CoefficientField.lean"
+    },
+    "AffineFKProof.l2CoefficientFieldLinear_coe": {
+      "kind": "theorem",
+      "source": "AffineFK/L2CoefficientField.lean"
+    },
+    "AffineFKProof.l2CoefficientField": {
+      "kind": "def",
+      "source": "AffineFK/L2CoefficientField.lean"
+    },
+    "AffineFKProof.l2CoefficientField_coe": {
+      "kind": "theorem",
+      "source": "AffineFK/L2CoefficientField.lean"
+    },
+    "AffineFKProof.h1ScalarCoefficient": {
+      "kind": "def",
+      "source": "AffineFK/H1MultiplierCoefficients.lean"
+    },
+    "AffineFKProof.h1ScalarCoefficient_coe": {
+      "kind": "theorem",
+      "source": "AffineFK/H1MultiplierCoefficients.lean"
+    },
+    "AffineFKProof.h1VectorCoefficient_bound": {
+      "kind": "theorem",
+      "source": "AffineFK/H1MultiplierCoefficients.lean"
+    },
+    "AffineFKProof.h1VectorCoefficient": {
+      "kind": "def",
+      "source": "AffineFK/H1MultiplierCoefficients.lean"
+    },
+    "AffineFKProof.h1VectorCoefficient_coe": {
+      "kind": "theorem",
+      "source": "AffineFK/H1MultiplierCoefficients.lean"
+    },
+    "AffineFKProof.h1_gradient_continuous": {
+      "kind": "theorem",
+      "source": "AffineFK/H1MultiplierCoefficients.lean"
+    },
+    "AffineFKProof.h1CrossCoefficient": {
+      "kind": "def",
+      "source": "AffineFK/H1MultiplierCoefficients.lean"
+    },
+    "AffineFKProof.h1CrossCoefficient_coe": {
+      "kind": "theorem",
+      "source": "AffineFK/H1MultiplierCoefficients.lean"
+    },
+    "AffineFKProof.h1MultiplierAmbient": {
+      "kind": "def",
+      "source": "AffineFK/H1MultiplierAmbient.lean"
+    },
+    "AffineFKProof.h1MultiplierAmbient_value": {
+      "kind": "theorem",
+      "source": "AffineFK/H1MultiplierAmbient.lean"
+    },
+    "AffineFKProof.h1MultiplierAmbient_gradient": {
+      "kind": "theorem",
+      "source": "AffineFK/H1MultiplierAmbient.lean"
+    },
+    "AffineFKProof.h1MultiplyTest": {
+      "kind": "def",
+      "source": "AffineFK/H1MultiplierAmbient.lean"
+    },
+    "AffineFKProof.h1MultiplyTest_gradient": {
+      "kind": "theorem",
+      "source": "AffineFK/H1MultiplierAmbient.lean"
+    },
+    "AffineFKProof.h1MultiplierAmbient_smooth_pair": {
+      "kind": "theorem",
+      "source": "AffineFK/H1MultiplierAmbient.lean"
+    },
+    "AffineFKProof.h1MultiplierAmbient_preserves_graph": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletMultiplier.lean"
+    },
+    "AffineFKProof.h1Multiplier": {
+      "kind": "def",
+      "source": "AffineFK/DirichletMultiplier.lean"
+    },
+    "AffineFKProof.h1Multiplier_value": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletMultiplier.lean"
+    },
+    "AffineFKProof.h1Multiplier_gradient": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletMultiplier.lean"
+    },
+    "AffineFKProof.h1Multiplier_dirichlet_test": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletMultiplier.lean"
+    },
+    "AffineFKProof.h1Multiplier_preserves_dirichlet": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletMultiplier.lean"
+    },
+    "AffineFKProof.dirichletMultiplier": {
+      "kind": "def",
+      "source": "AffineFK/DirichletMultiplier.lean"
+    },
+    "AffineFKProof.dirichletMultiplier_value": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletMultiplier.lean"
+    },
+    "AffineFKProof.dirichletMultiplier_gradient": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletMultiplier.lean"
+    },
+    "AffineFKProof.IsDirichletWeakEigenfunction": {
+      "kind": "def",
+      "source": "AffineFK/DirichletWeakEigenfunction.lean"
+    },
+    "AffineFKProof.dirichletWeakEigenfunction_integral": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletWeakEigenfunction.lean"
+    },
+    "AffineFKProof.dirichletWeakEigenfunction_rayleigh": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletWeakEigenfunction.lean"
+    },
+    "AffineFKProof.dirichletLinearImage": {
+      "kind": "def",
+      "source": "AffineFK/DirichletLinearTransport.lean"
+    },
+    "AffineFKProof.dirichletLinearImage_coe": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletLinearTransport.lean"
+    },
+    "AffineFKProof.dirichletLinearTest": {
+      "kind": "def",
+      "source": "AffineFK/DirichletLinearTransport.lean"
+    },
+    "AffineFKProof.dirichlet_approximating_tests": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletLinearTransport.lean"
+    },
+    "AffineFKProof.dirichlet_linear_graph_transport": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletLinearTransport.lean"
+    },
+    "AffineFKProof.dirichlet_linear_graph_energy": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletLinearRayleigh.lean"
+    },
+    "AffineFKProof.dirichlet_linear_rayleigh_transport": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletLinearRayleigh.lean"
+    },
+    "AffineFKProof.dirichletLinearImage_symm": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletLinearEigenvalue.lean"
+    },
+    "AffineFKProof.dirichletEigenvalue_linear_image_le": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletLinearEigenvalue.lean"
+    },
+    "AffineFKProof.dirichletEigenvalue_linear_pullback_le": {
+      "kind": "theorem",
+      "source": "AffineFK/DirichletLinearEigenvalue.lean"
+    }
+  },
+  "source_sha256": {
+    "AffineFK/WeightedSobolev.lean": "453b3e60c0b9d5639f63ddb0999d3e96498e844324c0f4805153488bf46df1d5",
+    "AffineFK/WeakPoisson.lean": "19e16ed5b614f6664e0fc139158b6fd082150783f5e624d27752b53c5c1527bc",
+    "AffineFK/WeightedPoisson.lean": "b8bdf19aa22db7c534bb095730f56c4e5297d0988113bfcf6c5b337b42fcdea6",
+    "AffineFK/SobolevCutoff.lean": "2b7364dba45fdd99bebbccb7404ae74a90a99296b1d6eba0e559b2041e7de10b",
+    "AffineFK/SobolevApproximation.lean": "5bf1688856a6c4f31a4f0297eceaa1a06a498cf4ad189f6e5ecad4ca9554017a",
+    "AffineFK/PoissonTests.lean": "a408ab61b560568f4f6da5d846954ac5e6fedb2c3bbc354f7208dad411e42ec8",
+    "AffineFK/SobolevCoordinates.lean": "fd5dc5b5820511948e7c04b1b600af461e60f2c1ad24fea0e7535befb8ef2b21",
+    "AffineFK/FirstSteinKernel.lean": "d34b0a23263351f07df59ba60f50a3c37edc6ffe6bc7b7180f5d38a7692ae5ac",
+    "AffineFK/L2Coordinates.lean": "9887f025c3d3f46348604836a322c5de224a47ab69eebd26f7f08c1295ecd1e8",
+    "AffineFK/SecondPoisson.lean": "916a41a4b6c5781e94f3e4cf4882ae421b26426eb02b897fde5d6d98f5508fcd",
+    "AffineFK/IsotropicCoordinates.lean": "35cdde9b14a6b37f2c74c545756fa855e8a846e9d07a9869c84faf152c72e034",
+    "AffineFK/SteinTestIdentities.lean": "8da318230d463ad6d3813b9a5931733ef95803e6ad084629a039c88ba1777fb8",
+    "AffineFK/WeightedTestIntegration.lean": "91e3c1681cba3158a8c589ca5ee0952fe231b3b4b54cabe8615131a5d89e63d4",
+    "AffineFK/UnweightedSobolevGraph.lean": "89ea14c334e096da9ce2ba408906077fea99b8aa4325cc7f6cdb4492858dc41d",
+    "AffineFK/UnweightedSobolevIntegration.lean": "84a3c8c14071d07a2b86087a218dfc0959271afdd0af8e3de0f8edb7a4c0caec",
+    "AffineFK/DirichletSobolev.lean": "0a351430f466082a2c08a4636d83a0869f2b30c841fc1eb8867cea4622778064",
+    "AffineFK/DirichletRayleigh.lean": "b574671fae52ca93f8e62c039e741764c08f2681598f144a42c25f8abe215ce7",
+    "AffineFK/DirichletRayleighFinite.lean": "a5bb70b6655b53cc5a96a3d52e8a5d6de5c15cdf6d52e9c09d9257048a8a5dcc",
+    "audit/probes/DirichletCoreAxioms.lean": "0ca661b4191269c925b7dcf6388a09cc0f62c9310384bc0caa0d25fb39e59de9",
+    "AffineFK/L2CoefficientField.lean": "16ba86fc03b3369960cd3157159077c1bc645c52ff3c4461bf7c2c7be114fe11",
+    "AffineFK/H1MultiplierCoefficients.lean": "3482fe0ca161591dd1e89b443279cb57ced3650033d4d4db50e590f70f5c7bbc",
+    "AffineFK/H1MultiplierAmbient.lean": "bcdf2ab6c055b5cb87976c73f7558c5eccf657613f592c37578eb2f9c57ba906",
+    "AffineFK/DirichletMultiplier.lean": "3afccb9810f7ef132a4194a6dea567bc90690f7dc6bbaab03dddc31b53456c6c",
+    "AffineFK/DirichletWeakEigenfunction.lean": "adb2faa0f9458915625c337e090a2db417a9002f8010a843a79aa859ccab723d",
+    "audit/probes/DirichletMultiplierAxioms.lean": "41b8646e1c9d90435cef8e633634a5e1ef9b6b8038a347730dfd7f99ad3e787c",
+    "AffineFK/SobolevDensityProductRule.lean": "cae90b4a345d490586f717bb97fc2141059c4b7f370ada4e4241b3893be1ff14",
+    "AffineFK/SteinTensorAssembly.lean": "6ba2872457ef9a87499668703fcca6403ae2d99377d115f564c247ef5f594330",
+    "AffineFK/TestReflection.lean": "17a6daa8b6ca06bf1cd93c84f8bd5bb29696cb7f77ce415df43e4779480ece87",
+    "AffineFK/SteinSumVariance.lean": "011e7f68c5e40fb284df5c75cf163ae7d21306b8f74f1e294a0fb9cfc85bb998",
+    "AffineFK/SteinSumLaw.lean": "650d1623bb0e032fc0ba622f0110b3181a223769f5ea0cf3bc49c3be06c55edf",
+    "AffineFK/OddTensorSymmetrization.lean": "fc71b5881eb100a0de73a9e4ef4b06f46feef08043e7880a67c8f9679ff4cf00",
+    "AffineFK/OddSteinTensor.lean": "011bce87b61f092279ed5eff9f876846d6cb788472fed944b0b3371349d45abf",
+    "AffineFK/SmoothPartials.lean": "5189892fb96921fae2183c91eaf12b32004d822af001ffd66d91a138748aab8e",
+    "AffineFK/VectorSteinIdentity.lean": "57b0d746e695bfc3205a4ac1827153591f529450095ad920755c3ea9849bb632",
+    "AffineFK/FiniteSobolevRelativeScore.lean": "b9712274ab0285599d3a428a6d5a0fed4a29c50ad8f95940cac733dd30ed6070",
+    "AffineFK/OrdinaryFisherConvolutionScore.lean": "0e186f1b10d814ccd75dcbc55c135dd6ecfb15689c79cfed026c64b12815e219",
+    "AffineFK/AffineTestFunctions.lean": "3752790a424179311adc157d822df2b607afdd6fb4cab4e161bf603ecbfbe7bc",
+    "AffineFK/AffineSteinIdentity.lean": "344644cad4ff7f9b509ddb3362e0ab173b2d7067e5d526ddf666ffe5034e27f5",
+    "AffineFK/ProductSteinIdentity.lean": "9a6e50e2104ec57e9dfc55c957f27459f317c788da0c02be965d74b585766567",
+    "AffineFK/GaussianIntegrationByParts.lean": "8db39cf8afc4dd8df2582814857e6889e8c14b3217f3047e091a6a8b75baf131",
+    "AffineFK/RealGaussianMoments.lean": "be19f3543cf9fbac5317e3adb6efc782319d098c8701a010961da644a33e224f",
+    "AffineFK/GaussianHermiteBasis.lean": "92564b3902623adf4dc653839d55ee8a730e7dc7275060131364615885a7fb5e",
+    "AffineFK/GaussianHermitePairs.lean": "ce258b8134ba77d67d8c30e902ae762af27409e08a9ee81b2ff9a97aeac0ab1b",
+    "AffineFK/GaussianHermiteCovariance.lean": "25b57e6b4b53838ad9df0ded1c28994aa59ebeb20010a0beab6b4aaa618d1750",
+    "AffineFK/EuclideanGaussianCovariance.lean": "028062dac1c57fda361ad00bb76159ce87020d5593390ffdad99c044b97c1748",
+    "AffineFK/AffineProductIntegrability.lean": "06700fe5829ec4368572890584ebfa9d48616ef2b87b91d6f839274990d505e0",
+    "AffineFK/ConditionalSteinPairing.lean": "bc21b5c83f7f79319494bd12fa42ade3cb293e04ca277f62bed8a91b0e90a992",
+    "AffineFK/ConditionalVectorField.lean": "86477b1d49603c3ceff1383dd1300ec61092460772da32077dd2051496661df3",
+    "AffineFK/OrdinaryFisherConvolution.lean": "4b52c5b3a3fe566810a22837aa00022736c16c89ad81c47dc7bd2f4de1ceb164",
+    "AffineFK/OrdinaryFisherLinearMap.lean": "f3efe099864a6bb89ab4a3ed7432e4d214b69f12c03a3982b3a0ab0ce344f98b",
+    "AffineFK/LogDensityIntegration.lean": "10254cba50037e0b6a7b5b2796d3e39414c5c8295b578eb01d67112dc655a14b",
+    "AffineFK/DensityRatio.lean": "afba93c717c59f3ff7cb5c959fa39b75d5131a51ee8373b88cac8a39bcee84f8",
+    "AffineFK/OrdinaryFisherConvolutionDensity.lean": "ca0c92019786b62b15f219532dbdf33ecd25746099a6836e89e540c0a0d75854",
+    "AffineFK/OrdinaryFisherLinearMapDensity.lean": "4fb0273bd129e4cde8e719fb1c2763436056c3344b5f99886119d316fb70867d",
+    "AffineFK/OrdinaryFisherLinearMapLp.lean": "69a9bf5b844e48e2a33e94a6deea3962eb16bed4e1a4686826b3ed438334868c",
+    "AffineFK/OrdinaryFisherLinearMapH1.lean": "974ac8a4cc8b3ec4f95a65c55b3d2f00d732b875abf630950270ea19afce3ac4",
+    "AffineFK/OrdinaryFisherLinearMapEnergy.lean": "6302039d276375a39d5c5dd357ddfe3e79a1daaefee8571a7fbffb11cd86a525",
+    "AffineFK/DirichletLinearTransport.lean": "48419bacad7937de275e7b13dc0f5daf388f3a5216276571fd2837eae7abf121",
+    "AffineFK/DirichletLinearRayleigh.lean": "97d6b0732a45b36e567ffde8069256cb43748da54cc15a30aae4727911c830a8",
+    "AffineFK/DirichletLinearEigenvalue.lean": "35336eaabc83213a3528c41da4d28e22e5fb1c59d795a52f18626649207d4bc9",
+    "audit/probes/DirichletLinearAxioms.lean": "c96ae9d590badad161a98b94ea4cba3ae9cee8365897b5dd94228bc5df11678f"
+  },
+  "source_pins": 61,
+  "reviewed_handoff_sha256": {
+    "audit/dirichlet_core_source_manifest.json": "eb2cb0fab29fc610f35d227bc5a8d9f3eb67455c58614c8d3ef3123bbb6abd43",
+    "audit/dirichlet_multiplier_source_manifest.json": "ce64b837ed01a756cca20925f8842d6625582a8a9524b6379e67353f50e50b37",
+    "audit/dirichlet_source_milestone_handoff.json": "867e5700f20bce7836beec8de57e577777fc50f85beb5ce43d821e0191474bb3",
+    "audit/dirichlet_linear_source_handoff.json": "b9ce02bf3102b227a199d0a0331536737beb512f5c08536a25e5dddf43fda0c1"
+  },
+  "actual_evidence_sha256": {
+    "audit/dirichlet_core_source_manifest.json": "eb2cb0fab29fc610f35d227bc5a8d9f3eb67455c58614c8d3ef3123bbb6abd43",
+    "logs/branch_dirichlet_rayleigh/core-axioms-01.txt": "6459cb1aa6e52eb684843bc9dc5c0ab6ddd323789699334166b296f6f9cef8dc",
+    "audit/dirichlet_multiplier_source_manifest.json": "ce64b837ed01a756cca20925f8842d6625582a8a9524b6379e67353f50e50b37",
+    "logs/branch_dirichlet_rayleigh/multiplier-axioms-01.txt": "fa2dbeb5be06fd930c43f22b67a380f1b8b659d282efa4259a54c01d277f7f18",
+    "logs/branch_dirichlet_rayleigh/source-build-03.txt": "8636ba6675827d20b68dcf2a9ca59631d4ec03e1501bea1c8dd40dc81d295721",
+    "logs/branch_dirichlet_rayleigh/finite-build-04.txt": "95b2f313d408faa562413a53aef1aeb6827b34dcc62f9ec8d6e0eb67859a8ac0",
+    "logs/branch_dirichlet_rayleigh/coefficient-build-04.txt": "646c81dfab839b5956b00c6634627281a866453ebadda2917bb486341dde388e",
+    "logs/branch_dirichlet_rayleigh/multiplier-coefficients-build-01.txt": "8cdb5f3beb83b8f96074eee5997fdd69184e234be666092a8d60091428343683",
+    "logs/branch_dirichlet_rayleigh/weak-build-02.txt": "cec40096cfc5c9bb9a3f5511a147e6d41fd314cfe2b394ab4d143709517f963f",
+    "logs/branch_dirichlet_rayleigh/multiplier-build-03.txt": "7017c2fbae6137190fbd44f860e19358fa830c8a29147a886130eaafc0fc08d4",
+    "logs/branch_dirichlet_rayleigh/coefficient-build-01.txt": "2c4829084ed89161393b8521d187d35593c20aa8456c579eec1f32ae908fad4f",
+    "logs/branch_dirichlet_rayleigh/coefficient-build-02.txt": "233bfaf5a26bbab01078b25b0a9e31f6ea35dfc6f28cb1644c1c5b9532536d18",
+    "logs/branch_dirichlet_rayleigh/coefficient-build-03.txt": "a8e9dcd96a6cb39c3abf990483b9d99adcee8fa077663688b979e286caafdf3d",
+    "logs/branch_dirichlet_rayleigh/finite-build-01.txt": "8e7606e777dee66f37986551741ea84086fbbb9144b3cd9d54d4d012984f19c1",
+    "logs/branch_dirichlet_rayleigh/finite-build-02.txt": "e5de023b8e4a8ac5fd1becff6cf21e8ba4651d6cb3257129f23e16fe70261e33",
+    "logs/branch_dirichlet_rayleigh/finite-build-03.txt": "71c1e1e3e6b2f67ebb93530a942765be4a133e9aa67d114069fe807d99d565a4",
+    "logs/branch_dirichlet_rayleigh/multiplier-build-01.txt": "55015052ec7f200415e30a1b9abc722b5d06c4e8e008634879e55f2de065aba2",
+    "logs/branch_dirichlet_rayleigh/multiplier-build-02.txt": "599e3c30861651867924db5c2d36a2c892206747c11cad79d32be4737a8da94b",
+    "logs/branch_dirichlet_rayleigh/source-axioms-01.txt": "018615a944c4f7c666bb29303cb70c458bb513ef8dc92a4b8d8288ce6499c746",
+    "logs/branch_dirichlet_rayleigh/source-build-01.txt": "ed7542c804c9d0fd6201debaae17d6df80f622d4bac92b9272749164cf5e7368",
+    "logs/branch_dirichlet_rayleigh/source-build-02.txt": "cb6a43b92ff525020f51e4e909fa1970ef41641d659ec50d252faffac09b43d4",
+    "logs/branch_dirichlet_rayleigh/weak-build-01.txt": "1fb34160ff827c34b18b938eed14b6441418b482a8ac571ee5e01303c14344a3",
+    "logs/branch_bochner/dirichlet-linear-axioms-01.txt": "90110333548e5fcbde4320f2eace8be4c4681e81a5ef62aa6b44caab36f21b72",
+    "logs/branch_bochner/dirichlet-linear-eigenvalue-build-01.txt": "c24fced6c124abf4f4c7cd3839d6c04fc9a0c9890b8395e8e6f86bed8489e8e0",
+    "logs/branch_bochner/dirichlet-linear-eigenvalue-build-02.txt": "ed6718ce73b172d39b0594eb81f43bb367ed36bfd3a9536c6524c42e3fd8ec4b",
+    "logs/branch_bochner/dirichlet-linear-eigenvalue-build-03.txt": "f3bf89de26cc054b51f757726bb66be3c42979f8b8f737d8c7ffa811624f5e4e",
+    "logs/branch_bochner/dirichlet-linear-eigenvalue-build-04.txt": "742ba49f1ba03abafae215f8ba3558f17271dafbd50ce56d3755be3ed0020fbb",
+    "logs/branch_bochner/dirichlet-linear-rayleigh-build-01.txt": "245991f22a61241243252b9e92217a030fc722fba54b124998ea539c31cfeb0c",
+    "logs/branch_bochner/dirichlet-linear-rayleigh-build-02.txt": "997619d75b94efda3612dadf3d8221ec21b5093205dee94623e05bfaba2ba28c",
+    "logs/branch_bochner/dirichlet-linear-rayleigh-build-03.txt": "b31ad4c272cf9755a865d446d064e9692ddd310a89dc37cf0daefd271f5e0829",
+    "logs/branch_bochner/dirichlet-linear-rayleigh-build-04.txt": "5c6d98de0be4b316906b4a4b4579d8a0b2cffccc0493e3c31aa183740ea7e222",
+    "logs/branch_bochner/dirichlet-linear-rayleigh-build-05.txt": "d0343a2cad9d8786d47f88d41a8ba7f70ef693de4af1b0bd7659d056fbddf215",
+    "logs/branch_bochner/dirichlet-linear-transport-build-01.txt": "bdf2ec970efdfe8d1d83ce6928ada7b07a014cccf34870f79c823693cbf33533",
+    "logs/branch_bochner/dirichlet-linear-transport-build-02.txt": "0dec79e27c8c382fb0a3846e4094c8f8c26032e607a44ec40674d78447f0636d",
+    "logs/linux-gauss-stage30/gaussian-dilation-profile/versions.json": "a6379da8c306c821a7d7ccdbfb33fc8c56eed91a15c71ed8e44ec209b6215f42"
+  },
+  "actual_logs": {
+    "logs/branch_dirichlet_rayleigh/core-axioms-01.txt": {
+      "sha256": "6459cb1aa6e52eb684843bc9dc5c0ab6ddd323789699334166b296f6f9cef8dc",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake env lean audit/probes/DirichletCoreAxioms.lean",
+      "elapsed_seconds": 4.642
+    },
+    "logs/branch_dirichlet_rayleigh/multiplier-axioms-01.txt": {
+      "sha256": "fa2dbeb5be06fd930c43f22b67a380f1b8b659d282efa4259a54c01d277f7f18",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake env lean audit/probes/DirichletMultiplierAxioms.lean",
+      "elapsed_seconds": 5.213
+    },
+    "logs/branch_dirichlet_rayleigh/source-build-03.txt": {
+      "sha256": "8636ba6675827d20b68dcf2a9ca59631d4ec03e1501bea1c8dd40dc81d295721",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletRayleigh",
+      "elapsed_seconds": 33.454
+    },
+    "logs/branch_dirichlet_rayleigh/finite-build-04.txt": {
+      "sha256": "95b2f313d408faa562413a53aef1aeb6827b34dcc62f9ec8d6e0eb67859a8ac0",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletRayleighFinite",
+      "elapsed_seconds": 9.117
+    },
+    "logs/branch_dirichlet_rayleigh/coefficient-build-04.txt": {
+      "sha256": "646c81dfab839b5956b00c6634627281a866453ebadda2917bb486341dde388e",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.L2CoefficientField",
+      "elapsed_seconds": 7.253
+    },
+    "logs/branch_dirichlet_rayleigh/multiplier-coefficients-build-01.txt": {
+      "sha256": "8cdb5f3beb83b8f96074eee5997fdd69184e234be666092a8d60091428343683",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.H1MultiplierCoefficients",
+      "elapsed_seconds": 9.772
+    },
+    "logs/branch_dirichlet_rayleigh/weak-build-02.txt": {
+      "sha256": "cec40096cfc5c9bb9a3f5511a147e6d41fd314cfe2b394ab4d143709517f963f",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletWeakEigenfunction",
+      "elapsed_seconds": 15.773
+    },
+    "logs/branch_dirichlet_rayleigh/multiplier-build-03.txt": {
+      "sha256": "7017c2fbae6137190fbd44f860e19358fa830c8a29147a886130eaafc0fc08d4",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletMultiplier",
+      "elapsed_seconds": 10.886
+    },
+    "logs/branch_dirichlet_rayleigh/coefficient-build-01.txt": {
+      "sha256": "2c4829084ed89161393b8521d187d35593c20aa8456c579eec1f32ae908fad4f",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.L2CoefficientField",
+      "elapsed_seconds": 7.117
+    },
+    "logs/branch_dirichlet_rayleigh/coefficient-build-02.txt": {
+      "sha256": "233bfaf5a26bbab01078b25b0a9e31f6ea35dfc6f28cb1644c1c5b9532536d18",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.L2CoefficientField",
+      "elapsed_seconds": 7.289
+    },
+    "logs/branch_dirichlet_rayleigh/coefficient-build-03.txt": {
+      "sha256": "a8e9dcd96a6cb39c3abf990483b9d99adcee8fa077663688b979e286caafdf3d",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.L2CoefficientField",
+      "elapsed_seconds": 7.352
+    },
+    "logs/branch_dirichlet_rayleigh/finite-build-01.txt": {
+      "sha256": "8e7606e777dee66f37986551741ea84086fbbb9144b3cd9d54d4d012984f19c1",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletRayleighFinite",
+      "elapsed_seconds": 9.599
+    },
+    "logs/branch_dirichlet_rayleigh/finite-build-02.txt": {
+      "sha256": "e5de023b8e4a8ac5fd1becff6cf21e8ba4651d6cb3257129f23e16fe70261e33",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletRayleighFinite",
+      "elapsed_seconds": 9.098
+    },
+    "logs/branch_dirichlet_rayleigh/finite-build-03.txt": {
+      "sha256": "71c1e1e3e6b2f67ebb93530a942765be4a133e9aa67d114069fe807d99d565a4",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletRayleighFinite",
+      "elapsed_seconds": 9.325
+    },
+    "logs/branch_dirichlet_rayleigh/multiplier-build-01.txt": {
+      "sha256": "55015052ec7f200415e30a1b9abc722b5d06c4e8e008634879e55f2de065aba2",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletMultiplier",
+      "elapsed_seconds": 10.889
+    },
+    "logs/branch_dirichlet_rayleigh/multiplier-build-02.txt": {
+      "sha256": "599e3c30861651867924db5c2d36a2c892206747c11cad79d32be4737a8da94b",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletMultiplier",
+      "elapsed_seconds": 24.288
+    },
+    "logs/branch_dirichlet_rayleigh/source-axioms-01.txt": {
+      "sha256": "018615a944c4f7c666bb29303cb70c458bb513ef8dc92a4b8d8288ce6499c746",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake env lean audit/probes/DirichletRayleighAxioms.lean",
+      "elapsed_seconds": 4.678
+    },
+    "logs/branch_dirichlet_rayleigh/source-build-01.txt": {
+      "sha256": "ed7542c804c9d0fd6201debaae17d6df80f622d4bac92b9272749164cf5e7368",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletRayleigh",
+      "elapsed_seconds": 11.076
+    },
+    "logs/branch_dirichlet_rayleigh/source-build-02.txt": {
+      "sha256": "cb6a43b92ff525020f51e4e909fa1970ef41641d659ec50d252faffac09b43d4",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletRayleigh",
+      "elapsed_seconds": 24.878
+    },
+    "logs/branch_dirichlet_rayleigh/weak-build-01.txt": {
+      "sha256": "1fb34160ff827c34b18b938eed14b6441418b482a8ac571ee5e01303c14344a3",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletWeakEigenfunction",
+      "elapsed_seconds": 5.918
+    },
+    "logs/branch_bochner/dirichlet-linear-axioms-01.txt": {
+      "sha256": "90110333548e5fcbde4320f2eace8be4c4681e81a5ef62aa6b44caab36f21b72",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake env lean audit/probes/DirichletLinearAxioms.lean",
+      "elapsed_seconds": 3.795
+    },
+    "logs/branch_bochner/dirichlet-linear-eigenvalue-build-01.txt": {
+      "sha256": "c24fced6c124abf4f4c7cd3839d6c04fc9a0c9890b8395e8e6f86bed8489e8e0",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletLinearEigenvalue",
+      "elapsed_seconds": 37.59
+    },
+    "logs/branch_bochner/dirichlet-linear-eigenvalue-build-02.txt": {
+      "sha256": "ed6718ce73b172d39b0594eb81f43bb367ed36bfd3a9536c6524c42e3fd8ec4b",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletLinearEigenvalue",
+      "elapsed_seconds": 39.708
+    },
+    "logs/branch_bochner/dirichlet-linear-eigenvalue-build-03.txt": {
+      "sha256": "f3bf89de26cc054b51f757726bb66be3c42979f8b8f737d8c7ffa811624f5e4e",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletLinearEigenvalue",
+      "elapsed_seconds": 10.568
+    },
+    "logs/branch_bochner/dirichlet-linear-eigenvalue-build-04.txt": {
+      "sha256": "742ba49f1ba03abafae215f8ba3558f17271dafbd50ce56d3755be3ed0020fbb",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletLinearEigenvalue",
+      "elapsed_seconds": 11.552
+    },
+    "logs/branch_bochner/dirichlet-linear-rayleigh-build-01.txt": {
+      "sha256": "245991f22a61241243252b9e92217a030fc722fba54b124998ea539c31cfeb0c",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletLinearRayleigh",
+      "elapsed_seconds": 37.404
+    },
+    "logs/branch_bochner/dirichlet-linear-rayleigh-build-02.txt": {
+      "sha256": "997619d75b94efda3612dadf3d8221ec21b5093205dee94623e05bfaba2ba28c",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletLinearRayleigh",
+      "elapsed_seconds": 39.185
+    },
+    "logs/branch_bochner/dirichlet-linear-rayleigh-build-03.txt": {
+      "sha256": "b31ad4c272cf9755a865d446d064e9692ddd310a89dc37cf0daefd271f5e0829",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletLinearRayleigh",
+      "elapsed_seconds": 37.087
+    },
+    "logs/branch_bochner/dirichlet-linear-rayleigh-build-04.txt": {
+      "sha256": "5c6d98de0be4b316906b4a4b4579d8a0b2cffccc0493e3c31aa183740ea7e222",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletLinearRayleigh",
+      "elapsed_seconds": 38.961
+    },
+    "logs/branch_bochner/dirichlet-linear-rayleigh-build-05.txt": {
+      "sha256": "d0343a2cad9d8786d47f88d41a8ba7f70ef693de4af1b0bd7659d056fbddf215",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletLinearRayleigh",
+      "elapsed_seconds": 34.559
+    },
+    "logs/branch_bochner/dirichlet-linear-transport-build-01.txt": {
+      "sha256": "bdf2ec970efdfe8d1d83ce6928ada7b07a014cccf34870f79c823693cbf33533",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletLinearTransport",
+      "elapsed_seconds": 34.683
+    },
+    "logs/branch_bochner/dirichlet-linear-transport-build-02.txt": {
+      "sha256": "0dec79e27c8c382fb0a3846e4094c8f8c26032e607a44ec40674d78447f0636d",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.DirichletLinearTransport",
+      "elapsed_seconds": 35.804
+    }
+  },
+  "actual_axiom_reports": {
+    "AffineFKProof.dirichletTestToTop": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletTestToTop_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletTestToH1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletSobolev": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletSobolev_isClosed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletSobolev_completeSpace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletValue": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletGradient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletValue_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichlet_test_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletSobolev_mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletInclusion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletInclusion_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletInclusion_gradient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletRayleigh": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletEigenvalue": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletRayleigh_eq_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletEigenvalue_le_rayleigh": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletEigenvalue_antitone": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletTestElement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletTestElement_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletTestElement_gradient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletTestElement_value_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichlet_exists_nonzero_test": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletEigenvalue_ne_top": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.l2CoefficientField_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.l2CoefficientFieldLinear": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.l2CoefficientFieldLinear_coe": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.l2CoefficientField": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.l2CoefficientField_coe": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1ScalarCoefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1ScalarCoefficient_coe": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1VectorCoefficient_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1VectorCoefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1VectorCoefficient_coe": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1_gradient_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1CrossCoefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1CrossCoefficient_coe": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1MultiplierAmbient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1MultiplierAmbient_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1MultiplierAmbient_gradient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1MultiplyTest": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1MultiplyTest_gradient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1MultiplierAmbient_smooth_pair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1MultiplierAmbient_preserves_graph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1Multiplier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1Multiplier_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1Multiplier_gradient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1Multiplier_dirichlet_test": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.h1Multiplier_preserves_dirichlet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletMultiplier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletMultiplier_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletMultiplier_gradient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.IsDirichletWeakEigenfunction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletWeakEigenfunction_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletWeakEigenfunction_rayleigh": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletLinearImage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletLinearImage_coe": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletLinearTest": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichlet_approximating_tests": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichlet_linear_graph_transport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichlet_linear_graph_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichlet_linear_rayleigh_transport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletLinearImage_symm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletEigenvalue_linear_image_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.dirichletEigenvalue_linear_pullback_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "theorem_count": 44,
+  "data_definition_count": 21,
+  "instance_proof_count": 1,
+  "complete_types_and_proof_bodies_read": true,
+  "mathematical_defect_found": false,
+  "source_statement_fidelity": true,
+  "authorship_boundary": "Reviewer authored reused UnweightedSobolevGraph/Integration foundations; those existing proofs are not independently reviewed by their own author here. The new66 root-authored declarations were read independently. OrdinaryFisherLinearMapLp/H1/Energy are sibling-C authored and retain their separate prior root reviews.",
+  "ordinary_source_compile_and_axiom_evidence_only": true,
+  "fresh_Lean_run_by_reviewer": false,
+  "eigenfunction_existence_or_spectral_identification_proved": false,
+  "own_comparator_claim": false,
+  "human_review": false,
+  "full_paper_verified": false
+}

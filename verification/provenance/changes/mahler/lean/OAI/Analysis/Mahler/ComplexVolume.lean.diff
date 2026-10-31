@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/ComplexVolume.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ComplexVolume.lean
+@@ -1,5 +1,9 @@
+-import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
+-import Mathlib.MeasureTheory.Integral.Lebesgue.Map
++module
++
++public import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
++public import Mathlib.MeasureTheory.Integral.Lebesgue.Map
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

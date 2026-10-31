@@ -1,0 +1,18 @@
+{
+  "kind": "Independent non-author AI mathematical, fidelity and clarity review",
+  "reviewer": "/root",
+  "proof_author": "/root/claim_inventory",
+  "all_11_headers_and_bodies_read": true,
+  "modules": 3,
+  "theorems": 10,
+  "definitions": 1,
+  "source_probe_pins": 26,
+  "raw_logs": 5,
+  "actual_axiom_queries": 11,
+  "source_handoff_sha256": "526d916615c8321da9e4fa0e2110605719b056d4cf556eb51dc4e437e3955757",
+  "review_sha256": "cf05c72476d5d7268bf11634ca59528bd76b78ac95b6c2e9920eb150a39ebb75",
+  "defects_found": [],
+  "groundstate_existence_verified": false,
+  "own_comparator_accepted": false,
+  "full_paper_verified": false
+}

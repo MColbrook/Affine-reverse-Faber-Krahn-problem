@@ -1,0 +1,20 @@
+--- lean/OAI/Analysis/Mahler/ConformalInverse.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ConformalInverse.lean
+@@ -1,8 +1,12 @@
+-import OAI.Analysis.Mahler.ConformalInjectivity
+-import OAI.Analysis.Mahler.AngularStrip
+-import Mathlib.Analysis.Complex.CauchyIntegral
+-import Mathlib.Analysis.Calculus.ContDiff.RCLike
+-import Mathlib.Analysis.Calculus.InverseFunctionTheorem.Deriv
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ConformalInjectivity
++public import AffineFK.OpenAIMahler.Analysis.Mahler.AngularStrip
++public import Mathlib.Analysis.Complex.CauchyIntegral
++public import Mathlib.Analysis.Calculus.ContDiff.RCLike
++public import Mathlib.Analysis.Calculus.InverseFunctionTheorem.Deriv
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

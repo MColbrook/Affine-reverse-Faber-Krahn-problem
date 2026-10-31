@@ -1,0 +1,83 @@
+{
+  "reviewer": "AI /root/palomar_requirements",
+  "status": "Independent five-new-body mathematical review and actual evidence check passed",
+  "authorship_boundary": "Reviewer authored reused Gaussian/free-heat and finite-iteration inputs. This independently reviews only the three new parent-authored modules/five proofs, not those reused inputs or every transitive proof body.",
+  "findings": [],
+  "new_declarations_read_in_full": [
+    "AffineFKProof.gaussianL2Average_graph_energy_le_form",
+    "AffineFKProof.gaussianL2Average_form_sequence_close",
+    "AffineFKProof.gaussian_supported_normalized_minimizing_limit",
+    "AffineFKProof.gaussian_logConcave_groundstate_of_competitors",
+    "AffineFKProof.exists_even_logConcave_dirichlet_groundstate"
+  ],
+  "manifest_sha256": "3c4f0e2a14fd4e27cb6a975968718cbe279a2f41727253d65f447d33d1cbacac",
+  "exact_new_source_sha256": {
+    "AffineFK/GaussianDirichletMinimizingLimit.lean": "cc3fba5977538c8dc9162e410006bb1ac669f4d57b8143dd93caa4e406805e22",
+    "AffineFK/GaussianLogConcaveGroundstateLimit.lean": "956282eb15b6afeee32c0fcc34f28d9fff62a6bc80ab27460545045b2c042c96",
+    "AffineFK/EvenLogConcaveGroundstate.lean": "b5dc3bf68b46a7c9691a7da8c2c1c14b8efeca644b143a8bc41e4c446c6127c8"
+  },
+  "transitive_source_pins_verified": 230,
+  "actual_axiom_reports": {
+    "AffineFKProof.gaussianL2Average_graph_energy_le_form": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussianL2Average_form_sequence_close": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussian_supported_normalized_minimizing_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.gaussian_logConcave_groundstate_of_competitors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.exists_even_logConcave_dirichlet_groundstate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiom_log_sha256": "e9373d0fec87d4fefd169b5b9fcb2a40f8464047ec98810d18698fd5b7b8110c",
+  "successful_builds": {
+    "logs/branch_bochner/gaussian-dirichlet-minimizing-limit-build-02.txt": {
+      "sha256": "8072140ddfeb9127bb622695c0777a2106766527b0ace3fb768a0b32f8d8fd87",
+      "elapsed_seconds": "15.266"
+    },
+    "logs/branch_bochner/gaussian-logconcave-groundstate-limit-build-01.txt": {
+      "sha256": "44939c18d9613830582063bc654c089cc2376556bab03dfe0de7a4a87a112f61",
+      "elapsed_seconds": "20.466"
+    },
+    "logs/branch_bochner/even-logconcave-groundstate-build-02.txt": {
+      "sha256": "243a11e849f19abfa5924a066a86fcaeaf572b69cde8c5f30a453db124404c86",
+      "elapsed_seconds": "17.944"
+    }
+  },
+  "evidence_archive_sha256": "4d94ffef05f4c33c72f519ac51131d5d2f8055c6c94a9da60c93881ed2f13124",
+  "all_seven_archived_raw_logs_match_local": {
+    "logs/branch_bochner/gaussian-dirichlet-minimizing-limit-build-01.txt": "6829c4742de52a9bdd4403af72c36c7d79279e53d3eeb1903bacc2c6f2dcf1c0",
+    "logs/branch_bochner/gaussian-dirichlet-minimizing-limit-build-02.txt": "8072140ddfeb9127bb622695c0777a2106766527b0ace3fb768a0b32f8d8fd87",
+    "logs/branch_bochner/gaussian-minimizing-limit-axioms-01.txt": "cd145691df1361d323ddf0fdba593ffc1da514b962268cd3370d708769f9649f",
+    "logs/branch_bochner/gaussian-logconcave-groundstate-limit-build-01.txt": "44939c18d9613830582063bc654c089cc2376556bab03dfe0de7a4a87a112f61",
+    "logs/branch_bochner/even-logconcave-groundstate-build-01.txt": "734fbb1ea16f6e9a2a4760bde991585daf1210d0ed9aa3b96cade533b505a58c",
+    "logs/branch_bochner/even-logconcave-groundstate-build-02.txt": "243a11e849f19abfa5924a066a86fcaeaf572b69cde8c5f30a453db124404c86",
+    "logs/branch_bochner/groundstate-composition-axioms-01.txt": "e9373d0fec87d4fefd169b5b9fcb2a40f8464047ec98810d18698fd5b7b8110c"
+  },
+  "own_comparator_acceptance": false,
+  "full_paper_verified": false,
+  "scope": "An actually constructed normalized nonnegative even pointwise log-concave representative of one true first weak H0 groundstate for every nonempty bounded convex symmetric open Euclidean domain, including n0. No assumed approximating family remains in the final unconditional theorem.",
+  "not_claimed": [
+    "Strict positivity on the whole interior",
+    "Simplicity or uniqueness",
+    "All groundstates are log-concave",
+    "Classical smooth eigenfunction regularity",
+    "Milman existence or headline affine reverse Faber-Krahn theorems",
+    "New Comparator acceptance"
+  ]
+}

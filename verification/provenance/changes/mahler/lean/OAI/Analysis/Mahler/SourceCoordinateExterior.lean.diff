@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SourceCoordinateExterior.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceCoordinateExterior.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.SourceRealExterior
+-import OAI.Analysis.Mahler.SourceTopCoordinates
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceRealExterior
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceTopCoordinates
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

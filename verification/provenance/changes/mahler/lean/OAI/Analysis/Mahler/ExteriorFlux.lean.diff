@@ -1,0 +1,18 @@
+--- lean/OAI/Analysis/Mahler/ExteriorFlux.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ExteriorFlux.lean
+@@ -1,7 +1,11 @@
+-import OAI.Analysis.Mahler.HomogeneousFlux
+-import OAI.Analysis.Mahler.HolomorphicRegularity
+-import Mathlib.Analysis.Calculus.DifferentialForm.Basic
+-import Mathlib.Analysis.Calculus.ContDiff.RestrictScalars
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousFlux
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HolomorphicRegularity
++public import Mathlib.Analysis.Calculus.DifferentialForm.Basic
++public import Mathlib.Analysis.Calculus.ContDiff.RestrictScalars
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

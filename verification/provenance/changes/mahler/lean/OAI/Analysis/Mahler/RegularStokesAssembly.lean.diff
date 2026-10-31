@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/RegularStokesAssembly.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RegularStokesAssembly.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.InteriorStokes
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.InteriorStokes
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

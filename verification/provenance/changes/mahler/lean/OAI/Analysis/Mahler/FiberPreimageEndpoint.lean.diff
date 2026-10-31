@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/FiberPreimageEndpoint.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/FiberPreimageEndpoint.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.FiberEndpoint
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.FiberEndpoint
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

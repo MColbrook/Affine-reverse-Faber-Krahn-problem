@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/HemisphereMeasure.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HemisphereMeasure.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.HemisphereJacobian
+-import Mathlib.MeasureTheory.Integral.Lebesgue.Map
+-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HemisphereJacobian
++public import Mathlib.MeasureTheory.Integral.Lebesgue.Map
++public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

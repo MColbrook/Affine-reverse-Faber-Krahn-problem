@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/VerticalRadius.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/VerticalRadius.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.ConformalInverse
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ConformalInverse
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

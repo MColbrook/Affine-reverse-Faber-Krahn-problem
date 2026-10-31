@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/EuclideanRegularLevels.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/EuclideanRegularLevels.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.EuclideanSpecialMap
+-import OAI.Analysis.Mahler.StripRegularLevels
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.EuclideanSpecialMap
++public import AffineFK.OpenAIMahler.Analysis.Mahler.StripRegularLevels
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

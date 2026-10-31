@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/StripRegularLevels.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/StripRegularLevels.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.StripLevelGeometry
+-import Mathlib.Topology.Order.MonotoneConvergence
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.StripLevelGeometry
++public import Mathlib.Topology.Order.MonotoneConvergence
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

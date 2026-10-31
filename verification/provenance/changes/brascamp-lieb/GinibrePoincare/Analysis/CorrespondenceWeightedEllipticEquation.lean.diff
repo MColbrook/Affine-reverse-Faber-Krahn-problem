@@ -1,0 +1,11 @@
+--- GinibrePoincare/Analysis/CorrespondenceWeightedEllipticEquation.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceWeightedEllipticEquation.lean
+@@ -1,6 +1,6 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticReal
+-public import GinibrePoincare.Analysis.GinibreTransitionAnalyticLocalRegularityTestIntegrability
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticReal
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreTransitionAnalyticLocalRegularityTestIntegrability
+ @[expose] public section
+ open MeasureTheory Set
+ open scoped ContDiff BigOperators

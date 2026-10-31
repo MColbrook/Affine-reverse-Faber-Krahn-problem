@@ -1,0 +1,9 @@
+--- GinibrePoincare/Analysis/CorrespondenceWeightedEllipticZeroGradient.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceWeightedEllipticZeroGradient.lean
+@@ -1,5 +1,5 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticC1Tests
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticC1Tests
+ public import Mathlib.Analysis.Calculus.BumpFunction.Convolution
+ public import Mathlib.Analysis.Calculus.MeanValue
+ @[expose] public section

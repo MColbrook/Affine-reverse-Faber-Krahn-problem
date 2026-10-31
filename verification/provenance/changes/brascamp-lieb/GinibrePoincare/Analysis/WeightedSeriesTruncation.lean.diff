@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/WeightedSeriesTruncation.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/WeightedSeriesTruncation.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.HermiteParsevalModes
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteParsevalModes
+ 
+ @[expose] public section
+ 

@@ -1,0 +1,13 @@
+--- GinibrePoincare/Analysis/CorrespondenceWeightedEllipticLiouville.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceWeightedEllipticLiouville.lean
+@@ -1,7 +1,7 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticCutoffEnergy
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticZeroGradient
+-public import GinibrePoincare.Analysis.CorrespondenceBrascampLiebCutoffs
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticCutoffEnergy
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticZeroGradient
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceBrascampLiebCutoffs
+ @[expose] public section
+ open MeasureTheory Set Filter
+ open scoped ContDiff BigOperators Topology

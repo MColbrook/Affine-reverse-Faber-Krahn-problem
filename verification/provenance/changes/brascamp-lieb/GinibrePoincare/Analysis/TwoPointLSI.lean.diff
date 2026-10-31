@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/TwoPointLSI.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/TwoPointLSI.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.FiniteEntropyTensorization
++public import AffineFK.ChafaiBrascampLieb.Analysis.FiniteEntropyTensorization
+ public import Mathlib.Analysis.Calculus.Deriv.MeanValue
+ public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+ 

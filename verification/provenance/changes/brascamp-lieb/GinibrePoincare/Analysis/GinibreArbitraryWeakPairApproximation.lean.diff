@@ -1,0 +1,18 @@
+--- GinibrePoincare/Analysis/GinibreArbitraryWeakPairApproximation.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreArbitraryWeakPairApproximation.lean
+@@ -1,10 +1,10 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreWeakPermutation
+-public import GinibrePoincare.Analysis.GinibreWeightedInteriorMollification
+-public import GinibrePoincare.Analysis.GinibreCollisionCutoffEnergy
+-public import GinibrePoincare.Analysis.GinibreValueTruncationWeakChain
+-public import GinibrePoincare.Analysis.GinibreWeakSobolevTruncation
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreWeakPermutation
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreWeightedInteriorMollification
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreCollisionCutoffEnergy
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreValueTruncationWeakChain
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreWeakSobolevTruncation
+ public import Mathlib.Topology.MetricSpace.Thickening
+ 
+ @[expose] public section

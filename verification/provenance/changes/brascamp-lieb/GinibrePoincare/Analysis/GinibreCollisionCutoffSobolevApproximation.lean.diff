@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GinibreCollisionCutoffSobolevApproximation.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreCollisionCutoffSobolevApproximation.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreCollisionCutoffEnergy
+-public import GinibrePoincare.Analysis.RadialSmoothSobolevApproximation
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreCollisionCutoffEnergy
++public import AffineFK.ChafaiBrascampLieb.Analysis.RadialSmoothSobolevApproximation
+ 
+ @[expose] public section
+ 

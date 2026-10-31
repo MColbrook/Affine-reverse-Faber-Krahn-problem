@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/RegularChartStokes.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RegularChartStokes.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ChartExtension
+-import OAI.Analysis.Mahler.RegularStokesAssembly
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ChartExtension
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RegularStokesAssembly
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

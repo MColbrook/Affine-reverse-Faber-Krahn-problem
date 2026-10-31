@@ -1,0 +1,20 @@
+{
+  "proof_author": "/root/formalization_coverage",
+  "all_headers_and_bodies_read": true,
+  "new_declarations": 6,
+  "new_theorems": 4,
+  "new_definitions": 2,
+  "source_manifest_sha256": "a11baf588eac354c54f0423a4435e782fe661bd69159928fb4462e581722a25d",
+  "source_pins": 688,
+  "actual_axiom_queries": 6,
+  "actual_axiom_logs": [
+    "logs/branch_whitening_spectral/source-pinned-axioms-01.txt"
+  ],
+  "raw_logs": 5,
+  "kind": "Independent non-author AI mathematical, fidelity and clarity full-body review",
+  "reviewer": "/root",
+  "review_sha256": "9a3cb6c1d7d3030a244b03ea7c3cf4f65374bb0cb9fdda1b18f59bfdbc31a725",
+  "own_comparator_accepted": false,
+  "full_paper_verified": false,
+  "defects_found": []
+}

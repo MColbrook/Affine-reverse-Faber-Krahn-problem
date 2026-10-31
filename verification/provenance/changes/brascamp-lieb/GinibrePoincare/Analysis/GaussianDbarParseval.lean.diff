@@ -1,0 +1,24 @@
+--- GinibrePoincare/Analysis/GaussianDbarParseval.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianDbarParseval.lean
+@@ -1,13 +1,13 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.HermiteParsevalModes
+-public import GinibrePoincare.Analysis.HermiteEnergy
+-public import GinibrePoincare.Analysis.ComplexGaussianIntegrationByParts
+-public import GinibrePoincare.Analysis.GroundStateDbar
+-public import GinibrePoincare.Analysis.GaussianPolynomialIntegrability
+-public import GinibrePoincare.Analysis.MultivariateHermiteIntegrability
+-public import GinibrePoincare.Analysis.HermiteWirtinger
+-public import GinibrePoincare.Analysis.ComplexGaussianProductIntegral
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteParsevalModes
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteEnergy
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexGaussianIntegrationByParts
++public import AffineFK.ChafaiBrascampLieb.Analysis.GroundStateDbar
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianPolynomialIntegrability
++public import AffineFK.ChafaiBrascampLieb.Analysis.MultivariateHermiteIntegrability
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteWirtinger
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexGaussianProductIntegral
+ 
+ @[expose] public section
+ 

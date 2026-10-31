@@ -1,0 +1,35 @@
+{
+  "kind": "Independent post-check documentary findings resolved; no mathematical/interface/probe proof changed",
+  "preserved_predecessors": {
+    "verification/certificate.json": {
+      "preserved_path": "verification/provenance/postgate-before-documentary-corrections/certificate.json",
+      "sha256": "fd91b65448c74456f91f124458da755b9b788f41ef5f1688662dc730bd03a976"
+    },
+    "formalization.yaml": {
+      "preserved_path": "verification/provenance/postgate-before-documentary-corrections/formalization.yaml",
+      "sha256": "a8060ec66d5a9f6f3a4d8844d002fb59b38a5e00a50230b1918a671acd1a1ddd"
+    },
+    "verification/metadata-acceptance-delta.json": {
+      "preserved_path": "verification/provenance/postgate-before-documentary-corrections/metadata-acceptance-delta.json",
+      "sha256": "21673829745ca88abf53e2fe2dc2d194147108cc3bcbeeea94aa65c50a78abbb"
+    },
+    "verification/source-import-closure.json": {
+      "preserved_path": "verification/provenance/postgate-before-documentary-corrections/source-import-closure.json",
+      "sha256": "4658d0a72006be856110603d0a8fa2d11dd6fe4c85d88c6d15f2ccdae899ed6b"
+    },
+    "verification/README.md": {
+      "preserved_path": "verification/provenance/postgate-before-documentary-corrections/verification-README.md",
+      "sha256": "2c2f294ea35718b6a0341099e877b20330ce58d7bf4caec625dc865489aad531"
+    }
+  },
+  "metadata_correction_limited_to_review_role_clarity": true,
+  "current_metadata_sha256": "0868939b21057dabc7a0d86741627b084f0efa83e3a1ff999eada9976edb05d8",
+  "import_header_inspection_saved_documentary_sha256": "a9ded833d66f2208241338f248cee005b505a6dbd80c597fd319a35cb7463dc8",
+  "actual_invoked_LF_probe_sha256": "865926f0bdc8376914e96147d0cf8c8324614d92ed0715402ff16715ee7064ab",
+  "current_import_closure_report_sha256": "c034523a4009ba8cf01519db62b74d942b11cf0427b6abcbf26d5fda0880b7ae",
+  "checking_run_reused_actual_exit": 0,
+  "checking_run_seconds": 1464.25,
+  "Lean_proof_source_Challenge_Solution_config_or_AuditTools_changes": false,
+  "no_Lean_or_kernel_command_rerun": true,
+  "related_index_clarification": "Verification index now points to final metadata-schema run03 and explains both documentary corrections; earlier index bytes retained."
+}

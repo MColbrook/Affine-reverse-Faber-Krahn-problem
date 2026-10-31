@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/LevelFace.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/LevelFace.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.RegularChartStokes
+-import OAI.Analysis.Mahler.DCRegularity
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RegularChartStokes
++public import AffineFK.OpenAIMahler.Analysis.Mahler.DCRegularity
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

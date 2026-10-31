@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/SourceSphereLimit.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceSphereLimit.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.LogDilation
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.LogDilation
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

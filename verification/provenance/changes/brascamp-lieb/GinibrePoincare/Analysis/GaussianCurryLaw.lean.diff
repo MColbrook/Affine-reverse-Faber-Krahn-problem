@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GaussianCurryLaw.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianCurryLaw.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianPiCoordinates
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianPiCoordinates
+ 
+ @[expose] public section
+ 

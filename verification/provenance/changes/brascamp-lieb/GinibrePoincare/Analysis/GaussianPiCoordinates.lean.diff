@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GaussianPiCoordinates.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianPiCoordinates.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianLSIFiniteProduct
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianLSIFiniteProduct
+ public import Mathlib.MeasureTheory.Constructions.Pi
+ 
+ @[expose] public section

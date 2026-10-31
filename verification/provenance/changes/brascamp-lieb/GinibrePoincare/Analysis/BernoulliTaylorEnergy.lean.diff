@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/BernoulliTaylorEnergy.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/BernoulliTaylorEnergy.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.TaylorDifferenceQuotient
++public import AffineFK.ChafaiBrascampLieb.Analysis.TaylorDifferenceQuotient
+ 
+ @[expose] public section
+ 

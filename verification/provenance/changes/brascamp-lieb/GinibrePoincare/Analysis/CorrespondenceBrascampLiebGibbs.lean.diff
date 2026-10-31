@@ -1,0 +1,11 @@
+--- GinibrePoincare/Analysis/CorrespondenceBrascampLiebGibbs.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceBrascampLiebGibbs.lean
+@@ -1,6 +1,6 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceBrascampLiebCompactEnergy
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticDensity
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceBrascampLiebCompactEnergy
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticDensity
+ public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+ @[expose] public section
+ open MeasureTheory Measure

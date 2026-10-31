@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/EuclideanMassDensity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/EuclideanMassDensity.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.EuclideanSpecialMap
+-import OAI.Analysis.Mahler.SpecialMassBridge
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.EuclideanSpecialMap
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SpecialMassBridge
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

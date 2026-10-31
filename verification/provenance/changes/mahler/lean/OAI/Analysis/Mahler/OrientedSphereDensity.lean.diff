@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/OrientedSphereDensity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/OrientedSphereDensity.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.NormExteriorPower
+-import OAI.Analysis.Mahler.SphereNormalization
+-import Mathlib.LinearAlgebra.Alternating.Uncurry.Fin
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.NormExteriorPower
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereNormalization
++public import Mathlib.LinearAlgebra.Alternating.Uncurry.Fin
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

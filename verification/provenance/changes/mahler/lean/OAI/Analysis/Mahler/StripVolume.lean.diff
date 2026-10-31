@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/StripVolume.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/StripVolume.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.StripJacobian
+-import Mathlib.MeasureTheory.Function.Jacobian
+-import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.StripJacobian
++public import Mathlib.MeasureTheory.Function.Jacobian
++public import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,107 @@
+{
+  "kind": "Independent AI mathematical/fidelity/clarity review of five root-authored proofs",
+  "reviewer": "/root/formalization_coverage",
+  "author_of_new_sources": false,
+  "reviewed_all_complete_new_headers_and_bodies": true,
+  "new_declarations": 5,
+  "new_definitions": 0,
+  "new_source_sha256": {
+    "AffineFK/H1LocalizedCompactness.lean": "0a20722101162083373e184fa1c368ecd1e4282421b153e6626f96995aa299db",
+    "AffineFK/H1SupportedMinimizingLimit.lean": "8b0d08491b9671693ef321c62c9bc477aacc5e467c9faf264655fb75c8393cb5"
+  },
+  "source_manifest_sha256": "160f045601fd37f3d8f33dee8768daf4a78966d21b4254888b45fc50bfa8e5f3",
+  "validated_source_pins": 87,
+  "actual_logs": {
+    "logs/branch_bochner/h1-localized-compactness-build-01.txt": {
+      "sha256": "1e2efd4e499a7c4e428fbdac5f38b5ecb93208d125218af649daf2afafe70c7a",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.H1LocalizedCompactness",
+      "elapsed_seconds": 12.774
+    },
+    "logs/branch_bochner/h1-localized-compactness-build-02.txt": {
+      "sha256": "a8cd36e5a63f6a08a179e219425ec2027828be06049509d0d980212e7b326fc8",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.H1LocalizedCompactness",
+      "elapsed_seconds": 10.473
+    },
+    "logs/branch_bochner/h1-localized-compactness-build-03.txt": {
+      "sha256": "a53efe858ee77f2a2926ffd29b1598156a41b3345a54fef88845a58a073006ac",
+      "exit_code": 1,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.H1LocalizedCompactness",
+      "elapsed_seconds": 10.465
+    },
+    "logs/branch_bochner/h1-localized-compactness-build-04.txt": {
+      "sha256": "b6f460c9316834d337b3e29981c4fd28c902bc690065fdd770fae7039c2af885",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.H1LocalizedCompactness",
+      "elapsed_seconds": 12.389
+    },
+    "logs/branch_bochner/h1-supported-minimizing-limit-build-01.txt": {
+      "sha256": "7710e4177e024075bb4e4fdfaac2fcfd0681259b19ccf925ad0b64bb23d44de3",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake build AffineFK.H1SupportedMinimizingLimit",
+      "elapsed_seconds": 23.779
+    },
+    "logs/branch_bochner/h1-minimizing-limit-axioms-01.txt": {
+      "sha256": "5b3eea44394d589563c60f1c843921861ab65e9d8dd1b11ec71e8bf6e6ccf60a",
+      "exit_code": 0,
+      "command": "COMMAND: /home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake env lean audit/probes/H1MinimizingLimitAxioms.lean",
+      "elapsed_seconds": 5.016
+    }
+  },
+  "actual_allowed_axiom_reports": {
+    "AffineFKProof.h1_compact_multiplier_value_isCompact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.supported_l2_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.supported_l2_near_h1_subsequence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.supported_h1_normalized_limit_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AffineFKProof.supported_h1_normalized_minimizing_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "primary_mathlib_sources_read": {
+    "Mathlib/MeasureTheory/Function/ConvergenceInMeasure.lean": "47299ecb47d3f1a397addcf95ce360fbbd16d8dd0fb8a7a07cc1738775e6db50",
+    "Mathlib/Analysis/Normed/Operator/Compact/Basic.lean": "601eb996b16f14abae3669cf0b005bfb36cdd2f23c773e3d102f9d2803ebd1b5",
+    "Mathlib/Topology/Sequences.lean": "a38d4c369b7948d168a218c37d381668dbcd7513f058bb5d4ee21e9885b3f550"
+  },
+  "findings": [],
+  "mathematical_review_outcome": "No mathematical, domain, constant, support, integrability or trust defect found.",
+  "key_checks": [
+    "The compact multiplier factors through the actual bounded-open H0 value map, invoking the attributed Benenson Rellich proof, not an assumed compactness premise.",
+    "The supported-L2 limit proof uses actual Lp-to-convergence-in-measure and its genuine almost-everywhere subsequence theorem on volume, without requiring finite total volume.",
+    "The cutoff fixes each actual supported f_k almost everywhere, and its bounded scalar coefficient map transfers the original L2 approximation error to zero.",
+    "The extracted subsequence is strictly increasing and converges strongly in the genuine L2 space.",
+    "The final H1 graph energy helper is applied to the original v_(s(k)) and original b_(s(k)), never to the cutoff sequence.",
+    "H0 membership is proved for that same global H1 element; its value and gradient are unchanged by the subtype construction. The internal dilation bound used only for membership does not alter the final energy constant.",
+    "Strong L2 convergence preserves the exact squared value norm one, with no later rescaling or division loss.",
+    "The actual Rayleigh-infimum lower bound meets the passed energy upper bound. Nonempty U follows from 0 in U, giving actual finite eigenvalue before ENNReal.ofReal_toReal equality.",
+    "The genuine earlier variational theorem supplies the actual weak eigen-equation after attainment; no desired eigen-equation is assumed."
+  ],
+  "authorship_boundary": "Reviewer authored some frozen reused unweighted-H1/weak-compactness foundations. This review is independent for all five new root-authored declarations, not an independent re-review of those older authored foundations; their existing separate reviews remain applicable.",
+  "scope_limits": [
+    "The sequence, genuine H1 approximation, normalization and original gradient bounds are explicit hypotheses; their existence for the eventual Gaussian iteration is not claimed.",
+    "No log-concavity, positivity, simplicity or evenness of the resulting minimizer is asserted.",
+    "No fresh Lean build, Comparator or six-kernel run was performed by the reviewer; the inspected actual author checking logs are distinguished from independent proof reading.",
+    "This is an AI review, not human review or full-paper verification."
+  ],
+  "new_lean_checks_run": false,
+  "own_comparator_claim": false,
+  "full_paper_verified": false
+}

@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GinibreGeneratorL2.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreGeneratorL2.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreIntegrationByParts
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreIntegrationByParts
+ 
+ @[expose] public section
+ 

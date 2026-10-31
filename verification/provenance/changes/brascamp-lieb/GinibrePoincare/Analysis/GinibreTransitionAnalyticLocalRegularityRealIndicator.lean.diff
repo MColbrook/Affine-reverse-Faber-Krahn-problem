@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GinibreTransitionAnalyticLocalRegularityRealIndicator.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreTransitionAnalyticLocalRegularityRealIndicator.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreTransitionAnalyticLocalRegularityRealTests
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreTransitionAnalyticLocalRegularityRealTests
+ public import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
+ 
+ @[expose] public section

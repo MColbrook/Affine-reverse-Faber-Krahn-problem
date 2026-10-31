@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/FiniteStripReduction.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/FiniteStripReduction.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.StripVolume
+-import OAI.Analysis.Mahler.PlanarErrorRate
+-import Mathlib.Data.Nat.Factorial.Basic
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.StripVolume
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PlanarErrorRate
++public import Mathlib.Data.Nat.Factorial.Basic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

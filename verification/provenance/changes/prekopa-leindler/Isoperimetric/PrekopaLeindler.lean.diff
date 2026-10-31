@@ -1,0 +1,252 @@
+--- Isoperimetric/PrekopaLeindler.lean
++++ AffineFK/PrekopaLeindler.lean
+@@ -1,11 +1,25 @@
+-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+-
+-import Isoperimetric.Basic
++module
++
++public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
++public import AffineFK.PrekopaLeindlerBasic
++
++/-
++Derived from Jonathan Ho, Isoperimetric, Isoperimetric/PrekopaLeindler.lean
++https://github.com/hojonathanho/isoperimetric/tree/29768f8beeaf17295cdf3853d37da35d7e2b0a5f
++Released upstream under Apache-2.0; original license retained in
++vendor/isoperimetric-upstream/LICENSE. Upstream notices and comments retained.
++Modified by Codex for this project: module/public declarations, namespace,
++local import path and lemma-to-theorem spelling; further compatibility
++repairs must be recorded separately. No claim of original proof authorship.
++-/
++
++@[expose] public noncomputable section
++namespace AffineFKProof
+ 
+ open MeasureTheory Set
+ open scoped Pointwise
+ 
+-lemma brunn_minkowski_1d_compact
++theorem brunn_minkowski_1d_compact
+     {A B C : Set ℝ}
+     (h : A + B ⊆ C)
+     (hA_nonempty : A.Nonempty) (hA_compact : IsCompact A)
+@@ -46,14 +60,14 @@
+       exact (hB_compact.add isCompact_singleton).measurableSet
+     _ = volume A + volume B := by simp [A', B']
+ 
+-lemma brunn_minkowski_1d_infinite
++theorem brunn_minkowski_1d_infinite
+     {A B C : Set ℝ} (ha : volume A = ⊤) (hb : B.Nonempty) (hc : A + B ⊆ C) :
+     volume A + volume B ≤ volume C := calc
+   volume A + volume B = volume (A + {hb.some}) := by simp [ha]  -- since both sides = ⊤
+   _ ≤ volume (A + B) := measure_mono (add_subset_add_left (singleton_subset_iff.mpr hb.some_mem))
+   _ ≤ volume C := measure_mono hc
+ 
+-lemma brunn_minkowski_1d
++theorem brunn_minkowski_1d
+     {A B C : Set ℝ}
+     (h : A + B ⊆ C)
+     (hA_nonempty : A.Nonempty) (hA_measurable : MeasurableSet A)
+@@ -128,7 +142,7 @@
+   exact brunn_minkowski_1d_compact hKplusLsubC hKnonempty hKcompact hLnonempty hLcompact
+ 
+ -- Utilities
+-lemma vol_superlevelset_measurable (f : ℝ → ENNReal)
++theorem vol_superlevelset_measurable (f : ℝ → ENNReal)
+     : Measurable (fun t : ℝ ↦ volume {x | ENNReal.ofReal t ≤ f x}) := by
+   apply Antitone.measurable
+   intro a b hab
+@@ -142,7 +156,7 @@
+ -- This is the layer cake formula.
+ -- The version of this theorem in mathlib (MeasureTheory.lintegral_eq_lintegral_meas_lt)
+ -- is for a ℝ-valued function instead of ENNReal-valued function.
+-lemma layercake {f : ℝ → ENNReal} (hf_measurable : Measurable f) :
++theorem layercake {f : ℝ → ENNReal} (hf_measurable : Measurable f) :
+     ∫⁻ (x : ℝ), f x = ∫⁻ (t : ℝ) in Ioi 0, volume {x : ℝ | ENNReal.ofReal t ≤ f x} := by
+   let ind (x t : ℝ) : ENNReal := if ENNReal.ofReal t ≤ f x then 1 else 0
+   calc
+@@ -181,7 +195,7 @@
+           exact measurableSet_le measurable_const hf_measurable
+         _ = volume {x | ENNReal.ofReal t ≤ f x} := by apply setLIntegral_one
+ 
+-lemma lintegral_eq_vol_superlevelset_lintegral_01
++theorem lintegral_eq_vol_superlevelset_lintegral_01
+     {f : ℝ → ENNReal} (hf_bound : f ≤ 1) (hf_measurable : Measurable f)
+     : ∫⁻ x, f x = ∫⁻ t in Ioo 0 1, (fun t ↦ volume {x | ENNReal.ofReal t ≤ f x}) t := by
+   let vf := fun t : ℝ ↦ volume {x | ENNReal.ofReal t ≤ f x}
+@@ -207,7 +221,7 @@
+       exact absurd this (not_lt.mpr (hf_bound x))
+ 
+ -- A form of the weighted AM-GM inequality
+-lemma weighted_amgm {θ a b : ℝ} (hθ : 0 < θ ∧ θ < 1) (ha : 0 ≤ a) (hb : 0 ≤ b)
++theorem weighted_amgm {θ a b : ℝ} (hθ : 0 < θ ∧ θ < 1) (ha : 0 ≤ a) (hb : 0 ≤ b)
+     : ((1-θ)^(1-θ) * θ^θ)⁻¹ * a^(1-θ) * b^θ ≤ a + b := calc
+   ((1-θ)^(1-θ) * θ^θ)⁻¹ * a^(1-θ) * b^θ = ((1-θ)^(1-θ))⁻¹ * a^(1-θ) * (θ^θ)⁻¹ * b^θ := by grind
+   _ = ((1-θ)⁻¹)^(1-θ) * a^(1-θ) * (θ⁻¹)^θ * b^θ := by
+@@ -222,7 +236,7 @@
+   _ = a + b := by grind
+ 
+ -- Prekopa-Leindler in 1 dimension assuming sup norm 1.
+-lemma prekopa_leindler_1d_normalized
++theorem prekopa_leindler_1d_normalized
+     {θ : ℝ} {f g h : ℝ → ENNReal}
+     (hθ : 0 < θ ∧ θ < 1)
+     (hf_measurable : Measurable f) (hf_sup1 : iSup f = 1)
+@@ -281,11 +295,8 @@
+       rw [lintegral_add_left (vol_superlevelset_measurable f)]
+     _ ≤ ∫⁻ t in Ioo 0 1, vh t := by
+       apply lintegral_mono_ae
+-      rw [ae_restrict_iff (measurableSet_le
+-        (Measurable.add (vol_superlevelset_measurable f) (vol_superlevelset_measurable g))
+-        (vol_superlevelset_measurable h))]
+-      filter_upwards
+-      exact h_vol_ineq
++      filter_upwards [ae_restrict_mem measurableSet_Ioo] with t ht
++      exact h_vol_ineq t ht
+     _ ≤ ∫⁻ t in Ioi 0, vh t := by apply lintegral_mono_set; grind
+ 
+   -- "layer cake" formulas
+@@ -352,7 +363,7 @@
+ 
+ -- Prekopa-Leindler in 1 dimension assuming boundedness.
+ -- This removes the sup norm 1 assumption of prekopa_leindler_1d_normalized by scaling.
+-lemma prekopa_leindler_1d_bounded {θ : ℝ} {f g h : ℝ → ENNReal}
++theorem prekopa_leindler_1d_bounded {θ : ℝ} {f g h : ℝ → ENNReal}
+     (hθ : 0 < θ ∧ θ < 1)
+     (hf_measurable : Measurable f) (hf_bounded : iSup f ≠ ⊤)
+     (hg_measurable : Measurable g) (hg_bounded : iSup g ≠ ⊤)
+@@ -457,7 +468,7 @@
+ 
+ -- Prekopa-Leindler in 1 dimension. This removes the boundedness assumption of
+ -- prekopa_leindler_1d_bounded using an approximation argument.
+-lemma prekopa_leindler_1d {θ : ℝ} {f g h : ℝ → ENNReal}
++theorem prekopa_leindler_1d {θ : ℝ} {f g h : ℝ → ENNReal}
+     (hθ : 0 < θ ∧ θ < 1)
+     (hf_measurable : Measurable f)
+     (hg_measurable : Measurable g)
+@@ -505,18 +516,19 @@
+       congr; ext; rw [← ENNReal.mul_iSup, iSup_rpow_of_pos hθ.1]
+     _ ≤ ∫⁻ x, h x := by apply iSup₂_le; exact result_for_bounded
+ 
+-lemma lintegral_fin1 (F : (Fin 1 → ℝ) → ENNReal) :
++theorem lintegral_fin1 (F : (Fin 1 → ℝ) → ENNReal) :
+     ∫⁻ v : (Fin 1 → ℝ), F v = ∫⁻ x : ℝ, F (fun _ ↦ x) := by
+-  rw [← (volume_preserving_funUnique (Fin 1) ℝ).symm.map_eq,
+-      lintegral_map_equiv (g := (MeasurableEquiv.funUnique (Fin 1) ℝ).symm)]
+-  rfl
++  have hm : MeasurePreserving (MeasurableEquiv.funUnique (Fin 1) ℝ).symm
++      (volume : Measure ℝ) (volume : Measure (Fin 1 → ℝ)) :=
++    MeasurePreserving.symm _ (volume_preserving_funUnique (Fin 1) ℝ)
++  exact (hm.lintegral_comp_emb (MeasurableEquiv.funUnique (Fin 1) ℝ).symm.measurableEmbedding F).symm
+ 
+ -- Append to the end of a vector
+ def append {d : ℕ} (x : Fin d → ℝ) (t : Fin 1 → ℝ) : Fin (d + 1) → ℝ :=
+   fun i ↦ if h : i.val < d then x ⟨i.val, h⟩ else t default
+ 
+ @[fun_prop]
+-lemma append_measurable {d : ℕ} (x : Fin d → ℝ) : Measurable (append x) := by
++theorem append_measurable {d : ℕ} (x : Fin d → ℝ) : Measurable (append x) := by
+   unfold append
+   apply measurable_pi_lambda
+   intro
+@@ -525,7 +537,7 @@
+   fun_prop
+ 
+ @[fun_prop]
+-lemma append_measurable' {d : ℕ} (t : Fin 1 → ℝ) : Measurable (fun x : Fin d → ℝ ↦ append x t) := by
++theorem append_measurable' {d : ℕ} (t : Fin 1 → ℝ) : Measurable (fun x : Fin d → ℝ ↦ append x t) := by
+   unfold append
+   apply measurable_pi_lambda
+   intro
+@@ -533,7 +545,7 @@
+   · fun_prop
+   fun_prop
+ 
+-lemma append_linear {d : ℕ} (x1 y1 : Fin (d + 1) → ℝ) (x y : Fin 1 → ℝ)
++theorem append_linear {d : ℕ} (x1 y1 : Fin (d + 1) → ℝ) (x y : Fin 1 → ℝ)
+     : append x1 x + append y1 y = append (x1 + y1) (x + y) := by
+   unfold append
+   aesop
+@@ -543,16 +555,16 @@
+   F ∘ (append x)
+ 
+ @[fun_prop]
+-lemma fix_measurable {d : ℕ} {F : (Fin (d + 1) → ℝ) → ENNReal} (hF : Measurable F) (x : Fin d → ℝ)
++theorem fix_measurable {d : ℕ} {F : (Fin (d + 1) → ℝ) → ENNReal} (hF : Measurable F) (x : Fin d → ℝ)
+     : Measurable (fix F x) := by
+   unfold fix
+   fun_prop
+ 
+-lemma fix_apply {d : ℕ} (F : (Fin (d + 1) → ℝ) → ENNReal) (x : Fin d → ℝ) (y : Fin 1 → ℝ)
++theorem fix_apply {d : ℕ} (F : (Fin (d + 1) → ℝ) → ENNReal) (x : Fin d → ℝ) (y : Fin 1 → ℝ)
+     : fix F x y = F (append x y) := by
+   rfl
+ 
+-lemma lintegral_fix_eq_lmarginal {d : ℕ}
++theorem lintegral_fix_eq_lmarginal {d : ℕ}
+     (F : (Fin (d + 2) → ℝ) → ENNReal) (x1 : Fin (d + 1) → ℝ)
+     : ∫⁻ y : Fin 1 → ℝ, (fix F x1) y = (∫⋯∫⁻_{⟨d+1, by simp⟩}, F) (append x1 default) := by
+   have h_lmarginal_singleton := lmarginal_singleton F ⟨d+1, by simp⟩ (μ := fun _ ↦ volume)
+@@ -564,10 +576,10 @@
+   simp_all only [Pi.default_def, eq_rec_constant, Fin.default_eq_zero, Fin.isValue, dite_eq_ite,
+     Function.comp_apply]
+   congr; ext; congr; ext i; split
+-  case e_f.h.e_a.h.isTrue => simp_all
+-  case e_f.h.e_a.h.isFalse h => simp [Fin.val_lt_last h]
+-
+-lemma lintegral_fix_lintegral_eq_lintegral
++  case e_f.isTrue => simp_all
++  case e_f.isFalse h => simp [Fin.val_lt_last h]
++
++theorem lintegral_fix_lintegral_eq_lintegral
+     {d : ℕ} {f : (Fin (d + 2) → ℝ) → ENNReal} (hf_measurable : Measurable f) :
+     ∫⁻ (x : Fin (d + 1) → ℝ), ∫⁻ (t : Fin 1 → ℝ), (fix f x) t
+     = ∫⁻ (x : Fin (d + 2) → ℝ), f x := by
+@@ -612,7 +624,7 @@
+   (∀ x y, (f x)^(1-θ) * (g y)^θ ≤ h (x + y))
+ 
+ -- This is a small wrapper around prekopa_leindler_1d.
+-lemma prekopa_leindler_1d_fin1
++theorem prekopa_leindler_1d_fin1
+     {θ : ℝ} {f g h : (Fin 1 → ℝ) → ENNReal} (hθfgh : PLConditions 1 θ f g h)
+     : ENNReal.ofReal ((1-θ)^(1-θ) * θ^θ)⁻¹ * (∫⁻ x, f x)^(1-θ) * (∫⁻ x, g x)^θ ≤ ∫⁻ x, h x := by
+   let ⟨hθ0, hθ1, hf_measurable, hg_measurable, hh_measurable, hfgh⟩ := hθfgh
+@@ -670,21 +682,20 @@
+   -- Apply the inductive hypothesis to F, G, H
+   have hF_measurable : Measurable F := by
+     rw [h_F_eq_F']; unfold F'
+-    apply Measurable.comp'
+-    · apply Measurable.lmarginal; exact hf_measurable
+-    fun_prop
++    exact (Measurable.lmarginal (fun _ : Fin (d + 2) => (volume : Measure ℝ))
++      (s := {⟨d + 1, by omega⟩}) hf_measurable).comp
++        (append_measurable' (d := d + 1) (default : Fin 1 → ℝ))
+   have hG_measurable : Measurable G := by
+     rw [h_G_eq_G']; unfold G'
+-    apply Measurable.comp'
+-    · apply Measurable.lmarginal; exact hg_measurable
+-    fun_prop
++    exact (Measurable.lmarginal (fun _ : Fin (d + 2) => (volume : Measure ℝ))
++      (s := {⟨d + 1, by omega⟩}) hg_measurable).comp
++        (append_measurable' (d := d + 1) (default : Fin 1 → ℝ))
+   have hH_measurable : Measurable H := by
+     rw [h_H_eq_H']; unfold H'
+-    apply Measurable.comp'
+-    · fun_prop
+-    apply Measurable.comp'
+-    · apply Measurable.lmarginal; exact hh_measurable
+-    fun_prop
++    exact measurable_const.mul ((Measurable.lmarginal
++      (fun _ : Fin (d + 2) => (volume : Measure ℝ))
++      (s := {⟨d + 1, by omega⟩}) hh_measurable).comp
++        (append_measurable' (d := d + 1) (default : Fin 1 → ℝ)))
+   have factor_pos : 0 < (1-θ)^(1-θ)*θ^θ :=
+     mul_pos (Real.rpow_pos_of_pos (by linarith) (1-θ)) (Real.rpow_pos_of_pos (by linarith) θ)
+   have fix_plconditions : ∀ x1 y1 : Fin (d + 1) → ℝ,
+@@ -784,3 +795,6 @@
+     ≤ ∫⁻ (x : Fin (d + 2) → ℝ), h x
+   rw [rewrite_const_of_result_d_3] at result_d_3
+   exact result_d_3
++
++
++end AffineFKProof

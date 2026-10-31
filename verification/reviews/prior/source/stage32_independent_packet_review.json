@@ -1,0 +1,54 @@
+{
+  "kind": "Independent AI separate Challenge statement/data/source-copy and Solution-wrapper review",
+  "reviewer": "/root/claim_inventory",
+  "independent_ai_review_complete": true,
+  "pins": {
+    "AffineFK/InformationSpectrumResults/Challenge.lean": "1d86fb0758591aadaa32c4ac9761eb7ddb2e0d83ab2d64d7125c7174df676b97",
+    "AffineFK/InformationSpectrumResults/Solution.lean": "1f3d6ea990ace91f54217df40dd164b2e0201ddd18813f7a85fb6d21276b9b75",
+    "information-spectrum-comparator.json": "d1e7164d923b2db51fc522b04e605dbc403c30f0b70ae5db044188603c7b4a41",
+    "AffineFK/InformationSpectrumResults/interface-manifest.json": "588a20706caa5cf2735b059eb4439fd7c33d62199a4df7e3e73bdc2ffc22f772",
+    "AffineFK/InformationSpectrumLaw.lean": "ebdd02f3f99adddc588cfc2eabf39f6b30652c3bcfad234337127e100d10122c",
+    "logs/stage32/source-axioms.txt": "ef727ffba2848fe95566cf1bf9f352b6d63b0b949211346216637304af363963",
+    "logs/stage32/source-dependencies.txt": "e92cf88415e9ab741b5591b7a91b05fe342ff2110218d0f2cb2bccefef9ee790",
+    "logs/stage32/source-statement-dependencies.txt": "8b9590167b93763192ee8932e841915f0100c1f27fedc2f7adc9f6ea27ebc71a"
+  },
+  "challenge_caps": {
+    "raw_bytes": 18161,
+    "physical_lines": 262
+  },
+  "solution_caps": {
+    "raw_bytes": 18301,
+    "physical_lines": 264
+  },
+  "manual_owners": 26,
+  "semantic_data": 23,
+  "genuine_manual_theorem_helpers": 2,
+  "isolated_selected_benchmark": 1,
+  "all25_nonbenchmark_complete_headers_and_bodies_copied": true,
+  "copy_check_method": "Read-only independent comment-aware declaration extraction, complete header/body equality after namespace and whitespace normalization; manual reading of all26 owners and scope. Actual compiled diagnostics/Comparator remain authoritative.",
+  "complete_imported_proof_modules": 377,
+  "attributed_rellich_modules": 0,
+  "source_type_constants": 139,
+  "full_source_project_closure": 2225,
+  "actual_source_axiom_queries": 475,
+  "actual_source_axioms_exit": 0,
+  "actual_source_axioms_elapsed_seconds": 6.487,
+  "actual_source_full_dependencies_exit": 0,
+  "actual_source_type_dependencies_exit": 0,
+  "canonical_mathlib_only_challenge_imports": true,
+  "definition_holes": [],
+  "selected_solution_placeholders": 0,
+  "actual_own_comparator_accepted": false,
+  "actual_packet_diagnostics_reviewed": false,
+  "source_mapping": {
+    "M03": "Explicit measurable pointwise log-concave density witness formulation, source lines178\u2013191. Exact actual bound and uniform quantifiers preserved; independently defined set-based log-concave-measure equivalence remains open.",
+    "M01": "Not verified by this theorem",
+    "M02": "Not verified by this theorem"
+  },
+  "source_authorship_boundary": "Reviewer authored some reused sources; packet source-copy/interface review is independent, not a new non-author mathematical review of those sources. Root/B/E separate reviews supply that layer. E separately reviews root new8 proof bodies.",
+  "corrections": [
+    "Actual complete377-module interface has zero Rellich paths; earlier parent summary 'including15Rellich' inherited from Stage31 is incorrect for Stage32 and must not be propagated."
+  ],
+  "status": "Independent statement/data/source-copy review complete before own Comparator. Fresh actual packet diagnostics remain separately pending at review time. Saved on shared VT_gauss while local drive is full; later byte-for-byte fetch required.",
+  "completed_at_utc": "2026-10-29 01:01:14 UTC"
+}

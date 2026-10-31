@@ -1,0 +1,18 @@
+--- lean/OAI/Analysis/Mahler/HemisphereChart.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HemisphereChart.lean
+@@ -1,7 +1,11 @@
+-import OAI.Analysis.Mahler.CoordinateEuclidean
+-import Mathlib.Analysis.SpecialFunctions.Sqrt
+-import Mathlib.LinearAlgebra.Matrix.SchurComplement
+-import Mathlib.MeasureTheory.Function.Jacobian
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.CoordinateEuclidean
++public import Mathlib.Analysis.SpecialFunctions.Sqrt
++public import Mathlib.LinearAlgebra.Matrix.SchurComplement
++public import Mathlib.MeasureTheory.Function.Jacobian
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

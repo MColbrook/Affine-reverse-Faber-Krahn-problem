@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SphereCoordinateIntegral.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SphereCoordinateIntegral.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.HemisphereFlux
+-import OAI.Analysis.Mahler.SphereRadius
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HemisphereFlux
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereRadius
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

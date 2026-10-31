@@ -1,0 +1,206 @@
+--- RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/ArzelaAscoli.lean
++++ AffineFK/BenensonRellich/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/ArzelaAscoli.lean
+@@ -1,8 +1,15 @@
+-import RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Compactness
+-import Mathlib.Analysis.Normed.Group.Bounded
+-import Mathlib.Topology.ContinuousMap.Bounded.ArzelaAscoli
+-import Mathlib.MeasureTheory.Function.L2Space
+-import Mathlib.MeasureTheory.Integral.Bochner.Set
++module
++
++public import AffineFK.BenensonRellich.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Compactness
++public import Mathlib.Analysis.Normed.Group.Bounded
++public import Mathlib.Topology.ContinuousMap.Bounded.ArzelaAscoli
++public import Mathlib.MeasureTheory.Function.L2Space
++public import Mathlib.MeasureTheory.Integral.Bochner.Set
++
++@[expose] public section
++
++set_option autoImplicit false
++set_option backward.isDefEq.respectTransparency false
+ 
+ /-
+ Copyright (c) 2026 Adam Benenson. All rights reserved.
+@@ -42,8 +49,7 @@
+ 
+ variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E]
+ 
+-local instance instMeasurableSpaceE_L2CompactnessArzelaAscoli : MeasurableSpace E := borel E
+-local instance instBorelSpaceE_L2CompactnessArzelaAscoli : BorelSpace E := ⟨rfl⟩
++variable [MeasurableSpace E] [BorelSpace E]
+ local instance instOpensMeasurableSpaceE_L2CompactnessArzelaAscoli : OpensMeasurableSpace E := by
+   infer_instance
+ local instance instMeasurableAddE_L2CompactnessArzelaAscoli : MeasurableAdd E := by
+@@ -152,7 +158,7 @@
+     -- A compact ball controlling all values.
+     let s : Set ℝ := Metric.closedBall (0 : ℝ) (R * (mK * Cψ))
+     have hs : IsCompact s := by
+-      simpa [s] using isCompact_closedBall (0 : ℝ) (R * (mK * Cψ))
++      simpa [s] using! isCompact_closedBall (0 : ℝ) (R * (mK * Cψ))
+     -- Pointwise compact range: each function in `A` takes values in `s`.
+     have in_s :
+         ∀ (f : BoundedContinuousFunction (↥(Kψ (K := K) (ψ := ψ))) ℝ) (x : ↥(Kψ (K := K) (ψ := ψ))),
+@@ -160,7 +166,7 @@
+       intro f x hfA
+       rcases hfA with ⟨u, hu_ball, rfl⟩
+       have hu_norm : ‖u‖ ≤ R := by
+-        simpa [Metric.mem_closedBall, dist_eq_norm] using hu_ball
++        simpa [Metric.mem_closedBall, dist_eq_norm] using! hu_ball
+       -- Build the `L²(K)` kernel element.
+       have hker :
+           MemLp (fun t : E => ψ ((x : E) - t)) (2 : ℝ≥0∞) (volume.restrict K) := by
+@@ -187,8 +193,8 @@
+                 (μ := (volume.restrict K)) (p := (2 : ℝ≥0∞))
+                 (f := fun t : E => ψ ((x : E) - t))
+                 hker] with t ht hrep
+-            simpa [kx, hrep] using ht))
+-        simpa [mK] using this
++            simpa [kx, hrep] using! ht))
++        simpa [mK] using! this
+       -- Express the smoothing value as an `L²` inner product, then apply Cauchy–Schwarz.
+       have hsmooth :
+           smoothFun (E := E) (K := K) ψ u (x : E) =
+@@ -214,7 +220,7 @@
+         erw [MeasureTheory.L2.inner_def]; exact hsmooth'
+       have habs :
+           |smoothFun (E := E) (K := K) ψ u (x : E)| ≤ ‖u‖ * ‖kx‖ := by
+-        simpa [hinner] using
++        simpa [hinner] using!
+           (abs_real_inner_le_norm (u : MeasureTheory.Lp ℝ (2 : ℝ≥0∞) μ) kx)
+       have habs' : |smoothFun (E := E) (K := K) ψ u (x : E)| ≤ R * (mK * Cψ) := by
+         calc
+@@ -225,7 +231,7 @@
+       have : dist (smoothBCF (E := E) (K := K) (ψ := ψ) hK hKm hψc hψcs u x) 0 ≤ R * (mK * Cψ) := by
+         simpa [smoothBCF_apply (E := E) (K := K) (ψ := ψ) hK hKm hψc hψcs u x,
+           dist_eq_norm, Real.norm_eq_abs] using habs'
+-      simpa [s, Metric.mem_closedBall, dist_eq_norm] using this
++      simpa [s, Metric.mem_closedBall, dist_eq_norm] using! this
+     -- Equicontinuity for `A`.
+     have H' : UniformEquicontinuous ((↑) : A → ↥(Kψ (K := K) (ψ := ψ)) → ℝ) := by
+       rw [Metric.uniformEquicontinuous_iff]
+@@ -240,32 +246,32 @@
+           have :
+               (f : BoundedContinuousFunction (↥(Kψ (K := K) (ψ := ψ))) ℝ) x ∈ s :=
+             in_s (f := (f : BoundedContinuousFunction (↥(Kψ (K := K) (ψ := ψ))) ℝ)) x f.property
+-          simpa [s, Metric.mem_closedBall] using this
++          simpa [s, Metric.mem_closedBall] using! this
+         have hy0 : dist ((f : BoundedContinuousFunction (↥(Kψ (K := K) (ψ := ψ))) ℝ) y) 0 ≤
+             R * (mK * Cψ) := by
+           have :
+               (f : BoundedContinuousFunction (↥(Kψ (K := K) (ψ := ψ))) ℝ) y ∈ s :=
+             in_s (f := (f : BoundedContinuousFunction (↥(Kψ (K := K) (ψ := ψ))) ℝ)) y f.property
+-          simpa [s, Metric.mem_closedBall] using this
++          simpa [s, Metric.mem_closedBall] using! this
+         have hx0' :
+             dist ((f : BoundedContinuousFunction (↥(Kψ (K := K) (ψ := ψ))) ℝ) x) 0 = 0 := by
+           have : dist ((f : BoundedContinuousFunction (↥(Kψ (K := K) (ψ := ψ))) ℝ) x) 0 ≤ 0 := by
+-            simpa [hmK0] using hx0
++            simpa [hmK0] using! hx0
+           exact le_antisymm this dist_nonneg
+         have hy0' :
+             dist ((f : BoundedContinuousFunction (↥(Kψ (K := K) (ψ := ψ))) ℝ) y) 0 = 0 := by
+           have : dist ((f : BoundedContinuousFunction (↥(Kψ (K := K) (ψ := ψ))) ℝ) y) 0 ≤ 0 := by
+-            simpa [hmK0] using hy0
++            simpa [hmK0] using! hy0
+           exact le_antisymm this dist_nonneg
+         have hx : (f : BoundedContinuousFunction (↥(Kψ (K := K) (ψ := ψ))) ℝ) x = 0 :=
+           dist_eq_zero.1 hx0'
+         have hy : (f : BoundedContinuousFunction (↥(Kψ (K := K) (ψ := ψ))) ℝ) y = 0 :=
+           dist_eq_zero.1 hy0'
+-        simpa [hx, hy] using hε
++        simpa [hx, hy] using! hε
+       · have hRmK_ne : R * mK ≠ 0 := mul_ne_zero hR0 hmK0
+         let ε2 : ℝ := ε / 2
+         have hε2pos : 0 < ε2 := by
+-          simpa [ε2] using half_pos hε
++          simpa [ε2] using! half_pos hε
+         let ε' : ℝ := ε2 / (R * mK)
+         have hε'pos : 0 < ε' :=
+           div_pos hε2pos (mul_pos hRpos (lt_of_le_of_ne hmK (Ne.symm hmK0)))
+@@ -282,9 +288,9 @@
+         have hu_eq' :
+             (f : BoundedContinuousFunction (↥(Kψ (K := K) (ψ := ψ))) ℝ) =
+               smoothBCF (E := E) (K := K) (ψ := ψ) hK hKm hψc hψcs u := by
+-          simpa using hu_eq.symm
++          simpa using! hu_eq.symm
+         have hu_norm : ‖u‖ ≤ R := by
+-          simpa [Metric.mem_closedBall, dist_eq_norm] using hu_ball
++          simpa [Metric.mem_closedBall, dist_eq_norm] using! hu_ball
+         -- Kernel elements at `x` and `y`.
+         have hkerx :
+             MemLp (fun t : E => ψ ((x : E) - t)) (2 : ℝ≥0∞) (volume.restrict K) := by
+@@ -317,22 +323,22 @@
+             (MeasureTheory.Lp.coeFn_sub (μ := (volume.restrict K)) (p := (2 : ℝ≥0∞)) kx ky)] with
+             t ht hx_t hy_t hsub
+           have hxy' : dist ((x : E) - t) ((y : E) - t) < δ := by
+-            simpa [sub_eq_add_neg, add_assoc] using hxy
++            simpa [sub_eq_add_neg, add_assoc] using! hxy
+           have hψxy : dist (ψ ((x : E) - t)) (ψ ((y : E) - t)) < ε' :=
+             hδ (a := (x : E) - t) (b := (y : E) - t) hxy'
+           have : ‖ψ ((x : E) - t) - ψ ((y : E) - t)‖ ≤ ε' := by
+-            simpa [dist_eq_norm, sub_eq_add_neg] using le_of_lt hψxy
+-          have hx' : kx t = ψ ((x : E) - t) := by simpa [kx] using hx_t
+-          have hy' : ky t = ψ ((y : E) - t) := by simpa [ky] using hy_t
++            simpa [dist_eq_norm, sub_eq_add_neg] using! le_of_lt hψxy
++          have hx' : kx t = ψ ((x : E) - t) := by simpa [kx] using! hx_t
++          have hy' : ky t = ψ ((y : E) - t) := by simpa [ky] using! hy_t
+           have hnorm : ‖kx t - ky t‖ ≤ ε' := by
+-            simpa [hx', hy'] using this
++            simpa [hx', hy'] using! this
+           have hsub' : (kx - ky) t = kx t - ky t := by
+-            simpa [Pi.sub_apply] using hsub
+-          simpa [hsub'.symm] using hnorm
++            simpa [Pi.sub_apply] using! hsub
++          simpa [hsub'.symm] using! hnorm
+         have hkdiff : ‖kx - ky‖ ≤ mK * ε' := by
+           have := (MeasureTheory.Lp.norm_le_of_ae_bound (μ := (volume.restrict K)) (p := (2 : ℝ≥0∞))
+             (f := (kx - ky : MeasureTheory.Lp ℝ (2 : ℝ≥0∞) μ)) (hC := le_of_lt hε'pos) h_ae)
+-          simpa [mK, mul_comm, mul_left_comm, mul_assoc] using this
++          simpa [mK, mul_comm, mul_left_comm, mul_assoc] using! this
+         -- Bound the difference of values using Cauchy–Schwarz.
+         have hdist :
+             dist (smoothBCF (E := E) (K := K) (ψ := ψ) hK hKm hψc hψcs u x)
+@@ -399,11 +405,11 @@
+             have this' :
+                 smoothFun (E := E) (K := K) ψ u (x : E) - smoothFun (E := E) (K := K) ψ u (y : E) =
+                   inner ℝ (u : MeasureTheory.Lp ℝ (2 : ℝ≥0∞) μ) (kx - ky) := by
+-              simpa [smoothBCF_apply (E := E) (K := K) (ψ := ψ) hK hKm hψc hψcs] using this
++              simpa [smoothBCF_apply (E := E) (K := K) (ψ := ψ) hK hKm hψc hψcs] using! this
+             have hCS :=
+               (abs_real_inner_le_norm (u : MeasureTheory.Lp ℝ (2 : ℝ≥0∞) μ) (kx - ky))
+-            simpa [this', dist_eq_norm, Real.norm_eq_abs] using hCS
+-          simpa [dist_eq_norm] using this
++            simpa [this', dist_eq_norm, Real.norm_eq_abs] using! hCS
++          simpa [dist_eq_norm] using! this
+         have hle :
+             dist (smoothBCF (E := E) (K := K) (ψ := ψ) hK hKm hψc hψcs u x)
+                 (smoothBCF (E := E) (K := K) (ψ := ψ) hK hKm hψc hψcs u y)
+@@ -419,22 +425,22 @@
+               exact mul_le_mul_of_nonneg_right hu_norm hmKε'
+         have hRmkε' : R * (mK * ε') = ε2 := by
+           have : R * mK * ε' = ε2 := by
+-            simpa [ε', mul_assoc] using hε'lt
+-          simpa [mul_assoc] using this
++            simpa [ε', mul_assoc] using! hε'lt
++          simpa [mul_assoc] using! this
+         have hle' :
+             dist (smoothBCF (E := E) (K := K) (ψ := ψ) hK hKm hψc hψcs u x)
+                 (smoothBCF (E := E) (K := K) (ψ := ψ) hK hKm hψc hψcs u y) ≤ ε2 := by
+-          simpa [hRmkε'] using hle
++          simpa [hRmkε'] using! hle
+         have hε2lt : ε2 < ε := by
+-          simpa [ε2] using half_lt_self hε
++          simpa [ε2] using! half_lt_self hε
+         have :
+             dist (smoothBCF (E := E) (K := K) (ψ := ψ) hK hKm hψc hψcs u x)
+                 (smoothBCF (E := E) (K := K) (ψ := ψ) hK hKm hψc hψcs u y) < ε :=
+           lt_of_le_of_lt hle' hε2lt
+-        simpa [hu_eq'] using this
++        simpa [hu_eq'] using! this
+     have H : Equicontinuous ((↑) : A → ↥(Kψ (K := K) (ψ := ψ)) → ℝ) := H'.equicontinuous
+     -- Apply Arzelà–Ascoli.
+-    simpa [A, s] using
++    simpa [A, s] using!
+       (BoundedContinuousFunction.arzela_ascoli (α := ↥(Kψ (K := K) (ψ := ψ))) (β := ℝ)
+         (s := s) hs A (fun f x hf => in_s f x hf) H)
+ 

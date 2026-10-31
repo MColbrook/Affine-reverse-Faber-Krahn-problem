@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/ExteriorCoordinates.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ExteriorCoordinates.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.BasisContinuousWedge
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.BasisContinuousWedge
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

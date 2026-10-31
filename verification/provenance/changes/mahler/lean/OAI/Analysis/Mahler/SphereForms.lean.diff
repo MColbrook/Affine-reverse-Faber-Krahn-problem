@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SphereForms.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SphereForms.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.HomogeneousDeformation
+-import Mathlib.Analysis.InnerProductSpace.Projection.FiniteDimensional
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousDeformation
++public import Mathlib.Analysis.InnerProductSpace.Projection.FiniteDimensional
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

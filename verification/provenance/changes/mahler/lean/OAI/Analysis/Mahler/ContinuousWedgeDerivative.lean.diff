@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/ContinuousWedgeDerivative.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ContinuousWedgeDerivative.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.BasisContinuousWedge
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.BasisContinuousWedge
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

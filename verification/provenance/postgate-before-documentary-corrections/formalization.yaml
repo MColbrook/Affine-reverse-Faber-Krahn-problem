@@ -1,0 +1,219 @@
+{
+  "version": "v0.4",
+  "project": {
+    "name": "Affine reverse Faber--Krahn: the three principal results",
+    "description": "The three principal manuscript results M01, M02 and M03, with their original domains and quantifier order. M01: one finite C>0 before every n>0 and compact convex Euclidean body K with nonempty interior; there exists a literal real special-linear matrix S with finite actual H0 Rayleigh infimum on interior(S K) and lambda_1(interior(S K))*volume(K)^(2/n)<=C*n. M02: one finite C>0 before every n>0 and origin-symmetric compact convex volume-one K with nonempty interior in maximal Gaussian measure position; its actual H0 Rayleigh infimum is at most C*n. M03: for each real P>=2 one finite C(P)>0 precedes every n>0, every even isotropic probability law nu satisfying the conventional compact-set IsLogConcaveMeasure condition, least Poincare constant at most P and finite actual Gaussian-relative Fisher information, and every origin-symmetric compact convex body D with nonempty interior supporting nu almost everywhere; lambda_1(interior D)<=C(P)*(n+sqrt(n*I(nu|gamma))). The log-concave density is derived from the law's original finite-information hypothesis; no density witness, covariance lower bound, ellipsoid-existence conclusion or desired spectral estimate is an additional premise. This standalone combined M01/M02/M03 package passed its own ordinary Linux sandboxed Comparator --paranoid with all six configured kernels. Its actual build, complete fixed-statement comparison, private proof inspection, axiom reports and separate AI reviews are retained under verification/.",
+    "authors": [
+      "Matthew J. Colbrook"
+    ],
+    "license": "Apache-2.0",
+    "responsible_maintainers": [
+      "Matthew J. Colbrook"
+    ]
+  },
+  "classification": {
+    "arxiv": [
+      "math.SP",
+      "math.MG"
+    ],
+    "msc2020": [
+      "35P15",
+      "52A23"
+    ]
+  },
+  "sources": [
+    {
+      "title": "An affine reverse Faber--Krahn inequality via information decay",
+      "authors": [
+        "Matthew J. Colbrook",
+        "George Stepaniants"
+      ],
+      "id": "sha256:1d30574bf6a09012c0492449d6860884c993b191837c9c0d2a9bd17080a3d0bc",
+      "type": "paper",
+      "location": "source/manuscript.tex",
+      "relationship": "adapts",
+      "license": "Source authors retain their rights; not relicensed by this formalisation.",
+      "author_endorsement": "other",
+      "note": "Unpublished manuscript by Matthew J. Colbrook and George Stepaniants. The first author requested this AI-assisted formalization and preparation workflow. This package targets only M01/M02/M03; the full manuscript is not verified. No human Lean review, coauthor formalization participation, upstream endorsement, public repository upload or registry submission is claimed. The manuscript retains its authors' rights."
+    },
+    {
+      "title": "Mathlib",
+      "type": "other",
+      "id": "https://github.com/leanprover-community/mathlib4/tree/b63f6e8a68d220e3b3bc4f3792bb53650d375f24",
+      "relationship": "background",
+      "license": "Apache-2.0",
+      "note": "Pinned Mathlib actual probability laws, conditional expectations, characteristic functions, Sobolev closed graphs, real calculus, Gaussian measures and KL divergence; original contributor attribution retained."
+    },
+    {
+      "title": "P. Bizeul: Entropy and information jump for log-concave vectors",
+      "authors": [
+        "Pierre Bizeul"
+      ],
+      "id": "https://doi.org/10.5802/crmath.390",
+      "type": "paper",
+      "relationship": "adapts",
+      "note": "The manuscript Bizeul information-jump argument; original work receives attribution. This formalization proves the identical-copy specialization, not every unequal-input claim."
+    },
+    {
+      "title": "Jonathan Ho: isoperimetric Lean proofs",
+      "authors": [
+        "Jonathan Ho"
+      ],
+      "id": "https://github.com/hojonathanho/isoperimetric/tree/29768f8beeaf17295cdf3853d37da35d7e2b0a5f",
+      "type": "other",
+      "relationship": "adapts",
+      "license": "Apache-2.0",
+      "note": "Genuine attributed Prekopa marginal proof dependencies; original files, licence and port provenance retained."
+    },
+    {
+      "title": "Scott Armstrong and Amelie Loher: Gaussian closure under L2 convergence",
+      "authors": [
+        "Scott Armstrong",
+        "Amelie Loher"
+      ],
+      "type": "other",
+      "relationship": "adapts",
+      "license": "Apache-2.0",
+      "id": "https://github.com/scottnarmstrong/DOZZ/tree/5d770d1a6d69fac6dbb63060e8a89861bf3ee330",
+      "note": "The generic GaussianClosure proof prefix is genuinely reused with namespace/import adaptation. Original bytes, Git-blob provenance, citation and licence are retained. Separate full-body AI review and actual builds/axiom reports cover the local copy."
+    },
+    {
+      "title": "Djalil Chafai: complete Brascamp--Lieb Lean proof",
+      "authors": [
+        "Djalil Chafai"
+      ],
+      "id": "https://github.com/djalilchafai/ginibre-poincare/tree/a1b2ba84e7dad8ba11b5c49a18b986a762a00a41",
+      "type": "other",
+      "relationship": "adapts",
+      "license": "MIT",
+      "note": "234 exact source modules in the actual closure; pinned original licence and rc3 proof-body compatibility patches retained. Integration changes import headers only, checked independently; no upstream endorsement claimed."
+    },
+    {
+      "title": "Adam Benenson: Euclidean Rellich--Kondrachov Lean development",
+      "authors": [
+        "Adam Benenson"
+      ],
+      "id": "https://github.com/abenenson/rellich-kondrachov/tree/70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+      "type": "other",
+      "relationship": "adapts",
+      "license": "Apache-2.0",
+      "note": "Fifteen genuinely reused proof modules with original licence, Git-blob provenance and 12 explicit Lean4.35 compatibility receipts retained. The BorelSpace context generalization and every port change are disclosed. No assumed compactness or spectral proxy."
+    },
+    {
+      "title": "Pinned OpenAI symmetric Mahler Lean proof development",
+      "authors": [
+        "OpenAI; unnamed internal model identified by the upstream project"
+      ],
+      "type": "other",
+      "relationship": "adapts",
+      "id": "https://github.com/openai/math/tree/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/OAI/Analysis/Mahler",
+      "license": "Apache-2.0",
+      "note": "All 229 reachable genuine source modules and original licence retained. Every mathematical body is byte-identical; only module visibility/import paths are adapted. Primary Git object IDs independently verified. Upstream toolchain or scripts were not executed. Upstream disabled nanoda setting is not inherited; our own all-six gate is required."
+    }
+  ],
+  "related_formalizations": [],
+  "status": {
+    "scope": "The three principal manuscript results M01, M02 and M03, with their original domains and quantifier order. M01: one finite C>0 before every n>0 and compact convex Euclidean body K with nonempty interior; there exists a literal real special-linear matrix S with finite actual H0 Rayleigh infimum on interior(S K) and lambda_1(interior(S K))*volume(K)^(2/n)<=C*n. M02: one finite C>0 before every n>0 and origin-symmetric compact convex volume-one K with nonempty interior in maximal Gaussian measure position; its actual H0 Rayleigh infimum is at most C*n. M03: for each real P>=2 one finite C(P)>0 precedes every n>0, every even isotropic probability law nu satisfying the conventional compact-set IsLogConcaveMeasure condition, least Poincare constant at most P and finite actual Gaussian-relative Fisher information, and every origin-symmetric compact convex body D with nonempty interior supporting nu almost everywhere; lambda_1(interior D)<=C(P)*(n+sqrt(n*I(nu|gamma))). The log-concave density is derived from the law's original finite-information hypothesis; no density witness, covariance lower bound, ellipsoid-existence conclusion or desired spectral estimate is an additional premise. Genuine unchanged proof-source union: 992 modules (accepted Main35's 989 plus three set-based log-concave-law/density modules used for M03), with the new root interface and aggregate checked separately. One deliberate Challenge-only benchmark placeholder; zero Solution or proof-closure placeholders and zero definition holes. Schema sorry_count excludes that deliberate Challenge placeholder. This standalone combined M01/M02/M03 package passed its own ordinary Linux sandboxed Comparator --paranoid with all six configured kernels. Its actual build, complete fixed-statement comparison, private proof inspection, axiom reports and separate AI reviews are retained under verification/. Full classical positivity/simplicity/regularity, all-groundstate statements and every manuscript intermediate assertion are outside the principal-results claim.",
+    "sorry_count": 0,
+    "sorry_in_definitions": 0,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "main_results": [
+      {
+        "declaration": "AffineFK.affine_reverse_faber_krahn_principal_results",
+        "file": "Solution.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "note": "The exact combined packaged declaration passed its own ordinary sandboxed Comparator and all six kernels; source statements and complete proof dependencies are preserved."
+      }
+    ]
+  },
+  "automation": {
+    "methods": [
+      {
+        "method": "agent",
+        "models": [
+          "GPT-6 (Codex; exact serving variant not exposed)"
+        ],
+        "framework": "Codex desktop with AI subagents",
+        "tool_setup": "Lean4.35.0-rc3; Mathlib b63f6e8a68d220e3b3bc4f3792bb53650d375f24 and exact transitive dependency pins. Ordinary kernel-checked tactics and complete genuinely reused proof sources. Mathlib-only root Challenge contains complete conventional fixed data and one isolated theorem benchmark placeholder. Root Solution imports the full genuine proof bundle and never imports Challenge. No native-execution trust, custom axiom, Solution placeholder or definition hole supports the solution. This exact package has actual successful build/compiled-data/private-proof/axiom evidence and its own ordinary Linux sandboxed Comparator --paranoid/all-six acceptance. Earlier source-certificate identities are retained as historical provenance, not substituted for the new verdict.",
+        "cost": {
+          "wall_time": "Not precisely tracked; actual command logs retained.",
+          "spend_usd": "not tracked",
+          "hardware": "VT_gauss Linux x86_64 server with 120 CPUs; earlier local Windows compilation"
+        },
+        "prompting_notes": "Preserve the full intended source statements, inventory all prerequisites, forbid placeholder/native-execution trust in the solution, use separate statement and proof reviews, and report partial scope honestly."
+      }
+    ],
+    "spend_usd": "not tracked",
+    "notes": "Parallel AI proof construction and separate non-author AI mathematics, statement-fidelity and clarity reviews, with authorship boundaries disclosed in verification/reviews/. The three principal source results reuse the exact accepted Main35 and M03 source proofs; the new combined interface is reviewed and checked separately. All reused authorship, licences, commits and compatibility changes are retained. Upstream checker-disable settings are not inherited. No human review, public upload or registry submission is claimed."
+  },
+  "fidelity": {
+    "divergences": "The three principal manuscript results M01, M02 and M03, with their original domains and quantifier order. M01: one finite C>0 before every n>0 and compact convex Euclidean body K with nonempty interior; there exists a literal real special-linear matrix S with finite actual H0 Rayleigh infimum on interior(S K) and lambda_1(interior(S K))*volume(K)^(2/n)<=C*n. M02: one finite C>0 before every n>0 and origin-symmetric compact convex volume-one K with nonempty interior in maximal Gaussian measure position; its actual H0 Rayleigh infimum is at most C*n. M03: for each real P>=2 one finite C(P)>0 precedes every n>0, every even isotropic probability law nu satisfying the conventional compact-set IsLogConcaveMeasure condition, least Poincare constant at most P and finite actual Gaussian-relative Fisher information, and every origin-symmetric compact convex body D with nonempty interior supporting nu almost everywhere; lambda_1(interior D)<=C(P)*(n+sqrt(n*I(nu|gamma))). The log-concave density is derived from the law's original finite-information hypothesis; no density witness, covariance lower bound, ellipsoid-existence conclusion or desired spectral estimate is an additional premise. See docs/correspondence.md for exact source-to-Lean clauses and docs/proof-departures.md for material argument changes. The manuscript strategy through information decay, Gaussian dilation, a dyadic bridge and Rayleigh bounds is retained. The weaker geometric volume-product input is obtained from a genuinely reused stronger sharp symmetric Mahler proof, with complete attribution. At the terminal bridge-to-spectrum step, an actual H0 killed-density-row competitor, free-heat approximation, logarithmic-grid energy estimates and compactness replace the classical killed-heat-kernel spectral identification. Its weaker intermediate constants still give the stated unspecified C(p)(A+n); the manuscript's sharper intermediate display is not certified by that alternative. One normalized even nonnegative log-concave weak first minimizer is constructed from Gaussian killing iterations and compactness; universal strict positivity, simplicity and all-groundstate log-concavity are not inferred. These departures preserve the three complete principal conclusions and introduce no replacement conclusion as an input hypothesis. Full arbitrary-law Borell affine-support equivalence is not claimed; the actual finite-information law-to-density theorem needed by M03 is proved."
+  },
+  "review": {
+    "status": "Separate non-author AI canonical data, statement-fidelity, proof-application, compiled-dependency and documentation reviews complete; own ordinary sandboxed six-kernel check accepted; no human review",
+    "reviewers": [
+      "Codex root: source author and independent reviewer of disjoint B/C/E proof branches; final package/gate author",
+      "Codex formalization_coverage: disjoint source author, independent root-source and manuscript proof-departure reviewer",
+      "Codex claim_inventory: disjoint source author, independent original principal statements and canonical fixed-data/interface reviewer",
+      "Codex palomar_requirements: Main35 aggregate author; independent disjoint root analytic-source, historical-protocol and package-tooling reviewer"
+    ],
+    "notes": "Exact prior review records and authorship boundaries are retained under verification/reviews/. docs/correspondence.md specifies the original domains/constants/quantifiers; docs/proof-departures.md specifies material alternative arguments and outstanding full-paper background. A source author is not presented as the independent mathematical reviewer of that same proof. The new combined-root canonical and actual compiled-data review receipts were pinned before its own Comparator run. Post-check integrity review is retained separately. No earlier certificate is treated as a verdict on this new package."
+  },
+  "alignment": {
+    "namespace": "AffineFK",
+    "statements": [
+      {
+        "source": "Original manuscript M01/M02/M03: the three complete principal conclusions",
+        "lean": "AffineFK.affine_reverse_faber_krahn_principal_results",
+        "module": "Solution",
+        "status": "proved",
+        "note": "Exact conjunction with independent clause quantifiers and original domains, including set-based log-concave-law M03; see docs/correspondence.md."
+      }
+    ]
+  },
+  "acknowledgements": "Manuscript: Matthew J. Colbrook and George Stepaniants. Pierre Bizeul: information jump; Max Fathi: higher-order Stein identities; Ledoux, Nourdin and Peccati: HSI. Jonathan Ho: genuine Apache2.0 Prekopa proofs. Scott Armstrong and Amelie Loher: genuinely reused Apache2.0 Gaussian L2 closure proof. Etienne Marion: Gaussian independent-increments argument; Moritz Doll: smooth compact Lp approximation; Mathlib, Lean and independent checker contributors retain original attribution. Classical dyadic Schauder bridge construction is implemented on actual Gaussian products. AI authors/reviewers are identified; no human review, author endorsement or public submission is implied. Djalil Chafai: genuine MIT Brascamp--Lieb proof; Adam Benenson: genuine Apache2.0 Rellich--Kondrachov proof. Their complete actual dependency sources, licences and port provenance are retained. The complete sharp symmetric Mahler proof is genuinely reused from the OpenAI math development at commit7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a, attributed upstream to an unnamed internal OpenAI model, with the original Apache-2.0 licence and zero mathematical body edits. Exact polar, Jacobian, covariance-ellipsoid and affine bridges and their AI authors/reviewers are separately documented. No upstream endorsement or human review is implied.",
+  "repository": {
+    "role": "substantive-development"
+  },
+  "verification": {
+    "status": "accepted-ordinary-sandboxed-all-six",
+    "new_combined_package_acceptance_claimed": true,
+    "selected_theorem": "AffineFK.affine_reverse_faber_krahn_principal_results",
+    "challenge_module": "Challenge",
+    "solution_module": "Solution",
+    "challenge_placeholder_count": 1,
+    "solution_and_proof_closure_placeholder_count": 0,
+    "definition_holes": [],
+    "historical_protocol_review_date": "2026-10-27",
+    "current_online_policy_check_claimed": false,
+    "github_interaction_or_submission_performed": false,
+    "prior_source_evidence": "Earlier source-certificate identities and verdict summaries appear in verification/reviews/prior/source-review-index.json. Their complete original development remains preserved separately. This package has its own authoritative verification/certificate.json.",
+    "full_manuscript_verified": false,
+    "actual_comparator_exit": 0,
+    "actual_comparator_seconds": 1464.25,
+    "kernel_acceptance_labels": [
+      "Lean paranoid kernel",
+      "lean4lean kernel",
+      "nanoda kernel",
+      "con-leche kernel",
+      "con-ron kernel",
+      "Lean default kernel"
+    ],
+    "actual_statement_dependency_constants": 104,
+    "actual_private_project_constants_including_selected": 5685,
+    "actual_source_modules": 992,
+    "ordinary_TYPE_definitions": 25,
+    "ordinary_TYPE_theorem_helpers": 79,
+    "complete_reviewed_data_declarations": 26,
+    "retained_data_owner_outside_ordinary_TYPE": "AffineFK.fisherInformation"
+  }
+}

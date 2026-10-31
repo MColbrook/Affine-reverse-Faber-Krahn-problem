@@ -1,0 +1,18 @@
+--- lean/OAI/Analysis/Mahler/ComplexCoordinates.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ComplexCoordinates.lean
+@@ -1,7 +1,11 @@
+-import OAI.Analysis.Mahler.CoordinateEuclidean
+-import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
+-import Mathlib.MeasureTheory.Integral.Bochner.Set
+-import Mathlib.MeasureTheory.Integral.Lebesgue.Map
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.CoordinateEuclidean
++public import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
++public import Mathlib.MeasureTheory.Integral.Bochner.Set
++public import Mathlib.MeasureTheory.Integral.Lebesgue.Map
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/CompactFluxDifferentiation.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/CompactFluxDifferentiation.lean
+@@ -1,5 +1,9 @@
+-import Mathlib.Analysis.Calculus.ParametricIntegral
+-import Mathlib.MeasureTheory.Function.LocallyIntegrable
++module
++
++public import Mathlib.Analysis.Calculus.ParametricIntegral
++public import Mathlib.MeasureTheory.Function.LocallyIntegrable
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

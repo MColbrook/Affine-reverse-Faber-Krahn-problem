@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/MassLimit.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/MassLimit.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.MassTarget
+-import Mathlib.Topology.Instances.ENNReal.Lemmas
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.MassTarget
++public import Mathlib.Topology.Instances.ENNReal.Lemmas
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

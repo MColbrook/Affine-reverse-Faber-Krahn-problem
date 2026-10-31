@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/StripJacobian.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/StripJacobian.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.StripDifferential
+-import OAI.Analysis.Mahler.Jacobian
+-import Mathlib.LinearAlgebra.Determinant
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.StripDifferential
++public import AffineFK.OpenAIMahler.Analysis.Mahler.Jacobian
++public import Mathlib.LinearAlgebra.Determinant
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/InteriorStokes.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/InteriorStokes.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.HalfspaceStokes
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HalfspaceStokes
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

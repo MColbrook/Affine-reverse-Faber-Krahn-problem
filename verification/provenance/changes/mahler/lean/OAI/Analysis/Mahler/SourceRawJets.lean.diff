@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SourceRawJets.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceRawJets.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.RawClosedPower
+-import OAI.Analysis.Mahler.SourceExteriorDerivative
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RawClosedPower
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceExteriorDerivative
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

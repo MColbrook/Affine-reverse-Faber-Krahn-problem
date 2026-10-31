@@ -1,0 +1,132 @@
+--- RellichKondrachov/MeasureTheory/Function/LpSpace/Restrict.lean
++++ AffineFK/BenensonRellich/MeasureTheory/Function/LpSpace/Restrict.lean
+@@ -1,5 +1,12 @@
+-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+-import Mathlib.MeasureTheory.Function.LpSpace.Basic
++module
++
++public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
++public import Mathlib.MeasureTheory.Function.LpSpace.Basic
++
++@[expose] public section
++
++set_option autoImplicit false
++set_option backward.isDefEq.respectTransparency false
+ 
+ /-
+ Copyright (c) 2026 Adam Benenson. All rights reserved.
+@@ -42,10 +49,10 @@
+ variable {p : ℝ≥0∞} [Fact (1 ≤ p)]
+ variable {s : Set α} (hs : MeasurableSet s)
+ 
+-private noncomputable def extendByZeroFun (f : Lp E p (μ.restrict s)) : Lp E p μ :=
++noncomputable def extendByZeroFun (f : Lp E p (μ.restrict s)) : Lp E p μ :=
+   let hf : MemLp (fun x : α => f x) p (μ.restrict s) := Lp.memLp f
+   let hfi : MemLp (s.indicator fun x : α => f x) p μ :=
+-    (memLp_indicator_iff_restrict (μ := μ) (p := p) (s := s) (f := fun x : α => f x) hs).2 hf
++    (memLp_indicator_iff_restrict (μ := μ) (p := p) (s := s) (f := fun x : α => f x) hs.nullMeasurableSet).2 hf
+   hfi.toLp (s.indicator fun x : α => f x)
+ 
+ omit [NormedSpace ℝ E] [Fact (1 ≤ p)] in
+@@ -63,7 +70,7 @@
+     refine Lp.ext ?_
+     have h_add_restrict :
+         (fun x : α => (f + g) x) =ᵐ[μ.restrict s] fun x : α => f x + g x := by
+-      simpa using (Lp.coeFn_add (μ := μ.restrict s) f g)
++      simpa using! (Lp.coeFn_add (μ := μ.restrict s) f g)
+     have h_add_on :
+         ∀ᵐ x : α ∂μ, x ∈ s → (f + g) x = f x + g x :=
+       (ae_restrict_iff' (μ := μ) (s := s) hs).1 h_add_restrict
+@@ -82,7 +89,7 @@
+               extendByZeroFun (μ := μ) (p := p) (s := s) hs g x =
+             (extendByZeroFun (μ := μ) (p := p) (s := s) hs f +
+               extendByZeroFun (μ := μ) (p := p) (s := s) hs g) x := by
+-        simpa [Pi.add_apply] using hadd.symm
++        simpa [Pi.add_apply] using! hadd.symm
+       calc
+         extendByZeroFun (μ := μ) (p := p) (s := s) hs (f + g) x
+             = s.indicator (fun x : α => (f + g) x) x := hfg
+@@ -101,7 +108,7 @@
+               extendByZeroFun (μ := μ) (p := p) (s := s) hs g x =
+             (extendByZeroFun (μ := μ) (p := p) (s := s) hs f +
+               extendByZeroFun (μ := μ) (p := p) (s := s) hs g) x := by
+-        simpa [Pi.add_apply] using hadd.symm
++        simpa [Pi.add_apply] using! hadd.symm
+       calc
+         extendByZeroFun (μ := μ) (p := p) (s := s) hs (f + g) x
+             = s.indicator (fun x : α => (f + g) x) x := hfg
+@@ -117,7 +124,7 @@
+     refine Lp.ext ?_
+     have h_smul_restrict :
+         (fun x : α => (c • f) x) =ᵐ[μ.restrict s] fun x : α => c • f x := by
+-      simpa using (Lp.coeFn_smul (μ := μ.restrict s) c f)
++      simpa using! (Lp.coeFn_smul (μ := μ.restrict s) c f)
+     have h_smul_on :
+         ∀ᵐ x : α ∂μ, x ∈ s → (c • f) x = c • f x :=
+       (ae_restrict_iff' (μ := μ) (s := s) hs).1 h_smul_restrict
+@@ -132,7 +139,7 @@
+       have hsmul' :
+           c • extendByZeroFun (μ := μ) (p := p) (s := s) hs f x =
+             (c • extendByZeroFun (μ := μ) (p := p) (s := s) hs f) x := by
+-        simpa [Pi.smul_apply] using hsmul.symm
++        simpa [Pi.smul_apply] using! hsmul.symm
+       calc
+         extendByZeroFun (μ := μ) (p := p) (s := s) hs (c • f) x
+             = s.indicator (fun x : α => (c • f) x) x := hcf
+@@ -145,7 +152,7 @@
+       have hsmul' :
+           c • extendByZeroFun (μ := μ) (p := p) (s := s) hs f x =
+             (c • extendByZeroFun (μ := μ) (p := p) (s := s) hs f) x := by
+-        simpa [Pi.smul_apply] using hsmul.symm
++        simpa [Pi.smul_apply] using! hsmul.symm
+       calc
+         extendByZeroFun (μ := μ) (p := p) (s := s) hs (c • f) x
+             = s.indicator (fun x : α => (c • f) x) x := hcf
+@@ -153,15 +160,15 @@
+         _ = (c • extendByZeroFun (μ := μ) (p := p) (s := s) hs f) x := by
+             have hf0 :
+                 extendByZeroFun (μ := μ) (p := p) (s := s) hs f x = 0 := by
+-              simpa [Set.indicator_of_notMem, hx] using hf
++              simpa [Set.indicator_of_notMem, hx] using! hf
+             have hcx :
+                 (c • extendByZeroFun (μ := μ) (p := p) (s := s) hs f) x = 0 := by
+               calc
+                 (c • extendByZeroFun (μ := μ) (p := p) (s := s) hs f) x =
+                     c • extendByZeroFun (μ := μ) (p := p) (s := s) hs f x := by
+-                      simpa [Pi.smul_apply] using hsmul
++                      simpa [Pi.smul_apply] using! hsmul
+                 _ = 0 := by simp [hf0]
+-            simpa using hcx.symm
++            simpa using! hcx.symm
+ 
+ /-- Extension-by-zero as a linear isometry. -/
+ noncomputable def extendByZeroₗᵢ : Lp E p (μ.restrict s) →ₗᵢ[ℝ] Lp E p μ where
+@@ -172,7 +179,7 @@
+     have hfi :
+         MemLp (s.indicator fun x : α => f x) p μ :=
+       (memLp_indicator_iff_restrict (μ := μ) (p := p) (s := s)
+-        (f := fun x : α => f x) hs).2 (Lp.memLp f)
++        (f := fun x : α => f x) hs.nullMeasurableSet).2 (Lp.memLp f)
+     -- Norm in the codomain is the `eLpNorm` of the indicator.
+     have hnorm_out :
+         ‖extendByZeroₗ (μ := μ) (p := p) (s := s) hs f‖ =
+@@ -183,8 +190,8 @@
+     have hnorm_restrict :
+         eLpNorm (s.indicator fun x : α => f x) p μ =
+           eLpNorm (fun x : α => f x) p (μ.restrict s) := by
+-      simpa using (eLpNorm_indicator_eq_eLpNorm_restrict (μ := μ) (p := p) (s := s)
+-        (f := fun x : α => f x) hs)
++      simpa using! (eLpNorm_indicator_eq_eLpNorm_restrict (μ := μ) (p := p) (s := s)
++        (f := fun x : α => f x) hs.nullMeasurableSet)
+     -- Combine with the definition of the `Lp` norm on the restricted space.
+     simp [hnorm_out, hnorm_restrict, norm_def]
+ 
+@@ -192,7 +199,7 @@
+     ((extendByZeroₗᵢ (μ := μ) (p := p) (s := s) hs) f : α → E) =ᵐ[μ]
+       s.indicator fun x : α => f x := by
+   -- Unfold to the underlying `extendByZeroFun` and use the defining AE equality.
+-  simpa [extendByZeroₗᵢ, extendByZeroₗ] using
++  simpa [extendByZeroₗᵢ, extendByZeroₗ] using!
+     (extendByZeroFun_coe (μ := μ) (p := p) (s := s) hs f)
+ 
+ lemma extendByZeroₗᵢ_congr (hs₁ hs₂ : MeasurableSet s) :

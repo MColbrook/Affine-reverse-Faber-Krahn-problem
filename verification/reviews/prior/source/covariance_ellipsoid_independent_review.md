@@ -1,0 +1,17 @@
+# Independent AI review of the genuine covariance ellipsoid
+
+Reviewer: Codex `/root`; proof author: Codex `/root/palomar_requirements`. I read all 28 complete statements and bodies in the six frozen covariance-ellipsoid modules: four definitions and 24 theorems. This is a non-author AI mathematical, statement-fidelity and clarity review, not human review or Comparator acceptance.
+
+The matrix is literally the coordinate second-moment matrix of the law translated by m. Actual measure-map integration gives its centered entries. When m has the actual coordinate means, those entries equal the actual covariance definition. Genuine L2 transport and the existing CFC inverse-square-root identity whiten this same matrix. Finite coordinate summation, with each product integrable, proves the actual norm-square expectation n. This moment is not an assumed input.
+
+The ellipsoid is the actual set where the whitened centered norm is at most sqrt(2n). Its inverse-image and square-root-image descriptions are established using the real invertible CFC map, and give compactness. For positive dimension, the derived second moment and actual Markov inequality bound the tail by one half. The complement of the closed ellipsoid lies in that tail, so its actual probability is at least one half. Boundary inclusion and the directions of the inequalities are correct.
+
+For an actual density supported in compact K and bounded above by exp(n), the actual withDensity integral is at most exp(n) times the intersection volume. Both the half-mass and the finite-intersection guards precede conversion to real numbers. The scalar inequality gives the exact lower bound `(1/(2*exp(1)))^n` for n positive, using `2<=2^n`; no probability or volume conclusion is supplied as a premise.
+
+The ball-volume bound follows directly from the actual standard Gaussian density and its proved unit integral. On the radius-sqrt(2n) ball the density is at least `exp(n*(log((sqrt(2*pi))^-1)-1))`, so ball volume is at most `B0^n`, with `B0=exp(1-log((sqrt(2*pi))^-1))`. This is a valid dimension-exponential bound, including dimension zero, without Stirling or numerical execution trust.
+
+Actual Haar translation invariance and the invertible linear Jacobian give the exact ellipsoid volume `sqrt(det(M))*volume(ball(sqrt(2n)))`. Positivity of M justifies the inverse CFC square root and its determinant identity. From a supplied genuine determinant bound `det(M)<=C^n`, C nonnegative, monotonicity of square roots and the guarded power identity yield the stated volume bound `(sqrt(C)*B0)^n`. The same ellipsoid supplies the mass, intersection and volume conclusions in the final composition.
+
+No mathematical defect or omitted condition was found. The generic theorem still consumes a positive-definite actual covariance matrix and its determinant bound. It returns a translated ellipsoid centered at the actual mean; origin centering, normalization to volume one and a universal small-determinant tilt are separate steps. Thus no G05 or unconditional main theorem is inferred from these 28 declarations.
+
+All six actual final source builds and the fresh 28-declaration axiom command succeeded. The complete352-pin dependency closure includes the dotted attributed sources. The earlier helper parser failure occurred before SSH/Lean, is preserved separately, and was repaired by retaining complete dotted local module paths. No failed or prelaunch command is passed off as a successful Lean check.

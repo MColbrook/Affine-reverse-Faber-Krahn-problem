@@ -1,0 +1,11 @@
+--- GinibrePoincare/Concrete/Wirtinger.lean
++++ AffineFK/ChafaiBrascampLieb/Concrete/Wirtinger.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+ public import Mathlib.Analysis.Calculus.ContDiff.Defs
+-public import GinibrePoincare.Concrete.MeasureModel
++public import AffineFK.ChafaiBrascampLieb.Concrete.MeasureModel
+ public import Mathlib.Analysis.Calculus.FDeriv.Basic
+ public import Mathlib.MeasureTheory.Integral.Bochner.Basic
+ public import Mathlib.Order.ConditionallyCompleteLattice.Basic

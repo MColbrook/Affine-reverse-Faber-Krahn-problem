@@ -1,0 +1,64 @@
+--- RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/TranslationIntegral.lean
++++ AffineFK/BenensonRellich/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/TranslationIntegral.lean
+@@ -1,6 +1,13 @@
+-import RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Approximation
+-import RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.Translation
+-import Mathlib.MeasureTheory.Integral.Bochner.Basic
++module
++
++public import AffineFK.BenensonRellich.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Approximation
++public import AffineFK.BenensonRellich.Analysis.FunctionalSpaces.Sobolev.Euclidean.Translation
++public import Mathlib.MeasureTheory.Integral.Bochner.Basic
++
++@[expose] public section
++
++set_option autoImplicit false
++set_option backward.isDefEq.respectTransparency false
+ 
+ /-
+ Copyright (c) 2026 Adam Benenson. All rights reserved.
+@@ -38,8 +45,7 @@
+ 
+ variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E]
+ 
+-local instance instMeasurableSpaceE_L2CompactnessTranslationIntegral : MeasurableSpace E := borel E
+-local instance instBorelSpaceE_L2CompactnessTranslationIntegral : BorelSpace E := ⟨rfl⟩
++variable [MeasurableSpace E] [BorelSpace E]
+ local instance instOpensMeasurableSpaceE_L2CompactnessTranslationIntegral :
+     OpensMeasurableSpace E := by infer_instance
+ local instance instMeasurableAddE_L2CompactnessTranslationIntegral : MeasurableAdd E := by
+@@ -87,7 +93,7 @@
+   haveI : MeasureTheory.IsProbabilityMeasure μ :=
+     ⟨kernelMeasure_univ (E := E) (ψ := ψ) hψc hψcs hψ0 hψint⟩
+   have hμzero : μ ((Metric.ball (0 : E) δ)ᶜ) = 0 := by
+-    simpa [μ] using kernelMeasure_compl_ball_eq_zero_of_tsupport_subset (E := E) (ψ := ψ) hψsupp
++    simpa [μ] using! kernelMeasure_compl_ball_eq_zero_of_tsupport_subset (E := E) (ψ := ψ) hψsupp
+   have hAE_ball : (Metric.ball (0 : E) δ) ∈ MeasureTheory.ae μ :=
+     (MeasureTheory.mem_ae_iff.2 hμzero)
+   -- On `Metric.ball 0 δ`, the squared translation error is bounded by `η²`.
+@@ -102,12 +108,12 @@
+     have hnonneg : 0 ≤ ‖(translateL2 (μ := (volume : Measure E)) (-t)) F - F‖ ^ 2 :=
+       sq_nonneg _
+     have hηnonneg : 0 ≤ η ^ 2 := sq_nonneg _
+-    simpa [Real.norm_eq_abs, abs_of_nonneg hnonneg, abs_of_nonneg hηnonneg] using hsq
++    simpa [Real.norm_eq_abs, abs_of_nonneg hnonneg, abs_of_nonneg hηnonneg] using! hsq
+   have hnorm_int :
+       ‖∫ t,
+             ‖(translateL2 (μ := (volume : Measure E)) (-t)) F - F‖ ^ 2
+           ∂μ‖ ≤ η ^ 2 * μ.real Set.univ := by
+-    simpa using
++    simpa using!
+       (MeasureTheory.norm_integral_le_of_norm_le_const (μ := μ)
+         (f := fun t : E => ‖(translateL2 (μ := (volume : Measure E)) (-t)) F - F‖ ^ 2)
+         (C := η ^ 2) hAE_bound)
+@@ -128,8 +134,8 @@
+           ∂μ| ≤ η ^ 2 := by
+     have := hnorm_int
+     -- Replace `‖·‖` by `abs` in `ℝ` and simplify `μ.real univ = 1`.
+-    simpa [Real.norm_eq_abs, hμreal, mul_one] using this
+-  simpa [abs_of_nonneg hnonneg_int, μ] using habs
++    simpa [Real.norm_eq_abs, hμreal, mul_one] using! this
++  simpa [abs_of_nonneg hnonneg_int, μ] using! habs
+ 
+ end Volume
+ 

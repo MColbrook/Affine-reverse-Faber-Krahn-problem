@@ -1,0 +1,9 @@
+--- GinibrePoincare/Analysis/CorrespondenceBrascampLiebIntegralCS.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceBrascampLiebIntegralCS.lean
+@@ -1,5 +1,5 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceBrascampLiebMatrix
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceBrascampLiebMatrix
+ public import Mathlib.MeasureTheory.Integral.Bochner.Basic
+ public import Mathlib.Algebra.QuadraticDiscriminant
+ @[expose] public section

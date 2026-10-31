@@ -1,0 +1,80 @@
+{
+  "reviewer": "AI /root/palomar_requirements",
+  "status": "Independent new-four-declaration mathematical and statement review passed; actual evidence checked",
+  "findings": [],
+  "authorship_boundary": "Reviewer did not author the four new parent declarations. Reviewer authored reused Gaussian/bridge and spectral-transport/affine-reduction inputs; those reused proofs are not independently self-reviewed here. Only the new definition and three full proof bodies are the independent mathematical scope; the 737 transitive hashes are evidence checks, not a claim to reread all 737 proof bodies.",
+  "source_sha256": {
+    "AffineFK/GaussianEllipsoidSpectralReduction.lean": "b54ba15c858352a971f3ec44a757bb0d7476aaa01c933146bd1e7267d03eadd3"
+  },
+  "manifest_sha256": "649f7dfbb7b52b1a81bd4500d40b4ac79593943774711476a2ff21cac5a1b738",
+  "all_transitive_source_pins_checked": 737,
+  "new_declarations_read_in_full": [
+    "AffineFKProof.UniformVolumeOneEllipsoidIntersection",
+    "AffineFKProof.maximal_gaussian_covariance_of_ellipsoid_intersection",
+    "AffineFKProof.symmetric_gaussian_spectral_bound_of_ellipsoid_intersections",
+    "AffineFKProof.affine_reverse_faber_krahn_of_ellipsoid_intersections"
+  ],
+  "four_headers_identical_to_preserved_initial_candidate": true,
+  "preserved_initial_candidate_sha256": "3b110f819ed3c9e08dfede0b8386ca69da1444f767f78deac8856e1451c4a436",
+  "actual_build": {
+    "path": "logs/branch_bochner/gaussian-ellipsoid-spectral-reduction-build-02.txt",
+    "sha256": "fcb75899b21ae191e000da0d9284076244e0c593fd512b60df76a7f1135ee2c9",
+    "exit": 0,
+    "seconds": "10.036"
+  },
+  "actual_axioms": {
+    "path": "logs/branch_bochner/gaussian-ellipsoid-reduction-axioms-01.txt",
+    "sha256": "f96bdd64aabf6d869e9eefef2bcdc261cbe4be4a4cfa9246dcac7e6575788aad",
+    "exit": 0,
+    "seconds": "6.607",
+    "reports": {
+      "AffineFKProof.UniformVolumeOneEllipsoidIntersection": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AffineFKProof.maximal_gaussian_covariance_of_ellipsoid_intersection": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AffineFKProof.symmetric_gaussian_spectral_bound_of_ellipsoid_intersections": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AffineFKProof.affine_reverse_faber_krahn_of_ellipsoid_intersections": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  },
+  "preserved_failed_build": {
+    "path": "logs/branch_bochner/gaussian-ellipsoid-spectral-reduction-build-01.txt",
+    "sha256": "5e8867e2b0fb9b7dacd9905e438b25b638b1b576e06d49a59484843256951b2b",
+    "exit": 1
+  },
+  "evidence_archive_sha256": "53db21e256011cec212971f56b9254a343d93652f9d76d2583c935b0b0264f9c",
+  "all_three_archived_logs_match_actual_local": {
+    "logs/branch_bochner/gaussian-ellipsoid-spectral-reduction-build-01.txt": "5e8867e2b0fb9b7dacd9905e438b25b638b1b576e06d49a59484843256951b2b",
+    "logs/branch_bochner/gaussian-ellipsoid-spectral-reduction-build-02.txt": "fcb75899b21ae191e000da0d9284076244e0c593fd512b60df76a7f1135ee2c9",
+    "logs/branch_bochner/gaussian-ellipsoid-reduction-axioms-01.txt": "f96bdd64aabf6d869e9eefef2bcdc261cbe4be4a4cfa9246dcac7e6575788aad"
+  },
+  "nonself_review_of_reused_affine14": {
+    "path": "audit/affine_spectral_reduction_independent_review.json",
+    "sha256": "f464751f6f156bad49c2c07b870616351cb98e0f2a665953d2b040df8d6f1309"
+  },
+  "conditional_scope": "The one external hypothesis is dimension-uniform positive-volume intersection with a literal volume-one origin ellipsoid for every original origin-symmetric volume-one convex body. Actual covariance at each already-maximal K, the uniform symmetric spectral bound and the unrestricted determinant-one affine conclusion are derived. Universal G05/Milman existence is not proved.",
+  "constant_check": "For one a>0, B=1+abs(gaussianPositionEllipsoidMassExponent a), c=exp(-2*B-1)>0 and c<=1 are chosen before n,K. The spectral constant depends only on c, and the unrestricted reduction contributes the exact factor4.",
+  "own_comparator_acceptance": false,
+  "unconditional_M01_verified": false,
+  "full_paper_verified": false,
+  "not_claimed": [
+    "Proof of universal Milman/G05",
+    "An unconditional headline M01 theorem",
+    "All original manuscript intermediate claims proved",
+    "Independent review of the reviewer's own reused input proofs",
+    "A new Comparator verdict or public submission"
+  ]
+}

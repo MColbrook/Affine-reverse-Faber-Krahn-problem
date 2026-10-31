@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/HermiteWeightedEnergy.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/HermiteWeightedEnergy.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.HermiteParsevalModes
+-public import GinibrePoincare.Analysis.HermiteEnergy
+-public import GinibrePoincare.Analysis.GaussianDbarParseval
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteParsevalModes
++public import AffineFK.ChafaiBrascampLieb.Analysis.HermiteEnergy
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianDbarParseval
+ 
+ @[expose] public section
+ 

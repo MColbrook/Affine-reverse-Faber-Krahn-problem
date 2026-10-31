@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/HomogeneousPrimitiveRegularity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HomogeneousPrimitiveRegularity.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.PrimitiveRegularity
+-import OAI.Analysis.Mahler.SphereFlux
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PrimitiveRegularity
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereFlux
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

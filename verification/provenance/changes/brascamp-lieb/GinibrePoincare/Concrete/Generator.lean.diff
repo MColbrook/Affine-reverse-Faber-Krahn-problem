@@ -1,0 +1,12 @@
+--- GinibrePoincare/Concrete/Generator.lean
++++ AffineFK/ChafaiBrascampLieb/Concrete/Generator.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.SmoothTarget
+-public import GinibrePoincare.Concrete.Wirtinger
++public import AffineFK.ChafaiBrascampLieb.Concrete.SmoothTarget
++public import AffineFK.ChafaiBrascampLieb.Concrete.Wirtinger
+ public import Mathlib.Analysis.Calculus.FDeriv.Add
+ public import Mathlib.Analysis.Calculus.FDeriv.Mul
+ 

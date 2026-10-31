@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/PuncturedBallStokes.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/PuncturedBallStokes.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.FormStokes
+-import OAI.Analysis.Mahler.CoordinateSphere
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.FormStokes
++public import AffineFK.OpenAIMahler.Analysis.Mahler.CoordinateSphere
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

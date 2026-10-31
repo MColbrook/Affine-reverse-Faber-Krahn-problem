@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SphereTransport.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SphereTransport.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ComplexCoordinates
+-import Mathlib.MeasureTheory.Constructions.HaarToSphere
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ComplexCoordinates
++public import Mathlib.MeasureTheory.Constructions.HaarToSphere
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

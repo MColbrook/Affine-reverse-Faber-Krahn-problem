@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/RadialL2MollifierAverage.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/RadialL2MollifierAverage.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.RadialMollifierKernels
+-public import GinibrePoincare.Analysis.LebesgueL2Mollification
++public import AffineFK.ChafaiBrascampLieb.Analysis.RadialMollifierKernels
++public import AffineFK.ChafaiBrascampLieb.Analysis.LebesgueL2Mollification
+ 
+ @[expose] public section
+ 

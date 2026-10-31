@@ -1,0 +1,427 @@
+{
+  "kind": "Historical non-author AI source review index and prior-certificate provenance only",
+  "context": "The review documents preserve their original checking cuts and original development-relative references. The current package verdict is exclusively verification/certificate.json.",
+  "unchanged_source_proof_files": 992,
+  "original_source_reviews": {
+    "audit/affine_spectral_reduction_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/affine_spectral_reduction_independent_review.md",
+      "sha256": "10f950f460c6b3b62d67aef3c61119fc98bdb9008f4af9fe16b9f45160c1bef3"
+    },
+    "audit/affine_spectral_reduction_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/affine_spectral_reduction_independent_review.json",
+      "sha256": "f464751f6f156bad49c2c07b870616351cb98e0f2a665953d2b040df8d6f1309"
+    },
+    "audit/bridge_foundations_markov_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/bridge_foundations_markov_independent_review.md",
+      "sha256": "2cac5f52a921c8f12a4cfcaae6d2d23de4f294d50298fab607637edc300b0c86"
+    },
+    "audit/bridge_foundations_markov_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/bridge_foundations_markov_independent_review.json",
+      "sha256": "b1bedabc7a780e725030defa158a3a7181716d6dc5a97da3702ade3ae72ecd85"
+    },
+    "audit/bridge_heat_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/bridge_heat_independent_review.md",
+      "sha256": "b991d8f675033ff2752dc88f89a04e42572ffc32012b502e0b021903cc2e01b1"
+    },
+    "audit/bridge_heat_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/bridge_heat_independent_review.json",
+      "sha256": "adaf236d870ca49edc140ed05dd56abf270dbbab6e7aa2e3bcc1d2c54218d8f2"
+    },
+    "audit/bridge_middle_pointwise_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/bridge_middle_pointwise_independent_review.md",
+      "sha256": "5de718efee289e207f4de9a45c132d2f75abc27dd4bfd7666033fbb067146844"
+    },
+    "audit/bridge_middle_pointwise_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/bridge_middle_pointwise_independent_review.json",
+      "sha256": "f441f8d1b57151777a6ae929d47f44d672d2fb7352a5a9371b8c97fa280c3233"
+    },
+    "audit/bridge_rayleigh_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/bridge_rayleigh_independent_review.md",
+      "sha256": "b25526aef4513019e7b0222bb46f952e5cfd6aba99ba85d57a8f4ce493417f7f"
+    },
+    "audit/bridge_rayleigh_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/bridge_rayleigh_independent_review.json",
+      "sha256": "8410a0c64d0c95ac76f613ca0fc917202fa4f4d887c16c83cee3272d89149344"
+    },
+    "audit/covariance_ellipsoid_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/covariance_ellipsoid_independent_review.md",
+      "sha256": "efce64e757427193e1e345d1a4ef0a8e7535d937c1e28466afebf933468f5c71"
+    },
+    "audit/covariance_ellipsoid_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/covariance_ellipsoid_independent_review.json",
+      "sha256": "3e7b6c1085fffb3b0d014b8b62c6c86357682b9b1860350a3ec5fb678bedef20"
+    },
+    "audit/covariance_ellipsoid_tilt_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/covariance_ellipsoid_tilt_independent_review.md",
+      "sha256": "79ca8f7382574713d7bd47e0c6de20016b0136e117c305c4ec86874d87e3184d"
+    },
+    "audit/covariance_ellipsoid_tilt_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/covariance_ellipsoid_tilt_independent_review.json",
+      "sha256": "df71705b226bc03f957631920d52f2d91f72225f7be6e49b8e1ca1f7803eb870"
+    },
+    "audit/dirichlet_invariances_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/dirichlet_invariances_independent_review.md",
+      "sha256": "8fec5e813857ee86bc3dfc24a513710448a4aeb38398f2dcdd853ce43ca1b665"
+    },
+    "audit/dirichlet_invariances_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/dirichlet_invariances_independent_review.json",
+      "sha256": "c3c4a7c2f1c8e571e0bd3120c8d42569e1781e5d9989f9dc1dd9ee5e8973bb1c"
+    },
+    "audit/dirichlet_sources_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/dirichlet_sources_independent_review.md",
+      "sha256": "da2274fbe6e97f1ef5f2466b640f56f3c461f95bf99d94e14e92155a5adf138c"
+    },
+    "audit/dirichlet_sources_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/dirichlet_sources_independent_review.json",
+      "sha256": "a26f0b1c138ceba3654ac8a785126127a841db74bf550d61274864442181a83d"
+    },
+    "audit/dirichlet_support_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/dirichlet_support_independent_review.md",
+      "sha256": "d6d5a63a2eabdc15fd09690f640b3d40e0021125e5d8022020a0c07a624653af"
+    },
+    "audit/dirichlet_support_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/dirichlet_support_independent_review.json",
+      "sha256": "1887bf386f8c1c50d97c57ad023ef07eefbebf1ef19e1fadcdf442e89eb3a734"
+    },
+    "audit/dyadic_information_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/dyadic_information_independent_review.md",
+      "sha256": "85d6eeab2938dd6720af414254ab78424cec5e36efcda7634b85dd494de3cacb"
+    },
+    "audit/dyadic_information_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/dyadic_information_independent_review.json",
+      "sha256": "df9079989d6489da39237434c2c41446ace83be0627285e455aec9b00ce8049f"
+    },
+    "audit/gaussian_ellipsoid_reduction_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/gaussian_ellipsoid_reduction_independent_review.md",
+      "sha256": "d5c313625721a0adfbb65ac542ac0a7eede41709e4e27c4b7cd8ce30163640aa"
+    },
+    "audit/gaussian_ellipsoid_reduction_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/gaussian_ellipsoid_reduction_independent_review.json",
+      "sha256": "1da9684118264b2d3348c3bcdeeb3456606545805dc1795be2bdd2c3a548d48d"
+    },
+    "audit/gaussian_iteration_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/gaussian_iteration_independent_review.md",
+      "sha256": "4cdca494fa5d68043bceb7271c4d73fabe1b1da39d3fda3f237225ee747534da"
+    },
+    "audit/gaussian_iteration_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/gaussian_iteration_independent_review.json",
+      "sha256": "5149054229c680d4a2730e81d5da36663b12af70020f69e9ab811dd0983a642a"
+    },
+    "audit/gaussian_killed_concrete_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/gaussian_killed_concrete_independent_review.md",
+      "sha256": "61196efa510875fba11ce995e3e75858f555efa378df58bfe0ede61b61301eb6"
+    },
+    "audit/gaussian_killed_concrete_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/gaussian_killed_concrete_independent_review.json",
+      "sha256": "97841f7dc7bc576dee6f00581b328e39b9e6531efcf28b372012ab5d6fd3a239"
+    },
+    "audit/gaussian_killed_foundations_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/gaussian_killed_foundations_independent_review.md",
+      "sha256": "e8cabd02cf7b23c79bfd9b4322bb8738d126a40396b2c7d326eb662ef1ca4570"
+    },
+    "audit/gaussian_killed_foundations_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/gaussian_killed_foundations_independent_review.json",
+      "sha256": "4543994958d8d0335767884219bf1e9ad3777732fadd5a48cd3d019a440d8193"
+    },
+    "audit/gaussian_position_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/gaussian_position_independent_review.md",
+      "sha256": "050970c690f2349f50eedf6ad0cca93a8dd03ac57f744edb91dbad7edc50076e"
+    },
+    "audit/gaussian_position_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/gaussian_position_independent_review.json",
+      "sha256": "894d9369bd4461037a564304e36981b64c846eb1627c45c7bc7f2e7a9d53c668"
+    },
+    "audit/gaussian_position_milman_independent_final_receipt.md": {
+      "package_path": "verification/reviews/prior/source/gaussian_position_milman_independent_final_receipt.md",
+      "sha256": "9e0b0a834f021b99ff438f459426e81c4c4a39ef3a84e84d51695225ad2aa838"
+    },
+    "audit/gaussian_position_milman_independent_final_receipt.json": {
+      "package_path": "verification/reviews/prior/source/gaussian_position_milman_independent_final_receipt.json",
+      "sha256": "d5d5d1836fd6c9c534d5bb76c22afb7738a56edee3229a6947138de3e1716c73"
+    },
+    "audit/gaussian_position_milman_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/gaussian_position_milman_independent_review.md",
+      "sha256": "ed84a0a78e541c10af7d1801e310efaf3916ced7a70947b9281e07df129ea368"
+    },
+    "audit/gaussian_position_milman_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/gaussian_position_milman_independent_review.json",
+      "sha256": "2f17a010244540dc625229af8deeb90c9f8d355d5c9a96fa92f80973b72d5c22"
+    },
+    "audit/gaussian_position_milman_statement_fidelity_review.md": {
+      "package_path": "verification/reviews/prior/source/gaussian_position_milman_statement_fidelity_review.md",
+      "sha256": "dd97177b9818007453b1e06b80b8ddd64f084b4a91da1a0949d698195f79c891"
+    },
+    "audit/gaussian_position_milman_statement_fidelity_review.json": {
+      "package_path": "verification/reviews/prior/source/gaussian_position_milman_statement_fidelity_review.json",
+      "sha256": "2b1ccdf878ff7ce8962010854f6e1338ce5f366e61b3306d8a4fae27450805c5"
+    },
+    "audit/gaussian_position_polar_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/gaussian_position_polar_independent_review.md",
+      "sha256": "5298ab9a54a961b971176020df7415ceb081cff7dbefd1752bad227a2da60b48"
+    },
+    "audit/gaussian_position_polar_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/gaussian_position_polar_independent_review.json",
+      "sha256": "587eca851d0ae79c813e4a81ae4a7a4b844b49cc0f1f60f87f5118fd87d7e3e4"
+    },
+    "audit/gaussian_tilt_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/gaussian_tilt_independent_review.md",
+      "sha256": "9a560fcf202a2697c6cce57cd83caf3a9e7d37ff639883290106d519d9f1fa80"
+    },
+    "audit/gaussian_tilt_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/gaussian_tilt_independent_review.json",
+      "sha256": "9c5012d70570cd865246bf6fc5c2a3dfb013476ec26dce753e46b2754670f384"
+    },
+    "audit/gaussian_tilt_jacobian_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/gaussian_tilt_jacobian_independent_review.md",
+      "sha256": "92f59636df96b67c6fe1e576b3c6b784b56c89520f9d3e20a2e7e11677d251c6"
+    },
+    "audit/gaussian_tilt_jacobian_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/gaussian_tilt_jacobian_independent_review.json",
+      "sha256": "e4691be4ed40de015f04ede0d62a4ddd36f0641308be04c63c5ccd466a7dfde4"
+    },
+    "audit/gaussian_tilt_mean_map_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/gaussian_tilt_mean_map_independent_review.md",
+      "sha256": "cb59a295842d60635ffa101963376ae728eeb30efdfba9b1ad44feab5060c3df"
+    },
+    "audit/gaussian_tilt_mean_map_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/gaussian_tilt_mean_map_independent_review.json",
+      "sha256": "2cb6b0cfcf33ca5675168987a811a073f12e29dffd8e897e087ecff3dfbf1627"
+    },
+    "audit/groundstate_composition_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/groundstate_composition_independent_review.md",
+      "sha256": "bd8ec64cc981a035fea97861f1411a1ccc5fd98df19c9a50c853bb5a7c8f69b5"
+    },
+    "audit/groundstate_composition_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/groundstate_composition_independent_review.json",
+      "sha256": "3382fa75bd2f789f55b2235598327e7a05493a741bc13a37702aaa8f50ee22a8"
+    },
+    "audit/groundstate_gaussian_fisher_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/groundstate_gaussian_fisher_independent_review.md",
+      "sha256": "ea7a71b6ba6f079a453187a70fe4e5f540ecbd55eb3def98c95e4b183e272292"
+    },
+    "audit/groundstate_gaussian_fisher_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/groundstate_gaussian_fisher_independent_review.json",
+      "sha256": "4946dd041b5c56d08b01d1943268a83ac95d16efaaf277678dc019d825f66d93"
+    },
+    "audit/groundstate_lc_density_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/groundstate_lc_density_independent_review.md",
+      "sha256": "32fad10f110cc41a8b3b9cfeca58a7b308a0ade4ba2b2946e72876ce5d12cb57"
+    },
+    "audit/groundstate_lc_density_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/groundstate_lc_density_independent_review.json",
+      "sha256": "c52c3d53b52430d33c172286b13129f53d4ddb8368789bb4cf548b5af64a9063"
+    },
+    "audit/h1_gaussian_form_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/h1_gaussian_form_independent_review.md",
+      "sha256": "1d934ae0c0a291910aa07c92dbd47dfde2816e904051f013c40dbd9ee5bc1a83"
+    },
+    "audit/h1_gaussian_form_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/h1_gaussian_form_independent_review.json",
+      "sha256": "c098d4cac8fa27a8d4215fe08cbbcc8afccecb055e002647cb55eb9629b38a6e"
+    },
+    "audit/h1_minimizing_limit_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/h1_minimizing_limit_independent_review.md",
+      "sha256": "e242eb49aebf8073193bd746f65fd7e3c5945f7419ff9ee3dc0c378036015317"
+    },
+    "audit/h1_minimizing_limit_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/h1_minimizing_limit_independent_review.json",
+      "sha256": "b531bdbad341988ef4fa98376113b22b263ddbb36f284fc30f7f60eda3d720e7"
+    },
+    "audit/information_entropy_jump_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/information_entropy_jump_independent_review.md",
+      "sha256": "03721e56a2f44fb7e1e28e37a4e605ed832b749323172504b57dd3aceb09cc0f"
+    },
+    "audit/information_entropy_jump_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/information_entropy_jump_independent_review.json",
+      "sha256": "124449a64e33b73124d94c3bc678633cb9bce1d7d590c2012fc7c0d1d883ec53"
+    },
+    "audit/information_spectrum_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/information_spectrum_independent_review.md",
+      "sha256": "fd970f041f704e676e9d2c039d5d17ebea0e9737351e79d89ce43f1c16dad5ae"
+    },
+    "audit/information_spectrum_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/information_spectrum_independent_review.json",
+      "sha256": "e69884e0bb95fdd06f9df63059977b0826d7a43b871f5a7d6f93c89ff3374f63"
+    },
+    "audit/information_spectrum_statement_fidelity_review.md": {
+      "package_path": "verification/reviews/prior/source/information_spectrum_statement_fidelity_review.md",
+      "sha256": "b93dd471d9248baa4d183ca4da774219cad00e3011d2fc623643fc61449900e8"
+    },
+    "audit/information_spectrum_statement_fidelity_review.json": {
+      "package_path": "verification/reviews/prior/source/information_spectrum_statement_fidelity_review.json",
+      "sha256": "06468278373cb18addcfe02c9ce56f63a18d866855bbe26a939d31ada3766f52"
+    },
+    "audit/injective_jacobian_integral_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/injective_jacobian_integral_independent_review.md",
+      "sha256": "169fe9592a61253004fc010db6c1ee8069644cfdfdd906f32fa9e58dda0eb518"
+    },
+    "audit/injective_jacobian_integral_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/injective_jacobian_integral_independent_review.json",
+      "sha256": "da44b9d91ab19f023a5e95aa0495cec5d173b5c7aaf49f1300f10001993ceeee"
+    },
+    "audit/law_dilation_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/law_dilation_independent_review.md",
+      "sha256": "97eae904a437b08eb8017ad7aa1934a708734120e4e74ae30d209a07f7e4bc7d"
+    },
+    "audit/law_dilation_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/law_dilation_independent_review.json",
+      "sha256": "9c5d16ebbe4e940540f0ad61648251be8d8df1e26c21fd82480682f1ee99eb92"
+    },
+    "audit/logconcave_measure_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/logconcave_measure_independent_review.md",
+      "sha256": "d20969c175267bec914e43bc2ca6d2e03f4fa6d7ff9e836448fd7354fd3fa87e"
+    },
+    "audit/logconcave_measure_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/logconcave_measure_independent_review.json",
+      "sha256": "b9c6103d86854edc95f0adf1f91b624c5d3878777f85960a5c6b04bf7d1a1bc9"
+    },
+    "audit/logconcave_representative_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/logconcave_representative_independent_review.md",
+      "sha256": "cf05c72476d5d7268bf11634ca59528bd76b78ac95b6c2e9920eb150a39ebb75"
+    },
+    "audit/logconcave_representative_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/logconcave_representative_independent_review.json",
+      "sha256": "8841647408dfa2e275a019821c8de7a4850e9a5f0ca0e311fc5b09f791731c27"
+    },
+    "audit/main_theorems_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/main_theorems_independent_review.md",
+      "sha256": "64bf267f25d9c16940c362eb7118a078780bb1354249e2ea05def10d8a93688b"
+    },
+    "audit/main_theorems_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/main_theorems_independent_review.json",
+      "sha256": "f82548ff78ab74f6a25f364422fe7d242a6b1954a5556ac085670728c6d1d5e7"
+    },
+    "audit/openai_mahler_source_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/openai_mahler_source_independent_review.md",
+      "sha256": "e2dccbf13639246f0c18666cb9c62b981a7efd4a47ee01b7c64c6af95cee41bf"
+    },
+    "audit/openai_mahler_source_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/openai_mahler_source_independent_review.json",
+      "sha256": "a2faa4719cb5b69ef52e185b471e95e98cf92e953c91189bb4e2265b41324381"
+    },
+    "audit/stage32_independent_packet_review.md": {
+      "package_path": "verification/reviews/prior/source/stage32_independent_packet_review.md",
+      "sha256": "118812eeac7d4acda148620d2a9a9a51a81aedd46ba16546943717520d7f1967"
+    },
+    "audit/stage32_independent_packet_review.json": {
+      "package_path": "verification/reviews/prior/source/stage32_independent_packet_review.json",
+      "sha256": "be9df1b6ae3813871e2a9ee3030d7b82e14f15dffc44e36a9d03791f18497d31"
+    },
+    "audit/stage33_independent_packet_review.md": {
+      "package_path": "verification/reviews/prior/source/stage33_independent_packet_review.md",
+      "sha256": "5b7bb945e5867b3763185290e65e0fe0d0ee790b63efe729c624ffa85c465cc1"
+    },
+    "audit/stage33_independent_packet_review.json": {
+      "package_path": "verification/reviews/prior/source/stage33_independent_packet_review.json",
+      "sha256": "28250b804352fa82900ee1098e6ac71db83784336ef643b1c664fd71dda054c7"
+    },
+    "audit/stage33_source_statement_review.md": {
+      "package_path": "verification/reviews/prior/source/stage33_source_statement_review.md",
+      "sha256": "5f9d1f41ce3365a4f7f2f655864a6bf027f42df69af5931e99ff193009fba463"
+    },
+    "audit/stage33_source_statement_review.json": {
+      "package_path": "verification/reviews/prior/source/stage33_source_statement_review.json",
+      "sha256": "e97ec8eefc728ce11b67991eac68ba5c2dc4e5e2cc14a49814523a8a331dacb7"
+    },
+    "audit/stage34_independent_packet_review.md": {
+      "package_path": "verification/reviews/prior/source/stage34_independent_packet_review.md",
+      "sha256": "cdf828a492387f3c82e7c4392d935b51da68229ed2a96ab2e91f3c75342479c1"
+    },
+    "audit/stage34_independent_packet_review.json": {
+      "package_path": "verification/reviews/prior/source/stage34_independent_packet_review.json",
+      "sha256": "5a3608e39073ec96166b0865004c3540982c572f2153ddd014385a0180040959"
+    },
+    "audit/stage35_independent_packet_review.md": {
+      "package_path": "verification/reviews/prior/source/stage35_independent_packet_review.md",
+      "sha256": "1ebf89630ff8beb74280bd2c8cc03bb07b53d7e6eac557709b5d4261a03a2ff2"
+    },
+    "audit/stage35_independent_packet_review.json": {
+      "package_path": "verification/reviews/prior/source/stage35_independent_packet_review.json",
+      "sha256": "bf4e3d319c54e37fa2d2bf59a0920ce7fee10e151d07b43f96ac395dba9ec647"
+    },
+    "audit/stage35_presentation_delta_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/stage35_presentation_delta_independent_review.md",
+      "sha256": "c237d9e0e52cd973105c8622209d7be42863199e2fdd49a93259f6d47fea2fcf"
+    },
+    "audit/stage35_presentation_delta_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/stage35_presentation_delta_independent_review.json",
+      "sha256": "b2f23835c1a750a227ae1e6a5ecf1e9261404bc526c9117f1c02cad4ac20415d"
+    },
+    "audit/stage35_source_statement_review.md": {
+      "package_path": "verification/reviews/prior/source/stage35_source_statement_review.md",
+      "sha256": "c3457513707111d2d2fc521a345a25d8887f24c106d681dbefb6b84530fe2ac4"
+    },
+    "audit/stage35_source_statement_review.json": {
+      "package_path": "verification/reviews/prior/source/stage35_source_statement_review.json",
+      "sha256": "1da8665484a7e8a9ea3cf868df05e8de6ca856fa9cb0832e8b2549e645e3d92f"
+    },
+    "audit/support_converse_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/support_converse_independent_review.md",
+      "sha256": "8fdfa8fca7a0e415d90a3e02ab70bb0ab78009afa61db070599d4950e11e5767"
+    },
+    "audit/support_converse_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/support_converse_independent_review.json",
+      "sha256": "bbf0d6aede9f978ae637e7c302fde74221407b167605f069a9bce1a14e587d47"
+    },
+    "audit/symmetric_covariance_spectral_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/symmetric_covariance_spectral_independent_review.md",
+      "sha256": "a97ef7aeede4aaf1453c5dda9c6046eeba900dd0b79362f338ee5742d1b177cd"
+    },
+    "audit/symmetric_covariance_spectral_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/symmetric_covariance_spectral_independent_review.json",
+      "sha256": "68b571497792c4559b4c0ba5734ab97af51e3fd93daa917fda3450e2e8cf6007"
+    },
+    "audit/whitening_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/whitening_independent_review.md",
+      "sha256": "96cb21fbcc9994813fca55c5eaac694e740755973de4b089296badb8d4194068"
+    },
+    "audit/whitening_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/whitening_independent_review.json",
+      "sha256": "cb77c20c5429fffd3b1383dec6da1ef1f7ec4411397e87d14b1b9fa21b5cd868"
+    },
+    "audit/whitening_spectral_closure_independent_review.md": {
+      "package_path": "verification/reviews/prior/source/whitening_spectral_closure_independent_review.md",
+      "sha256": "9a3cb6c1d7d3030a244b03ea7c3cf4f65374bb0cb9fdda1b18f59bfdbc31a725"
+    },
+    "audit/whitening_spectral_closure_independent_review.json": {
+      "package_path": "verification/reviews/prior/source/whitening_spectral_closure_independent_review.json",
+      "sha256": "80ab1f6a13dade0ff338247e74e3c83185fa514691b9c83555db47599c2dbc83"
+    }
+  },
+  "earlier_certificate_receipts": [
+    {
+      "original_certificate_sha256": "e75f46af1c41a44e6d15f07166a6279fd77df3666b56fed4ed4f1a3c6dc07ba3",
+      "selected_theorem": "AffineFK.affine_reverse_faber_krahn_main_theorems",
+      "actual_comparator_exit": 0,
+      "sandbox_disabled": false,
+      "actual_seconds": 1480.371,
+      "actual_kernel_labels": [
+        "Lean paranoid kernel",
+        "lean4lean kernel",
+        "nanoda kernel",
+        "con-leche kernel",
+        "con-ron kernel",
+        "Lean default kernel"
+      ],
+      "full_original_development_not_redistributed": true,
+      "new_package_acceptance_inferred": false
+    },
+    {
+      "original_certificate_sha256": "65932fa0e2b39e685e8c2ee0a28bf4337154e7f859edd9ca10951a6df61a59f5",
+      "selected_theorem": "AffineFK.additional_original_manuscript_results",
+      "actual_comparator_exit": 0,
+      "sandbox_disabled": false,
+      "actual_seconds": 1385.118,
+      "actual_kernel_labels": [
+        "Lean paranoid kernel",
+        "lean4lean kernel",
+        "nanoda kernel",
+        "con-leche kernel",
+        "con-ron kernel",
+        "Lean default kernel"
+      ],
+      "full_original_development_not_redistributed": true,
+      "new_package_acceptance_inferred": false
+    }
+  ]
+}

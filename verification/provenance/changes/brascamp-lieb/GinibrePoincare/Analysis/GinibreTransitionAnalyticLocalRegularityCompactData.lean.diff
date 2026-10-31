@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GinibreTransitionAnalyticLocalRegularityCompactData.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreTransitionAnalyticLocalRegularityCompactData.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreTransitionAnalyticLocalRegularityTemperedEquation
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreTransitionAnalyticLocalRegularityTemperedEquation
+ 
+ @[expose] public section
+ 

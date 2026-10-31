@@ -1,0 +1,20 @@
+--- GinibrePoincare/Analysis/CorrespondenceWeightedEllipticLocalSobolev.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceWeightedEllipticLocalSobolev.lean
+@@ -1,6 +1,6 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticEquation
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticDivision
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticEquation
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticDivision
+ @[expose] public section
+ open MeasureTheory Set Filter
+ open scoped ContDiff
+@@ -37,7 +37,7 @@
+     (by intro θ hθ hθc hs; simpa using correspondenceWeightedElliptic_annihilator_equation b ρ hρ hp f hf hA θ hθ hθc)
+   have hmK := correspondenceWeightedElliptic_compact_multiplier_memLp ρ hρ.continuous hp f (η*ρ) hf
+     (hη.continuous.mul hρ.continuous) K hc
+-  have hmI := (memLp_indicator_iff_restrict hc.measurableSet).mpr hmK
++  have hmI := (memLp_indicator_iff_restrict hc.measurableSet.nullMeasurableSet).mpr hmK
+   have hw : MemLp (fun x=>η x*(ρ x*f x)) 2 (volume : Measure E) := by
+     apply hmI.ae_eq
+     exact ae_of_all volume fun x=>by

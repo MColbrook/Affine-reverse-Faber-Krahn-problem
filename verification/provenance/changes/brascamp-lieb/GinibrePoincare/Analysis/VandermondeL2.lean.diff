@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/VandermondeL2.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/VandermondeL2.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.CollisionNull
+-public import GinibrePoincare.Analysis.GinibreMassFiniteness
+-public import GinibrePoincare.Concrete.NormalizedGroundState
++public import AffineFK.ChafaiBrascampLieb.Analysis.CollisionNull
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreMassFiniteness
++public import AffineFK.ChafaiBrascampLieb.Concrete.NormalizedGroundState
+ public import Mathlib.MeasureTheory.Function.LpSpace.Complete
+ 
+ @[expose] public section

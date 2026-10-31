@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/GlobalPlanarBound.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/GlobalPlanarBound.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.PrimitiveEquality
+-import OAI.Analysis.Mahler.PlanarSymmetry
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PrimitiveEquality
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PlanarSymmetry
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

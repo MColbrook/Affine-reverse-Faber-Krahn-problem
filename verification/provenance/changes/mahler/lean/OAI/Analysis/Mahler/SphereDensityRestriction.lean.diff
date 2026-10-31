@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/SphereDensityRestriction.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SphereDensityRestriction.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.ReferenceSphereIntegral
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ReferenceSphereIntegral
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

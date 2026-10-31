@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/HomogeneousFlux.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HomogeneousFlux.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.MatrixHessian
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.MatrixHessian
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ open Complex

@@ -1,0 +1,94 @@
+{
+  "kind": "Independent non-author AI mathematical, fidelity and clarity review",
+  "reviewer": "/root",
+  "proof_author": "/root/formalization_coverage",
+  "all_15_full_headers_and_bodies_read": true,
+  "source_pins": 245,
+  "actual_logs": 16,
+  "actual_axiom_reports": {
+    "AffineFKProof.normalized_copies_absolutelyContinuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.normalized_copies_entropy_contraction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.normalized_copies_entropy_jump_of_finite_information": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.normalized_copies_finite_entropy_jump": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.normalized_copies_finite_information_jump": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.normalized_copies_information_contraction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.ou_normalized_copies_information_jump": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.positive_time_dissipation_exponential_decay": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.positive_time_dissipation_gap_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.positive_time_dissipation_gap_finite_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.positive_time_dissipation_weighted_integral_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.positive_time_dissipation_weighted_tendsto_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.positive_time_integrated_identity_absolutelyContinuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.positive_time_shifted_weighted_integrated_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.positive_time_weighted_integrated_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "manifest_sha256": "2ed1815104e4356f0e8e7201b53cfdf7dad344f6eedff521db4a1e7a63317a48",
+  "review_sha256": "03721e56a2f44fb7e1e28e37a4e605ed832b749323172504b57dd3aceb09cc0f",
+  "defects_found": [],
+  "root_authored_endpoint_and_lower_bound_dependencies": "separately reviewed by non-author C/E; root aggregate and packet review separate",
+  "original_law_jump_domain": "positive n; literal isotropic actual LC probability density; actual CP upper bound; no assumed smoothness/LSC/dissipation",
+  "own_comparator_accepted": false,
+  "full_information_jump_source_proved": true,
+  "own_comparator_gate_pending": true,
+  "full_paper_verified": false
+}

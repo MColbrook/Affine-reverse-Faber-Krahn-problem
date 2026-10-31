@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/SobolevTruncation.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/SobolevTruncation.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.EntropyL2Closure
++public import AffineFK.ChafaiBrascampLieb.Analysis.EntropyL2Closure
+ public import Mathlib.Analysis.Calculus.BumpFunction.SmoothApprox
+ 
+ @[expose] public section

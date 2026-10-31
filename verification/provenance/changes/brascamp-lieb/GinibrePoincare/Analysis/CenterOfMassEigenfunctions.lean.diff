@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/CenterOfMassEigenfunctions.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CenterOfMassEigenfunctions.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.Generator
+-public import GinibrePoincare.Concrete.CenterOfMass
++public import AffineFK.ChafaiBrascampLieb.Concrete.Generator
++public import AffineFK.ChafaiBrascampLieb.Concrete.CenterOfMass
+ 
+ @[expose] public section
+ 

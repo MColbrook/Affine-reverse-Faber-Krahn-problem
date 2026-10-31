@@ -1,0 +1,61 @@
+{
+  "kind": "All pinned cached dependencies checked locally; only exact tracked internal non-Lean symlink forms restored",
+  "packages": [
+    {
+      "package": "mathlib",
+      "pinned_commit": "b63f6e8a68d220e3b3bc4f3792bb53650d375f24",
+      "tracked_clean": true
+    },
+    {
+      "package": "plausible",
+      "pinned_commit": "fb13df72ecefd8ddbf9291021d7f33a8673eb57b",
+      "tracked_clean": true
+    },
+    {
+      "package": "LeanSearchClient",
+      "pinned_commit": "29ff470276c725ae01505d55b17148c18fc7dfd3",
+      "tracked_clean": true
+    },
+    {
+      "package": "importGraph",
+      "pinned_commit": "10a2cfff285e1c7c2ebc49c0ba22cab0f3c58ee5",
+      "tracked_clean": true
+    },
+    {
+      "package": "proofwidgets",
+      "pinned_commit": "c643bbb3c24f8a25f9c14e3a6b1ceb13d01f3de1",
+      "tracked_clean": true
+    },
+    {
+      "package": "aesop",
+      "pinned_commit": "a90fbf7b02ff06a0deebf74088dff9e5fe02c9ea",
+      "tracked_clean": true
+    },
+    {
+      "package": "Qq",
+      "pinned_commit": "37b0ba0b26109cf9f9c541f0f9557e50cfa1a3b9",
+      "tracked_clean": true
+    },
+    {
+      "package": "batteries",
+      "pinned_commit": "33131f4fb10067cb3009bf4db615d9680c1ccd6b",
+      "tracked_clean": true
+    },
+    {
+      "package": "Cli",
+      "pinned_commit": "843844fa601dd56767b1eb22b7ada5b64d5e567a",
+      "tracked_clean": true
+    }
+  ],
+  "restored_links": [
+    {
+      "package": "batteries",
+      "path": "docs/README.md",
+      "original_relative_target": "../README.md",
+      "materialized_content_sha256": "b030c96a982ad6dd90b41c806876787fea4c405b32527d9ab4ea060bbc203aca",
+      "git_index": "120000 32d46ee883b58d6a383eed06eb98f33aa6530ded 0\tdocs/README.md"
+    }
+  ],
+  "no_Lean_source_changes": true,
+  "no_network_fetch": true
+}

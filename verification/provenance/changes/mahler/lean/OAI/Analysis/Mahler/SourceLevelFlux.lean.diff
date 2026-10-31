@@ -1,0 +1,18 @@
+--- lean/OAI/Analysis/Mahler/SourceLevelFlux.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceLevelFlux.lean
+@@ -1,7 +1,11 @@
+-import OAI.Analysis.Mahler.ReferenceSphere
+-import OAI.Analysis.Mahler.OpenExteriorNormalization
+-import OAI.Analysis.Mahler.LevelFace
+-import OAI.Analysis.Mahler.ComplexCoordinates
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ReferenceSphere
++public import AffineFK.OpenAIMahler.Analysis.Mahler.OpenExteriorNormalization
++public import AffineFK.OpenAIMahler.Analysis.Mahler.LevelFace
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ComplexCoordinates
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

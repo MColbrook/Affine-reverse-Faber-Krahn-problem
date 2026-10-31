@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GinibreGradientPhaseNorm.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreGradientPhaseNorm.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreWeakGradientPhase
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreWeakGradientPhase
+ 
+ @[expose] public section
+ 

@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/FullRadialLSIReduction.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/FullRadialLSIReduction.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.BlockMagnitudeLift
+-public import GinibrePoincare.Analysis.GaussianBlockLSI
++public import AffineFK.ChafaiBrascampLieb.Analysis.BlockMagnitudeLift
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianBlockLSI
+ 
+ @[expose] public section
+ 

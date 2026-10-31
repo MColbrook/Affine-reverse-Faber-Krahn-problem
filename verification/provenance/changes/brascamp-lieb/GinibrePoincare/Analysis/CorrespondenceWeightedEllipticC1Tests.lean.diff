@@ -1,0 +1,13 @@
+--- GinibrePoincare/Analysis/CorrespondenceWeightedEllipticC1Tests.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceWeightedEllipticC1Tests.lean
+@@ -1,7 +1,7 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticConvolution
+-public import GinibrePoincare.Analysis.WeakDerivativeMollification
+-public import GinibrePoincare.Analysis.LipschitzMollification
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticConvolution
++public import AffineFK.ChafaiBrascampLieb.Analysis.WeakDerivativeMollification
++public import AffineFK.ChafaiBrascampLieb.Analysis.LipschitzMollification
+ public import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+ @[expose] public section
+ open MeasureTheory Filter ContinuousLinearMap

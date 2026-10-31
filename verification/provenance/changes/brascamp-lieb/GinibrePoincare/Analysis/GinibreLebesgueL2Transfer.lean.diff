@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GinibreLebesgueL2Transfer.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreLebesgueL2Transfer.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreDensityBound
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreDensityBound
+ 
+ @[expose] public section
+ 

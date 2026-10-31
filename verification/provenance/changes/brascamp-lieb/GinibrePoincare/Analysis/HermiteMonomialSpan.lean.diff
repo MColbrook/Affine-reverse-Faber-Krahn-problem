@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/HermiteMonomialSpan.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/HermiteMonomialSpan.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.ComplexHermiteOrthogonality
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexHermiteOrthogonality
+ 
+ @[expose] public section
+ 

@@ -1,0 +1,18 @@
+{
+  "kind": "Independent non-author AI mathematical, fidelity and clarity review",
+  "reviewer": "/root",
+  "proof_author": "/root/palomar_requirements",
+  "all_new_46_headers_and_bodies_read": true,
+  "new_modules": 14,
+  "source_pins": 174,
+  "actual_final_build_logs": 14,
+  "actual_axiom_queries": 46,
+  "manifest_sha256": "e476e7e8287d18bc475ff573f4f131927ac35f781cac6be286e8e9ab00f2a8b9",
+  "review_sha256": "b25526aef4513019e7b0222bb46f952e5cfd6aba99ba85d57a8f4ce493417f7f",
+  "defects_found": [],
+  "preceding405_new_independent_full_body_review_claimed": false,
+  "exact_spectral_exponential_display_verified": false,
+  "own_comparator_accepted": false,
+  "full_M03_verified": false,
+  "full_paper_verified": false
+}

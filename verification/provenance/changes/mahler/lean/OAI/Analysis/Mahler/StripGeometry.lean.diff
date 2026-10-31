@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/StripGeometry.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/StripGeometry.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.StripSublevelTopology
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.StripSublevelTopology
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

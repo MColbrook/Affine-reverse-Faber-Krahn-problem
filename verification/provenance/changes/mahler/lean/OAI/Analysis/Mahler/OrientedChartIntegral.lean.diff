@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/OrientedChartIntegral.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/OrientedChartIntegral.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.ChartStokes
+-import Mathlib.MeasureTheory.Function.Jacobian
+-import Mathlib.LinearAlgebra.Determinant
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ChartStokes
++public import Mathlib.MeasureTheory.Function.Jacobian
++public import Mathlib.LinearAlgebra.Determinant
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SphereFluxIntegral.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SphereFluxIntegral.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.OrientedSphereDensity
+-import OAI.Analysis.Mahler.ReferenceSphere
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.OrientedSphereDensity
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ReferenceSphere
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

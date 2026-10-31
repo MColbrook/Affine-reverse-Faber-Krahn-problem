@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/HomogeneousFluxDifferentiation.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HomogeneousFluxDifferentiation.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.SphereFluxDifferentiation
+-import OAI.Analysis.Mahler.HomogeneousDensityVariation
+-import OAI.Analysis.Mahler.BoundaryJet
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereFluxDifferentiation
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousDensityVariation
++public import AffineFK.OpenAIMahler.Analysis.Mahler.BoundaryJet
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

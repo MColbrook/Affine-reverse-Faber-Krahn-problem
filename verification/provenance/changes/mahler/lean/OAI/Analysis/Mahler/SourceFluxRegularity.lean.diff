@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SourceFluxRegularity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceFluxRegularity.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ContinuousWedge
+-import OAI.Analysis.Mahler.SourceLevelFlux
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ContinuousWedge
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceLevelFlux
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

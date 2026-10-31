@@ -1,0 +1,9 @@
+--- GinibrePoincare/Analysis/CorrespondenceWeightedEllipticCutoffGradient.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceWeightedEllipticCutoffGradient.lean
+@@ -1,5 +1,5 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticLocalSobolev
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticLocalSobolev
+ @[expose] public section
+ open MeasureTheory Set Filter
+ open scoped ContDiff

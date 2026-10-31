@@ -1,0 +1,55 @@
+{
+  "reviewer": "/root/claim_inventory",
+  "review_kind": "independent AI source statement and proof-composition review",
+  "new_declarations_fully_read": [
+    "symmetric_body_eigenvalue_bound_of_scalar_covariance",
+    "uniform_symmetric_body_spectral_bound_of_covariance"
+  ],
+  "independent_source_review_complete": true,
+  "mathematical_defect_found": false,
+  "actual_pinned_source_build": {
+    "exit_code": 0,
+    "elapsed_seconds": 12.147
+  },
+  "scope": "Actual conditional scalar-restricted-Gaussian-covariance body bound, uniform in dimension and body for fixed c>0.",
+  "not_verified_by_this_review": [
+    "G05/position existence",
+    "full M01",
+    "full M02",
+    "strict positivity",
+    "simplicity",
+    "Stage33 generated Challenge",
+    "Stage33 Comparator acceptance"
+  ],
+  "proof_source_changes": false,
+  "pins": {
+    "AffineFK/SymmetricCovarianceSpectralBound.lean": {
+      "sha256": "cb2a3edf24799e765b81e6fc9f7ffe4de6e578c187253900fb7d32c44728bb50",
+      "bytes": 4270
+    },
+    "AffineFK/EvenLogConcaveGroundstate.lean": {
+      "sha256": "b5dc3bf68b46a7c9691a7da8c2c1c14b8efeca644b143a8bc41e4c446c6127c8",
+      "bytes": 5492
+    },
+    "AffineFK/GroundstateLogConcaveSpectralClosure.lean": {
+      "sha256": "f2a0e3fccc990b7c90aef48fa40fbc7fff1ecb08427ca38972776f19d8499d8c",
+      "bytes": 3014
+    },
+    "AffineFK/WhiteningSpectralClosure.lean": {
+      "sha256": "2836f8ef225a14a380c30d9cc7d60ff0a08227b408b04e63733a1423b9675726",
+      "bytes": 8483
+    },
+    "source/affine_reverse_faber_krahn.tex": {
+      "sha256": "1d30574bf6a09012c0492449d6860884c993b191837c9c0d2a9bd17080a3d0bc",
+      "bytes": 48048
+    },
+    "logs/branch_bochner/symmetric-covariance-spectral-bound-build-02.txt": {
+      "sha256": "77a6f2f59211bbffa6fba5a054aaded0cec02d6f1eaa919183c2135c22a13bd8",
+      "bytes": 209107
+    },
+    "audit/stage33_source_statement_review.md": {
+      "sha256": "5f9d1f41ce3365a4f7f2f655864a6bf027f42df69af5931e99ff193009fba463",
+      "bytes": 4877
+    }
+  }
+}

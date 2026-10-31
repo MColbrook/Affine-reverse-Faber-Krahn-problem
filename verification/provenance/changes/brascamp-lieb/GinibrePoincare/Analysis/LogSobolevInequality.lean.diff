@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/LogSobolevInequality.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/LogSobolevInequality.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.PolynomialEigenfunctions
+-public import GinibrePoincare.Analysis.GinibreEntropy
+-public import GinibrePoincare.Analysis.FullRadialLSIReduction
++public import AffineFK.ChafaiBrascampLieb.Analysis.PolynomialEigenfunctions
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreEntropy
++public import AffineFK.ChafaiBrascampLieb.Analysis.FullRadialLSIReduction
+ 
+ @[expose] public section
+ 

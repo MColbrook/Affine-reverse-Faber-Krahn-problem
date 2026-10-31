@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SourceTopCoordinates.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceTopCoordinates.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.SourceRawOrientation
+-import OAI.Analysis.Mahler.SourceCoordinateMeasure
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceRawOrientation
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceCoordinateMeasure
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

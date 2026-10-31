@@ -1,0 +1,20 @@
+--- lean/OAI/Analysis/Mahler/LogScalarJet.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/LogScalarJet.lean
+@@ -1,8 +1,12 @@
+-import OAI.Analysis.Mahler.LogUniform
+-import Mathlib.Analysis.Calculus.FDeriv.Mul
+-import Mathlib.Analysis.Calculus.FDeriv.Congr
+-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+-import Mathlib.Analysis.Normed.Module.FiniteDimension
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.LogUniform
++public import Mathlib.Analysis.Calculus.FDeriv.Mul
++public import Mathlib.Analysis.Calculus.FDeriv.Congr
++public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
++public import Mathlib.Analysis.Normed.Module.FiniteDimension
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/EntropyProductDecomposition.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/EntropyProductDecomposition.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreEntropy
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreEntropy
+ public import Mathlib.MeasureTheory.Integral.Prod
+ 
+ @[expose] public section

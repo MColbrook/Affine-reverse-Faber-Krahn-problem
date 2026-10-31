@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GaussianBlockRadialLaw.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianBlockRadialLaw.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.RadialGradientTransfer
+-public import GinibrePoincare.Analysis.GinibreRadialGamma
++public import AffineFK.ChafaiBrascampLieb.Analysis.RadialGradientTransfer
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreRadialGamma
+ 
+ @[expose] public section
+ 

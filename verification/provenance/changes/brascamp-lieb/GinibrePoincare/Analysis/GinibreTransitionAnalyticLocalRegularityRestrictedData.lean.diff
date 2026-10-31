@@ -1,0 +1,23 @@
+--- GinibrePoincare/Analysis/GinibreTransitionAnalyticLocalRegularityRestrictedData.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreTransitionAnalyticLocalRegularityRestrictedData.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreTransitionAnalyticLocalRegularityLocalizedData
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreTransitionAnalyticLocalRegularityLocalizedData
+ public import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
+ 
+ @[expose] public section
+@@ -25,9 +25,9 @@
+       ContDiff ℝ ∞ θ → HasCompactSupport θ →
+       (∫ x, θ x*g i x) = -(∫ x, fderiv ℝ θ x (b i)*(η x*u x)) := by
+   classical
+-  have hup : MemLp (U.indicator u) 2 (volume : Measure E) := (memLp_indicator_iff_restrict hUm).mpr hu
+-  have hhp : MemLp (U.indicator h) 2 (volume : Measure E) := (memLp_indicator_iff_restrict hUm).mpr hh
+-  have hFp (i) : MemLp (U.indicator (F i)) 2 (volume : Measure E) := (memLp_indicator_iff_restrict hUm).mpr (hF i)
++  have hup : MemLp (U.indicator u) 2 (volume : Measure E) := (memLp_indicator_iff_restrict hUm.nullMeasurableSet).mpr hu
++  have hhp : MemLp (U.indicator h) 2 (volume : Measure E) := (memLp_indicator_iff_restrict hUm.nullMeasurableSet).mpr hh
++  have hFp (i) : MemLp (U.indicator (F i)) 2 (volume : Measure E) := (memLp_indicator_iff_restrict hUm.nullMeasurableSet).mpr (hF i)
+   have heqp : ∀ θ : E → ℂ, ContDiff ℝ ∞ θ → HasCompactSupport θ → tsupport θ ⊆ U →
+       (∫ x, U.indicator u x*ginibreLocalRegularityLaplacian (fun i => b i) θ x) =
+         (∫ x, U.indicator h x*θ x)-∑ i, ∫ x, U.indicator (F i) x*ginibreLocalRegularityDirectional (b i) θ x := by

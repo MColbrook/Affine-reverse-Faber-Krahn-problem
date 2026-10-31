@@ -1,0 +1,21 @@
+--- GinibrePoincare/Analysis/NonQuadraticPotential.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/NonQuadraticPotential.lean
+@@ -1,12 +1,12 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.LogSobolevInequality
++public import AffineFK.ChafaiBrascampLieb.Analysis.LogSobolevInequality
+ public import Mathlib.Analysis.Normed.Module.Convex
+-public import GinibrePoincare.Analysis.GlobalPhaseAction
+-public import GinibrePoincare.Analysis.EquilibriumFactorization
+-public import GinibrePoincare.Analysis.NonQuadraticRadialConvexity
+-public import GinibrePoincare.Analysis.NonQuadraticSmoothPoincare
+-public import GinibrePoincare.Endgame.ConcreteTheoremOneNine
++public import AffineFK.ChafaiBrascampLieb.Analysis.GlobalPhaseAction
++public import AffineFK.ChafaiBrascampLieb.Analysis.EquilibriumFactorization
++public import AffineFK.ChafaiBrascampLieb.Analysis.NonQuadraticRadialConvexity
++public import AffineFK.ChafaiBrascampLieb.Analysis.NonQuadraticSmoothPoincare
++public import AffineFK.ChafaiBrascampLieb.Endgame.ConcreteTheoremOneNine
+ 
+ @[expose] public section
+ 

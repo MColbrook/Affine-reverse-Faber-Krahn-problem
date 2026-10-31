@@ -1,0 +1,20 @@
+--- lean/OAI/Analysis/Mahler/FiniteStrips.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/FiniteStrips.lean
+@@ -1,8 +1,12 @@
+-import Mathlib.Algebra.BigOperators.Ring.Finset
+-import Mathlib.Algebra.Order.BigOperators.Group.Finset
+-import Mathlib.Basic.Real.Basic
+-import Mathlib.Tactic.Linarith
+-import Mathlib.Tactic.Ring
++module
++
++public import Mathlib.Algebra.BigOperators.Ring.Finset
++public import Mathlib.Algebra.Order.BigOperators.Group.Finset
++public import Mathlib.Basic.Real.Basic
++public import Mathlib.Tactic.Linarith
++public import Mathlib.Tactic.Ring
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

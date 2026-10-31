@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/OpenHessian.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/OpenHessian.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.HolomorphicRegularity
+-import OAI.Analysis.Mahler.MassTarget
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HolomorphicRegularity
++public import AffineFK.OpenAIMahler.Analysis.Mahler.MassTarget
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ open Complex Matrix

@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/ActualFiniteStrips.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ActualFiniteStrips.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.FiniteStrips
+-import OAI.Analysis.Mahler.GlobalPlanarMonotonicity
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.FiniteStrips
++public import AffineFK.OpenAIMahler.Analysis.Mahler.GlobalPlanarMonotonicity
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

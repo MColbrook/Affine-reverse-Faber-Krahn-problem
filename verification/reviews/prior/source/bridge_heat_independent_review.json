@@ -1,0 +1,17 @@
+{
+  "kind": "Independent non-author AI mathematical, fidelity and clarity review",
+  "reviewer": "/root",
+  "proof_author": "/root/palomar_requirements",
+  "all_new_45_headers_and_bodies_read": true,
+  "new_modules": 11,
+  "source_pins": 120,
+  "actual_final_build_logs": 11,
+  "actual_axiom_queries": 45,
+  "manifest_sha256": "b1f360c1941334b288b783214bbf42cdffde2c7a1686ce6dffa3d03493a04f1f",
+  "review_sha256": "b991d8f675033ff2752dc88f89a04e42572ffc32012b502e0b021903cc2e01b1",
+  "mathematical_defects_found": [],
+  "attribution_clarification": "Moritz Doll authored Mathlib SmoothApprox Lp density; underlying approximation also uses Sebastien Gouezel and contributors.",
+  "preceding405_new_independent_full_body_review_claimed": false,
+  "own_comparator_accepted": false,
+  "full_paper_verified": false
+}

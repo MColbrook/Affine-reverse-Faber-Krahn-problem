@@ -1,0 +1,62 @@
+--- RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/TranslationEstimateH1.lean
++++ AffineFK/BenensonRellich/Analysis/FunctionalSpaces/Sobolev/Euclidean/TranslationEstimateH1.lean
+@@ -1,5 +1,12 @@
+-import RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.TranslationEstimateL2
+-import Mathlib.Topology.Order.OrderClosed
++module
++
++public import AffineFK.BenensonRellich.Analysis.FunctionalSpaces.Sobolev.Euclidean.TranslationEstimateL2
++public import Mathlib.Topology.Order.OrderClosed
++
++@[expose] public section
++
++set_option autoImplicit false
++set_option backward.isDefEq.respectTransparency false
+ 
+ /-
+ Copyright (c) 2026 Adam Benenson. All rights reserved.
+@@ -33,10 +40,7 @@
+ 
+ variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E]
+ 
+-local instance instMeasurableSpaceE_SobolevEuclideanTranslationEstimateH1 :
+-    MeasurableSpace E := borel E
+-local instance instBorelSpaceE_SobolevEuclideanTranslationEstimateH1 :
+-    BorelSpace E := ⟨rfl⟩
++variable [MeasurableSpace E] [BorelSpace E]
+ local instance instOpensMeasurableSpaceE_SobolevEuclideanTranslationEstimateH1 :
+     OpensMeasurableSpace E := by
+   infer_instance
+@@ -73,19 +77,19 @@
+       have hsub :
+           Continuous fun v : V =>
+             translateL2 (μ := μ) (F := ℝ) a v.1 - v.1 := by
+-        simpa [sub_eq_add_neg] using htr.sub hfst
+-      simpa using (continuous_norm.comp hsub)
++        simpa [sub_eq_add_neg] using! htr.sub hfst
++      simpa using! (continuous_norm.comp hsub)
+     have hg :
+         Continuous fun v : V =>
+           ‖a‖ * ‖v.2‖ := by
+       have hsnd : Continuous fun v : V => v.2 := continuous_snd
+       have hnorm : Continuous fun v : V => ‖v.2‖ := continuous_norm.comp hsnd
+-      simpa [mul_assoc] using (continuous_const.mul hnorm)
++      simpa [mul_assoc] using! (continuous_const.mul hnorm)
+     exact isClosed_le hf hg
+   have hRange : (LinearMap.range (graph (μ := μ) (E := E)) : Set V) ⊆ S := by
+     rintro v ⟨f, rfl⟩
+     -- Reduce to the `C¹_c` estimate.
+-    simpa [S, graph, toL2Linear, toL2GradLinear] using
++    simpa [S, graph, toL2Linear, toL2GradLinear] using!
+       norm_translateL2_sub_toL2_le (μ := μ) (E := E) a f
+   have hClosure :
+       closure (LinearMap.range (graph (μ := μ) (E := E)) : Set V) ⊆ S :=
+@@ -108,7 +112,7 @@
+     exact hu1
+   have huS : (u : V) ∈ S := hClosure hu
+   -- Unpack membership in `S` and rewrite in terms of the bundled maps `h1ToL2` and `h1ToL2Grad`.
+-  simpa [S, V, h1ToL2, h1ToL2Grad] using huS
++  simpa [S, V, h1ToL2, h1ToL2Grad] using! huS
+ 
+ end
+ 

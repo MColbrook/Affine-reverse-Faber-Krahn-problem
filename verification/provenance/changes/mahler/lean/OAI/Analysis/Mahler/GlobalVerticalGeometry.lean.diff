@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/GlobalVerticalGeometry.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/GlobalVerticalGeometry.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.FiberEndpoint
+-import OAI.Analysis.Mahler.ConformalInverse
+-import Mathlib.Topology.Order.LeftRight
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.FiberEndpoint
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ConformalInverse
++public import Mathlib.Topology.Order.LeftRight
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

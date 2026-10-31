@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/PlanarSymmetry.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/PlanarSymmetry.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.PlanarDensity
+-import Mathlib.Analysis.Calculus.Deriv.Star
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PlanarDensity
++public import Mathlib.Analysis.Calculus.Deriv.Star
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

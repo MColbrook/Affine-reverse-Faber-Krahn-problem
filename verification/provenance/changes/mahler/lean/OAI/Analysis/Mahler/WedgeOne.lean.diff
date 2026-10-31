@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/WedgeOne.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/WedgeOne.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.WedgeAssociativity
+-import Mathlib.LinearAlgebra.Alternating.Uncurry.Fin
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.WedgeAssociativity
++public import Mathlib.LinearAlgebra.Alternating.Uncurry.Fin
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

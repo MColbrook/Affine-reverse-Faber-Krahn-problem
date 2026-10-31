@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GaussianLSIReal.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GaussianLSIReal.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.BernoulliBinomialBridge
+-public import GinibrePoincare.Analysis.GaussianSobolevApproximation
++public import AffineFK.ChafaiBrascampLieb.Analysis.BernoulliBinomialBridge
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianSobolevApproximation
+ 
+ @[expose] public section
+ 

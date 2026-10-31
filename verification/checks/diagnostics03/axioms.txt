@@ -1,0 +1,14 @@
+COMMAND: ["/home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake", "env", "lean", "AxiomAudit.lean"]
+CONFIG_SHA256: 8f067ec60c3a994daba8faeaaad85bfff96ae7e39623ddf29934d8047673a6ac
+CHALLENGE_SHA256: f1e54850c2a7e20d96f5c26af48ec68dfa208d718837c6f91e966444172d01c1
+SOLUTION_SHA256: 40e7bf57f72e19da664b408a95ab9fdca52caf883d9adf7cc351f7c50708e659
+SOURCES_SHA256: 8f47b864010173ab9bd069e432191e032b8ff683f103cf81aa9703c5a4233a24
+warning: batteries: repository has local changes:
+  /dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/batteries
+'AffineFK.affine_reverse_faber_krahn_principal_results' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AffineFKProof.affine_reverse_faber_krahn_main_theorems' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AffineFKProof.information_spectrum_logConcaveMeasure_uniform_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+EXIT_CODE: 0
+ELAPSED_SECONDS: 9.353

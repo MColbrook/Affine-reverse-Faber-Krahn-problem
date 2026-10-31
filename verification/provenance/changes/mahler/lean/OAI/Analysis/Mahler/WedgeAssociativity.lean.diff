@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/WedgeAssociativity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/WedgeAssociativity.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.WedgeDecomposition
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.WedgeDecomposition
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

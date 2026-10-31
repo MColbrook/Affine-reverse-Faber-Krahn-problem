@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/GlobalPlanarMonotonicity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/GlobalPlanarMonotonicity.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.GlobalPlanarBound
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.GlobalPlanarBound
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

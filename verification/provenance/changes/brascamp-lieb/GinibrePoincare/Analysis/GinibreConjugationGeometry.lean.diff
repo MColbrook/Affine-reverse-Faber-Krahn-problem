@@ -1,0 +1,14 @@
+--- GinibrePoincare/Analysis/GinibreConjugationGeometry.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreConjugationGeometry.lean
+@@ -1,8 +1,8 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.HolomorphicVandermondeL2Closure
+-public import GinibrePoincare.Analysis.GlobalPhaseAction
+-public import GinibrePoincare.Analysis.L2RepresentativeBridges
++public import AffineFK.ChafaiBrascampLieb.Analysis.HolomorphicVandermondeL2Closure
++public import AffineFK.ChafaiBrascampLieb.Analysis.GlobalPhaseAction
++public import AffineFK.ChafaiBrascampLieb.Analysis.L2RepresentativeBridges
+ 
+ @[expose] public section
+ 

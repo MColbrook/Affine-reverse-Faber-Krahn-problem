@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/SourceLogC2.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceLogC2.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.HolomorphicLogC2
+-import OAI.Analysis.Mahler.SourceRescaling
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HolomorphicLogC2
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceRescaling
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

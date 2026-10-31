@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/WedgeCalculus.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/WedgeCalculus.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.WedgeAlgebra
+-import Mathlib.Analysis.Calculus.Deriv.Mul
+-import Mathlib.Analysis.Calculus.Deriv.Add
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.WedgeAlgebra
++public import Mathlib.Analysis.Calculus.Deriv.Mul
++public import Mathlib.Analysis.Calculus.Deriv.Add
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

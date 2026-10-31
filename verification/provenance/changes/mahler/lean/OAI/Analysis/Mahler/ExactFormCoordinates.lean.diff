@@ -1,0 +1,18 @@
+--- lean/OAI/Analysis/Mahler/ExactFormCoordinates.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ExactFormCoordinates.lean
+@@ -1,7 +1,11 @@
+-import OAI.Analysis.Mahler.SphereVolumeOrientation
+-import OAI.Analysis.Mahler.SphereTransport
+-import OAI.Analysis.Mahler.FormStokes
+-import Mathlib.Analysis.Calculus.DifferentialForm.Basic
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereVolumeOrientation
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereTransport
++public import AffineFK.OpenAIMahler.Analysis.Mahler.FormStokes
++public import Mathlib.Analysis.Calculus.DifferentialForm.Basic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

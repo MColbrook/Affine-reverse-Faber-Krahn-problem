@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/HolomorphicLogC2.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HolomorphicLogC2.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.LogNormSquare
+-import OAI.Analysis.Mahler.HolomorphicRegularity
+-import Mathlib.Analysis.InnerProductSpace.PiL2
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.LogNormSquare
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HolomorphicRegularity
++public import Mathlib.Analysis.InnerProductSpace.PiL2
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

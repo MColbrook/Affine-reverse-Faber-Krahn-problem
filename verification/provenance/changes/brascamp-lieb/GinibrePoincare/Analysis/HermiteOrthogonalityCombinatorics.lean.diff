@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/HermiteOrthogonalityCombinatorics.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/HermiteOrthogonalityCombinatorics.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.MultivariateHermiteIntegrability
++public import AffineFK.ChafaiBrascampLieb.Analysis.MultivariateHermiteIntegrability
+ 
+ @[expose] public section
+ 

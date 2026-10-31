@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/LebesgueL2Convolution.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/LebesgueL2Convolution.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.LebesgueL2Mollification
++public import AffineFK.ChafaiBrascampLieb.Analysis.LebesgueL2Mollification
+ public import Mathlib.Analysis.Calculus.ContDiff.Convolution
+ public import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
+ 

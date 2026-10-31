@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/HomogeneousDeformation.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HomogeneousDeformation.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.SourceHomogeneous
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceHomogeneous
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

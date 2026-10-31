@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/ExteriorDirectional.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ExteriorDirectional.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.ExteriorCoordinates
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ExteriorCoordinates
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

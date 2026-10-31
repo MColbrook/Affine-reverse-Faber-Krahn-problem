@@ -1,0 +1,27 @@
+{
+  "kind": "Independent AI primary statement/data/provenance and exact unchanged mathematical-body port review",
+  "reviewer": "/root",
+  "port_author": "/root/formalization_coverage",
+  "upstream_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "original_proof_attribution": "Unnamed internal OpenAI model, as attributed by the primary upstream repository",
+  "raw_Git_blobs_independently_verified": 229,
+  "complete_port_bodies_byte_unchanged": 229,
+  "proof_body_edits": 0,
+  "source_probe_pins": 230,
+  "actual_source_build_exit": 0,
+  "actual_axiom_queries": 2,
+  "actual_allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_manifest_sha256": "77bd819df303eed1e961753eef2d3958ee39d380b5f59a90917a2fa88509f816",
+  "review_sha256": "e2dccbf13639246f0c18666cb9c62b981a7efd4a47ee01b7c64c6af95cee41bf",
+  "independent_static_review_sha256": "c030b5b6709ecd831ce506e074757ecb8d4251883120a9735ffea6313ce9d3ed",
+  "manual_all_1565_upstream_proof_review_claimed": false,
+  "defects_found": [],
+  "upstream_disabled_kernel_mode_inherited": false,
+  "own_comparator_accepted": false,
+  "unconditional_G05_or_M01_verified": false,
+  "full_paper_verified": false
+}

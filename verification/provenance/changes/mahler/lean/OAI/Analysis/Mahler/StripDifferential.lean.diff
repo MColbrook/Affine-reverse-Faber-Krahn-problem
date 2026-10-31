@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/StripDifferential.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/StripDifferential.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.ActualFiniteStrips
+-import OAI.Analysis.Mahler.PlanarRegularity
+-import Mathlib.LinearAlgebra.Matrix.ToLin
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ActualFiniteStrips
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PlanarRegularity
++public import Mathlib.LinearAlgebra.Matrix.ToLin
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

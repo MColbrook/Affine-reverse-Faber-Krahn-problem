@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/UniformError.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/UniformError.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.ErrorBound
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ErrorBound
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

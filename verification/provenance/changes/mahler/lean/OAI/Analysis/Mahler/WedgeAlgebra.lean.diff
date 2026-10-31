@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/WedgeAlgebra.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/WedgeAlgebra.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.HorizontalForms
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HorizontalForms
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

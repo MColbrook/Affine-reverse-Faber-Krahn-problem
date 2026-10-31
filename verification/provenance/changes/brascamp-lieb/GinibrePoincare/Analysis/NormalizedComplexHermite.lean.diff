@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/NormalizedComplexHermite.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/NormalizedComplexHermite.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.ComplexHermiteLowering
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexHermiteLowering
+ public import Mathlib.Analysis.SpecialFunctions.Sqrt
+ public import Mathlib.Tactic.FieldSimp
+ 

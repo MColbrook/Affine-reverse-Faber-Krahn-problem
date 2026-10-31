@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/HemisphereFlux.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HemisphereFlux.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.HemisphereArea
+-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HemisphereArea
++public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/RawClosedProduct.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RawClosedProduct.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.RawAlternatingCalculus
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RawAlternatingCalculus
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

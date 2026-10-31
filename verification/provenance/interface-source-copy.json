@@ -1,0 +1,175 @@
+{
+  "kind": "AI packaging design and source-fidelity proposal; new packet UNCHECKED",
+  "author": "/root/claim_inventory",
+  "target": "AffineFK.affine_reverse_faber_krahn_principal_results",
+  "clause_grouping": "(M01 AND M02) AND M03",
+  "claims": [
+    "M01",
+    "M02",
+    "M03"
+  ],
+  "mathematical_statement_weakened": false,
+  "new_mathematical_lemma": false,
+  "complete_fixed_owner_count": 29,
+  "complete_block_copies": [
+    {
+      "names": [
+        "SobolevAmbient",
+        "testFunctionGradient"
+      ],
+      "accepted_canonical_origin": "AffineFK/MainTheoremsResults/Challenge.lean",
+      "lf_normalized_complete_block_sha256": "1bffa56284f3a1a975ced576d8beac182df011fe8697092e280a5bb190f49c28"
+    },
+    {
+      "names": [
+        "gaussianPosition_matrix_det",
+        "gaussianPositionSLLinear"
+      ],
+      "accepted_canonical_origin": "AffineFK/MainTheoremsResults/Challenge.lean",
+      "lf_normalized_complete_block_sha256": "0f5b7b1ba2062dd2f9f85ed550988134c63234c497a9ee92f66de558b551805d"
+    },
+    {
+      "names": [
+        "GaussianPositionMaximal"
+      ],
+      "accepted_canonical_origin": "AffineFK/MainTheoremsResults/Challenge.lean",
+      "lf_normalized_complete_block_sha256": "3c4d8ea825ccccd2e105dead8460bd367d281141a03e646db2bab953504d4de4"
+    },
+    {
+      "names": [
+        "unweightedTestToL2",
+        "unweightedSmoothPair",
+        "unweightedSobolevGraph",
+        "unweightedValue",
+        "unweightedGradient",
+        "unweighted_smooth_pair_mem"
+      ],
+      "accepted_canonical_origin": "AffineFK/MainTheoremsResults/Challenge.lean",
+      "lf_normalized_complete_block_sha256": "9f7511dc2e911e2eca092328b72bd2a547c085a321762a0bc6d98ffb68ed4095"
+    },
+    {
+      "names": [
+        "dirichletTestToTop",
+        "dirichletTestToH1",
+        "dirichletSobolev",
+        "dirichletValue",
+        "dirichletGradient"
+      ],
+      "accepted_canonical_origin": "AffineFK/MainTheoremsResults/Challenge.lean",
+      "lf_normalized_complete_block_sha256": "41f2218139d9e334559d74cae4090245db61cfeacdf5788f6c509afb86b4481e"
+    },
+    {
+      "names": [
+        "dirichletRayleigh",
+        "dirichletEigenvalue"
+      ],
+      "accepted_canonical_origin": "AffineFK/MainTheoremsResults/Challenge.lean",
+      "lf_normalized_complete_block_sha256": "f0270310569e658c5609178394b7fd198f623af8edede09f22b3fa9326bfd502"
+    },
+    {
+      "names": [
+        "UniformSymmetricGaussianDirichletBound"
+      ],
+      "accepted_canonical_origin": "AffineFK/MainTheoremsResults/Challenge.lean",
+      "lf_normalized_complete_block_sha256": "ab0aca1acca0c3dfac629c68a79d0db695dcfb58d3089158559fc5f7c264b84a"
+    },
+    {
+      "names": [
+        "IsLogConcaveMeasure"
+      ],
+      "accepted_canonical_origin": "AffineFK/AdditionalOriginalResults/Challenge.lean",
+      "lf_normalized_complete_block_sha256": "deb5e2df25002739494a7f003bf190f04ee47c4b1d2221a260d5b36ae30d9f78"
+    },
+    {
+      "names": [
+        "densityMeasure"
+      ],
+      "accepted_canonical_origin": "AffineFK/AdditionalOriginalResults/Challenge.lean",
+      "lf_normalized_complete_block_sha256": "564c155efad4a2b845587cc225d556679335c61791d0fa1ee9b5466422473f18"
+    },
+    {
+      "names": [
+        "sqrtDensitySobolev",
+        "fisherInformation",
+        "relativeFisherInformation"
+      ],
+      "accepted_canonical_origin": "AffineFK/AdditionalOriginalResults/Challenge.lean",
+      "lf_normalized_complete_block_sha256": "4125824e024ff711ce764cdc6ae071afbf154d8aafce99f88541f1a4cca85e44"
+    },
+    {
+      "names": [
+        "canonicalLebesgueDensity",
+        "relativeFisherMeasure"
+      ],
+      "accepted_canonical_origin": "AffineFK/AdditionalOriginalResults/Challenge.lean",
+      "lf_normalized_complete_block_sha256": "2bf1518d22f98d738770b2559ed4db89727b9ba149b4cbd69bd70609bf5b13c6"
+    },
+    {
+      "names": [
+        "poincare_euclidean_completeSpace",
+        "AdmissiblePoincareConstant",
+        "poincareConstant"
+      ],
+      "accepted_canonical_origin": "AffineFK/AdditionalOriginalResults/Challenge.lean",
+      "lf_normalized_complete_block_sha256": "fa19751048dce69a3457e79daee9da02dd16b4a00c71c5f6752e57012895b486"
+    }
+  ],
+  "challenge_benchmark_holes": 1,
+  "solution_holes": 0,
+  "definition_holes": [],
+  "accepted_clause_origins": {
+    "M01+M02": "AffineFK/MainTheoremsResults/Challenge.lean",
+    "M03": "AffineFK/AdditionalOriginalResults/Challenge.lean:first clause"
+  },
+  "source_proof_endpoints": [
+    "AffineFK.MainTheorems",
+    "AffineFK.InformationSpectrumLogConcaveMeasure"
+  ],
+  "static_proof_modules": 992,
+  "actual_combined_packet_compiled": false,
+  "actual_combined_TYPE_comparison": false,
+  "actual_combined_axiom_audit": false,
+  "actual_combined_Comparator": false,
+  "submission_or_GitHub_interaction": false,
+  "full_manuscript_verified": false,
+  "files": {
+    "Challenge.lean": {
+      "sha256": "f1e54850c2a7e20d96f5c26af48ec68dfa208d718837c6f91e966444172d01c1",
+      "raw_bytes": 22148,
+      "physical_lines": 327
+    },
+    "Solution.lean": {
+      "sha256": "40e7bf57f72e19da664b408a95ab9fdca52caf883d9adf7cc351f7c50708e659",
+      "raw_bytes": 22409,
+      "physical_lines": 331
+    },
+    "AxiomAudit.lean": {
+      "sha256": "ae9b8510fa4bb76d5397732612b1c72644ddbc8d9199d1b8f4fedb913897d459",
+      "raw_bytes": 98,
+      "physical_lines": 3
+    },
+    "comparator.json": {
+      "sha256": "cc5393783e0205e982a32ea7cd502d004be0ef3a17f83320f48d88a382e27fe7",
+      "raw_bytes": 268,
+      "physical_lines": 13
+    },
+    "static_proof_source_manifest.json": {
+      "sha256": "55d3fe032b1fdc6fb77265fad7f917477a60ef380dad7cef6d24c3e3cb3f9465",
+      "raw_bytes": 126981,
+      "physical_lines": 1010
+    }
+  },
+  "accepted_input_pins": {
+    "AffineFK/MainTheoremsResults/Challenge.lean": "48ec40a745ccd3948e5d9d5c1e59e57865c21df1f463fd3a8a8bcfde6ce60bc7",
+    "AffineFK/AdditionalOriginalResults/Challenge.lean": "90063d93437e66c9c7bae2bb363c34085046af51b24e6fa458e28635cef65eb2",
+    "AffineFK/MainTheoremsResults/Solution.lean": "389b4eed3eee8365a494a36b010a91795f291023d91ddf8f4746aadbcd6193b2",
+    "AffineFK/AdditionalOriginalResults/Solution.lean": "cd51d97a3fd3d24aeeabd4b284e576541171c263389ee479adf4247d30c8d5e0",
+    "AffineFK/MainTheorems.lean": "79e7f75588806e79d357b6792b569651ee024ce5318cecc6bbaab4f10faedf40",
+    "AffineFK/InformationSpectrumLogConcaveMeasure.lean": "bfbf56af1c2830f7332be8a14f4382ccd97327dad20dd34b4e8748d34887a457",
+    "audit/stage35_verification.json": "e75f46af1c41a44e6d15f07166a6279fd77df3666b56fed4ed4f1a3c6dc07ba3",
+    "audit/stage36_verification.json": "65932fa0e2b39e685e8c2ee0a28bf4337154e7f859edd9ca10951a6df61a59f5",
+    "audit/principal_manuscript_lean_correspondence_review.md": "c267a2b82b5e926b491346d2f15e024f3eadbefa71b7e93f4fc5e82224862c16",
+    "audit/claim_inventory.json": "20988714f811ab8b56ac528e9f009d3f9907a61aba85400b1c47288a394407b0",
+    "source/affine_reverse_faber_krahn.tex": "1d30574bf6a09012c0492449d6860884c993b191837c9c0d2a9bd17080a3d0bc"
+  }
+}

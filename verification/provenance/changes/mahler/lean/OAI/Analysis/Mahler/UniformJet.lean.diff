@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/UniformJet.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/UniformJet.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.RescaledHolomorphic
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RescaledHolomorphic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

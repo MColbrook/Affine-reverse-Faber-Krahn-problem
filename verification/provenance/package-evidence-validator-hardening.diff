@@ -1,0 +1,26 @@
+--- verification/provenance/precheck-package-checker.py.txt
++++ scripts/check_package.py
+@@ -85,8 +85,22 @@
+         certificate = json.loads((ROOT / "verification/certificate.json").read_text())
+         assert certificate["actual_comparator_exit"] == 0
+         assert certificate["sandbox_disabled"] is False
+-        assert len(certificate["kernel_acceptance_labels"]) == 6
++        expected_labels = {"Lean paranoid kernel", "lean4lean kernel", "nanoda kernel",
++                           "con-leche kernel", "con-ron kernel", "Lean default kernel"}
++        labels = certificate["kernel_acceptance_labels"]
++        assert len(labels) == 6 and set(labels) == expected_labels
+         assert certificate["selected_theorem"] == TARGET
++        raw = (ROOT / certificate["comparator_log"]).read_text(encoding="utf-8")
++        assert re.findall(r"^EXIT_CODE: (\d+)$", raw, re.M) == ["0"]
++        assert "Your solution is okay!" in raw and "PANIC" not in raw
++        assert "--inadvisably-no-sandbox" not in raw and "Sandbox disabled" not in raw
++        raw_labels = re.findall(r"^(.+ kernel) accepts the solution$", raw, re.M)
++        assert raw_labels == labels
++        for tag, name in [("CONFIG", "comparator.json"), ("CHALLENGE", "Challenge.lean"),
++                          ("SOLUTION", "Solution.lean"), ("SOURCES", "verification/source-sha256.json")]:
++            assert tag+"_SHA256: "+sha(ROOT / name) in raw
++        for name, pin in certificate["file_sha256"].items():
++            assert sha(ROOT / name) == pin, name
+         assert metadata["verification"]["new_combined_package_acceptance_claimed"] is True
+         recorded = json.loads((ROOT / "verification/payload-sha256.json").read_text())
+         current = {p.relative_to(ROOT).as_posix():sha(p) for p in files

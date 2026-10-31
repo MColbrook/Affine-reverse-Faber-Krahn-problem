@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/SourceRealExterior.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceRealExterior.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.SourceFullExterior
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceFullExterior
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

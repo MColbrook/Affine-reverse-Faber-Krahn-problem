@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/CovectorVolume.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/CovectorVolume.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.WedgeAlgebra
+-import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.WedgeAlgebra
++public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

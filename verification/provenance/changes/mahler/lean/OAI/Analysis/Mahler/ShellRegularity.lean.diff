@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/ShellRegularity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ShellRegularity.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.CoordinateAnnulus
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.CoordinateAnnulus
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

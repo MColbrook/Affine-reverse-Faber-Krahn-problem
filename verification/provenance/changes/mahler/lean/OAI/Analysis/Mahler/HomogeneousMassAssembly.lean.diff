@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/HomogeneousMassAssembly.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HomogeneousMassAssembly.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.SourceRadiusFlux
+-import OAI.Analysis.Mahler.SpecialSourceMass
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceRadiusFlux
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SpecialSourceMass
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

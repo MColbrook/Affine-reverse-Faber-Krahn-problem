@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/PowerTransgression.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/PowerTransgression.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.ClosedWedgePowers
+-import OAI.Analysis.Mahler.PairExteriorBridge
+-import OAI.Analysis.Mahler.HomogeneousVariationCoefficient
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ClosedWedgePowers
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PairExteriorBridge
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousVariationCoefficient
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

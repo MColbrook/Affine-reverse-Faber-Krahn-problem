@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/StripSublevelTopology.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/StripSublevelTopology.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.StripCompactSublevels
+-import Mathlib.LinearAlgebra.FiniteDimensional.Lemmas
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.StripCompactSublevels
++public import Mathlib.LinearAlgebra.FiniteDimensional.Lemmas
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

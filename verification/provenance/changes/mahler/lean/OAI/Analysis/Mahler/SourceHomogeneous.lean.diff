@@ -1,0 +1,18 @@
+--- lean/OAI/Analysis/Mahler/SourceHomogeneous.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceHomogeneous.lean
+@@ -1,7 +1,11 @@
+-import OAI.Analysis.Mahler.ExteriorFlux
+-import OAI.Analysis.Mahler.HorizontalForms
+-import OAI.Analysis.Mahler.MassTarget
+-import Mathlib.Analysis.Analytic.Polynomial
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ExteriorFlux
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HorizontalForms
++public import AffineFK.OpenAIMahler.Analysis.Mahler.MassTarget
++public import Mathlib.Analysis.Analytic.Polynomial
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

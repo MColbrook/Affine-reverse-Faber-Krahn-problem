@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/KostlanGammaLaw.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/KostlanGammaLaw.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.KostlanProductLaw
+-public import GinibrePoincare.Analysis.HomogeneousRadialMeasure
++public import AffineFK.ChafaiBrascampLieb.Analysis.KostlanProductLaw
++public import AffineFK.ChafaiBrascampLieb.Analysis.HomogeneousRadialMeasure
+ public import Mathlib.LinearAlgebra.Complex.FiniteDimensional
+ 
+ @[expose] public section

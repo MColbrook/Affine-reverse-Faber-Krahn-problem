@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/GlobalFiberParametrization.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/GlobalFiberParametrization.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.GlobalVerticalGeometry
+-import OAI.Analysis.Mahler.FiberPreimageEndpoint
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.GlobalVerticalGeometry
++public import AffineFK.OpenAIMahler.Analysis.Mahler.FiberPreimageEndpoint
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

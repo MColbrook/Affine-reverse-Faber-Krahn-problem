@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/HermiteWirtinger.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/HermiteWirtinger.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.MultivariateComplexHermite
+-public import GinibrePoincare.Concrete.Wirtinger
++public import AffineFK.ChafaiBrascampLieb.Analysis.MultivariateComplexHermite
++public import AffineFK.ChafaiBrascampLieb.Concrete.Wirtinger
+ public import Mathlib.Analysis.Calculus.FDeriv.Mul
+ public import Mathlib.Analysis.Calculus.FDeriv.Pow
+ public import Mathlib.Analysis.Calculus.FDeriv.Pi

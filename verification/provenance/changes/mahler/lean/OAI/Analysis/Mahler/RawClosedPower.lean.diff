@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/RawClosedPower.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RawClosedPower.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.RawClosedProduct
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RawClosedProduct
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

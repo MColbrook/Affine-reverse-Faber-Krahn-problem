@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/MultivariateHermiteIntegrability.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/MultivariateHermiteIntegrability.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.ComplexHermiteOrthogonality
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexHermiteOrthogonality
+ public import Mathlib.MeasureTheory.Function.L2Space
+ public import Mathlib.MeasureTheory.Integral.Pi
+ 

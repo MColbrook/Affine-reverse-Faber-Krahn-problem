@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/GinibreSmoothDistributionalGradient.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreSmoothDistributionalGradient.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreWeakSobolevMultipliers
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreWeakSobolevMultipliers
+ public import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+ 
+ @[expose] public section

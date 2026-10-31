@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/SphereNormalization.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SphereNormalization.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.SphereForms
+-import Mathlib.MeasureTheory.Constructions.HaarToSphere
+-import Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereForms
++public import Mathlib.MeasureTheory.Constructions.HaarToSphere
++public import Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

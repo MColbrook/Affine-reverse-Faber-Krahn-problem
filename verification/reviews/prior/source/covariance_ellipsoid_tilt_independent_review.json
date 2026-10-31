@@ -1,0 +1,16 @@
+{
+  "all_13_headers_and_bodies_read": true,
+  "source_manifest_sha256": "d596b92448483511624fb10b8b25a5881f0c04a1cca55cd0691bd25471b72370",
+  "source_pins": 366,
+  "new_definitions": 2,
+  "new_theorems": 11,
+  "actual_axiom_queries": 13,
+  "universal_small_determinant_input_not_inferred": true,
+  "kind": "Independent non-author AI complete mathematical/fidelity/clarity review",
+  "reviewer": "/root",
+  "proof_author": "/root/palomar_requirements",
+  "review_sha256": "79ca8f7382574713d7bd47e0c6de20016b0136e117c305c4ec86874d87e3184d",
+  "defects_found": [],
+  "own_comparator_accepted": false,
+  "full_paper_verified": false
+}

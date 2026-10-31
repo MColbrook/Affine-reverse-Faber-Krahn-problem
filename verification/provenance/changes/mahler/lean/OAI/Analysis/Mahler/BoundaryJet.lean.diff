@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/BoundaryJet.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/BoundaryJet.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.DilationTransport
+-import OAI.Analysis.Mahler.WedgeCalculus
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.DilationTransport
++public import AffineFK.OpenAIMahler.Analysis.Mahler.WedgeCalculus
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

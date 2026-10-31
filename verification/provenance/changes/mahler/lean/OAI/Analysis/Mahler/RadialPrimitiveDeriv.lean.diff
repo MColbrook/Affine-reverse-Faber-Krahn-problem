@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/RadialPrimitiveDeriv.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RadialPrimitiveDeriv.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.FiberHeight
+-import OAI.Analysis.Mahler.FiberPrimitive
+-import Mathlib.Analysis.Calculus.Deriv.Inverse
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.FiberHeight
++public import AffineFK.OpenAIMahler.Analysis.Mahler.FiberPrimitive
++public import Mathlib.Analysis.Calculus.Deriv.Inverse
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

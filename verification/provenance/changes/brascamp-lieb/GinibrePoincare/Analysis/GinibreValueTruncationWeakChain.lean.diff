@@ -1,0 +1,16 @@
+--- GinibrePoincare/Analysis/GinibreValueTruncationWeakChain.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreValueTruncationWeakChain.lean
+@@ -1,9 +1,9 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreValueTruncationChainLimits
+-public import GinibrePoincare.Analysis.GinibreWeightedRadialInteriorMollification
+-public import GinibrePoincare.Analysis.GinibreWeakGradientSupport
+-public import GinibrePoincare.Analysis.SmoothTestLocalization
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreValueTruncationChainLimits
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreWeightedRadialInteriorMollification
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreWeakGradientSupport
++public import AffineFK.ChafaiBrascampLieb.Analysis.SmoothTestLocalization
+ 
+ @[expose] public section
+ 

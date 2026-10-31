@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/ConformalRadialRegularity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ConformalRadialRegularity.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.VerticalRadius
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.VerticalRadius
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

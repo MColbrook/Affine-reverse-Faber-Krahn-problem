@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/ComplexStripMap.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ComplexStripMap.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.StripVolume
+-import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.StripVolume
++public import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

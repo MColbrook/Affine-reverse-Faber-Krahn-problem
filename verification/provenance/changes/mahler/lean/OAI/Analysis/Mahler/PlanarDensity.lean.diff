@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/PlanarDensity.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/PlanarDensity.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ActualVerticalPrimitive
+-import Mathlib.Analysis.Calculus.FDeriv.Analytic
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ActualVerticalPrimitive
++public import Mathlib.Analysis.Calculus.FDeriv.Analytic
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,12 @@
+--- GinibrePoincare/Concrete/MeasureModel.lean
++++ AffineFK/ChafaiBrascampLieb/Concrete/MeasureModel.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.Weights
+-public import GinibrePoincare.Concrete.GaussianProbability
++public import AffineFK.ChafaiBrascampLieb.Concrete.Weights
++public import AffineFK.ChafaiBrascampLieb.Concrete.GaussianProbability
+ public import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
+ public import Mathlib.MeasureTheory.Measure.Haar.OfBasis
+ public import Mathlib.MeasureTheory.Measure.WithDensity

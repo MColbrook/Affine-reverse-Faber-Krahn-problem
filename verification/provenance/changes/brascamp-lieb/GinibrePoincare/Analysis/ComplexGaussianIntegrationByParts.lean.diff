@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/ComplexGaussianIntegrationByParts.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/ComplexGaussianIntegrationByParts.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.RealGaussianIntegrationByParts
+-public import GinibrePoincare.Concrete.Wirtinger
++public import AffineFK.ChafaiBrascampLieb.Analysis.RealGaussianIntegrationByParts
++public import AffineFK.ChafaiBrascampLieb.Concrete.Wirtinger
+ 
+ @[expose] public section
+ 

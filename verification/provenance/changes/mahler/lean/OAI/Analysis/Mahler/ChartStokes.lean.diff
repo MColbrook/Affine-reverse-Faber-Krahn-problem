@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/ChartStokes.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ChartStokes.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.FormStokes
+-import OAI.Analysis.Mahler.DCForms
+-import Mathlib.MeasureTheory.Integral.DivergenceTheorem
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.FormStokes
++public import AffineFK.OpenAIMahler.Analysis.Mahler.DCForms
++public import Mathlib.MeasureTheory.Integral.DivergenceTheorem
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

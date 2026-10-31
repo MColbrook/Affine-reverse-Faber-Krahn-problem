@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/StripRankGeometry.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/StripRankGeometry.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ActualFiniteStrips
+-import Mathlib.Topology.Algebra.Module.FiniteDimension
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ActualFiniteStrips
++public import Mathlib.Topology.Algebra.Module.FiniteDimension
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

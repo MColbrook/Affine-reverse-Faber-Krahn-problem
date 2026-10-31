@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/ConvexENNRealTransfer.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ConvexENNRealTransfer.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.ConvexMain
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ConvexMain
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

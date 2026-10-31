@@ -1,0 +1,18 @@
+--- lean/OAI/Analysis/Mahler/ImplicitAngle.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/ImplicitAngle.lean
+@@ -1,7 +1,11 @@
+-import OAI.Analysis.Mahler.VerticalSpeed
+-import OAI.Analysis.Mahler.AngularGeometry
+-import Mathlib.Analysis.Calculus.ImplicitContDiff
+-import Mathlib.Analysis.Complex.CauchyIntegral
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.VerticalSpeed
++public import AffineFK.OpenAIMahler.Analysis.Mahler.AngularGeometry
++public import Mathlib.Analysis.Calculus.ImplicitContDiff
++public import Mathlib.Analysis.Complex.CauchyIntegral
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,9 @@
+--- GinibrePoincare/Analysis/CorrespondenceBrascampLiebCoreRange.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceBrascampLiebCoreRange.lean
+@@ -1,5 +1,5 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceBrascampLiebLinear
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceBrascampLiebLinear
+ public import Mathlib.Analysis.InnerProductSpace.Projection.Submodule
+ @[expose] public section
+ open MeasureTheory Measure

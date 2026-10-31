@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/PunctureCutoff.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/PunctureCutoff.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.RegularChartStokes
+-import OAI.Analysis.Mahler.PuncturedBallStokes
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RegularChartStokes
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PuncturedBallStokes
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/ComplexHermiteLowering.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/ComplexHermiteLowering.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.ComplexHermite
++public import AffineFK.ChafaiBrascampLieb.Analysis.ComplexHermite
+ 
+ @[expose] public section
+ 

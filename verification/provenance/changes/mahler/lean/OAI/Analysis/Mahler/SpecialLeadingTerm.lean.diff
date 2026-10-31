@@ -1,0 +1,18 @@
+--- lean/OAI/Analysis/Mahler/SpecialLeadingTerm.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SpecialLeadingTerm.lean
+@@ -1,7 +1,11 @@
+-import OAI.Analysis.Mahler.ComplexStripMap
+-import Mathlib.Analysis.Analytic.IsolatedZeros
+-import Mathlib.Analysis.Normed.Operator.Asymptotics
+-import Mathlib.RingTheory.MvPolynomial.Homogeneous
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ComplexStripMap
++public import Mathlib.Analysis.Analytic.IsolatedZeros
++public import Mathlib.Analysis.Normed.Operator.Asymptotics
++public import Mathlib.RingTheory.MvPolynomial.Homogeneous
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

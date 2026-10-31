@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/AlternativeBakryEmeryGibbsGenerator.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/AlternativeBakryEmeryGibbsGenerator.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.AlternativeBakryEmeryIntegrationByParts
++public import AffineFK.ChafaiBrascampLieb.Analysis.AlternativeBakryEmeryIntegrationByParts
+ public import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+ public import Mathlib.Analysis.Calculus.Gradient.Basic
+ public import Mathlib.Analysis.InnerProductSpace.Calculus

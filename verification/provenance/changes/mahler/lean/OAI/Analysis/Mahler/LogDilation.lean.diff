@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/LogDilation.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/LogDilation.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.SphereFluxLimit
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereFluxLimit
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

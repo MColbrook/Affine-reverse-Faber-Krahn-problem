@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/RadialSobolevClosure.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/RadialSobolevClosure.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.EntropyL2Closure
+-public import GinibrePoincare.Analysis.GaussianRadialLift
++public import AffineFK.ChafaiBrascampLieb.Analysis.EntropyL2Closure
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianRadialLift
+ public import Mathlib.Analysis.InnerProductSpace.PiL2
+ public import Mathlib.MeasureTheory.Function.LpSpace.Indicator
+ 

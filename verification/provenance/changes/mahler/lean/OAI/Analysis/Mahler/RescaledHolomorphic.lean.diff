@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/RescaledHolomorphic.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RescaledHolomorphic.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.RescalingEstimates
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.RescalingEstimates
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

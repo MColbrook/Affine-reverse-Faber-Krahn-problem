@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GinibreMassFiniteness.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreMassFiniteness.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianPolynomialIntegrability
+-public import GinibrePoincare.Analysis.GinibreMassPositivity
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianPolynomialIntegrability
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreMassPositivity
+ 
+ @[expose] public section
+ 

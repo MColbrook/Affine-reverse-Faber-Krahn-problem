@@ -1,0 +1,10 @@
+--- GinibrePoincare/Concrete/Weights.lean
++++ AffineFK/ChafaiBrascampLieb/Concrete/Weights.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Concrete.Vandermonde
++public import AffineFK.ChafaiBrascampLieb.Concrete.Vandermonde
+ public import Mathlib.Analysis.SpecialFunctions.Exp
+ public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+ public import Mathlib.Data.NNReal.Defs

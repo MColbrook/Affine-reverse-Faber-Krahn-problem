@@ -1,0 +1,21 @@
+{
+  "kind": "Actual remote checking-producer and fixed proof/interface/probe file hashes",
+  "file_sha256": {
+    "scripts/run_checks.py": "556268950533cc8ffeed2442289466b06aae2bb9da11a94d81f8822a04547191",
+    "Challenge.lean": "f1e54850c2a7e20d96f5c26af48ec68dfa208d718837c6f91e966444172d01c1",
+    "Solution.lean": "40e7bf57f72e19da664b408a95ab9fdca52caf883d9adf7cc351f7c50708e659",
+    "AxiomAudit.lean": "02fcc86dd0c6bf5508141ed6ee21e316c742aa31a7e058f5996f2264af7ebe9b",
+    "comparator.json": "8f067ec60c3a994daba8faeaaad85bfff96ae7e39623ddf29934d8047673a6ac",
+    "AuditTools/StatementChallenge.lean": "a99d43358e64cf9df95fbc5ea30afec8ac8b5f7a1c44a3e2f959310e058d2ea8",
+    "AuditTools/StatementSolution.lean": "483fca647ec811494381bfffc5ac063fd5e5609858606fdbeffa84c228976553",
+    "AuditTools/ProofClosure.lean": "116101d4dcddd9d30590e66f965e388e597cd2a68993a27022490e380543643f",
+    "verification/source-sha256.json": "8f47b864010173ab9bd069e432191e032b8ff683f103cf81aa9703c5a4233a24"
+  },
+  "actual_driver_command": [
+    "/usr/bin/python3",
+    "scripts/run_checks.py",
+    "comparator",
+    "--output",
+    ".verification/comparator-final01"
+  ]
+}

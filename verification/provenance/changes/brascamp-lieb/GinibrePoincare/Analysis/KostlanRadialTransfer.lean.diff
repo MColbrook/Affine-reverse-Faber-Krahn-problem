@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/KostlanRadialTransfer.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/KostlanRadialTransfer.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.KostlanDiagonalIdentity
+-public import GinibrePoincare.Analysis.GroundStateDbar
++public import AffineFK.ChafaiBrascampLieb.Analysis.KostlanDiagonalIdentity
++public import AffineFK.ChafaiBrascampLieb.Analysis.GroundStateDbar
+ 
+ @[expose] public section
+ 

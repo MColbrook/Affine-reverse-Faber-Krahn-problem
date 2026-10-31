@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GroundStateDbar.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GroundStateDbar.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibreMassFiniteness
+-public import GinibrePoincare.Concrete.AnalyticStatements
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreMassFiniteness
++public import AffineFK.ChafaiBrascampLieb.Concrete.AnalyticStatements
+ public import Mathlib.Analysis.Calculus.FDeriv.Mul
+ public import Mathlib.Analysis.Calculus.FDeriv.RestrictScalars
+ 

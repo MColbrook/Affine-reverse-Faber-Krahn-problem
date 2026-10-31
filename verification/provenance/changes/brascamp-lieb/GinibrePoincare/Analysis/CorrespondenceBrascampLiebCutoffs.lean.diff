@@ -1,0 +1,9 @@
+--- GinibrePoincare/Analysis/CorrespondenceBrascampLiebCutoffs.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceBrascampLiebCutoffs.lean
+@@ -1,5 +1,5 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceBrascampLiebJets
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceBrascampLiebJets
+ public import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
+ @[expose] public section
+ open Filter

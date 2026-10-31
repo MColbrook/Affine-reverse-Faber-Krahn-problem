@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/SourceRadiusFlux.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceRadiusFlux.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.SourceFluxCoordinates
+-import OAI.Analysis.Mahler.SphereDensityBridge
+-import OAI.Analysis.Mahler.SphereRadius
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceFluxCoordinates
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereDensityBridge
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereRadius
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

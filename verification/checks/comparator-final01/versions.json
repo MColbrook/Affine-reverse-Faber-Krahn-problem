@@ -1,0 +1,195 @@
+{
+  "versions": {
+    "lean": "Lean (version 4.35.0-rc3, x86_64-unknown-linux-gnu, commit 470d5ce1400764999581fd26d5d72b00d990b0f4, Release)",
+    "lake": "Lake version 5.0.0-src+470d5ce (Lean version 4.35.0-rc3)"
+  },
+  "binary_sha256": {
+    "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "leanexport": "c5bc1a10a21e22cbb3671d65987cdef2076833b14182d823ccb2153adf2fa954",
+    "leanchecker": "9e36e955a251b1313c8eb5b7fa101282d51df109d34d8bb7c1cfdf51985aba29",
+    "leanchecker-paranoid": "00034357f65aa93e49b710f7671960518459d91e052797532545adaae1275286",
+    "lean4lean": "baaec030a70c78562ced2c75866ab0d2410e81ce680b835179ed16570ad5ef97",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "con-leche": "a6380d68b4fb364189821dd4692569c11536de0a1e3aaefea06028c0d67bb193",
+    "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef"
+  },
+  "mathlib_commit": "b63f6e8a68d220e3b3bc4f3792bb53650d375f24",
+  "mathlib_clean": true,
+  "lake_manifest_sha256": "a9340a6648ae07976e18f4b362b2ad6c2480311042154a98ddd642dc89369dc1",
+  "dependencies": [
+    {
+      "package": "mathlib",
+      "pinned_commit": "b63f6e8a68d220e3b3bc4f3792bb53650d375f24",
+      "tracked_clean": true,
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/mathlib",
+        "diff",
+        "--quiet"
+      ]
+    },
+    {
+      "package": "plausible",
+      "pinned_commit": "fb13df72ecefd8ddbf9291021d7f33a8673eb57b",
+      "tracked_clean": true,
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/plausible",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/plausible",
+        "diff",
+        "--quiet"
+      ]
+    },
+    {
+      "package": "LeanSearchClient",
+      "pinned_commit": "29ff470276c725ae01505d55b17148c18fc7dfd3",
+      "tracked_clean": true,
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/LeanSearchClient",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/LeanSearchClient",
+        "diff",
+        "--quiet"
+      ]
+    },
+    {
+      "package": "importGraph",
+      "pinned_commit": "10a2cfff285e1c7c2ebc49c0ba22cab0f3c58ee5",
+      "tracked_clean": true,
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/importGraph",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/importGraph",
+        "diff",
+        "--quiet"
+      ]
+    },
+    {
+      "package": "proofwidgets",
+      "pinned_commit": "c643bbb3c24f8a25f9c14e3a6b1ceb13d01f3de1",
+      "tracked_clean": true,
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/proofwidgets",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/proofwidgets",
+        "diff",
+        "--quiet"
+      ]
+    },
+    {
+      "package": "aesop",
+      "pinned_commit": "a90fbf7b02ff06a0deebf74088dff9e5fe02c9ea",
+      "tracked_clean": true,
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/aesop",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/aesop",
+        "diff",
+        "--quiet"
+      ]
+    },
+    {
+      "package": "Qq",
+      "pinned_commit": "37b0ba0b26109cf9f9c541f0f9557e50cfa1a3b9",
+      "tracked_clean": true,
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/Qq",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/Qq",
+        "diff",
+        "--quiet"
+      ]
+    },
+    {
+      "package": "batteries",
+      "pinned_commit": "33131f4fb10067cb3009bf4db615d9680c1ccd6b",
+      "tracked_clean": true,
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/batteries",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/batteries",
+        "diff",
+        "--quiet"
+      ]
+    },
+    {
+      "package": "Cli",
+      "pinned_commit": "843844fa601dd56767b1eb22b7ada5b64d5e567a",
+      "tracked_clean": true,
+      "revision_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/Cli",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cleanliness_command": [
+        "git",
+        "-C",
+        "/dev/shm/affine-fk-submission-20261030-m01-m03-attempt02/.lake/packages/Cli",
+        "diff",
+        "--quiet"
+      ]
+    }
+  ],
+  "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.35",
+  "dependency_fetching_performed": false
+}

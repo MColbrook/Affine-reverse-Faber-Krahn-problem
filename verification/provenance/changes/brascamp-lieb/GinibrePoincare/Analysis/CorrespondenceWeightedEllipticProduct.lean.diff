@@ -1,0 +1,9 @@
+--- GinibrePoincare/Analysis/CorrespondenceWeightedEllipticProduct.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/CorrespondenceWeightedEllipticProduct.lean
+@@ -1,5 +1,5 @@
+ module
+-public import GinibrePoincare.Analysis.CorrespondenceWeightedEllipticC1Tests
++public import AffineFK.ChafaiBrascampLieb.Analysis.CorrespondenceWeightedEllipticC1Tests
+ @[expose] public section
+ open MeasureTheory Set
+ open scoped ContDiff

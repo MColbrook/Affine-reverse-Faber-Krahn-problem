@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/HomogeneousSphereIntegral.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HomogeneousSphereIntegral.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.SphereDensityRestriction
+-import OAI.Analysis.Mahler.FluxVariation
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereDensityRestriction
++public import AffineFK.OpenAIMahler.Analysis.Mahler.FluxVariation
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

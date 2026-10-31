@@ -1,0 +1,142 @@
+{
+  "kind": "Independent non-author AI mathematics, fidelity and clarity review",
+  "reviewer": "/root",
+  "proof_author": "/root/formalization_coverage",
+  "all_25_full_headers_and_bodies_read": true,
+  "source_pins": 263,
+  "actual_logs": 16,
+  "actual_axiom_reports": {
+    "AffineFKProof.charFun_dyadicNormalizedLaw": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.convex_dilate_mono": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.dyadicNormalizedLaw": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.dyadicNormalizedLaw_entropy_rate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.dyadicNormalizedLaw_eq_normalizedSum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.dyadicNormalizedLaw_finite_information_decay": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.dyadicNormalizedLaw_information_decay": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.dyadicNormalizedLaw_isProbabilityMeasure": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.dyadicNormalizedLaw_isotropy": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.dyadicNormalizedLaw_logConcave_density": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.dyadicNormalizedLaw_poincare_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.dyadicNormalizedLaw_support": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.dyadic_entropy_rate_coefficient": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.dyadic_inverse_sqrt_coefficient": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.dyadic_normalized_sum_entropy_rate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.dyadic_normalized_sum_information_decay": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.dyadic_rounding_power_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.gaussian_dilation_profile_of_finite_information": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.gaussian_dyadic_support_entropy_rate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.logConcaveDensity_ne_top_of_finite_mass": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.normalizedSum_charFun": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.normalized_copies_logConcave_density": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.ordinaryFisherConvolutionDensity_logConcave": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.ordinaryFisherLinearDensity_logConcave": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AffineFKProof.zero_mem_convex_of_even_probability_support": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "manifest_sha256": "3bef2d443deec185d9089b9c51eee5cb362b69d9125444b1e04323c9eb2380ea",
+  "review_sha256": "85d6eeab2938dd6720af414254ab78424cec5e36efcda7634b85dd494de3cacb",
+  "defects_found": [],
+  "own_comparator_accepted": false,
+  "full_paper_verified": false,
+  "main_theorems_M01_M02_M03_verified": false,
+  "source_chain_proved": true
+}

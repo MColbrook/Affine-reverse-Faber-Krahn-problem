@@ -1,0 +1,18 @@
+--- lean/OAI/Analysis/Mahler/HomogeneousTransgressionFTC.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HomogeneousTransgressionFTC.lean
+@@ -1,7 +1,11 @@
+-import OAI.Analysis.Mahler.SourcePrimitiveStokes
+-import OAI.Analysis.Mahler.HomogeneousFluxFTC
+-import OAI.Analysis.Mahler.SphereDensityBridge
+-import OAI.Analysis.Mahler.HomogeneousCircleIntegral
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourcePrimitiveStokes
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousFluxFTC
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SphereDensityBridge
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousCircleIntegral
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

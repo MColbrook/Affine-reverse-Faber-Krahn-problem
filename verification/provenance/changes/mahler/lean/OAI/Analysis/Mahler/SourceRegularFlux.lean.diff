@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/SourceRegularFlux.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/SourceRegularFlux.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.SourceCoordinateExterior
+-import OAI.Analysis.Mahler.SourceCanonicalMeasure
+-import OAI.Analysis.Mahler.SourceBoundaryIntegral
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceCoordinateExterior
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceCanonicalMeasure
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SourceBoundaryIntegral
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

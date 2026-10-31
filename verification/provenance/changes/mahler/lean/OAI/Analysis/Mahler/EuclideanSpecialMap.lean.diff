@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/EuclideanSpecialMap.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/EuclideanSpecialMap.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.SpecialMassHypotheses
+-import OAI.Analysis.Mahler.OpenHessian
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.SpecialMassHypotheses
++public import AffineFK.OpenAIMahler.Analysis.Mahler.OpenHessian
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

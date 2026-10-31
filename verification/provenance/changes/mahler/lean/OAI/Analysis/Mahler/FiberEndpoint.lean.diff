@@ -1,0 +1,12 @@
+--- lean/OAI/Analysis/Mahler/FiberEndpoint.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/FiberEndpoint.lean
+@@ -1,4 +1,8 @@
+-import OAI.Analysis.Mahler.FiberHeight
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.FiberHeight
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

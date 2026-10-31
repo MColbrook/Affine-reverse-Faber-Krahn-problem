@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/ComplexGaussianMoments.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/ComplexGaussianMoments.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianPolynomialIntegrability
+-public import GinibrePoincare.Analysis.PolarGaussianMoments
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianPolynomialIntegrability
++public import AffineFK.ChafaiBrascampLieb.Analysis.PolarGaussianMoments
+ 
+ @[expose] public section
+ 

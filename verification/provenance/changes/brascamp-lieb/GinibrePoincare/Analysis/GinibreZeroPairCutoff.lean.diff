@@ -1,0 +1,12 @@
+--- GinibrePoincare/Analysis/GinibreZeroPairCutoff.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/GinibreZeroPairCutoff.lean
+@@ -1,7 +1,7 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GinibrePairRadius
+-public import GinibrePoincare.Analysis.GinibreZeroPairIntegrability
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibrePairRadius
++public import AffineFK.ChafaiBrascampLieb.Analysis.GinibreZeroPairIntegrability
+ 
+ @[expose] public section
+ 

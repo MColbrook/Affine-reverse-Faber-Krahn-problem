@@ -1,0 +1,74 @@
+--- RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/Compactness.lean
++++ AffineFK/BenensonRellich/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/Compactness.lean
+@@ -1,8 +1,15 @@
+-import RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Smoothing
+-import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+-import Mathlib.MeasureTheory.Measure.Typeclasses.Finite
+-import Mathlib.Topology.Algebra.Monoid
+-import Mathlib.Topology.UniformSpace.HeineCantor
++module
++
++public import AffineFK.BenensonRellich.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Smoothing
++public import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
++public import Mathlib.MeasureTheory.Measure.Typeclasses.Finite
++public import Mathlib.Topology.Algebra.Monoid
++public import Mathlib.Topology.UniformSpace.HeineCantor
++
++@[expose] public section
++
++set_option autoImplicit false
++set_option backward.isDefEq.respectTransparency false
+ 
+ /-
+ Copyright (c) 2026 Adam Benenson. All rights reserved.
+@@ -44,8 +51,7 @@
+ 
+ variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E]
+ 
+-local instance instMeasurableSpaceE_L2CompactnessCompactness : MeasurableSpace E := borel E
+-local instance instBorelSpaceE_L2CompactnessCompactness : BorelSpace E := ⟨rfl⟩
++variable [MeasurableSpace E] [BorelSpace E]
+ local instance instOpensMeasurableSpaceE_L2CompactnessCompactness : OpensMeasurableSpace E := by
+   infer_instance
+ local instance instMeasurableAddE_L2CompactnessCompactness : MeasurableAdd E := by
+@@ -65,14 +71,14 @@
+     IsCompact (Kψ (K := K) (ψ := ψ)) :=
+   IsCompact.add hK hψcs.isCompact
+ 
+-private def smoothOn (hKm : MeasurableSet K) (hψc : Continuous ψ) (hψcs : HasCompactSupport ψ)
++def smoothOn (hKm : MeasurableSet K) (hψc : Continuous ψ) (hψcs : HasCompactSupport ψ)
+     (u : MeasureTheory.Lp ℝ (2 : ℝ≥0∞) (volume.restrict K)) :
+     C(↥(Kψ (K := K) (ψ := ψ)), ℝ) where
+   toFun x := smoothFun (E := E) (K := K) ψ u x
+   continuous_toFun := by
+     have : Continuous (smoothFun (E := E) (K := K) ψ u) :=
+       continuous_smoothFun (E := E) (K := K) (ψ := ψ) (hKm := hKm) hψc hψcs u
+-    simpa using this.comp continuous_subtype_val
++    simpa using! this.comp continuous_subtype_val
+ 
+ /-- `smoothFun` packaged as a `BoundedContinuousFunction` on the compact set `K + tsupport ψ`. -/
+ def smoothBCF (hK : IsCompact K) (hKm : MeasurableSet K) (hψc : Continuous ψ)
+@@ -106,18 +112,18 @@
+   -- If `ψ x` is `ε`-far from `0`, then `ψ x ≠ 0`, hence `x` belongs to the support and therefore
+   -- to the topological support.
+   have hx' : ¬ dist (ψ x) 0 < ε := by
+-    simpa [Set.mem_compl_iff, Set.mem_setOf_eq] using hx
+-  have hxε : ε ≤ dist (ψ x) 0 := le_of_not_gt (by simpa [gt_iff_lt] using hx')
++    simpa [Set.mem_compl_iff, Set.mem_setOf_eq] using! hx
++  have hxε : ε ≤ dist (ψ x) 0 := le_of_not_gt (by simpa [gt_iff_lt] using! hx')
+   have hx0 : ψ x ≠ 0 := by
+     intro hψ0
+     have : dist (ψ x) 0 = 0 := by simp [hψ0]
+-    have : ε ≤ 0 := by simpa [this] using hxε
++    have : ε ≤ 0 := by simpa [this] using! hxε
+     exact not_lt_of_ge this hε
+   have hx_supp : x ∈ Function.support ψ := by
+-    simpa [Function.support] using hx0
++    simpa [Function.support] using! hx0
+   have hx_tsupp : x ∈ tsupport ψ := by
+     have : x ∈ closure (Function.support ψ) := subset_closure hx_supp
+-    simpa [tsupport] using this
++    simpa [tsupport] using! this
+   exact hx_tsupp
+ 
+ omit [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] in

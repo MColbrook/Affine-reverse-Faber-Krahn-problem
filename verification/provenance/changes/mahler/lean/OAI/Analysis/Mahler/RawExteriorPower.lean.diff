@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/RawExteriorPower.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/RawExteriorPower.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.ExteriorAlternatization
+-import OAI.Analysis.Mahler.WedgeAlgebra
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.ExteriorAlternatization
++public import AffineFK.OpenAIMahler.Analysis.Mahler.WedgeAlgebra
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

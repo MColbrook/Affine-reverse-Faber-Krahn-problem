@@ -1,0 +1,14 @@
+--- lean/OAI/Analysis/Mahler/HomogeneousFluxFTC.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/HomogeneousFluxFTC.lean
+@@ -1,5 +1,9 @@
+-import OAI.Analysis.Mahler.HomogeneousFluxDifferentiation
+-import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.HomogeneousFluxDifferentiation
++public import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

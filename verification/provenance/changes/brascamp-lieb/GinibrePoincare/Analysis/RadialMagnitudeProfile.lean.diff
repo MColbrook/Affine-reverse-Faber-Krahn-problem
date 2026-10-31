@@ -1,0 +1,10 @@
+--- GinibrePoincare/Analysis/RadialMagnitudeProfile.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/RadialMagnitudeProfile.lean
+@@ -1,6 +1,6 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.RadialSobolevClosure
++public import AffineFK.ChafaiBrascampLieb.Analysis.RadialSobolevClosure
+ public import Mathlib.Analysis.Calculus.ContDiff.RCLike
+ public import Mathlib.Analysis.InnerProductSpace.Calculus
+ 

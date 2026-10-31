@@ -1,0 +1,16 @@
+--- lean/OAI/Analysis/Mahler/FiberPrimitive.lean
++++ AffineFK/OpenAIMahler/Analysis/Mahler/FiberPrimitive.lean
+@@ -1,6 +1,10 @@
+-import OAI.Analysis.Mahler.AngularFibers
+-import OAI.Analysis.Mahler.AngularIntegrals
+-import OAI.Analysis.Mahler.PrimitiveBound
++module
++
++public import AffineFK.OpenAIMahler.Analysis.Mahler.AngularFibers
++public import AffineFK.OpenAIMahler.Analysis.Mahler.AngularIntegrals
++public import AffineFK.OpenAIMahler.Analysis.Mahler.PrimitiveBound
++
++@[expose] public noncomputable section
+ 
+ namespace OAI
+ 

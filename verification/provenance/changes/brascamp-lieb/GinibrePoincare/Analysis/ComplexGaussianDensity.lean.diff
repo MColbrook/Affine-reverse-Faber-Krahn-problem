@@ -1,0 +1,16 @@
+--- GinibrePoincare/Analysis/ComplexGaussianDensity.lean
++++ AffineFK/ChafaiBrascampLieb/Analysis/ComplexGaussianDensity.lean
+@@ -1,9 +1,9 @@
+ module
+ 
+-public import GinibrePoincare.Analysis.GaussianDensity
+-public import GinibrePoincare.Analysis.FinitePiDensity
+-public import GinibrePoincare.Analysis.MeasureTransport
+-public import GinibrePoincare.Concrete.MeasureModel
++public import AffineFK.ChafaiBrascampLieb.Analysis.GaussianDensity
++public import AffineFK.ChafaiBrascampLieb.Analysis.FinitePiDensity
++public import AffineFK.ChafaiBrascampLieb.Analysis.MeasureTransport
++public import AffineFK.ChafaiBrascampLieb.Concrete.MeasureModel
+ 
+ @[expose] public section
+ 
