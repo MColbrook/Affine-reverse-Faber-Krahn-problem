@@ -15,6 +15,10 @@ ROOT = Path(__file__).resolve().parents[1]
 TARGET = "AffineFK.affine_reverse_faber_krahn_principal_results"
 ALLOWED = {"propext", "Classical.choice", "Quot.sound"}
 IGNORED = {".lake", ".git", ".verification", ".venv", "__pycache__"}
+STATUS_UPDATE_SNAPSHOTS = {
+    name: "verification/provenance/before-status-documentation-update/" + Path(name).name + ".txt"
+    for name in ("Challenge.lean", "Solution.lean", "scripts/check_package.py", "verification/README.md")
+}
 
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -23,11 +27,38 @@ def payload():
     return sorted(p for p in ROOT.rglob("*") if p.is_file() and
         not any(part in IGNORED for part in p.relative_to(ROOT).parts))
 
+def checked_snapshot(name):
+    """The unchanged certificate and raw log identify these predecessor bytes."""
+    return ROOT / STATUS_UPDATE_SNAPSHOTS.get(name, name)
+
+def outside_module_documentation(data):
+    """Remove only the single, non-nested module comment; retain all other bytes."""
+    assert data.count(b"/-!") == 1, "Expected exactly one module comment"
+    prefix, _, rest = data.partition(b"/-!")
+    comment, close, suffix = rest.partition(b"-/")
+    assert close and b"/-" not in comment, "Expected a closed, non-nested module comment"
+    return prefix, suffix
+
+def check_documentation_update():
+    record = json.loads((ROOT / "verification/documentation-status-update.json").read_text())
+    assert set(record["preserved_predecessors"]) == set(STATUS_UPDATE_SNAPSHOTS)
+    assert set(record["current_file_sha256"]) == set(STATUS_UPDATE_SNAPSHOTS)
+    for name, saved in STATUS_UPDATE_SNAPSHOTS.items():
+        predecessor = record["preserved_predecessors"][name]
+        assert predecessor["preserved_path"] == saved
+        assert sha(ROOT / saved) == predecessor["sha256"], saved
+        assert sha(ROOT / name) == record["current_file_sha256"][name], name
+    for name in ("Challenge.lean", "Solution.lean"):
+        assert outside_module_documentation((ROOT / name).read_bytes()) == \
+            outside_module_documentation(checked_snapshot(name).read_bytes()), \
+            f"Non-documentation bytes changed in {name}; a new verification run is required"
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--preflight", action="store_true")
     parser.add_argument("--schema", action="store_true")
     args = parser.parse_args()
+    check_documentation_update()
     pins = json.loads((ROOT / "verification/source-sha256.json").read_text())
     assert len(pins) == 992
     actual = {p.relative_to(ROOT).as_posix() for p in (ROOT / "AffineFK").rglob("*.lean")}
@@ -98,9 +129,9 @@ def main():
         assert raw_labels == labels
         for tag, name in [("CONFIG", "comparator.json"), ("CHALLENGE", "Challenge.lean"),
                           ("SOLUTION", "Solution.lean"), ("SOURCES", "verification/source-sha256.json")]:
-            assert tag+"_SHA256: "+sha(ROOT / name) in raw
+            assert tag+"_SHA256: "+sha(checked_snapshot(name)) in raw
         for name, pin in certificate["file_sha256"].items():
-            assert sha(ROOT / name) == pin, name
+            assert sha(checked_snapshot(name)) == pin, name
         assert metadata["verification"]["new_combined_package_acceptance_claimed"] is True
         recorded = json.loads((ROOT / "verification/payload-sha256.json").read_text())
         current = {p.relative_to(ROOT).as_posix():sha(p) for p in files
@@ -109,7 +140,8 @@ def main():
     print(json.dumps(dict(status="PASS", proof_source_files=992, compiled_Lean_files=len(lean_files),
         source_bytes=sum((ROOT/p).stat().st_size for p in pins), Challenge_physical_lines=len(challenge.read_bytes().splitlines()),
         Challenge_bytes=challenge.stat().st_size, selected_originals=481,
-        schema_checked=args.schema, preflight_only=args.preflight, Lean_or_kernel_commands_run=False)))
+        schema_checked=args.schema, preflight_only=args.preflight,
+        documentation_only_update_checked=True, Lean_or_kernel_commands_run=False)))
 
 if __name__ == "__main__":
     main()

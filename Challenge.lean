@@ -196,7 +196,11 @@ public import Mathlib.MeasureTheory.Covering.BesicovitchVectorSpace
 The principal manuscript statements M01, M02 and M03, with their original
 uniform constants, dimensions, convex-body domains and actual information.
 All conventional data below have complete fixed definitions/proofs copied
-from the accepted interfaces. This is a new UNCHECKED packaging proposal.
+from the accepted interfaces. The initial unchecked packaging draft was
+subsequently checked: the combined comparison passed ordinary sandboxed
+Comparator and all six configured kernels, as recorded in
+`verification/certificate.json`. This status clarification changes no
+formal statement or proof.
 Challenge alone has the selected benchmark placeholder. Solution imports
 only genuine source proof endpoints and does not import Challenge.
 -/

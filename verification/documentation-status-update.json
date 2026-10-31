@@ -1,0 +1,39 @@
+{
+  "kind": "Documentation-only checking-status correction following Palomar feedback",
+  "date": "2026-10-31",
+  "base_commit": "0f7c0c1ef75a9221c02eef1c68dde9fa18f0adc0",
+  "reason": "Palomar identified the current unchecked-packaging wording as inconsistent with the completed passing comparison.",
+  "correction": "Challenge and Solution now identify the unchecked proposal as the initial draft and point to the subsequently completed ordinary sandboxed Comparator and six-kernel check.",
+  "preserved_predecessors": {
+    "Challenge.lean": {
+      "preserved_path": "verification/provenance/before-status-documentation-update/Challenge.lean.txt",
+      "sha256": "f1e54850c2a7e20d96f5c26af48ec68dfa208d718837c6f91e966444172d01c1"
+    },
+    "Solution.lean": {
+      "preserved_path": "verification/provenance/before-status-documentation-update/Solution.lean.txt",
+      "sha256": "40e7bf57f72e19da664b408a95ab9fdca52caf883d9adf7cc351f7c50708e659"
+    },
+    "scripts/check_package.py": {
+      "preserved_path": "verification/provenance/before-status-documentation-update/check_package.py.txt",
+      "sha256": "e688989a336e0aeed5b2fea60d9aa503c8117622c0c685a5d9565a80ea59c106"
+    },
+    "verification/README.md": {
+      "preserved_path": "verification/provenance/before-status-documentation-update/README.md.txt",
+      "sha256": "5e970c66feb8281f2e4b084f9edbd2c89fd80a1640da3f310fc5c829ae47f7fe"
+    }
+  },
+  "current_file_sha256": {
+    "Challenge.lean": "d0e20304f0158c729aded30cea3bb11a56ad748d45586de43e12860920d80a33",
+    "Solution.lean": "d02f3a0fd0e79af78528c763557b5c19dc93e18ee2646b919e65182a6f70d242",
+    "scripts/check_package.py": "731362b22d649a40ff2174da51677e19424231edba39309ef2bd9886559c0b3f",
+    "verification/README.md": "3bb7183c2b5df514411282d4c761ec9a4848b9f1301425d96b8e4ce2667d32c6"
+  },
+  "bytes_outside_Challenge_and_Solution_module_documentation_unchanged": true,
+  "all_992_supporting_proof_sources_unchanged": true,
+  "certificate_and_raw_check_logs_unchanged": true,
+  "recorded_certificate": "verification/certificate.json",
+  "recorded_comparator_log": "verification/checks/comparator-final01/comparator.txt",
+  "checker_change": "Validate the unchanged certificate and raw log against the preserved checked files; require exact equality of all bytes outside each current module comment; validate the correction hashes and refreshed payload.",
+  "Lean_or_kernel_rerun": false,
+  "new_commit_Palomar_verification_claimed": false
+}

@@ -1,10 +1,20 @@
 # Checking evidence
 
-The authoritative verdict for this clean repository is
+The recorded verdict for the checked mathematical package is
 [certificate.json](certificate.json): the exact combined M01/M02/M03
 benchmark passed ordinary Linux sandboxed Comparator and all six configured
 kernels, with actual exit 0 in 1464.250 seconds. This is a local checking
-certificate; no public upload or registry registration was performed.
+certificate produced before the public upload and Palomar submission.
+
+The module documentation in `Challenge.lean` and `Solution.lean` has since
+been corrected in response to Palomar's checking-status feedback. The old
+unchecked-proposal wording described the initial draft, before the recorded
+successful comparison. `documentation-status-update.json` records this
+documentation-only correction. The exact checked source files, previous
+package checker and previous version of this index are preserved under
+`provenance/before-status-documentation-update/`. The certificate and raw
+checking logs remain unchanged and refer to those predecessor bytes. No new
+Lean or kernel run is claimed for the documentation correction.
 
 ## Actual runs
 
@@ -100,7 +110,12 @@ package review applies to that predecessor; all Lean files, configuration,
 toolchain pins and actual kernel-check outputs remain byte-identical. The new
 metadata has its own schema check in `checks/metadata-preflight-04.txt`.
 
-`payload-sha256.json` freezes every delivered file except itself after this
-publication metadata update. Run `python3 scripts/check_package.py` from the repository
-root to check that payload and the actual verdict consistency. This file
-check does not replace replaying Lean and Comparator.
+`payload-sha256.json` freezes every delivered file except itself after the
+latest documentation-status correction. Run `python3 scripts/check_package.py`
+from the repository root to check that payload and the recorded verdict.
+The checker validates the certificate and raw log against the preserved
+checked files, and requires every byte outside the single module comment in
+each current Challenge/Solution file to match its checked predecessor.
+It also checks the current documentation, checker and index hashes against
+the correction record. This file check does not replace replaying Lean and
+Comparator on the new submission commit.
